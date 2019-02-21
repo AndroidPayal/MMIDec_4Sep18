@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.radioknit.mmidec">
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DeviceListActivity" />
+        <activity android:name=".WriteModeEnableActivity"/>
+        <activity android:name=".MainDisplayActivity" />
+        <activity android:name=".CarCallActivity" />
+        <activity android:name=".IOIndicatorActivity" />
+        <activity android:name=".SetDateTimeActivity" />
+        <activity android:name=".ProgramCodeActivity"/>
+        <activity android:name=".DisplayPatternActivity"/>
+        <activity android:name=".DeviceIDActivity"/>
+        <activity android:name=".ProgrammablePrarmeterActivity"/>
+        <activity android:name=".SpeedSelectionActivity"/>
+        <activity android:name=".FloorCallBlockingActivity"/>
+        <activity android:name=".LevelFunctionActivity"/>
+        <activity android:name=".AutoLevelActivity"/>
+        <activity android:name=".SignUpActivity" android:label="Sign Up"/>
+    </application>
+
+</manifest>

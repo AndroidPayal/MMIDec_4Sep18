@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+    <!--<include-->
+        <!--android:id="@+id/act_up_toolbar"-->
+        <!--layout="@layout/toolbar" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSetProgram_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:text="Set Values"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnViewProgram_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:text="View Values"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llProgram_code_SetValues"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Select Command"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spin_cmd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spin_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.20"/>
+
+
+            <TextView
+                android:text="Value: "
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewValue"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_weight="0.13" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnSetCmd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_selector"
+                android:text="Set"
+                android:textColor="@color/white"
+                android:layout_weight="0.50"
+                android:textSize="16sp"/>
+            <Button
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="View"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnViewValue"
+                android:background="@drawable/btn_selector"
+                android:layout_weight="0.50" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlViewProgram_code_Values"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Command"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Default Value"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Value"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Stop Delay"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvStopDelayDefalut"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"/>
+                <!--android:text="5"-->
+                <Spinner
+                    android:id="@+id/spinStopDelay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Transit Delay"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvTransitDelay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"/>
+                <!--android:text="60"-->
+                <Spinner
+                    android:id="@+id/spinTransitDelay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Brake High Pulse"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvBreakHiPulse"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"/>
+                <!--android:text="12"-->
+                <Spinner
+                    android:id="@+id/spinBreakHiPulse"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No. Of Floors"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvNoOfFloor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"/>
+                <!--android:text="8"-->
+                <Spinner
+                    android:id="@+id/spinNoOfFloor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Door Open Time"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvDoorOpenTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"/>
+                <!--android:text="4"-->
+                <Spinner
+                    android:id="@+id/spinDoorOpenTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Door Close Time"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvDoorCloseTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"/>
+                <!--android:text="4"-->
+                <Spinner
+                    android:id="@+id/spinDoorCloseTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Door Keep Open Time"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvDoorKeepOpenTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"/>
+                <!--android:text="2"-->
+                <Spinner
+                    android:id="@+id/spinDoorKeepOpenTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Clock Divide"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvClockDivide"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"/>
+                <!--android:text="1"-->
+                <Spinner
+                    android:id="@+id/spinClockDivide"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Control Bit"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvControlBit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"/>
+                <!--android:text="0"-->
+                <Spinner
+                    android:id="@+id/spinControlBit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fire Floor"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvFireFloor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"/>
+                <!--android:text="1"-->
+                <Spinner
+                    android:id="@+id/spinFireFloor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Home Floor"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvHomeFloor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"/>
+                <!--android:text="1"-->
+                <Spinner
+                    android:id="@+id/spinHomeFloor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Compulsory Stop"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvCompulsaryStop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"/>
+                <!--android:text="5"-->
+                <Spinner
+                    android:id="@+id/spinCompulsaryStop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Parking Floor"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvParkingFloor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"/>
+                <!--android:text="16"-->
+                <Spinner
+                    android:id="@+id/spinParkingFloor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></Spinner>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnSetProgramCodes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="Set Program Code"
+                android:background="@drawable/btn_selector"
+                />
+
+            <Button
+                android:id="@+id/btnProgram_code_read_plc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_selector"
+                android:text="Read PLC"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+
+</LinearLayout>
