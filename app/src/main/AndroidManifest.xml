@@ -26,6 +26,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".ViewErrorLogActivity"/>
         <activity android:name=".DeviceListActivity" />
         <activity android:name=".WriteModeEnableActivity"/>
         <activity android:name=".MainDisplayActivity" />

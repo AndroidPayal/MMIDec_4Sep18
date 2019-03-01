@@ -277,6 +277,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i1);
             }
         });
+        imgErrorLog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i1 = new Intent(MainActivity.this, ViewErrorLogActivity.class);
+                i1.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(i1);
+            }
+        });
     }
 
     private void createObj() {
@@ -329,7 +337,7 @@ public class MainActivity extends AppCompatActivity {
             //  shwLog.append(msg);
             msgAppend.append(msg);
             //msgAppendChk.append(msg);
-           // Log.e(TAG, "msgAppend = "+ msgAppend.toString());
+            Log.e(TAG, "msgAppend = "+ msgAppend.toString());
             //Log.e(TAG, "msgAppendChk = "+ msgAppendChk.toString());
             String strReceived = msgAppend.toString();
             processReceivedData(strReceived);
@@ -350,7 +358,7 @@ public class MainActivity extends AppCompatActivity {
            // Log.e(TAG, "temp = "+ temp);
 
         if(temp.startsWith("05")){
-           // Log.e(TAG, "DisplayData = "+ strReceived);
+            Log.e(TAG, "DisplayData = "+ strReceived);
             try{
                 //if(strReceived.substring(indexA+16,indexA+17).equals("\r")){
                     //String strComplete;
@@ -1582,6 +1590,7 @@ public class MainActivity extends AppCompatActivity {
                     // construct a string from the buffer
                     String writeMessage = new String(writeBuf);
 
+                    Toast.makeText(mContext, "sent="+writeMessage, Toast.LENGTH_SHORT).show();
                     //mConversationArrayAdapter.add("Me:  " + writeMessage);
                     break;
                 case MESSAGE_READ:

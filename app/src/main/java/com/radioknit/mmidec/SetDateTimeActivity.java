@@ -37,7 +37,7 @@ import static com.radioknit.mmidec.MainActivity.str77IOValues2;
 
 public class SetDateTimeActivity extends AppCompatActivity {
 
-    private static final String TAG = "SetDataTimeActivity";
+    private static final String TAG = "Tag_SetDataTimeAct";
     private Context mContext;
     private TextView mTvDeviceName;
     private Button btnDone;
@@ -99,10 +99,14 @@ public class SetDateTimeActivity extends AppCompatActivity {
                 String yr = String.valueOf(myear).substring(2,4);
 //                Log.e(TAG, "Yr = "+ yr);
 //                String str5 = Integer.toHexString(Integer.parseInt(yr));
-                String str5 = String.valueOf(yr);
+                                             String str5 = String.valueOf(yr);
                 String str6 = Integer.toHexString(68);
 
-
+                Log.d(TAG, "btnDone: str1 ="+str1 + " str2="+str2 + " str3= "+str3);
+/*
+D/Tag_SetDataTimeAct: btnDone: str1 =12 str2=f3 str3= 1
+E/Tag_SetDataTimeAct: asciiString = 12f30103194492
+* */
                 int sum = 0;
 //                Log.e(TAG, "day1 = "+mday+" month1 = "+ (mmonth+1)+" year1 = "+Integer.parseInt(yr));
                 sum = sum+ 18+243+mday+(mmonth+1)+Integer.parseInt(yr)+68;
@@ -123,7 +127,7 @@ public class SetDateTimeActivity extends AppCompatActivity {
 //                Log.e(TAG,"Msb = "+ msb);
                 String lsb = sumHex.substring(2,4);
 //                Log.e(TAG,"lsb = "+ lsb);
-                int msb1 = (Integer.parseInt(msb) | 50);
+                int msb1 = (Integer.parseInt(msb) | 50);//00110010
 
                 String finalString = str1+str2+str3+str4+str5+str6+lsb+msb1;
 
@@ -219,7 +223,7 @@ public class SetDateTimeActivity extends AppCompatActivity {
 
 //                Log.e(TAG, "Char = "+ (char) a1 );
 
-                byte[] br2 = {(byte)0x12,(byte) 0xf2 , (byte) b3,(byte) b4,(byte)b5,(byte) b6,(byte) b7, (byte) b8};
+       /* *****   byte[] br2 = {(byte)0x12,(byte) 0xf2 , (byte) b3,(byte) b4,(byte)b5,(byte) b6,(byte) b7, (byte) b8};*/
 //                Log.e(TAG, "br2 = "+ new String(br2));
 
                 String asciiString1  = String.format("%04x", b1).substring(2,4)+String.format("%04x", b2).substring(2,4)+String.format("%04x", b3).substring(2,4)+String.format("%04x", b4).substring(2,4)+String.format("%04x", b5).substring(2,4)+String.format("%04x", b6).substring(2,4) ;
@@ -348,6 +352,7 @@ public class SetDateTimeActivity extends AppCompatActivity {
                 }
             }
             myHandlerChk.postDelayed(this, 100);
+            //this postdelay making a contineous callback every 100 millisecond
         }
 
     };

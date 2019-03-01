@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:drawSelectorOnTop="false"
         android:dividerHeight="2dp"
-        ></ListView>
+        />
 
 
 </LinearLayout>

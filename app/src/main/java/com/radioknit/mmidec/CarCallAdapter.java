@@ -24,10 +24,12 @@ import static com.radioknit.mmidec.MainActivity.sendMessage;
 /**
  * Created by nishant on 24/4/17.
  */
+/*callLopCop() means calling lop and cop (device's floor indicators) for user selected floors*/
 
 public class CarCallAdapter extends BaseAdapter {
 
-    private static final String TAG = "CarCallIndicator";
+    private static final String TAG = "Tag_CarCallAdapter";
+    public static boolean SHOW_TAG = false;
 
     private Context mContext;
     protected ViewHolder mViewHolder;
@@ -95,7 +97,9 @@ public class CarCallAdapter extends BaseAdapter {
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
 
-       final ViewHolder viewHolder ;
+        //==== getView() FUNCTION GET CALLED FOR EACH ITEM OF LIST VIEW=================
+
+        final ViewHolder viewHolder ;
 
         if(convertView == null) {
             convertView = layoutInflater.inflate(R.layout.item_calles, null);
@@ -115,19 +119,23 @@ public class CarCallAdapter extends BaseAdapter {
         drawableSel = mContext.getResources().getDrawable(R.drawable.circular_text_view_selected);
         drawableNotSel=mContext.getResources().getDrawable(R.drawable.circular_text_view);
 //        drawable = mContext.getDrawable(R.drawable.circular_text_view_selected);
+
+        //========POSITION = 0 FOR TOP_FIRST ITEM===========and increases downwords=======
         viewHolder.txtFloorNumber.setText(""+(15-(position)));
         textViewStateAll[position]= viewHolder.txtFloorNumber;
         imageViewDownAll[position]= viewHolder.imgDown;
         imageViewUpAll[position]= viewHolder.imgUp;
 
         try {
-
+            //=======removing visibility of top up_image and last down_image=========
             imageViewUpAll[0].setVisibility(View.INVISIBLE);
             imageViewDownAll[15].setVisibility(View.INVISIBLE);
         }catch (Exception e){
             //Catch exception
         }
 
+
+        //===textViewStateAll = array of textView having Floor numbers
         if(showState[position]==0){
             textViewStateAll[position].setBackground(drawableNotSel);
         }
@@ -156,15 +164,21 @@ public class CarCallAdapter extends BaseAdapter {
 //            Log.e(TAG, "Floor hilight = "+ (15- callIndex));
 //            holder.txtFloorNumber.setBackgroundColor(mContext.getResources().getColor(R.color.red));
 //        }
+        if(SHOW_TAG)Log.d(TAG, "cop1Calls obj val = "+cop1Calls);
+
         if(Utils.isObjNotNull(cop1Calls)) {
+            if(SHOW_TAG)Log.d(TAG, "cop1Calls not null");
+
             if (Utils.isStringNotNull(cop1Calls)) {
+
+                if(SHOW_TAG)Log.d(TAG, "cop1Calls string = "+cop1Calls);
+
                 if (cop1Calls.charAt(0) == '1') {
                     callIndex = 8;
                     if ((Const.NO_OF_FLOORS - callIndex) == position) {
                         viewHolder.txtFloorNumber.setBackground(drawableNotSel);
                     }
                 }
-
                 if (cop1Calls.charAt(1) == '1') {
                     callIndex = 7;
                     if ((Const.NO_OF_FLOORS - callIndex) == position) {
@@ -269,6 +283,8 @@ public class CarCallAdapter extends BaseAdapter {
                     /*viewHolder.txtFloorNumber.setBackground(drawableNotSel);
                     mCarCallIndicatorSignalListner.sendCarCallIndicatorSignal(position);*/
 //                    viewHolder.txtFloorNumber.setTag(position);
+                    if(SHOW_TAG)Log.d(TAG, "txtFloorNumber clicked placecall = 1");
+
                     callLopCop((15-position),1);
                 }
             });
@@ -277,6 +293,9 @@ public class CarCallAdapter extends BaseAdapter {
                 @Override
                 public void onClick(View v) {
                     //mCarCallIndicatorSignalListner.sendUpCallIndicatorSignal(position);
+
+                    if(SHOW_TAG)Log.d(TAG, "imgUp clicked placecall = 2");
+
                     callLopCop((15-position),2);
                 }
             });
@@ -285,6 +304,9 @@ public class CarCallAdapter extends BaseAdapter {
                 @Override
                 public void onClick(View v) {
                     //mCarCallIndicatorSignalListner.sendDnCallIndicatorSignal(position);
+
+                    if(SHOW_TAG)Log.d(TAG, "imgDown clicked placecall = 4");
+
                     callLopCop((15-position),4);
                 }
             });
@@ -295,6 +317,8 @@ public class CarCallAdapter extends BaseAdapter {
     }
 
     private void showUpDnCalls(ViewHolder holder,String strUpDnCalls, int position) {
+
+        if(SHOW_TAG)Log.d(TAG, "showUpDnCalls()");
 
         if(Utils.isObjNotNull(strUpDnCalls)) {
             if (strUpDnCalls.charAt(7) == '1') {
@@ -319,6 +343,8 @@ public class CarCallAdapter extends BaseAdapter {
 
     public void callLopCop(int flrNo, int placeCall) {
 
+        if(SHOW_TAG)Log.d(TAG, "calllopcop() flor no = "+flrNo +" plaecall = "+placeCall );
+
         int a1 = 18;
         int a2 = 65;
         int a3 = flrNo;
@@ -327,10 +353,17 @@ public class CarCallAdapter extends BaseAdapter {
         int a6 = 76;
         int[] sendValChkSum={a1, a2, a3, a4, a5, a6};
         String strChkSum= CalculateCheckSum.calculateChkSum(sendValChkSum);
+
+        if(SHOW_TAG)Log.d(TAG, "checksum = "+strChkSum);
+
+
         String asciiString  = String.format("%04x", a1).substring(2,4)+String.format("%04x", a2).substring(2,4)+String.format("%04x", a3).substring(2,4)+String.format("%04x", a4).substring(2,4)+String.format("%04x", a5).substring(2,4)+String.format("%04x", a6).substring(2,4) ;
         asciiString = asciiString + strChkSum + "\r";
       //  Log.e(TAG, "asciiString = "+ asciiString);
         if(isConnected()) {
+
+            if(SHOW_TAG)Log.d(TAG, "-------------> sending msg = "+asciiString + " bytes fom = "+asciiString.getBytes());
+
             sendMessage(asciiString.getBytes());
         }
     }
@@ -338,13 +371,11 @@ public class CarCallAdapter extends BaseAdapter {
 
     @Override
     public int getViewTypeCount() {
-
         return getCount();
     }
 
     @Override
     public int getItemViewType(int position) {
-
         return position;
     }
 

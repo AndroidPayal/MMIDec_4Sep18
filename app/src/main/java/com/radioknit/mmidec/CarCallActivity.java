@@ -28,12 +28,12 @@ import static com.radioknit.mmidec.MainActivity.str13HexCarCallsCop1;
 import static com.radioknit.mmidec.MainActivity.str13HexCarCallsCop2;
 
 public class CarCallActivity extends AppCompatActivity implements CarCallAdapter.CarCallIndicatorSignalListner {
-
-
-    private static final String TAG = "CarCallActivity";
+    //debugging
+    private static final String TAG = "Tag_CarCallActivity";
+    private static boolean  SHOW_TAG =false;
 
     private static Context mContext;
-    private static ListView lstFloorsIndicator;
+    private static ListView listFloorsIndicator;
     private OutputStream outputStream;
     private static final String DEVICE_NAME = "DEVICE_NAME";
     private static final String LOG = "LOG";
@@ -47,6 +47,9 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_car_call);
+
+        if (SHOW_TAG) Log.d(TAG, "onCreate() ");
+
         createObj();
         generateId();
         registerEvent();
@@ -55,6 +58,9 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
     }
 
     private void createObj() {
+
+        if (SHOW_TAG) Log.d(TAG, "createObj() ");
+
         getSupportActionBar().setTitle("Car Call");
         mContext = CarCallActivity.this;
 
@@ -65,14 +71,16 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
     }
 
     private void generateId() {
-        lstFloorsIndicator = (ListView)findViewById(R.id.lstFloorIndicator);
+        if (SHOW_TAG) Log.d(TAG, "generateId() ");
+
+        listFloorsIndicator = (ListView)findViewById(R.id.lstFloorIndicator);
         adapter = new CarCallAdapter(getApplicationContext(), "00000000","00000000" , this);
         for(int pos=0;pos<=15;pos++){
-            showState[pos]=0;
-            showStateUp[pos]=0;
-            showStateDown[pos]=0;
+            showState[pos] = 0 ;
+            showStateUp[pos] = 0;
+            showStateDown[pos] = 0;
         }
-        lstFloorsIndicator.setAdapter(adapter);
+        listFloorsIndicator.setAdapter(adapter);
         str13HexCarCallsCop1N = "";
         str13HexCarCallsCop2N = "";
         str11ChkFlrN = "";
@@ -114,18 +122,58 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
     private Runnable checkDataContinue = new Runnable() {
 
         public void run() {
+
+/*
+*  ============run: CHECKING DATA CONTINEOUSLY=============
+2019-02-22 16:32:56.413 11797-11797/com.radioknit.mmidec D/Tag_CarCallActivity: str13HexCarCallsCop1 = str13HexCarCallsCop2 = str13HexCarCallsCop1N = str13HexCarCallsCop2N = str11ChkFlr = str11ChkFlrN = str11HexSwitchData=str11HexSwitchDataN =
+2019-02-22 16:32:56.515 11797-11797/com.radioknit.mmidec D/Tag_CarCallActivity: ============run: CHECKING DATA CONTINEOUSLY=============
+*/
             if(!str13HexCarCallsCop1.equals("") && !str13HexCarCallsCop2.equals("")){
+                if(SHOW_TAG)Log.d(TAG, "============run: CHECKING DATA CONTINEOUSLY=============");
+                if(SHOW_TAG)
+                    Log.d(TAG, "str13HexCarCallsCop1 = "+str13HexCarCallsCop1
+                            + "str13HexCarCallsCop2 = "+ str13HexCarCallsCop2
+                            + "str13HexCarCallsCop1N = " + str13HexCarCallsCop1N
+                            + "str13HexCarCallsCop2N = " + str13HexCarCallsCop2N
+                            + "str11ChkFlr = "+ str11ChkFlr
+                            + "str11ChkFlrN = " + str11ChkFlrN
+                            + "str11HexSwitchData=" + str11HexSwitchData
+                            + "str11HexSwitchDataN = "+ str11HexSwitchDataN);
+
                 if(!str13HexCarCallsCop1.equals(str13HexCarCallsCop1N) || !str13HexCarCallsCop2.equals(str13HexCarCallsCop2N)){
                     str13HexCarCallsCop1N = str13HexCarCallsCop1;
                     str13HexCarCallsCop2N = str13HexCarCallsCop2;
+
+                    if (SHOW_TAG) Log.d(TAG, "++++++++++++++calling showCarCalls()+++++++++++++");
+
                     showCarCalls(str13HexCarCallsCop1, str13HexCarCallsCop2);
                 }
             }
             if(!str11ChkFlr.equals("") && !str11HexSwitchData.equals("")) {
+                if(SHOW_TAG)Log.d(TAG, "============run: CHECKING DATA CONTINEOUSLY=============");
+                if(SHOW_TAG)
+                    Log.d(TAG, "str13HexCarCallsCop1 = "+str13HexCarCallsCop1
+                            + "str13HexCarCallsCop2 = "+ str13HexCarCallsCop2
+                            + "str13HexCarCallsCop1N = " + str13HexCarCallsCop1N
+                            + "str13HexCarCallsCop2N = " + str13HexCarCallsCop2N
+                            + "str11ChkFlr = "+ str11ChkFlr
+                            + "str11ChkFlrN = " + str11ChkFlrN
+                            + "str11HexSwitchData=" + str11HexSwitchData
+                            + "str11HexSwitchDataN = "+ str11HexSwitchDataN);
+
                 if (!str11ChkFlr.equals(str11ChkFlrN) || !str11HexSwitchData.equals(str11HexSwitchDataN)) {
                     str11ChkFlrN = str11ChkFlr;
                     str11HexSwitchDataN = str11HexSwitchData;
+
+                    if (SHOW_TAG) Log.d(TAG, "++++++++++++++calling showUpDnCalls() ");
+
                     showUpDnCalls(str11ChkFlr, str11HexSwitchData);
+
+                    //==============TODO :change by payal================
+                    str13HexCarCallsCop1 = "";str13HexCarCallsCop2="";str13HexCarCallsCop1N="";
+                    str13HexCarCallsCop2N="";str11ChkFlr="";str11ChkFlrN="";
+                    str11HexSwitchData="";str11HexSwitchDataN="";
+
                 }
             }
             if (isConnected()) {
@@ -144,7 +192,7 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
                     //Catch
                 }
             }
-            myHandlerChk.postDelayed(this, 100);
+            myHandlerChk.postDelayed(this, 1000);
         }
 
     };
@@ -171,10 +219,11 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
                 return super.onOptionsItemSelected(item);
         }
     }
+
      void showCarCalls(String strCarCallCop1, String strCarCallCop2) {
 
        /* CarCallAdapter adapter1 = new CarCallAdapter(mContext, "00000000","00000000",(CarCallAdapter.CarCallIndicatorSignalListner) this);
-        lstFloorsIndicator.setAdapter(adapter1);*/
+        listFloorsIndicator.setAdapter(adapter1);*/
 
         try {
             //int index = strCarCall.lastIndexOf("1311");
@@ -195,8 +244,8 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
                 }
             }
             adapter.notifyDataSetChanged();
-            /*CarCallAdapter adapter = new CarCallAdapter(mContext, strcallCop1, strcallCop2, (CarCallAdapter.CarCallIndicatorSignalListner) this);
-            lstFloorsIndicator.setAdapter(adapter);*/
+            /* CarCallAdapter adapter = new CarCallAdapter(mContext, strcallCop1, strcallCop2, (CarCallAdapter.CarCallIndicatorSignalListner) this);
+            listFloorsIndicator.setAdapter(adapter); */
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -205,7 +254,7 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
     private void showUpDnCalls(String strChkFlr, String hexSwitchData) {
 
        /* CarCallAdapter adapter1 = new CarCallAdapter(mContext, "00000000","00000000", (CarCallAdapter.CarCallIndicatorSignalListner)this);
-        lstFloorsIndicator.setAdapter(adapter1);
+        listFloorsIndicator.setAdapter(adapter1);
 */
         try {
             //int index = strUpDn.lastIndexOf("114c");
@@ -446,11 +495,12 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
             int flrNo = Integer.parseInt(floorNo) - 30;*/
 
             /*CarCallAdapter adapter = new CarCallAdapter(mContext, strUpDnCalls, flrNo,(CarCallAdapter.CarCallIndicatorSignalListner) this);
-            lstFloorsIndicator.setAdapter(adapter);*/
+            listFloorsIndicator.setAdapter(adapter);*/
         }catch (Exception e){
             e.printStackTrace();
         }
     }
+
     @Override
     public void onBackPressed() {
         super.onBackPressed();

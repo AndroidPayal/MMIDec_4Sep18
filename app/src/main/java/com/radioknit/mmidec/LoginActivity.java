@@ -107,10 +107,10 @@ public class LoginActivity extends AppCompatActivity {
 
                     //=TODO : temporary change by payal=====================
 
-                    /*removing dabase check for user credentials*/
+                        /*removing dabase check for user credentials*/
                     //new GetStatus().execute();
 
-                    /*setting user authentication status as 1 and allowing user to login*/
+                        /*setting user authentication status as 1 and allowing user to login*/
                     strLoginStatus ="1";
 
                     PrefUtils.saveToPrefs(LoginActivity.this, PREFS_LOGIN_USERNAME_KEY, strUser);
