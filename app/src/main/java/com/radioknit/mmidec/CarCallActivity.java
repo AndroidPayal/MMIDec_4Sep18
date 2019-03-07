@@ -165,7 +165,7 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
                     str11ChkFlrN = str11ChkFlr;
                     str11HexSwitchDataN = str11HexSwitchData;
 
-                    if (SHOW_TAG) Log.d(TAG, "++++++++++++++calling showUpDnCalls() ");
+                    if (SHOW_TAG) Log.d(TAG, "===============calling showUpDnCalls() ");
 
                     showUpDnCalls(str11ChkFlr, str11HexSwitchData);
 
@@ -220,6 +220,12 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
         }
     }
 
+
+
+
+
+
+
      void showCarCalls(String strCarCallCop1, String strCarCallCop2) {
 
        /* CarCallAdapter adapter1 = new CarCallAdapter(mContext, "00000000","00000000",(CarCallAdapter.CarCallIndicatorSignalListner) this);
@@ -236,6 +242,8 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
             //Log.e(TAG, "hexCarCallsCop2 = "+hexCarCallsCop2);
             //Log.e(TAG, "strcallCop2 = "+strcallCop2);
             String  strCallCopCombine = strcallCop2 + strcallCop1;
+            Log.d(TAG, "showCarCalls: strCallCopCombine="+strCallCopCombine);
+
             for(int indexCop=0; indexCop <=15; indexCop++) {
                 if (strCallCopCombine.charAt(indexCop) == '0') {
                     showState[indexCop] = 0;
@@ -262,10 +270,11 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
            // Log.e(TAG, "strChkFlr = "+ strChkFlr);
             //String hexSwitchData = strUpDn.substring(index+8,index+10);
             String binSwitchData = Utils.hexToBin(hexSwitchData);
-           // Log.e(TAG, "hexSwitchData = "+ hexSwitchData);
+            Log.e(TAG, "showUpDnCalls() : hexSwitchData = "+ hexSwitchData +" binSwitchData="+binSwitchData + " strChkFlr="+strChkFlr);
+
             if(strChkFlr.equals("30")){
                 if(binSwitchData.charAt(0)=='0'){
-                    showStateDown[15]=0;
+                    showStateDown[15]=0;//position = 15 for bottom most item = first floor
                 }
                 else if(binSwitchData.charAt(0)=='1'){
                     showStateDown[15]=1;
@@ -500,6 +509,13 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
             e.printStackTrace();
         }
     }
+
+
+
+
+
+
+
 
     @Override
     public void onBackPressed() {

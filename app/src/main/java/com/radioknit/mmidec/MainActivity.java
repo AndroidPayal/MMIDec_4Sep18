@@ -42,7 +42,7 @@ import static com.radioknit.mmidec.PrefUtils.PREFS_LOGIN_PASSWORD_KEY;
 import static com.radioknit.mmidec.PrefUtils.PREFS_LOGIN_USERNAME_KEY;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "Tag_MainActivity";
     private static final boolean D = true;
     // Message types sent from the BluetoothChatService Handler
     public static final int MESSAGE_STATE_CHANGE = 1;
@@ -337,7 +337,7 @@ public class MainActivity extends AppCompatActivity {
             //  shwLog.append(msg);
             msgAppend.append(msg);
             //msgAppendChk.append(msg);
-            Log.e(TAG, "msgAppend = "+ msgAppend.toString());
+            Log.e(TAG, "appendlog1() msgAppend = "+ msgAppend.toString());
             //Log.e(TAG, "msgAppendChk = "+ msgAppendChk.toString());
             String strReceived = msgAppend.toString();
             processReceivedData(strReceived);
@@ -355,10 +355,10 @@ public class MainActivity extends AppCompatActivity {
            // Log.e(TAG, "strReceived = "+ strReceived);
             int indexOd = strReceived.indexOf("\r");
             String temp = strReceived.substring(0, indexOd);
+        Log.d(TAG, "processReceivedData: temp = "+temp +"  index0d = "+indexOd);
            // Log.e(TAG, "temp = "+ temp);
 
         if(temp.startsWith("05")){
-            Log.e(TAG, "DisplayData = "+ strReceived);
             try{
                 //if(strReceived.substring(indexA+16,indexA+17).equals("\r")){
                     //String strComplete;
@@ -368,19 +368,22 @@ public class MainActivity extends AppCompatActivity {
                     int floorNo = Integer.parseInt(str05Flr, 16);
                     String hexFour = String.format("%04x", Integer.parseInt(str05Stat0, 16));
                     String strBinaryFour = Utils.hexToBin(hexFour);
-              //  Log.e(TAG, "strBinaryFour = "+ strBinaryFour);
+
+                Log.e(TAG, "processReceivedData(if 05) =flr " + str05Flr +" str05Stat0="+str05Stat0
+                + " flrNo ="+floorNo + " hexFour="+hexFour+ " strBinaryFour="+strBinaryFour);
+
                     if (strBinaryFour.charAt(7) == '1') {
                         if (strBinaryFour.charAt(5) == '1') {
                             imgUp.setVisibility(View.VISIBLE);
                             imgDown.setVisibility(View.GONE);
                             imgUp.setImageResource(R.drawable.up_flashing);
-//                        tvRunningStatus.setText("Up Running");
+                        tvRunningStatus.setText("Up Running");
 //                        Log.e(TAG, "Up Running");
                         } else {
                             imgUp.setVisibility(View.VISIBLE);
                             imgDown.setVisibility(View.GONE);
                             imgUp.setImageResource(R.drawable.up_arraow);
-//                        Log.e(TAG, "Up study");
+                        Log.e(TAG, "Up study");
 //                        tvRunningStatus.setText("Up");
                         }
                     } else if (strBinaryFour.charAt(6) == '1') {
@@ -388,13 +391,13 @@ public class MainActivity extends AppCompatActivity {
                             imgDown.setVisibility(View.VISIBLE);
                             imgUp.setVisibility(View.GONE);
                             imgDown.setImageResource(R.drawable.down_flashing);
-//                        Log.e(TAG, "Down Running");
+                        Log.e(TAG, "Down Running");
 //                        tvRunningStatus.setText("Down Running");
                         } else {
                             imgDown.setVisibility(View.VISIBLE);
                             imgUp.setVisibility(View.GONE);
                             imgDown.setImageResource(R.drawable.down_arr);
-//                        Log.e(TAG, "Down Study");
+                        Log.e(TAG, "Down Study");
 //                        tvRunningStatus.setText("Down");
                         }
                     } else if (strBinaryFour.charAt(7) == '0') {
@@ -408,7 +411,11 @@ public class MainActivity extends AppCompatActivity {
 
                     SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy | HH:mm");
                     String currentDateandTime = sdf.format(new Date());
-                    //Log.e(TAG, "currentDateandTime = "+ currentDateandTime);
+                    Log.e(TAG, "processReceivedData :currentDateandTime = "+ currentDateandTime);
+//05370030400056
+                Log.d(TAG, "processReceivedData: errorCheck : "+temp.substring(4,6)+" parsed="+Integer.parseInt(temp.substring(4, 6), 16));
+                Log.d(TAG, "processReceivedData: errorCheck2 : "+str05Err+" parsed="+(Integer.parseInt(str05Err, 16)));
+
 
                     if (Integer.parseInt(temp.substring(4, 6), 16) == 80) {
                         if((Integer.parseInt(str05Err, 16) != 80)) {
@@ -584,15 +591,21 @@ public class MainActivity extends AppCompatActivity {
             temp = "";
         }
         if(temp.startsWith("1311")){
+            Log.d(TAG, "processReceivedData: temp1311 : "+temp);
             int index = temp.indexOf("1311");
             str13HexCarCallsCop1 = temp.substring(index+6,index+8);
             str13HexCarCallsCop2 = temp.substring(index+8,index+10);
+
+            Log.d(TAG, "processReceivedData: temp1311 : "+temp+ " str13HexCarCallsCop1="+str13HexCarCallsCop1+ " str13HexCarCallsCop2 ="+str13HexCarCallsCop2);
+
             str13MainCarCall = temp;
         }
         if(temp.contains("114c50")){
-            int index = temp.indexOf("114c50");
-            str11ChkFlr=temp.substring(index-2,index);
-            str11HexSwitchData = temp.substring(index+8,index+10);
+            int index = temp.indexOf("114c50");//index = position of first 1 in 114c50 = 2 /*31114c5041..*/
+            str11ChkFlr=temp.substring(index-2,index);//31
+            str11HexSwitchData = temp.substring(index+8,index+10);//41
+
+            Log.d(TAG, "processReceivedData: temp114c50 : str11ChkFlr="+str11ChkFlr + " str11HexSwitchData=" +str11HexSwitchData);
         }
         if(temp.startsWith("71")){
             str71IOValues1 = temp;
@@ -602,14 +615,14 @@ public class MainActivity extends AppCompatActivity {
         }
         if(temp.startsWith("111250")) {
             String sum = Utils.calculateChecksumValueNew(temp);
-          //  Log.e(TAG, "" + sum.substring(2, 4) + " -- " + temp.substring(temp.length() - 2, temp.length()) + " temp = " + temp);
+            Log.e(TAG, "" + sum.substring(2, 4) + " -- " + temp.substring(temp.length() - 2, temp.length()) + " temp = " + temp);
 
             if (sum.substring(2, 4).equalsIgnoreCase(temp.substring(temp.length() - 2, temp.length()))) {
                 String locationAddress = temp.substring(6, 8);
 
                 int data = Integer.parseInt(temp.substring(8, 10), 16);
                 String strData = temp.substring(8, 10);
-              //  Log.e(TAG, "locationAddress = " + locationAddress + " data = " + data);
+                Log.e(TAG, "locationAddress = " + locationAddress + " data = " + data);
                 if (locationAddress.equalsIgnoreCase("82")) {
                     str11StopDelay = (Integer.toString(data) + " ");
                     //str11StopDelay = (strData + " ");
@@ -750,7 +763,7 @@ public class MainActivity extends AppCompatActivity {
 
                 else if (locationAddress.equalsIgnoreCase("A0")) {
                     str11FlrClBlk[0] = Integer.toString(data);
-                    //Log.e(TAG,"Data:"+str11FlrClBlk[0]);
+                      Log.e(TAG,"Data:"+str11FlrClBlk[0]);
                 } else if (locationAddress.equalsIgnoreCase("A1")) {
                     str11FlrClBlk[1] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("A2")) {
@@ -1204,21 +1217,21 @@ public class MainActivity extends AppCompatActivity {
         }
         if(temp.startsWith("11f1")){
             String sum = Utils.calculateChecksumValueNew(temp);
-            // Log.e(TAG, "" + sum.substring(2, 4) + " -- " + temp.substring(temp.length() - 2, temp.length()) + " temp = " + temp);
+             Log.e(TAG, "" + sum.substring(2, 4) + " -- " + temp.substring(temp.length() - 2, temp.length()) + " temp = " + temp);
 
             if (sum.substring(2, 4).equalsIgnoreCase(temp.substring(temp.length() - 2, temp.length()))) {
                 String locationAddress = temp.substring(6, 8);
 
                 int data = Integer.parseInt(temp.substring(8, 10), 16);
 
-                //Log.e(TAG, "locationAddress = " + locationAddress + " data = " + data);
+                Log.e(TAG, "locationAddress = " + locationAddress + " data = " + data);
 //                        Utils.showToastMsg(getActivity(), " Data = "+data +" char =  "+ temp.charAt(index - 1));
                 String lsb = temp.substring(8, 10);
                 String sb = temp.substring(6, 8);
                 String msb = temp.substring(4, 6);
                 String id = lsb + sb + msb;
                 int device = Integer.parseInt(temp.substring(10, 12));
-               // Log.e(TAG, "Device  = " + device + " Id :" + id);
+                Log.e(TAG, "Device  = " + device + " Id :" + id);
 
                 switch (device) {
                     case 0:
@@ -1604,6 +1617,7 @@ public class MainActivity extends AppCompatActivity {
                     if (readMessage != null) {
                         appendLog1(readMessage, false, false, needClean);
                     }
+                    Toast.makeText(mContext, "Read data", Toast.LENGTH_SHORT).show();
                     break;
                 case MESSAGE_DEVICE_NAME:
                     // save the connected device's name

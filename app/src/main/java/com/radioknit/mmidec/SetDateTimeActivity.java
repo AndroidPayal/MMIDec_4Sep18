@@ -128,6 +128,7 @@ E/Tag_SetDataTimeAct: asciiString = 12f30103194492
                 String lsb = sumHex.substring(2,4);
                 Log.e(TAG,"lsb = "+ lsb);
                 int msb1 = (Integer.parseInt(msb) | 50);//00110010
+                Log.e(TAG,"msb1 = "+ msb1);
 
                 String finalString = str1+str2+str3+str4+str5+str6+lsb+msb1;
 
@@ -136,6 +137,10 @@ E/Tag_SetDataTimeAct: asciiString = 12f30103194492
                 int a3 = Integer.parseInt(str3,16);
                 int a4 = Integer.parseInt(str4,16);
                 int a5 = Integer.parseInt(str5,16);
+
+                Log.d(TAG, "onClick: str5="+str5 +" a5="+a5);
+/*2019-03-04 12:15:31.750 22894-22894/com.radioknit.mmidec D/Tag_SetDataTimeAct: onClick: str5=19 a5=25*/
+
                 int a6 = Integer.parseInt(str6,16);
                 int a7 = Integer.parseInt(lsb,16);
                 int a8 = Integer.parseInt(String.valueOf(msb1),16);
@@ -146,25 +151,49 @@ E/Tag_SetDataTimeAct: asciiString = 12f30103194492
 
 /**
 * 2019-03-04 11:49:37.578 18805-18805/com.radioknit.mmidec D/Tag_SetDataTimeAct: btnDone: str1 =12 str2=f3 str3= 4
- * 2019-03-04 11:49:37.579 18805-18805/com.radioknit.mmidec E/Tag_SetDataTimeAct:  Sum =  361
- * 2019-03-04 11:49:37.579 18805-18805/com.radioknit.mmidec E/Tag_SetDataTimeAct:  sumHex =  016f
- * 2019-03-04 11:49:37.579 18805-18805/com.radioknit.mmidec E/Tag_SetDataTimeAct: Msb = 1
- * 2019-03-04 11:49:37.579 18805-18805/com.radioknit.mmidec E/Tag_SetDataTimeAct: lsb = 6f
- * 2019-03-04 11:49:37.579 18805-18805/com.radioknit.mmidec E/Tag_SetDataTimeAct:  a3 = 4 a4 = 3 a5 = 25
- * 2019-03-04 11:49:37.584 18805-18805/com.radioknit.mmidec E/Tag_SetDataTimeAct: asciiString = 12f304031944 strChkSum = 95
- * 2019-03-04 11:49:37.584 18805-18805/com.radioknit.mmidec E/Tag_SetDataTimeAct: asciiString to send= 12f30403194495
+ * 2019-03-04 11:49:37.579 18805-18805/Tag_SetDataTimeAct:  Sum =  361
+ * 2019-03-04 11:49:37.579 18805-18805/Tag_SetDataTimeAct:  sumHex =  016f
+ * 2019-03-04 11:49:37.579 18805-18805/Tag_SetDataTimeAct: Msb = 1
+ * 2019-03-04 11:49:37.579 18805-18805/Tag_SetDataTimeAct: lsb = 6f
+ * 2019-03-04 12:08:44.840 21503-21503/Tag_SetDataTimeAct: msb1 = 51
+ * 2019-03-04 11:49:37.579 18805-18805/Tag_SetDataTimeAct:  a3 = 4 a4 = 3 a5 = 25
+ * 2019-03-04 11:49:37.584 18805-18805/Tag_SetDataTimeAct: asciiString = 12f304031944 strChkSum = 95
+ * 2019-03-04 11:49:37.584 18805-18805/Tag_SetDataTimeAct: asciiString to send= 12f30403194495
 */
+/*
+* 2019-03-04 15:40:53.158 8822-8822/? E/Tag_SetDataTimeAct: simple a3 = 20 foramted a3 = 0014
+2019-03-04 15:40:53.159 8822-8822/? E/Tag_SetDataTimeAct: simple a1 = 18 foramted a3 = 0012
+2019-03-04 15:40:53.160 8822-8822/? E/Tag_SetDataTimeAct: simple a2 = 243 foramted a2 = 00f3
+2019-03-04 15:40:53.160 8822-8822/? E/Tag_SetDataTimeAct: simple a4 = 3 foramted a4 = 0003
+2019-03-04 15:40:53.161 8822-8822/? E/Tag_SetDataTimeAct: simple a5 = 25 foramted a5 = 0019
+2019-03-04 15:40:53.162 8822-8822/? E/Tag_SetDataTimeAct: simple a6 = 68 foramted a6 = 0044
+2019-03-04 15:40:53.167 8822-8822/? E/Tag_SetDataTimeAct: asciiString = 12f314031944 strChkSum = 96
+2019-03-04 15:40:53.167 8822-8822/? E/Tag_SetDataTimeAct: asciiString to send= 12f31403194496*/
+
                 String strChkSum= CalculateCheckSum.calculateChkSum(sendValChkSum);
 
                 byte[] br1 = {(byte)0x12,(byte) 0xf3 , (byte) a5,(byte) a4,(byte)a3,(byte) a6,(byte) a7, (byte) a8};
-//                Log.e(TAG, "br1 = "+ new String(br1));
+                Log.e(TAG, "simple a3 = "+a3+" foramted a3 = "+ String.format("%04x", a3));
+                Log.e(TAG, "simple a1 = "+a1+" foramted a3 = "+ String.format("%04x", a1));
+                Log.e(TAG, "simple a2 = "+a2+" foramted a2 = "+ String.format("%04x", a2));
+                Log.e(TAG, "simple a4 = "+a4+" foramted a4 = "+ String.format("%04x", a4));
+                Log.e(TAG, "simple a5 = "+a5+" foramted a5 = "+ String.format("%04x", a5));
+                Log.e(TAG, "simple a6 = "+a6+" foramted a6 = "+ String.format("%04x", a6));
 
-                String asciiString  = String.format("%04x", a1).substring(2,4)+String.format("%04x", a2).substring(2,4)+String.format("%04x", a3).substring(2,4)+String.format("%04x", a4).substring(2,4)+String.format("%04x", a5).substring(2,4)+String.format("%04x", a6).substring(2,4) ;
+
+/*FOR DATE 14 3 19
+2019-03-04 12:35:55.045 26998-26998/Tag_SetDataTimeAct: simple a3 = 20 foramted a3 = 0014
+* 2019-03-04 12:40:07.903 27772-27772/Tag_SetDataTimeAct: simple a1 = 18 foramted a3 = 0012
+2019-03-04 12:40:07.904 27772-27772/Tag_SetDataTimeAct: simple a2 = 243 foramted a2 = 00f3
+2019-03-04 12:40:07.904 27772-27772/Tag_SetDataTimeAct: simple a4 = 3 foramted a4 = 0003
+2019-03-04 12:40:07.905 27772-27772/Tag_SetDataTimeAct: simple a5 = 25 foramted a5 = 0019
+2019-03-04 12:40:07.906 27772-27772/Tag_SetDataTimeAct: simple a6 = 68 foramted a6 = 0044*/
+
+   String asciiString  = String.format("%04x", a1).substring(2,4)+String.format("%04x", a2).substring(2,4)+String.format("%04x", a3).substring(2,4)+String.format("%04x", a4).substring(2,4)+String.format("%04x", a5).substring(2,4)+String.format("%04x", a6).substring(2,4) ;
                 Log.e(TAG, "asciiString = "+asciiString +" strChkSum = "+strChkSum);
                 /*int sumSendString  = 0;
                 for(int i = 0; i<asciiString.length(); i++){
-                    sumSendString = sumSendString + Integer.parseInt(String.format("%04x", (int) asciiString.charAt(i)).substring(2,4));
-                }
+                    sumSendString = sumSendString + Integer.parseInt(String.format("%04x", (int) asciiString.charAt(i)).substring(2,4));}
                 Log.e(TAG, "sumSendString = "+ sumSendString);*/
                 //asciiString = asciiString +String.valueOf(sumSendString).substring(1,3)+ "\r";
                 asciiString = asciiString + strChkSum + "\r";
@@ -228,7 +257,7 @@ E/Tag_SetDataTimeAct: asciiString = 12f30103194492
                 String strChkSum1= CalculateCheckSum.calculateChkSum(sendValChkSum1);
 
 
-//                Log.e(TAG, "Input String 2  = "+ b3+" " + b4 +" "+b5+" "+ b6+" "+b7+" "+b8 );
+                Log.e(TAG, "Input String b values  = "+b1 +"    "+b2+"     "+ b3+"   " + b4 +"   "+b5+"   "+ b6+"   "+b7+"   "+b8 );
 
 
 //                Log.e(TAG, "Char = "+ (char) a1 );
@@ -237,7 +266,7 @@ E/Tag_SetDataTimeAct: asciiString = 12f30103194492
 //                Log.e(TAG, "br2 = "+ new String(br2));
 
                 String asciiString1  = String.format("%04x", b1).substring(2,4)+String.format("%04x", b2).substring(2,4)+String.format("%04x", b3).substring(2,4)+String.format("%04x", b4).substring(2,4)+String.format("%04x", b5).substring(2,4)+String.format("%04x", b6).substring(2,4) ;
-//                Log.e(TAG, "asciiString = "+asciiString);
+                Log.e(TAG, "asciiString time = "+asciiString);
 /*                int sumSendString1  = 0;
                 for(int i = 0; i<asciiString1.length(); i++){
                     sumSendString1 = sumSendString1 + Integer.parseInt(String.format("%04x", (int) asciiString1.charAt(i)).substring(2,4));
