@@ -60,6 +60,10 @@ public class CarCallAdapter extends BaseAdapter {
         mCarCallIndicatorSignalListner = carCallIndicatorSignalListner;
 
     }
+    public void notoifyChange(String cop1Calls,String cop2Calls){
+        this.cop1Calls=cop1Calls;
+        this.cop2Calls=cop2Calls;
+    }
 
     public CarCallAdapter(Context context, String strUpDnCalls , int floorNO, CarCallIndicatorSignalListner carCallIndicatorSignalListner){
         mContext = context;
@@ -135,6 +139,9 @@ public class CarCallAdapter extends BaseAdapter {
             //Catch exception
         }
 
+        Log.d(TAG, "getView: position = "+position + "textViewStateAll "+showState[position]);
+        Log.d(TAG, "getView: position = "+position + "imageViewUpAll "+showStateUp[position]);
+        Log.d(TAG, "getView: position = "+position + "imageViewDownAll "+showStateDown[position]);
 
         //===textViewStateAll = array of textView having Floor numbers
         if(showState[position]==0){
@@ -167,8 +174,9 @@ public class CarCallAdapter extends BaseAdapter {
 //        }
         if(SHOW_TAG)Log.d(TAG, "cop1Calls obj val = "+cop1Calls);
 
+/*
         if(Utils.isObjNotNull(cop1Calls)) {
-            if(SHOW_TAG)Log.d(TAG, "cop1Calls not null");
+          //  if(SHOW_TAG)Log.d(TAG, "cop1Calls not null");
 
             if (Utils.isStringNotNull(cop1Calls)) {
 
@@ -277,6 +285,7 @@ public class CarCallAdapter extends BaseAdapter {
                 }
             }
         }
+*/
 
         viewHolder.txtFloorNumber.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -314,7 +323,7 @@ public class CarCallAdapter extends BaseAdapter {
                 }
             });
 
-            showUpDnCalls(viewHolder,strUpDnCalls, position);
+       //     showUpDnCalls(viewHolder,strUpDnCalls, position);
 
         return convertView;
     }

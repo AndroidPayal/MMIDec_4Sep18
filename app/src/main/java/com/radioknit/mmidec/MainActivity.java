@@ -326,6 +326,11 @@ public class MainActivity extends AppCompatActivity {
         // txtDate.setText(currentDateandTime);
     }
 
+
+
+
+
+
     public void appendLog1(String message, boolean hexMode, boolean outgoing, boolean clean) {
         try {
             StringBuffer msg = new StringBuffer();
@@ -335,6 +340,8 @@ public class MainActivity extends AppCompatActivity {
 
             //txtLog.append(msg);
             //  shwLog.append(msg);
+            Log.e(TAG, "appendlog1() msgOld = "+ msg);
+
             msgAppend.append(msg);
             //msgAppendChk.append(msg);
             Log.e(TAG, "appendlog1() msgAppend = "+ msgAppend.toString());
@@ -358,6 +365,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "processReceivedData: temp = "+temp +"  index0d = "+indexOd);
            // Log.e(TAG, "temp = "+ temp);
 
+        //TODO:Protocol Broadcasting (status
         if(temp.startsWith("05")){
             try{
                 //if(strReceived.substring(indexA+16,indexA+17).equals("\r")){
@@ -572,9 +580,13 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
+
+        //TODO:Protocol for PreAnnouncing
         if(temp.startsWith("06")){
             str06MainPre = temp;
         }
+
+        //TODO:Protocol time
         if (temp.startsWith("11f2")) {
             String hrs = (temp.substring(4, 6));
             String min = (temp.substring(6, 8));
@@ -582,6 +594,7 @@ public class MainActivity extends AppCompatActivity {
             temp = "";
         }
 
+        //TODO:Protocol for Date
         if (temp.startsWith("11f3")) {
             String date = (temp.substring(4, 6));
             String month = (temp.substring(6, 8));
@@ -590,6 +603,7 @@ public class MainActivity extends AppCompatActivity {
             txtDate.setText(date +" / " + month+ " / " + "20" + year  );
             temp = "";
         }
+        //TODo : Protocol for COP1
         if(temp.startsWith("1311")){
             Log.d(TAG, "processReceivedData: temp1311 : "+temp);
             int index = temp.indexOf("1311");
@@ -600,19 +614,36 @@ public class MainActivity extends AppCompatActivity {
 
             str13MainCarCall = temp;
         }
-        if(temp.contains("114c50")){
-            int index = temp.indexOf("114c50");//index = position of first 1 in 114c50 = 2 /*31114c5041..*/
-            str11ChkFlr=temp.substring(index-2,index);//31
-            str11HexSwitchData = temp.substring(index+8,index+10);//41
 
-            Log.d(TAG, "processReceivedData: temp114c50 : str11ChkFlr="+str11ChkFlr + " str11HexSwitchData=" +str11HexSwitchData);
+        //TODo : Protocol for COP2
+        if(temp.startsWith("2311")) {
+            Log.d(TAG, "processReceivedData: temp2311 : " + temp);
         }
+
+        //TODO:Protocol for LOP
+        if(temp.contains("114c50")){
+            int index = temp.indexOf("114c50");
+            //index = position of first 1 in 114c50 = 2 /*32114c50000184*/
+            str11ChkFlr=temp.substring(index-2,index);//32
+            str11HexSwitchData = temp.substring(index+8,index+10);//01
+            /*01 (hex) = 0000 0001 (bin)
+            * working on its binary with 6th bit and 7th bit only*/
+
+            Log.d(TAG, "processReceivedData: temp114c50 : str11ChkFlr="
+                    +str11ChkFlr + " str11HexSwitchData=" +str11HexSwitchData);
+        }
+
+        //TODO:Protocol broadcasting I/Os
         if(temp.startsWith("71")){
             str71IOValues1 = temp;
         }
+
+        //TODO:Protocol Broadcasting (External Inputs
         if(temp.startsWith("77")){
             str77IOValues2 = temp;
         }
+
+        //TODO:Protocols for parameters
         if(temp.startsWith("111250")) {
             String sum = Utils.calculateChecksumValueNew(temp);
             Log.e(TAG, "" + sum.substring(2, 4) + " -- " + temp.substring(temp.length() - 2, temp.length()) + " temp = " + temp);
@@ -1215,6 +1246,8 @@ public class MainActivity extends AppCompatActivity {
                 }*/
             }
         }
+
+        //TODO:Protocol for Serial ID
         if(temp.startsWith("11f1")){
             String sum = Utils.calculateChecksumValueNew(temp);
              Log.e(TAG, "" + sum.substring(2, 4) + " -- " + temp.substring(temp.length() - 2, temp.length()) + " temp = " + temp);
@@ -1385,6 +1418,14 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+
+
+
+
+
+
+
     /**
      * Sends a message.
      *

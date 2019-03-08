@@ -5035,4 +5035,1521 @@ public class dummy {
  */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+* 2019-03-08 12:30:39.181 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: BT address:20:16:08:22:77:70
+ * 2019-03-08 12:30:39.283 12498-12498/com.radioknit.mmidec I/Tag_MainActivity: MESSAGE_STATE_CHANGE: 1
+ * 2019-03-08 12:30:39.409 12498-12498/com.radioknit.mmidec I/Tag_MainActivity: MESSAGE_STATE_CHANGE: 2
+ * 2019-03-08 12:30:40.391 12498-12498/com.radioknit.mmidec I/Tag_MainActivity: MESSAGE_STATE_CHANGE: 3
+ * 2019-03-08 12:30:40.566 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5
+ * 2019-03-08 12:30:40.567 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 5
+ * 2019-03-08 12:30:40.567 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 5  index0d = 1
+ * 2019-03-08 12:31:03.842 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+ * 2019-03-08 12:31:03.842 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+ * 2019-03-08 12:31:03.857 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f21
+ * 2019-03-08 12:31:03.857 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f21
+ * 2019-03-08 12:31:03.867 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2287
+ * 2019-03-08 12:31:03.867 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f212287
+ * 2019-03-08 12:31:03.880 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 44dca
+ * 2019-03-08 12:31:03.880 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f21228744dca
+ * 2019-03-08 12:31:03.880 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f21228744dca  index0d = 14
+ * 2019-03-08 12:31:28.999 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0textViewStateAll 0
+ * 2019-03-08 12:31:28.999 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewUpAll 0
+ * 2019-03-08 12:31:28.999 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewDownAll 0
+ * 2019-03-08 12:31:29.005 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1textViewStateAll 0
+ * 2019-03-08 12:31:29.005 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewUpAll 0
+ * 2019-03-08 12:31:29.005 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewDownAll 0
+ * 2019-03-08 12:31:29.011 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2textViewStateAll 0
+ * 2019-03-08 12:31:29.011 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewUpAll 0
+ * 2019-03-08 12:31:29.011 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewDownAll 0
+ * 2019-03-08 12:31:29.016 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3textViewStateAll 0
+ * 2019-03-08 12:31:29.016 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewUpAll 0
+ * 2019-03-08 12:31:29.016 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewDownAll 0
+ * 2019-03-08 12:31:29.021 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4textViewStateAll 0
+ * 2019-03-08 12:31:29.021 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewUpAll 0
+ * 2019-03-08 12:31:29.021 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewDownAll 0
+ * 2019-03-08 12:31:29.042 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0textViewStateAll 0
+ * 2019-03-08 12:31:29.042 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewUpAll 0
+ * 2019-03-08 12:31:29.042 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewDownAll 0
+ * 2019-03-08 12:31:29.044 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1textViewStateAll 0
+ * 2019-03-08 12:31:29.044 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewUpAll 0
+ * 2019-03-08 12:31:29.044 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewDownAll 0
+ * 2019-03-08 12:31:29.045 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2textViewStateAll 0
+ * 2019-03-08 12:31:29.045 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewUpAll 0
+ * 2019-03-08 12:31:29.045 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewDownAll 0
+ * 2019-03-08 12:31:29.047 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3textViewStateAll 0
+ * 2019-03-08 12:31:29.047 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewUpAll 0
+ * 2019-03-08 12:31:29.047 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewDownAll 0
+ * 2019-03-08 12:31:29.048 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4textViewStateAll 0
+ * 2019-03-08 12:31:29.048 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewUpAll 0
+ * 2019-03-08 12:31:29.048 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewDownAll 0
+ * 2019-03-08 12:31:29.052 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5textViewStateAll 0
+ * 2019-03-08 12:31:29.052 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewUpAll 0
+ * 2019-03-08 12:31:29.052 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewDownAll 0
+ * 2019-03-08 12:31:29.054 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0textViewStateAll 0
+ * 2019-03-08 12:31:29.054 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewUpAll 0
+ * 2019-03-08 12:31:29.054 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewDownAll 0
+ * 2019-03-08 12:31:29.056 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1textViewStateAll 0
+ * 2019-03-08 12:31:29.056 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewUpAll 0
+ * 2019-03-08 12:31:29.056 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewDownAll 0
+ * 2019-03-08 12:31:29.059 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2textViewStateAll 0
+ * 2019-03-08 12:31:29.059 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewUpAll 0
+ * 2019-03-08 12:31:29.059 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewDownAll 0
+ * 2019-03-08 12:31:29.061 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3textViewStateAll 0
+ * 2019-03-08 12:31:29.061 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewUpAll 0
+ * 2019-03-08 12:31:29.061 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewDownAll 0
+ * 2019-03-08 12:31:29.063 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4textViewStateAll 0
+ * 2019-03-08 12:31:29.063 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewUpAll 0
+ * 2019-03-08 12:31:29.063 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewDownAll 0
+ * 2019-03-08 12:31:29.065 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5textViewStateAll 0
+ * 2019-03-08 12:31:29.065 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewUpAll 0
+ * 2019-03-08 12:31:29.065 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewDownAll 0
+ * 2019-03-08 12:31:29.107 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0textViewStateAll 0
+ * 2019-03-08 12:31:29.107 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewUpAll 0
+ * 2019-03-08 12:31:29.107 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewDownAll 0
+ * 2019-03-08 12:31:29.112 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1textViewStateAll 0
+ * 2019-03-08 12:31:29.112 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewUpAll 0
+ * 2019-03-08 12:31:29.112 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewDownAll 0
+ * 2019-03-08 12:31:29.116 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2textViewStateAll 0
+ * 2019-03-08 12:31:29.116 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewUpAll 0
+ * 2019-03-08 12:31:29.116 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewDownAll 0
+ * 2019-03-08 12:31:29.120 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3textViewStateAll 0
+ * 2019-03-08 12:31:29.120 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewUpAll 0
+ * 2019-03-08 12:31:29.120 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewDownAll 0
+ * 2019-03-08 12:31:29.125 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4textViewStateAll 0
+ * 2019-03-08 12:31:29.125 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewUpAll 0
+ * 2019-03-08 12:31:29.125 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewDownAll 0
+ * 2019-03-08 12:31:29.129 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5textViewStateAll 0
+ * 2019-03-08 12:31:29.129 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewUpAll 0
+ * 2019-03-08 12:31:29.129 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewDownAll 0
+ * 2019-03-08 12:31:34.723 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+ * 2019-03-08 12:31:34.724 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+ * 2019-03-08 12:31:34.741 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3
+ * 2019-03-08 12:31:34.741 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3
+ * 2019-03-08 12:31:34.751 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 09031
+ * 2019-03-08 12:31:34.751 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f309031
+ * 2019-03-08 12:31:34.759 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 90495
+ * 2019-03-08 12:31:34.759 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f30903190495
+ * 2019-03-08 12:31:34.759 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f30903190495  index0d = 14
+ * 2019-03-08 12:31:57.095 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0textViewStateAll 0
+ * 2019-03-08 12:31:57.095 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewUpAll 0
+ * 2019-03-08 12:31:57.095 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewDownAll 0
+ * 2019-03-08 12:31:57.101 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1textViewStateAll 0
+ * 2019-03-08 12:31:57.101 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewUpAll 0
+ * 2019-03-08 12:31:57.101 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewDownAll 0
+ * 2019-03-08 12:31:57.108 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2textViewStateAll 0
+ * 2019-03-08 12:31:57.108 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewUpAll 0
+ * 2019-03-08 12:31:57.108 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewDownAll 0
+ * 2019-03-08 12:31:57.114 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3textViewStateAll 0
+ * 2019-03-08 12:31:57.115 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewUpAll 0
+ * 2019-03-08 12:31:57.115 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewDownAll 0
+ * 2019-03-08 12:31:57.121 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4textViewStateAll 0
+ * 2019-03-08 12:31:57.122 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewUpAll 0
+ * 2019-03-08 12:31:57.122 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewDownAll 0
+ * 2019-03-08 12:31:57.145 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0textViewStateAll 0
+ * 2019-03-08 12:31:57.145 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewUpAll 0
+ * 2019-03-08 12:31:57.145 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewDownAll 0
+ * 2019-03-08 12:31:57.146 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1textViewStateAll 0
+ * 2019-03-08 12:31:57.146 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewUpAll 0
+ * 2019-03-08 12:31:57.147 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewDownAll 0
+ * 2019-03-08 12:31:57.147 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2textViewStateAll 0
+ * 2019-03-08 12:31:57.147 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewUpAll 0
+ * 2019-03-08 12:31:57.147 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewDownAll 0
+ * 2019-03-08 12:31:57.148 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3textViewStateAll 0
+ * 2019-03-08 12:31:57.148 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewUpAll 0
+ * 2019-03-08 12:31:57.148 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewDownAll 0
+ * 2019-03-08 12:31:57.149 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4textViewStateAll 0
+ * 2019-03-08 12:31:57.149 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewUpAll 0
+ * 2019-03-08 12:31:57.149 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewDownAll 0
+ * 2019-03-08 12:31:57.152 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5textViewStateAll 0
+ * 2019-03-08 12:31:57.152 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewUpAll 0
+ * 2019-03-08 12:31:57.152 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewDownAll 0
+ * 2019-03-08 12:31:57.154 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0textViewStateAll 0
+ * 2019-03-08 12:31:57.154 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewUpAll 0
+ * 2019-03-08 12:31:57.154 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewDownAll 0
+ * 2019-03-08 12:31:57.155 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1textViewStateAll 0
+ * 2019-03-08 12:31:57.155 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewUpAll 0
+ * 2019-03-08 12:31:57.155 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewDownAll 0
+ * 2019-03-08 12:31:57.156 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2textViewStateAll 0
+ * 2019-03-08 12:31:57.156 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewUpAll 0
+ * 2019-03-08 12:31:57.156 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewDownAll 0
+ * 2019-03-08 12:31:57.158 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3textViewStateAll 0
+ * 2019-03-08 12:31:57.158 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewUpAll 0
+ * 2019-03-08 12:31:57.158 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewDownAll 0
+ * 2019-03-08 12:31:57.159 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4textViewStateAll 0
+ * 2019-03-08 12:31:57.159 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewUpAll 0
+ * 2019-03-08 12:31:57.159 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewDownAll 0
+ * 2019-03-08 12:31:57.160 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5textViewStateAll 0
+ * 2019-03-08 12:31:57.160 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewUpAll 0
+ * 2019-03-08 12:31:57.160 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewDownAll 0
+ * 2019-03-08 12:31:57.174 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0textViewStateAll 0
+ * 2019-03-08 12:31:57.174 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewUpAll 0
+ * 2019-03-08 12:31:57.174 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewDownAll 0
+ * 2019-03-08 12:31:57.177 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1textViewStateAll 0
+ * 2019-03-08 12:31:57.178 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewUpAll 0
+ * 2019-03-08 12:31:57.178 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewDownAll 0
+ * 2019-03-08 12:31:57.181 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2textViewStateAll 0
+ * 2019-03-08 12:31:57.181 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewUpAll 0
+ * 2019-03-08 12:31:57.181 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewDownAll 0
+ * 2019-03-08 12:31:57.185 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3textViewStateAll 0
+ * 2019-03-08 12:31:57.185 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewUpAll 0
+ * 2019-03-08 12:31:57.185 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewDownAll 0
+ * 2019-03-08 12:31:57.188 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4textViewStateAll 0
+ * 2019-03-08 12:31:57.188 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewUpAll 0
+ * 2019-03-08 12:31:57.189 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewDownAll 0
+ * 2019-03-08 12:31:57.192 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5textViewStateAll 0
+ * 2019-03-08 12:31:57.192 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewUpAll 0
+ * 2019-03-08 12:31:57.192 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewDownAll 0
+ * 2019-03-08 12:31:57.774 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 6textViewStateAll 0
+ * 2019-03-08 12:31:57.775 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 6imageViewUpAll 0
+ * 2019-03-08 12:31:57.775 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 6imageViewDownAll 0
+ * 2019-03-08 12:31:57.823 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 7textViewStateAll 0
+ * 2019-03-08 12:31:57.823 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 7imageViewUpAll 0
+ * 2019-03-08 12:31:57.823 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 7imageViewDownAll 0
+ * 2019-03-08 12:31:57.857 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 8textViewStateAll 0
+ * 2019-03-08 12:31:57.857 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 8imageViewUpAll 0
+ * 2019-03-08 12:31:57.857 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 8imageViewDownAll 0
+ * 2019-03-08 12:31:57.889 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 9textViewStateAll 0
+ * 2019-03-08 12:31:57.890 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 9imageViewUpAll 0
+ * 2019-03-08 12:31:57.890 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 9imageViewDownAll 0
+ * 2019-03-08 12:31:57.923 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10textViewStateAll 0
+ * 2019-03-08 12:31:57.923 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewUpAll 0
+ * 2019-03-08 12:31:57.923 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewDownAll 0
+ * 2019-03-08 12:31:57.974 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11textViewStateAll 0
+ * 2019-03-08 12:31:57.974 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewUpAll 0
+ * 2019-03-08 12:31:57.974 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewDownAll 0
+ * 2019-03-08 12:31:58.006 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12textViewStateAll 0
+ * 2019-03-08 12:31:58.006 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewUpAll 0
+ * 2019-03-08 12:31:58.006 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewDownAll 0
+ * 2019-03-08 12:31:58.057 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13textViewStateAll 0
+ * 2019-03-08 12:31:58.057 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewUpAll 0
+ * 2019-03-08 12:31:58.057 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewDownAll 0
+ * 2019-03-08 12:31:58.107 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14textViewStateAll 0
+ * 2019-03-08 12:31:58.107 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewUpAll 0
+ * 2019-03-08 12:31:58.107 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewDownAll 0
+ * 2019-03-08 12:31:58.172 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15textViewStateAll 0
+ * 2019-03-08 12:31:58.172 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewUpAll 0
+ * 2019-03-08 12:31:58.172 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewDownAll 0
+ * 2019-03-08 12:32:02.596 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: strcmd = 12410102434ca1=18   12 a2 = 65   41 a3= 1   01 a4= 2   02 a5 = 67   43 a6= 76   4c
+ * 2019-03-08 12:32:02.596 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 49
+ * 2019-03-08 12:32:02.596 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 99
+ * 2019-03-08 12:32:02.596 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 151
+ * 2019-03-08 12:32:02.596 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 200
+ * 2019-03-08 12:32:02.597 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 248
+ * 2019-03-08 12:32:02.597 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 297
+ * 2019-03-08 12:32:02.597 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 345
+ * 2019-03-08 12:32:02.597 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 395
+ * 2019-03-08 12:32:02.597 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 447
+ * 2019-03-08 12:32:02.597 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 498
+ * 2019-03-08 12:32:02.597 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 550
+ * 2019-03-08 12:32:02.597 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 649
+ * 2019-03-08 12:32:02.597 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: chksum = 649
+ * 2019-03-08 12:32:02.597 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: return = 289
+ * 2019-03-08 12:32:03.233 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 12410
+ * 2019-03-08 12:32:03.234 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 12410
+ * 2019-03-08 12:32:03.246 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1024
+ * 2019-03-08 12:32:03.246 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 124101024
+ * 2019-03-08 12:32:03.259 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 34c8
+ * 2019-03-08 12:32:03.259 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 12410102434c8
+ * 2019-03-08 12:32:03.349 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9
+ * 2019-03-08 12:32:03.350 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 12410102434c89
+ * 2019-03-08 12:32:03.350 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 12410102434c89  index0d = 14
+ * 2019-03-08 12:32:04.639 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 11f21
+ * 2019-03-08 12:32:04.639 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f21
+ * 2019-03-08 12:32:04.654 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 228744dc
+ * 2019-03-08 12:32:04.655 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f21228744dc
+ * 2019-03-08 12:32:04.668 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = a
+ * 2019-03-08 12:32:04.668 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f21228744dca
+ * 2019-03-08 12:32:04.668 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f21228744dca  index0d = 14
+ * 2019-03-08 12:32:13.835 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: strcmd = 12410202434ca1=18   12 a2 = 65   41 a3= 2   02 a4= 2   02 a5 = 67   43 a6= 76   4c
+ * 2019-03-08 12:32:13.835 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 49
+ * 2019-03-08 12:32:13.835 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 99
+ * 2019-03-08 12:32:13.835 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 151
+ * 2019-03-08 12:32:13.835 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 200
+ * 2019-03-08 12:32:13.835 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 248
+ * 2019-03-08 12:32:13.835 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 298
+ * 2019-03-08 12:32:13.835 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 346
+ * 2019-03-08 12:32:13.835 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 396
+ * 2019-03-08 12:32:13.835 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 448
+ * 2019-03-08 12:32:13.835 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 499
+ * 2019-03-08 12:32:13.836 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 551
+ * 2019-03-08 12:32:13.836 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 650
+ * 2019-03-08 12:32:13.836 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: chksum = 650
+ * 2019-03-08 12:32:13.836 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: return = 28a
+ * 2019-03-08 12:32:14.324 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 12410
+ * 2019-03-08 12:32:14.325 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 12410
+ * 2019-03-08 12:32:14.356 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2024
+ * 2019-03-08 12:32:14.356 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 124102024
+ * 2019-03-08 12:32:14.365 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 34c8
+ * 2019-03-08 12:32:14.365 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 12410202434c8
+ * 2019-03-08 12:32:14.372 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = a
+ * 2019-03-08 12:32:14.373 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 12410202434c8a
+ * 2019-03-08 12:32:14.373 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 12410202434c8a  index0d = 14
+ * 2019-03-08 12:32:14.453 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 3
+ * 2019-03-08 12:32:14.453 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 3
+ * 2019-03-08 12:32:14.462 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2114
+ * 2019-03-08 12:32:14.462 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114
+ * 2019-03-08 12:32:14.469 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = c500
+ * 2019-03-08 12:32:14.470 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c500
+ * 2019-03-08 12:32:14.477 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0418
+ * 2019-03-08 12:32:14.477 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c5000418
+ * 2019-03-08 12:32:14.538 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+ * 2019-03-08 12:32:14.538 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c50004188
+ * 2019-03-08 12:32:14.538 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 32114c50004188  index0d = 14
+ * 2019-03-08 12:32:14.538 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp114c50 : str11ChkFlr=32 str11HexSwitchData=41
+ * 2019-03-08 12:32:14.544 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:14.544 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:14.551 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5370
+ * 2019-03-08 12:32:14.551 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05370
+ * 2019-03-08 12:32:14.620 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0310
+ * 2019-03-08 12:32:14.621 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 053700310
+ * 2019-03-08 12:32:14.627 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 00255
+ * 2019-03-08 12:32:14.627 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05370031000255
+ * 2019-03-08 12:32:14.634 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld =
+ * 2019-03-08 12:32:14.634 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05370031000255
+ * 2019-03-08 12:32:14.635 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 05370031000255  index0d = 14
+ * 2019-03-08 12:32:14.636 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 00 str05Stat0=31 flrNo =0 hexFour=0031 strBinaryFour=00110001
+ * 2019-03-08 12:32:14.638 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Up study
+ * 2019-03-08 12:32:14.643 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:32
+ * 2019-03-08 12:32:14.643 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 00 parsed=0
+ * 2019-03-08 12:32:14.643 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:32:14.661 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:14.661 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:14.732 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 6020
+ * 2019-03-08 12:32:14.733 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 06020
+ * 2019-03-08 12:32:14.740 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0544
+ * 2019-03-08 12:32:14.740 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 060200544
+ * 2019-03-08 12:32:14.751 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 14a8
+ * 2019-03-08 12:32:14.751 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 06020054414a8
+ * 2019-03-08 12:32:14.758 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = b
+ * 2019-03-08 12:32:14.758 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 06020054414a8b
+ * 2019-03-08 12:32:14.758 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 06020054414a8b  index0d = 14
+ * 2019-03-08 12:32:14.803 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 7
+ * 2019-03-08 12:32:14.803 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 7
+ * 2019-03-08 12:32:14.810 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 955040000005
+ * 2019-03-08 12:32:14.810 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 7955040000005
+ * 2019-03-08 12:32:14.817 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = e
+ * 2019-03-08 12:32:14.817 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 7955040000005e
+ * 2019-03-08 12:32:14.817 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 7955040000005e  index0d = 14
+ * 2019-03-08 12:32:14.907 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:14.907 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:14.917 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5370
+ * 2019-03-08 12:32:14.917 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05370
+ * 2019-03-08 12:32:14.927 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0394
+ * 2019-03-08 12:32:14.927 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 053700394
+ * 2019-03-08 12:32:14.981 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0005
+ * 2019-03-08 12:32:14.981 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0537003940005
+ * 2019-03-08 12:32:15.016 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = f
+ * 2019-03-08 12:32:15.016 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0537003940005f
+ * 2019-03-08 12:32:15.016 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 0537003940005f  index0d = 14
+ * 2019-03-08 12:32:15.017 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 00 str05Stat0=39 flrNo =0 hexFour=0039 strBinaryFour=00111001
+ * 2019-03-08 12:32:15.018 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Up study
+ * 2019-03-08 12:32:15.020 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:32
+ * 2019-03-08 12:32:15.020 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 00 parsed=0
+ * 2019-03-08 12:32:15.020 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:32:15.027 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 7
+ * 2019-03-08 12:32:15.027 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 7
+ * 2019-03-08 12:32:15.042 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1b2f
+ * 2019-03-08 12:32:15.042 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f
+ * 2019-03-08 12:32:15.048 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 83ef
+ * 2019-03-08 12:32:15.048 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ef
+ * 2019-03-08 12:32:15.054 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = ffac
+ * 2019-03-08 12:32:15.054 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83efffac
+ * 2019-03-08 12:32:15.060 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5
+ * 2019-03-08 12:32:15.061 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83efffac5
+ * 2019-03-08 12:32:15.061 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 71b2f83efffac5  index0d = 14
+ * 2019-03-08 12:32:15.130 12498-12498/com.radioknit.mmidec E/Tag_CarCallActivity: showUpDnCalls() : hexSwitchData = 41 binSwitchData=01000001 strChkFlr=32
+ * 2019-03-08 12:32:15.143 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0textViewStateAll 0
+ * 2019-03-08 12:32:15.143 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewUpAll 0
+ * 2019-03-08 12:32:15.143 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewDownAll 0
+ * 2019-03-08 12:32:15.144 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1textViewStateAll 0
+ * 2019-03-08 12:32:15.144 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewUpAll 0
+ * 2019-03-08 12:32:15.144 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewDownAll 0
+ * 2019-03-08 12:32:15.145 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2textViewStateAll 0
+ * 2019-03-08 12:32:15.145 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewUpAll 0
+ * 2019-03-08 12:32:15.146 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewDownAll 0
+ * 2019-03-08 12:32:15.147 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3textViewStateAll 0
+ * 2019-03-08 12:32:15.147 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewUpAll 0
+ * 2019-03-08 12:32:15.147 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewDownAll 0
+ * 2019-03-08 12:32:15.147 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4textViewStateAll 0
+ * 2019-03-08 12:32:15.147 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewUpAll 0
+ * 2019-03-08 12:32:15.147 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewDownAll 0
+ * 2019-03-08 12:32:15.148 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5textViewStateAll 0
+ * 2019-03-08 12:32:15.148 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewUpAll 0
+ * 2019-03-08 12:32:15.148 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewDownAll 0
+ * 2019-03-08 12:32:15.149 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10textViewStateAll 0
+ * 2019-03-08 12:32:15.149 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewUpAll 0
+ * 2019-03-08 12:32:15.149 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewDownAll 0
+ * 2019-03-08 12:32:15.151 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11textViewStateAll 0
+ * 2019-03-08 12:32:15.151 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewUpAll 0
+ * 2019-03-08 12:32:15.151 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewDownAll 0
+ * 2019-03-08 12:32:15.152 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12textViewStateAll 0
+ * 2019-03-08 12:32:15.152 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewUpAll 0
+ * 2019-03-08 12:32:15.152 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewDownAll 0
+ * 2019-03-08 12:32:15.154 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13textViewStateAll 0
+ * 2019-03-08 12:32:15.154 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewUpAll 1
+ * 2019-03-08 12:32:15.154 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewDownAll 0
+ * 2019-03-08 12:32:15.161 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14textViewStateAll 0
+ * 2019-03-08 12:32:15.161 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewUpAll 0
+ * 2019-03-08 12:32:15.162 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewDownAll 0
+ * 2019-03-08 12:32:15.163 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15textViewStateAll 0
+ * 2019-03-08 12:32:15.163 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewUpAll 0
+ * 2019-03-08 12:32:15.163 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewDownAll 0
+ * 2019-03-08 12:32:15.295 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 3
+ * 2019-03-08 12:32:15.295 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 3
+ * 2019-03-08 12:32:15.301 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2114
+ * 2019-03-08 12:32:15.301 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114
+ * 2019-03-08 12:32:15.309 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = c500
+ * 2019-03-08 12:32:15.309 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c500
+ * 2019-03-08 12:32:15.318 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0418
+ * 2019-03-08 12:32:15.318 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c5000418
+ * 2019-03-08 12:32:15.326 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+ * 2019-03-08 12:32:15.326 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c50004188
+ * 2019-03-08 12:32:15.326 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 32114c50004188  index0d = 14
+ * 2019-03-08 12:32:15.326 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp114c50 : str11ChkFlr=32 str11HexSwitchData=41
+ * 2019-03-08 12:32:15.901 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:15.902 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:15.918 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5370
+ * 2019-03-08 12:32:15.918 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05370
+ * 2019-03-08 12:32:15.929 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0394
+ * 2019-03-08 12:32:15.929 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 053700394
+ * 2019-03-08 12:32:15.950 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0005
+ * 2019-03-08 12:32:15.950 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0537003940005
+ * 2019-03-08 12:32:15.958 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = f
+ * 2019-03-08 12:32:15.958 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0537003940005f
+ * 2019-03-08 12:32:15.958 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 0537003940005f  index0d = 14
+ * 2019-03-08 12:32:15.960 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 00 str05Stat0=39 flrNo =0 hexFour=0039 strBinaryFour=00111001
+ * 2019-03-08 12:32:15.961 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Up study
+ * 2019-03-08 12:32:15.966 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:32
+ * 2019-03-08 12:32:15.966 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 00 parsed=0
+ * 2019-03-08 12:32:15.966 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:32:16.132 12498-12498/com.radioknit.mmidec E/Tag_CarCallActivity: showUpDnCalls() : hexSwitchData = 41 binSwitchData=01000001 strChkFlr=32
+ * 2019-03-08 12:32:16.146 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0textViewStateAll 0
+ * 2019-03-08 12:32:16.146 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewUpAll 0
+ * 2019-03-08 12:32:16.146 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewDownAll 0
+ * 2019-03-08 12:32:16.150 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1textViewStateAll 0
+ * 2019-03-08 12:32:16.150 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewUpAll 0
+ * 2019-03-08 12:32:16.150 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewDownAll 0
+ * 2019-03-08 12:32:16.153 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2textViewStateAll 0
+ * 2019-03-08 12:32:16.153 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewUpAll 0
+ * 2019-03-08 12:32:16.153 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewDownAll 0
+ * 2019-03-08 12:32:16.156 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3textViewStateAll 0
+ * 2019-03-08 12:32:16.156 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewUpAll 0
+ * 2019-03-08 12:32:16.156 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewDownAll 0
+ * 2019-03-08 12:32:16.159 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4textViewStateAll 0
+ * 2019-03-08 12:32:16.159 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewUpAll 0
+ * 2019-03-08 12:32:16.159 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewDownAll 0
+ * 2019-03-08 12:32:16.162 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5textViewStateAll 0
+ * 2019-03-08 12:32:16.163 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewUpAll 0
+ * 2019-03-08 12:32:16.163 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewDownAll 0
+ * 2019-03-08 12:32:16.168 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10textViewStateAll 0
+ * 2019-03-08 12:32:16.168 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewUpAll 0
+ * 2019-03-08 12:32:16.168 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewDownAll 0
+ * 2019-03-08 12:32:16.171 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11textViewStateAll 0
+ * 2019-03-08 12:32:16.171 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewUpAll 0
+ * 2019-03-08 12:32:16.171 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewDownAll 0
+ * 2019-03-08 12:32:16.173 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12textViewStateAll 0
+ * 2019-03-08 12:32:16.173 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewUpAll 0
+ * 2019-03-08 12:32:16.173 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewDownAll 0
+ * 2019-03-08 12:32:16.176 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13textViewStateAll 0
+ * 2019-03-08 12:32:16.176 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewUpAll 1
+ * 2019-03-08 12:32:16.176 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewDownAll 0
+ * 2019-03-08 12:32:16.181 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14textViewStateAll 0
+ * 2019-03-08 12:32:16.181 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewUpAll 0
+ * 2019-03-08 12:32:16.181 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewDownAll 0
+ * 2019-03-08 12:32:16.183 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15textViewStateAll 0
+ * 2019-03-08 12:32:16.183 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewUpAll 0
+ * 2019-03-08 12:32:16.183 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewDownAll 0
+ * 2019-03-08 12:32:16.934 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:16.934 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:16.946 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5370
+ * 2019-03-08 12:32:16.947 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05370
+ * 2019-03-08 12:32:16.968 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0354
+ * 2019-03-08 12:32:16.968 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 053700354
+ * 2019-03-08 12:32:17.015 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0025d
+ * 2019-03-08 12:32:17.015 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0537003540025d
+ * 2019-03-08 12:32:17.015 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 0537003540025d  index0d = 14
+ * 2019-03-08 12:32:17.016 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 00 str05Stat0=35 flrNo =0 hexFour=0035 strBinaryFour=00110101
+ * 2019-03-08 12:32:17.058 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 7
+ * 2019-03-08 12:32:17.058 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 7
+ * 2019-03-08 12:32:17.118 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1b2f83e1
+ * 2019-03-08 12:32:17.118 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83e1
+ * 2019-03-08 12:32:17.124 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = efa8
+ * 2019-03-08 12:32:17.125 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83e1efa8
+ * 2019-03-08 12:32:17.132 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = f
+ * 2019-03-08 12:32:17.132 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83e1efa8f
+ * 2019-03-08 12:32:17.132 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 71b2f83e1efa8f  index0d = 14
+ * 2019-03-08 12:32:17.205 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:17.205 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:17.211 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 600f
+ * 2019-03-08 12:32:17.211 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0600f
+ * 2019-03-08 12:32:17.217 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = f544
+ * 2019-03-08 12:32:17.217 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0600ff544
+ * 2019-03-08 12:32:17.224 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 14af5
+ * 2019-03-08 12:32:17.224 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0600ff54414af5
+ * 2019-03-08 12:32:17.224 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 0600ff54414af5  index0d = 14
+ * 2019-03-08 12:32:19.049 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 32114
+ * 2019-03-08 12:32:19.049 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114
+ * 2019-03-08 12:32:19.061 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = c500
+ * 2019-03-08 12:32:19.062 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c500
+ * 2019-03-08 12:32:19.072 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0418
+ * 2019-03-08 12:32:19.073 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c5000418
+ * 2019-03-08 12:32:19.096 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+ * 2019-03-08 12:32:19.096 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c50004188
+ * 2019-03-08 12:32:19.096 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 32114c50004188  index0d = 14
+ * 2019-03-08 12:32:19.096 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp114c50 : str11ChkFlr=32 str11HexSwitchData=41
+ * 2019-03-08 12:32:19.178 12498-12498/com.radioknit.mmidec E/Tag_CarCallActivity: showUpDnCalls() : hexSwitchData = 41 binSwitchData=01000001 strChkFlr=32
+ * 2019-03-08 12:32:19.195 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0textViewStateAll 0
+ * 2019-03-08 12:32:19.195 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewUpAll 0
+ * 2019-03-08 12:32:19.195 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewDownAll 0
+ * 2019-03-08 12:32:19.196 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1textViewStateAll 0
+ * 2019-03-08 12:32:19.196 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewUpAll 0
+ * 2019-03-08 12:32:19.196 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewDownAll 0
+ * 2019-03-08 12:32:19.197 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2textViewStateAll 0
+ * 2019-03-08 12:32:19.197 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewUpAll 0
+ * 2019-03-08 12:32:19.197 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewDownAll 0
+ * 2019-03-08 12:32:19.198 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3textViewStateAll 0
+ * 2019-03-08 12:32:19.198 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewUpAll 0
+ * 2019-03-08 12:32:19.198 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewDownAll 0
+ * 2019-03-08 12:32:19.198 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4textViewStateAll 0
+ * 2019-03-08 12:32:19.198 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewUpAll 0
+ * 2019-03-08 12:32:19.198 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewDownAll 0
+ * 2019-03-08 12:32:19.199 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5textViewStateAll 0
+ * 2019-03-08 12:32:19.199 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewUpAll 0
+ * 2019-03-08 12:32:19.199 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewDownAll 0
+ * 2019-03-08 12:32:19.200 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10textViewStateAll 0
+ * 2019-03-08 12:32:19.200 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewUpAll 0
+ * 2019-03-08 12:32:19.200 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewDownAll 0
+ * 2019-03-08 12:32:19.202 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11textViewStateAll 0
+ * 2019-03-08 12:32:19.202 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewUpAll 0
+ * 2019-03-08 12:32:19.202 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewDownAll 0
+ * 2019-03-08 12:32:19.205 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12textViewStateAll 0
+ * 2019-03-08 12:32:19.205 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewUpAll 0
+ * 2019-03-08 12:32:19.205 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewDownAll 0
+ * 2019-03-08 12:32:19.207 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13textViewStateAll 0
+ * 2019-03-08 12:32:19.207 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewUpAll 1
+ * 2019-03-08 12:32:19.207 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewDownAll 0
+ * 2019-03-08 12:32:19.210 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14textViewStateAll 0
+ * 2019-03-08 12:32:19.211 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewUpAll 0
+ * 2019-03-08 12:32:19.211 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewDownAll 0
+ * 2019-03-08 12:32:19.215 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15textViewStateAll 0
+ * 2019-03-08 12:32:19.215 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewUpAll 0
+ * 2019-03-08 12:32:19.215 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewDownAll 0
+ * 2019-03-08 12:32:22.811 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 3
+ * 2019-03-08 12:32:22.811 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 3
+ * 2019-03-08 12:32:22.827 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2114
+ * 2019-03-08 12:32:22.827 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114
+ * 2019-03-08 12:32:22.838 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = c500
+ * 2019-03-08 12:32:22.838 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c500
+ * 2019-03-08 12:32:22.849 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0418
+ * 2019-03-08 12:32:22.849 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c5000418
+ * 2019-03-08 12:32:22.896 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+ * 2019-03-08 12:32:22.896 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c50004188
+ * 2019-03-08 12:32:22.896 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 32114c50004188  index0d = 14
+ * 2019-03-08 12:32:22.896 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp114c50 : str11ChkFlr=32 str11HexSwitchData=41
+ * 2019-03-08 12:32:23.188 12498-12498/com.radioknit.mmidec E/Tag_CarCallActivity: showUpDnCalls() : hexSwitchData = 41 binSwitchData=01000001 strChkFlr=32
+ * 2019-03-08 12:32:23.198 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0textViewStateAll 0
+ * 2019-03-08 12:32:23.198 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewUpAll 0
+ * 2019-03-08 12:32:23.199 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewDownAll 0
+ * 2019-03-08 12:32:23.202 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1textViewStateAll 0
+ * 2019-03-08 12:32:23.202 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewUpAll 0
+ * 2019-03-08 12:32:23.202 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewDownAll 0
+ * 2019-03-08 12:32:23.204 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2textViewStateAll 0
+ * 2019-03-08 12:32:23.204 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewUpAll 0
+ * 2019-03-08 12:32:23.205 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewDownAll 0
+ * 2019-03-08 12:32:23.207 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3textViewStateAll 0
+ * 2019-03-08 12:32:23.207 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewUpAll 0
+ * 2019-03-08 12:32:23.207 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewDownAll 0
+ * 2019-03-08 12:32:23.209 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4textViewStateAll 0
+ * 2019-03-08 12:32:23.209 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewUpAll 0
+ * 2019-03-08 12:32:23.209 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewDownAll 0
+ * 2019-03-08 12:32:23.211 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5textViewStateAll 0
+ * 2019-03-08 12:32:23.212 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewUpAll 0
+ * 2019-03-08 12:32:23.212 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewDownAll 0
+ * 2019-03-08 12:32:23.222 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10textViewStateAll 0
+ * 2019-03-08 12:32:23.222 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewUpAll 0
+ * 2019-03-08 12:32:23.222 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewDownAll 0
+ * 2019-03-08 12:32:23.226 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11textViewStateAll 0
+ * 2019-03-08 12:32:23.226 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewUpAll 0
+ * 2019-03-08 12:32:23.226 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewDownAll 0
+ * 2019-03-08 12:32:23.228 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12textViewStateAll 0
+ * 2019-03-08 12:32:23.229 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewUpAll 0
+ * 2019-03-08 12:32:23.229 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewDownAll 0
+ * 2019-03-08 12:32:23.233 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13textViewStateAll 0
+ * 2019-03-08 12:32:23.233 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewUpAll 1
+ * 2019-03-08 12:32:23.233 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewDownAll 0
+ * 2019-03-08 12:32:23.235 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14textViewStateAll 0
+ * 2019-03-08 12:32:23.235 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewUpAll 0
+ * 2019-03-08 12:32:23.235 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewDownAll 0
+ * 2019-03-08 12:32:23.239 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15textViewStateAll 0
+ * 2019-03-08 12:32:23.239 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewUpAll 0
+ * 2019-03-08 12:32:23.239 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewDownAll 0
+ * 2019-03-08 12:32:26.594 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 3
+ * 2019-03-08 12:32:26.594 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 3
+ * 2019-03-08 12:32:26.608 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2114
+ * 2019-03-08 12:32:26.608 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114
+ * 2019-03-08 12:32:26.635 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = c500
+ * 2019-03-08 12:32:26.635 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c500
+ * 2019-03-08 12:32:26.644 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0418
+ * 2019-03-08 12:32:26.644 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c5000418
+ * 2019-03-08 12:32:26.676 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+ * 2019-03-08 12:32:26.676 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c50004188
+ * 2019-03-08 12:32:26.676 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 32114c50004188  index0d = 14
+ * 2019-03-08 12:32:26.676 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp114c50 : str11ChkFlr=32 str11HexSwitchData=41
+ * 2019-03-08 12:32:27.200 12498-12498/com.radioknit.mmidec E/Tag_CarCallActivity: showUpDnCalls() : hexSwitchData = 41 binSwitchData=01000001 strChkFlr=32
+ * 2019-03-08 12:32:27.217 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0textViewStateAll 0
+ * 2019-03-08 12:32:27.218 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewUpAll 0
+ * 2019-03-08 12:32:27.218 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewDownAll 0
+ * 2019-03-08 12:32:27.221 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1textViewStateAll 0
+ * 2019-03-08 12:32:27.221 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewUpAll 0
+ * 2019-03-08 12:32:27.221 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewDownAll 0
+ * 2019-03-08 12:32:27.223 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2textViewStateAll 0
+ * 2019-03-08 12:32:27.223 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewUpAll 0
+ * 2019-03-08 12:32:27.223 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewDownAll 0
+ * 2019-03-08 12:32:27.226 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3textViewStateAll 0
+ * 2019-03-08 12:32:27.226 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewUpAll 0
+ * 2019-03-08 12:32:27.226 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewDownAll 0
+ * 2019-03-08 12:32:27.228 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4textViewStateAll 0
+ * 2019-03-08 12:32:27.228 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewUpAll 0
+ * 2019-03-08 12:32:27.228 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewDownAll 0
+ * 2019-03-08 12:32:27.231 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5textViewStateAll 0
+ * 2019-03-08 12:32:27.231 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewUpAll 0
+ * 2019-03-08 12:32:27.231 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewDownAll 0
+ * 2019-03-08 12:32:27.235 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10textViewStateAll 0
+ * 2019-03-08 12:32:27.235 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewUpAll 0
+ * 2019-03-08 12:32:27.235 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewDownAll 0
+ * 2019-03-08 12:32:27.239 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11textViewStateAll 0
+ * 2019-03-08 12:32:27.239 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewUpAll 0
+ * 2019-03-08 12:32:27.239 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewDownAll 0
+ * 2019-03-08 12:32:27.242 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12textViewStateAll 0
+ * 2019-03-08 12:32:27.242 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewUpAll 0
+ * 2019-03-08 12:32:27.242 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewDownAll 0
+ * 2019-03-08 12:32:27.246 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13textViewStateAll 0
+ * 2019-03-08 12:32:27.246 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewUpAll 1
+ * 2019-03-08 12:32:27.246 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewDownAll 0
+ * 2019-03-08 12:32:27.249 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14textViewStateAll 0
+ * 2019-03-08 12:32:27.249 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewUpAll 0
+ * 2019-03-08 12:32:27.249 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewDownAll 0
+ * 2019-03-08 12:32:27.251 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15textViewStateAll 0
+ * 2019-03-08 12:32:27.251 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewUpAll 0
+ * 2019-03-08 12:32:27.251 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewDownAll 0
+ * 2019-03-08 12:32:28.102 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:28.102 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:28.116 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 537003540025d
+ * 2019-03-08 12:32:28.117 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0537003540025d
+ * 2019-03-08 12:32:28.117 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 0537003540025d  index0d = 14
+ * 2019-03-08 12:32:28.119 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 00 str05Stat0=35 flrNo =0 hexFour=0035 strBinaryFour=00110101
+ * 2019-03-08 12:32:30.380 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 3
+ * 2019-03-08 12:32:30.380 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 3
+ * 2019-03-08 12:32:30.401 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 211
+ * 2019-03-08 12:32:30.402 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 3211
+ * 2019-03-08 12:32:30.419 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 4c500
+ * 2019-03-08 12:32:30.419 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c500
+ * 2019-03-08 12:32:30.430 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0418
+ * 2019-03-08 12:32:30.430 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c5000418
+ * 2019-03-08 12:32:30.438 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+ * 2019-03-08 12:32:30.438 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c50004188
+ * 2019-03-08 12:32:30.438 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 32114c50004188  index0d = 14
+ * 2019-03-08 12:32:30.438 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp114c50 : str11ChkFlr=32 str11HexSwitchData=41
+ * 2019-03-08 12:32:31.214 12498-12498/com.radioknit.mmidec E/Tag_CarCallActivity: showUpDnCalls() : hexSwitchData = 41 binSwitchData=01000001 strChkFlr=32
+ * 2019-03-08 12:32:31.236 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0textViewStateAll 0
+ * 2019-03-08 12:32:31.236 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewUpAll 0
+ * 2019-03-08 12:32:31.236 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewDownAll 0
+ * 2019-03-08 12:32:31.238 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1textViewStateAll 0
+ * 2019-03-08 12:32:31.238 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewUpAll 0
+ * 2019-03-08 12:32:31.238 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewDownAll 0
+ * 2019-03-08 12:32:31.240 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2textViewStateAll 0
+ * 2019-03-08 12:32:31.240 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewUpAll 0
+ * 2019-03-08 12:32:31.240 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewDownAll 0
+ * 2019-03-08 12:32:31.242 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3textViewStateAll 0
+ * 2019-03-08 12:32:31.242 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewUpAll 0
+ * 2019-03-08 12:32:31.242 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewDownAll 0
+ * 2019-03-08 12:32:31.244 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4textViewStateAll 0
+ * 2019-03-08 12:32:31.244 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewUpAll 0
+ * 2019-03-08 12:32:31.244 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewDownAll 0
+ * 2019-03-08 12:32:31.246 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5textViewStateAll 0
+ * 2019-03-08 12:32:31.246 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewUpAll 0
+ * 2019-03-08 12:32:31.246 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewDownAll 0
+ * 2019-03-08 12:32:31.258 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10textViewStateAll 0
+ * 2019-03-08 12:32:31.258 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewUpAll 0
+ * 2019-03-08 12:32:31.258 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewDownAll 0
+ * 2019-03-08 12:32:31.262 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11textViewStateAll 0
+ * 2019-03-08 12:32:31.262 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewUpAll 0
+ * 2019-03-08 12:32:31.262 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewDownAll 0
+ * 2019-03-08 12:32:31.266 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12textViewStateAll 0
+ * 2019-03-08 12:32:31.266 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewUpAll 0
+ * 2019-03-08 12:32:31.266 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewDownAll 0
+ * 2019-03-08 12:32:31.269 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13textViewStateAll 0
+ * 2019-03-08 12:32:31.269 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewUpAll 1
+ * 2019-03-08 12:32:31.269 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewDownAll 0
+ * 2019-03-08 12:32:31.271 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14textViewStateAll 0
+ * 2019-03-08 12:32:31.271 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewUpAll 0
+ * 2019-03-08 12:32:31.271 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewDownAll 0
+ * 2019-03-08 12:32:31.274 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15textViewStateAll 0
+ * 2019-03-08 12:32:31.274 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewUpAll 0
+ * 2019-03-08 12:32:31.274 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewDownAll 0
+ * 2019-03-08 12:32:34.178 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 3
+ * 2019-03-08 12:32:34.178 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 3
+ * 2019-03-08 12:32:34.245 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2114
+ * 2019-03-08 12:32:34.245 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114
+ * 2019-03-08 12:32:34.255 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = c500
+ * 2019-03-08 12:32:34.256 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c500
+ * 2019-03-08 12:32:34.266 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0418
+ * 2019-03-08 12:32:34.266 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c5000418
+ * 2019-03-08 12:32:34.273 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+ * 2019-03-08 12:32:34.273 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c50004188
+ * 2019-03-08 12:32:34.274 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 32114c50004188  index0d = 14
+ * 2019-03-08 12:32:34.274 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp114c50 : str11ChkFlr=32 str11HexSwitchData=41
+ * 2019-03-08 12:32:34.280 12498-12498/com.radioknit.mmidec E/Tag_CarCallActivity: showUpDnCalls() : hexSwitchData = 41 binSwitchData=01000001 strChkFlr=32
+ * 2019-03-08 12:32:34.287 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0textViewStateAll 0
+ * 2019-03-08 12:32:34.287 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewUpAll 0
+ * 2019-03-08 12:32:34.287 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewDownAll 0
+ * 2019-03-08 12:32:34.289 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1textViewStateAll 0
+ * 2019-03-08 12:32:34.289 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewUpAll 0
+ * 2019-03-08 12:32:34.289 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewDownAll 0
+ * 2019-03-08 12:32:34.290 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2textViewStateAll 0
+ * 2019-03-08 12:32:34.290 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewUpAll 0
+ * 2019-03-08 12:32:34.290 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewDownAll 0
+ * 2019-03-08 12:32:34.290 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3textViewStateAll 0
+ * 2019-03-08 12:32:34.290 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewUpAll 0
+ * 2019-03-08 12:32:34.290 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewDownAll 0
+ * 2019-03-08 12:32:34.291 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4textViewStateAll 0
+ * 2019-03-08 12:32:34.292 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewUpAll 0
+ * 2019-03-08 12:32:34.292 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewDownAll 0
+ * 2019-03-08 12:32:34.293 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5textViewStateAll 0
+ * 2019-03-08 12:32:34.294 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewUpAll 0
+ * 2019-03-08 12:32:34.294 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewDownAll 0
+ * 2019-03-08 12:32:34.295 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10textViewStateAll 0
+ * 2019-03-08 12:32:34.295 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewUpAll 0
+ * 2019-03-08 12:32:34.295 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewDownAll 0
+ * 2019-03-08 12:32:34.298 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11textViewStateAll 0
+ * 2019-03-08 12:32:34.298 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewUpAll 0
+ * 2019-03-08 12:32:34.298 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewDownAll 0
+ * 2019-03-08 12:32:34.299 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12textViewStateAll 0
+ * 2019-03-08 12:32:34.299 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewUpAll 0
+ * 2019-03-08 12:32:34.300 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewDownAll 0
+ * 2019-03-08 12:32:34.301 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13textViewStateAll 0
+ * 2019-03-08 12:32:34.301 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewUpAll 1
+ * 2019-03-08 12:32:34.301 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewDownAll 0
+ * 2019-03-08 12:32:34.303 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14textViewStateAll 0
+ * 2019-03-08 12:32:34.303 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewUpAll 0
+ * 2019-03-08 12:32:34.303 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewDownAll 0
+ * 2019-03-08 12:32:34.304 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15textViewStateAll 0
+ * 2019-03-08 12:32:34.304 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewUpAll 0
+ * 2019-03-08 12:32:34.304 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewDownAll 0
+ * 2019-03-08 12:32:36.660 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:36.661 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:36.669 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020
+ * 2019-03-08 12:32:36.670 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:32:36.676 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2398
+ * 2019-03-08 12:32:36.677 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202398
+ * 2019-03-08 12:32:36.689 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0005
+ * 2019-03-08 12:32:36.689 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023980005
+ * 2019-03-08 12:32:36.748 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = d
+ * 2019-03-08 12:32:36.748 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023980005d
+ * 2019-03-08 12:32:36.749 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 0502023980005d  index0d = 14
+ * 2019-03-08 12:32:36.750 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=39 flrNo =2 hexFour=0039 strBinaryFour=00111001
+ * 2019-03-08 12:32:36.768 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Up study
+ * 2019-03-08 12:32:36.774 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:32
+ * 2019-03-08 12:32:36.775 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:32:36.775 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:32:36.794 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:36.794 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:36.803 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020
+ * 2019-03-08 12:32:36.803 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:32:36.810 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2388
+ * 2019-03-08 12:32:36.810 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202388
+ * 2019-03-08 12:32:36.825 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0005
+ * 2019-03-08 12:32:36.825 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023880005
+ * 2019-03-08 12:32:36.831 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = c
+ * 2019-03-08 12:32:36.831 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023880005c
+ * 2019-03-08 12:32:36.831 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 0502023880005c  index0d = 14
+ * 2019-03-08 12:32:36.832 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=38 flrNo =2 hexFour=0038 strBinaryFour=00111000
+ * 2019-03-08 12:32:36.836 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:32
+ * 2019-03-08 12:32:36.836 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:32:36.836 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:32:36.899 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 7
+ * 2019-03-08 12:32:36.900 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 7
+ * 2019-03-08 12:32:36.908 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1b2f
+ * 2019-03-08 12:32:36.908 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f
+ * 2019-03-08 12:32:36.917 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 83ff
+ * 2019-03-08 12:32:36.917 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ff
+ * 2019-03-08 12:32:36.925 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = ff99
+ * 2019-03-08 12:32:36.925 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ffff99
+ * 2019-03-08 12:32:36.933 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = e
+ * 2019-03-08 12:32:36.933 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ffff99e
+ * 2019-03-08 12:32:36.933 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 71b2f83ffff99e  index0d = 14
+ * 2019-03-08 12:32:37.578 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:37.578 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:37.589 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 50202388
+ * 2019-03-08 12:32:37.589 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202388
+ * 2019-03-08 12:32:37.599 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0005
+ * 2019-03-08 12:32:37.599 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023880005
+ * 2019-03-08 12:32:37.622 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = c
+ * 2019-03-08 12:32:37.623 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023880005c
+ * 2019-03-08 12:32:37.623 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 0502023880005c  index0d = 14
+ * 2019-03-08 12:32:37.624 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=38 flrNo =2 hexFour=0038 strBinaryFour=00111000
+ * 2019-03-08 12:32:37.627 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:32
+ * 2019-03-08 12:32:37.627 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:32:37.627 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:32:37.921 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 3
+ * 2019-03-08 12:32:37.922 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 3
+ * 2019-03-08 12:32:37.934 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2114
+ * 2019-03-08 12:32:37.934 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114
+ * 2019-03-08 12:32:37.959 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = c500
+ * 2019-03-08 12:32:37.959 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c500
+ * 2019-03-08 12:32:37.966 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0418
+ * 2019-03-08 12:32:37.967 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c5000418
+ * 2019-03-08 12:32:38.043 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+ * 2019-03-08 12:32:38.043 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c50004188
+ * 2019-03-08 12:32:38.043 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 32114c50004188  index0d = 14
+ * 2019-03-08 12:32:38.043 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp114c50 : str11ChkFlr=32 str11HexSwitchData=41
+ * 2019-03-08 12:32:38.105 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:38.105 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:38.111 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020
+ * 2019-03-08 12:32:38.111 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:32:38.117 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2388
+ * 2019-03-08 12:32:38.117 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202388
+ * 2019-03-08 12:32:38.125 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2005e
+ * 2019-03-08 12:32:38.125 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023882005e
+ * 2019-03-08 12:32:38.130 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld =
+ * 2019-03-08 12:32:38.131 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023882005e
+ * 2019-03-08 12:32:38.131 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 0502023882005e  index0d = 14
+ * 2019-03-08 12:32:38.132 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=38 flrNo =2 hexFour=0038 strBinaryFour=00111000
+ * 2019-03-08 12:32:38.136 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:32
+ * 2019-03-08 12:32:38.136 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:32:38.136 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:32:38.200 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 06020
+ * 2019-03-08 12:32:38.200 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 06020
+ * 2019-03-08 12:32:38.209 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 254414a8
+ * 2019-03-08 12:32:38.209 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 06020254414a8
+ * 2019-03-08 12:32:38.215 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = d
+ * 2019-03-08 12:32:38.215 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 06020254414a8d
+ * 2019-03-08 12:32:38.215 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 06020254414a8d  index0d = 14
+ * 2019-03-08 12:32:38.265 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 7
+ * 2019-03-08 12:32:38.265 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 7
+ * 2019-03-08 12:32:38.271 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9550000
+ * 2019-03-08 12:32:38.272 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 79550000
+ * 2019-03-08 12:32:38.317 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 00005
+ * 2019-03-08 12:32:38.317 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 7955000000005
+ * 2019-03-08 12:32:38.324 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = a
+ * 2019-03-08 12:32:38.324 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 7955000000005a
+ * 2019-03-08 12:32:38.324 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 7955000000005a  index0d = 14
+ * 2019-03-08 12:32:38.340 12498-12498/com.radioknit.mmidec E/Tag_CarCallActivity: showUpDnCalls() : hexSwitchData = 41 binSwitchData=01000001 strChkFlr=32
+ * 2019-03-08 12:32:38.354 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0textViewStateAll 0
+ * 2019-03-08 12:32:38.354 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewUpAll 0
+ * 2019-03-08 12:32:38.354 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewDownAll 0
+ * 2019-03-08 12:32:38.355 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1textViewStateAll 0
+ * 2019-03-08 12:32:38.355 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewUpAll 0
+ * 2019-03-08 12:32:38.355 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewDownAll 0
+ * 2019-03-08 12:32:38.355 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2textViewStateAll 0
+ * 2019-03-08 12:32:38.355 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewUpAll 0
+ * 2019-03-08 12:32:38.355 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewDownAll 0
+ * 2019-03-08 12:32:38.356 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3textViewStateAll 0
+ * 2019-03-08 12:32:38.356 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewUpAll 0
+ * 2019-03-08 12:32:38.356 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewDownAll 0
+ * 2019-03-08 12:32:38.356 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4textViewStateAll 0
+ * 2019-03-08 12:32:38.356 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewUpAll 0
+ * 2019-03-08 12:32:38.356 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewDownAll 0
+ * 2019-03-08 12:32:38.357 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5textViewStateAll 0
+ * 2019-03-08 12:32:38.357 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewUpAll 0
+ * 2019-03-08 12:32:38.357 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewDownAll 0
+ * 2019-03-08 12:32:38.358 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10textViewStateAll 0
+ * 2019-03-08 12:32:38.358 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewUpAll 0
+ * 2019-03-08 12:32:38.358 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewDownAll 0
+ * 2019-03-08 12:32:38.359 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11textViewStateAll 0
+ * 2019-03-08 12:32:38.359 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewUpAll 0
+ * 2019-03-08 12:32:38.359 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewDownAll 0
+ * 2019-03-08 12:32:38.360 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12textViewStateAll 0
+ * 2019-03-08 12:32:38.360 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewUpAll 0
+ * 2019-03-08 12:32:38.360 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewDownAll 0
+ * 2019-03-08 12:32:38.360 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13textViewStateAll 0
+ * 2019-03-08 12:32:38.360 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewUpAll 1
+ * 2019-03-08 12:32:38.360 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewDownAll 0
+ * 2019-03-08 12:32:38.361 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14textViewStateAll 0
+ * 2019-03-08 12:32:38.361 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewUpAll 0
+ * 2019-03-08 12:32:38.361 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewDownAll 0
+ * 2019-03-08 12:32:38.362 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15textViewStateAll 0
+ * 2019-03-08 12:32:38.362 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewUpAll 0
+ * 2019-03-08 12:32:38.362 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewDownAll 0
+ * 2019-03-08 12:32:38.392 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 3
+ * 2019-03-08 12:32:38.392 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 3
+ * 2019-03-08 12:32:38.397 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2114
+ * 2019-03-08 12:32:38.397 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114
+ * 2019-03-08 12:32:38.402 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = c500
+ * 2019-03-08 12:32:38.402 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c500
+ * 2019-03-08 12:32:38.474 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 00184
+ * 2019-03-08 12:32:38.475 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c50000184
+ * 2019-03-08 12:32:38.475 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 32114c50000184  index0d = 14
+ * 2019-03-08 12:32:38.475 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp114c50 : str11ChkFlr=32 str11HexSwitchData=01
+ * 2019-03-08 12:32:38.607 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 050202398
+ * 2019-03-08 12:32:38.608 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202398
+ * 2019-03-08 12:32:38.615 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2005
+ * 2019-03-08 12:32:38.615 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023982005
+ * 2019-03-08 12:32:38.694 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = f
+ * 2019-03-08 12:32:38.695 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023982005f
+ * 2019-03-08 12:32:38.695 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 0502023982005f  index0d = 14
+ * 2019-03-08 12:32:38.696 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=39 flrNo =2 hexFour=0039 strBinaryFour=00111001
+ * 2019-03-08 12:32:38.697 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Up study
+ * 2019-03-08 12:32:38.701 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:32
+ * 2019-03-08 12:32:38.701 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:32:38.701 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:32:39.343 12498-12498/com.radioknit.mmidec E/Tag_CarCallActivity: showUpDnCalls() : hexSwitchData = 01 binSwitchData=00000001 strChkFlr=32
+ * 2019-03-08 12:32:39.354 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0textViewStateAll 0
+ * 2019-03-08 12:32:39.354 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewUpAll 0
+ * 2019-03-08 12:32:39.354 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewDownAll 0
+ * 2019-03-08 12:32:39.356 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1textViewStateAll 0
+ * 2019-03-08 12:32:39.356 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewUpAll 0
+ * 2019-03-08 12:32:39.356 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewDownAll 0
+ * 2019-03-08 12:32:39.357 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2textViewStateAll 0
+ * 2019-03-08 12:32:39.357 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewUpAll 0
+ * 2019-03-08 12:32:39.357 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewDownAll 0
+ * 2019-03-08 12:32:39.359 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3textViewStateAll 0
+ * 2019-03-08 12:32:39.359 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewUpAll 0
+ * 2019-03-08 12:32:39.359 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewDownAll 0
+ * 2019-03-08 12:32:39.360 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4textViewStateAll 0
+ * 2019-03-08 12:32:39.360 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewUpAll 0
+ * 2019-03-08 12:32:39.360 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewDownAll 0
+ * 2019-03-08 12:32:39.361 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5textViewStateAll 0
+ * 2019-03-08 12:32:39.362 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewUpAll 0
+ * 2019-03-08 12:32:39.362 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewDownAll 0
+ * 2019-03-08 12:32:39.364 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10textViewStateAll 0
+ * 2019-03-08 12:32:39.364 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewUpAll 0
+ * 2019-03-08 12:32:39.364 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewDownAll 0
+ * 2019-03-08 12:32:39.368 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11textViewStateAll 0
+ * 2019-03-08 12:32:39.368 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewUpAll 0
+ * 2019-03-08 12:32:39.368 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewDownAll 0
+ * 2019-03-08 12:32:39.370 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12textViewStateAll 0
+ * 2019-03-08 12:32:39.370 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewUpAll 0
+ * 2019-03-08 12:32:39.370 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewDownAll 0
+ * 2019-03-08 12:32:39.372 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13textViewStateAll 0
+ * 2019-03-08 12:32:39.372 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewUpAll 0
+ * 2019-03-08 12:32:39.372 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewDownAll 0
+ * 2019-03-08 12:32:39.374 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14textViewStateAll 0
+ * 2019-03-08 12:32:39.374 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewUpAll 0
+ * 2019-03-08 12:32:39.374 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewDownAll 0
+ * 2019-03-08 12:32:39.375 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15textViewStateAll 0
+ * 2019-03-08 12:32:39.376 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewUpAll 0
+ * 2019-03-08 12:32:39.376 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewDownAll 0
+ * 2019-03-08 12:32:39.629 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:39.629 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:39.643 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020
+ * 2019-03-08 12:32:39.643 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:32:39.653 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2318
+ * 2019-03-08 12:32:39.653 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202318
+ * 2019-03-08 12:32:39.681 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2005
+ * 2019-03-08 12:32:39.681 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023182005
+ * 2019-03-08 12:32:39.731 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 7
+ * 2019-03-08 12:32:39.731 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020231820057
+ * 2019-03-08 12:32:39.731 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 05020231820057  index0d = 14
+ * 2019-03-08 12:32:39.732 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=31 flrNo =2 hexFour=0031 strBinaryFour=00110001
+ * 2019-03-08 12:32:39.736 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Up study
+ * 2019-03-08 12:32:39.741 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:32
+ * 2019-03-08 12:32:39.741 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:32:39.741 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:32:40.657 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:40.657 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:40.684 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 50202318
+ * 2019-03-08 12:32:40.684 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202318
+ * 2019-03-08 12:32:40.692 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2005
+ * 2019-03-08 12:32:40.693 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023182005
+ * 2019-03-08 12:32:40.702 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 7
+ * 2019-03-08 12:32:40.702 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020231820057
+ * 2019-03-08 12:32:40.702 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 05020231820057  index0d = 14
+ * 2019-03-08 12:32:40.703 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=31 flrNo =2 hexFour=0031 strBinaryFour=00110001
+ * 2019-03-08 12:32:40.704 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Up study
+ * 2019-03-08 12:32:40.708 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:32
+ * 2019-03-08 12:32:40.708 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:32:40.708 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:32:41.688 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:41.689 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:41.706 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020
+ * 2019-03-08 12:32:41.706 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:32:41.713 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2318
+ * 2019-03-08 12:32:41.714 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202318
+ * 2019-03-08 12:32:41.733 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2005
+ * 2019-03-08 12:32:41.733 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023182005
+ * 2019-03-08 12:32:41.784 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 7
+ * 2019-03-08 12:32:41.785 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020231820057
+ * 2019-03-08 12:32:41.785 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 05020231820057  index0d = 14
+ * 2019-03-08 12:32:41.786 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=31 flrNo =2 hexFour=0031 strBinaryFour=00110001
+ * 2019-03-08 12:32:41.788 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Up study
+ * 2019-03-08 12:32:41.793 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:32
+ * 2019-03-08 12:32:41.793 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:32:41.793 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:32:42.711 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:42.712 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:42.722 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020
+ * 2019-03-08 12:32:42.722 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:32:42.742 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2310
+ * 2019-03-08 12:32:42.742 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202310
+ * 2019-03-08 12:32:42.763 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2004
+ * 2019-03-08 12:32:42.763 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023102004
+ * 2019-03-08 12:32:42.771 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = f
+ * 2019-03-08 12:32:42.771 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023102004f
+ * 2019-03-08 12:32:42.771 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 0502023102004f  index0d = 14
+ * 2019-03-08 12:32:42.772 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=31 flrNo =2 hexFour=0031 strBinaryFour=00110001
+ * 2019-03-08 12:32:42.774 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Up study
+ * 2019-03-08 12:32:42.778 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:32
+ * 2019-03-08 12:32:42.778 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:32:42.778 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:32:42.832 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 7
+ * 2019-03-08 12:32:42.832 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 7
+ * 2019-03-08 12:32:42.838 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1b2f
+ * 2019-03-08 12:32:42.838 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f
+ * 2019-03-08 12:32:42.872 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 83ff
+ * 2019-03-08 12:32:42.872 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ff
+ * 2019-03-08 12:32:42.927 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = ffbc
+ * 2019-03-08 12:32:42.927 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ffffbc
+ * 2019-03-08 12:32:42.934 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 7
+ * 2019-03-08 12:32:42.935 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ffffbc7
+ * 2019-03-08 12:32:42.935 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 71b2f83ffffbc7  index0d = 14
+ * 2019-03-08 12:32:44.792 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:44.793 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:44.804 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020
+ * 2019-03-08 12:32:44.804 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:32:44.816 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2314
+ * 2019-03-08 12:32:44.816 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202314
+ * 2019-03-08 12:32:44.877 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 20053
+ * 2019-03-08 12:32:44.877 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020231420053
+ * 2019-03-08 12:32:44.877 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 05020231420053  index0d = 14
+ * 2019-03-08 12:32:44.879 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=31 flrNo =2 hexFour=0031 strBinaryFour=00110001
+ * 2019-03-08 12:32:44.880 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Up study
+ * 2019-03-08 12:32:44.883 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:32
+ * 2019-03-08 12:32:44.883 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:32:44.883 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:32:44.891 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 7
+ * 2019-03-08 12:32:44.892 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 7
+ * 2019-03-08 12:32:44.899 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1b2f
+ * 2019-03-08 12:32:44.899 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f
+ * 2019-03-08 12:32:44.959 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 83ff
+ * 2019-03-08 12:32:44.959 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ff
+ * 2019-03-08 12:32:44.965 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = ffac
+ * 2019-03-08 12:32:44.965 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ffffac
+ * 2019-03-08 12:32:44.971 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 6
+ * 2019-03-08 12:32:44.971 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ffffac6
+ * 2019-03-08 12:32:44.971 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 71b2f83ffffac6  index0d = 14
+ * 2019-03-08 12:32:45.854 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:45.854 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:45.865 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020231420053
+ * 2019-03-08 12:32:45.865 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020231420053
+ * 2019-03-08 12:32:45.865 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 05020231420053  index0d = 14
+ * 2019-03-08 12:32:45.867 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=31 flrNo =2 hexFour=0031 strBinaryFour=00110001
+ * 2019-03-08 12:32:45.869 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Up study
+ * 2019-03-08 12:32:45.877 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:32
+ * 2019-03-08 12:32:45.877 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:32:45.877 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:32:46.836 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:46.836 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:46.845 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020
+ * 2019-03-08 12:32:46.845 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:32:46.871 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2314
+ * 2019-03-08 12:32:46.871 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202314
+ * 2019-03-08 12:32:46.880 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2005
+ * 2019-03-08 12:32:46.880 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023142005
+ * 2019-03-08 12:32:46.889 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 3
+ * 2019-03-08 12:32:46.889 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020231420053
+ * 2019-03-08 12:32:46.889 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 05020231420053  index0d = 14
+ * 2019-03-08 12:32:46.890 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=31 flrNo =2 hexFour=0031 strBinaryFour=00110001
+ * 2019-03-08 12:32:46.891 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Up study
+ * 2019-03-08 12:32:46.895 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:32
+ * 2019-03-08 12:32:46.895 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:32:46.895 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:32:47.878 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:47.878 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:47.889 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020
+ * 2019-03-08 12:32:47.889 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:32:47.899 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2304
+ * 2019-03-08 12:32:47.900 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202304
+ * 2019-03-08 12:32:47.954 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 00050
+ * 2019-03-08 12:32:47.955 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020230400050
+ * 2019-03-08 12:32:47.955 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 05020230400050  index0d = 14
+ * 2019-03-08 12:32:47.956 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=30 flrNo =2 hexFour=0030 strBinaryFour=00110000
+ * 2019-03-08 12:32:47.961 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:32
+ * 2019-03-08 12:32:47.961 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:32:47.961 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:32:47.982 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:47.982 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:48.050 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 6000
+ * 2019-03-08 12:32:48.050 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 06000
+ * 2019-03-08 12:32:48.060 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2544
+ * 2019-03-08 12:32:48.061 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 060002544
+ * 2019-03-08 12:32:48.067 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 14a8b
+ * 2019-03-08 12:32:48.067 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 06000254414a8b
+ * 2019-03-08 12:32:48.067 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 06000254414a8b  index0d = 14
+ * 2019-03-08 12:32:48.904 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 05020
+ * 2019-03-08 12:32:48.904 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:32:48.915 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2304
+ * 2019-03-08 12:32:48.915 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202304
+ * 2019-03-08 12:32:48.939 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0005
+ * 2019-03-08 12:32:48.939 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023040005
+ * 2019-03-08 12:32:48.946 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:48.946 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020230400050
+ * 2019-03-08 12:32:48.946 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 05020230400050  index0d = 14
+ * 2019-03-08 12:32:48.947 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=30 flrNo =2 hexFour=0030 strBinaryFour=00110000
+ * 2019-03-08 12:32:48.950 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:32
+ * 2019-03-08 12:32:48.950 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:32:48.950 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:32:49.946 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:32:49.946 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:32:49.957 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020
+ * 2019-03-08 12:32:49.957 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:32:49.989 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 23000004
+ * 2019-03-08 12:32:49.990 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023000004
+ * 2019-03-08 12:32:50.008 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = c
+ * 2019-03-08 12:32:50.008 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023000004c
+ * 2019-03-08 12:32:50.008 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 0502023000004c  index0d = 14
+ * 2019-03-08 12:32:50.009 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=30 flrNo =2 hexFour=0030 strBinaryFour=00110000
+ * 2019-03-08 12:32:50.012 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:32
+ * 2019-03-08 12:32:50.013 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:32:50.013 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:32:50.044 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 7
+ * 2019-03-08 12:32:50.044 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 7
+ * 2019-03-08 12:32:50.051 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1b2f
+ * 2019-03-08 12:32:50.051 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f
+ * 2019-03-08 12:32:50.081 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 83ff
+ * 2019-03-08 12:32:50.081 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ff
+ * 2019-03-08 12:32:50.100 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = ffbc
+ * 2019-03-08 12:32:50.100 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ffffbc
+ * 2019-03-08 12:32:50.147 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 7
+ * 2019-03-08 12:32:50.148 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ffffbc7
+ * 2019-03-08 12:32:50.148 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 71b2f83ffffbc7  index0d = 14
+ * 2019-03-08 12:33:02.287 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: strcmd = 12410204434ca1=18   12 a2 = 65   41 a3= 2   02 a4= 4   04 a5 = 67   43 a6= 76   4c
+ * 2019-03-08 12:33:02.287 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 49
+ * 2019-03-08 12:33:02.288 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 99
+ * 2019-03-08 12:33:02.288 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 151
+ * 2019-03-08 12:33:02.288 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 200
+ * 2019-03-08 12:33:02.288 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 248
+ * 2019-03-08 12:33:02.288 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 298
+ * 2019-03-08 12:33:02.288 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 346
+ * 2019-03-08 12:33:02.288 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 398
+ * 2019-03-08 12:33:02.288 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 450
+ * 2019-03-08 12:33:02.288 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 501
+ * 2019-03-08 12:33:02.288 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 553
+ * 2019-03-08 12:33:02.288 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 652
+ * 2019-03-08 12:33:02.288 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: chksum = 652
+ * 2019-03-08 12:33:02.288 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: return = 28c
+ * 2019-03-08 12:33:02.818 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+ * 2019-03-08 12:33:02.818 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+ * 2019-03-08 12:33:02.863 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2410
+ * 2019-03-08 12:33:02.863 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 12410
+ * 2019-03-08 12:33:02.871 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2044
+ * 2019-03-08 12:33:02.871 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 124102044
+ * 2019-03-08 12:33:02.909 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 34c8
+ * 2019-03-08 12:33:02.909 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 12410204434c8
+ * 2019-03-08 12:33:02.939 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = c
+ * 2019-03-08 12:33:02.939 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 12410204434c8c
+ * 2019-03-08 12:33:02.939 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 12410204434c8c  index0d = 14
+ * 2019-03-08 12:33:02.947 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 3
+ * 2019-03-08 12:33:02.948 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 3
+ * 2019-03-08 12:33:02.985 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2114
+ * 2019-03-08 12:33:02.985 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114
+ * 2019-03-08 12:33:03.048 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = c500
+ * 2019-03-08 12:33:03.048 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c500
+ * 2019-03-08 12:33:03.054 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0818c
+ * 2019-03-08 12:33:03.054 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c5000818c
+ * 2019-03-08 12:33:03.054 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 32114c5000818c  index0d = 14
+ * 2019-03-08 12:33:03.055 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp114c50 : str11ChkFlr=32 str11HexSwitchData=81
+ * 2019-03-08 12:33:03.119 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:33:03.119 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:33:03.125 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020
+ * 2019-03-08 12:33:03.125 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:33:03.132 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 23a8
+ * 2019-03-08 12:33:03.132 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023a8
+ * 2019-03-08 12:33:03.139 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 4008
+ * 2019-03-08 12:33:03.139 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023a84008
+ * 2019-03-08 12:33:03.145 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9
+ * 2019-03-08 12:33:03.145 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023a840089
+ * 2019-03-08 12:33:03.145 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 0502023a840089  index0d = 14
+ * 2019-03-08 12:33:03.146 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=3a flrNo =2 hexFour=003a strBinaryFour=00111010
+ * 2019-03-08 12:33:03.148 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Down Study
+ * 2019-03-08 12:33:03.152 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:33
+ * 2019-03-08 12:33:03.152 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:33:03.152 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:33:03.198 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 06010
+ * 2019-03-08 12:33:03.198 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 06010
+ * 2019-03-08 12:33:03.203 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2544
+ * 2019-03-08 12:33:03.204 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 060102544
+ * 2019-03-08 12:33:03.237 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 14a8c
+ * 2019-03-08 12:33:03.237 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 06010254414a8c
+ * 2019-03-08 12:33:03.237 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 06010254414a8c  index0d = 14
+ * 2019-03-08 12:33:03.271 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 32114
+ * 2019-03-08 12:33:03.272 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114
+ * 2019-03-08 12:33:03.279 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = c500
+ * 2019-03-08 12:33:03.279 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c500
+ * 2019-03-08 12:33:03.286 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0018
+ * 2019-03-08 12:33:03.286 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c5000018
+ * 2019-03-08 12:33:03.297 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 4
+ * 2019-03-08 12:33:03.297 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 32114c50000184
+ * 2019-03-08 12:33:03.297 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 32114c50000184  index0d = 14
+ * 2019-03-08 12:33:03.297 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp114c50 : str11ChkFlr=32 str11HexSwitchData=01
+ * 2019-03-08 12:33:03.359 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:33:03.359 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:33:03.365 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020
+ * 2019-03-08 12:33:03.365 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:33:03.371 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 23a8
+ * 2019-03-08 12:33:03.371 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023a8
+ * 2019-03-08 12:33:03.377 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 4008
+ * 2019-03-08 12:33:03.377 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023a84008
+ * 2019-03-08 12:33:03.432 12498-12498/com.radioknit.mmidec E/Tag_CarCallActivity: showUpDnCalls() : hexSwitchData = 01 binSwitchData=00000001 strChkFlr=32
+ * 2019-03-08 12:33:03.454 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0textViewStateAll 0
+ * 2019-03-08 12:33:03.454 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewUpAll 0
+ * 2019-03-08 12:33:03.454 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 0imageViewDownAll 0
+ * 2019-03-08 12:33:03.455 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1textViewStateAll 0
+ * 2019-03-08 12:33:03.455 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewUpAll 0
+ * 2019-03-08 12:33:03.455 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 1imageViewDownAll 0
+ * 2019-03-08 12:33:03.456 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2textViewStateAll 0
+ * 2019-03-08 12:33:03.456 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewUpAll 0
+ * 2019-03-08 12:33:03.456 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 2imageViewDownAll 0
+ * 2019-03-08 12:33:03.457 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3textViewStateAll 0
+ * 2019-03-08 12:33:03.457 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewUpAll 0
+ * 2019-03-08 12:33:03.457 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 3imageViewDownAll 0
+ * 2019-03-08 12:33:03.458 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4textViewStateAll 0
+ * 2019-03-08 12:33:03.458 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewUpAll 0
+ * 2019-03-08 12:33:03.458 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 4imageViewDownAll 0
+ * 2019-03-08 12:33:03.459 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5textViewStateAll 0
+ * 2019-03-08 12:33:03.459 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewUpAll 0
+ * 2019-03-08 12:33:03.459 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 5imageViewDownAll 0
+ * 2019-03-08 12:33:03.460 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10textViewStateAll 0
+ * 2019-03-08 12:33:03.460 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewUpAll 0
+ * 2019-03-08 12:33:03.460 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 10imageViewDownAll 0
+ * 2019-03-08 12:33:03.467 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11textViewStateAll 0
+ * 2019-03-08 12:33:03.467 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewUpAll 0
+ * 2019-03-08 12:33:03.467 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 11imageViewDownAll 0
+ * 2019-03-08 12:33:03.469 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12textViewStateAll 0
+ * 2019-03-08 12:33:03.469 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewUpAll 0
+ * 2019-03-08 12:33:03.469 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 12imageViewDownAll 0
+ * 2019-03-08 12:33:03.470 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13textViewStateAll 0
+ * 2019-03-08 12:33:03.470 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewUpAll 0
+ * 2019-03-08 12:33:03.471 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 13imageViewDownAll 0
+ * 2019-03-08 12:33:03.472 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14textViewStateAll 0
+ * 2019-03-08 12:33:03.472 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewUpAll 0
+ * 2019-03-08 12:33:03.472 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 14imageViewDownAll 0
+ * 2019-03-08 12:33:03.473 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15textViewStateAll 0
+ * 2019-03-08 12:33:03.473 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewUpAll 0
+ * 2019-03-08 12:33:03.473 12498-12498/com.radioknit.mmidec D/Tag_CarCallAdapter: getView: position = 15imageViewDownAll 0
+ * 2019-03-08 12:33:03.479 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9
+ * 2019-03-08 12:33:03.479 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023a840089
+ * 2019-03-08 12:33:03.479 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 0502023a840089  index0d = 14
+ * 2019-03-08 12:33:03.481 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=3a flrNo =2 hexFour=003a strBinaryFour=00111010
+ * 2019-03-08 12:33:03.484 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Down Study
+ * 2019-03-08 12:33:03.487 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:33
+ * 2019-03-08 12:33:03.487 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:33:03.487 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:33:04.368 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:33:04.368 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:33:04.448 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 502023a8
+ * 2019-03-08 12:33:04.450 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023a8
+ * 2019-03-08 12:33:04.456 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 4008
+ * 2019-03-08 12:33:04.456 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023a84008
+ * 2019-03-08 12:33:04.464 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9
+ * 2019-03-08 12:33:04.464 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023a840089
+ * 2019-03-08 12:33:04.464 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 0502023a840089  index0d = 14
+ * 2019-03-08 12:33:04.466 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=3a flrNo =2 hexFour=003a strBinaryFour=00111010
+ * 2019-03-08 12:33:04.467 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Down Study
+ * 2019-03-08 12:33:04.470 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:33
+ * 2019-03-08 12:33:04.470 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:33:04.470 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:33:05.390 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:33:05.390 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:33:05.412 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020
+ * 2019-03-08 12:33:05.412 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:33:05.419 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2328
+ * 2019-03-08 12:33:05.419 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202328
+ * 2019-03-08 12:33:05.426 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 4005
+ * 2019-03-08 12:33:05.427 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023284005
+ * 2019-03-08 12:33:05.518 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = a
+ * 2019-03-08 12:33:05.518 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023284005a
+ * 2019-03-08 12:33:05.518 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 0502023284005a  index0d = 14
+ * 2019-03-08 12:33:05.519 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=32 flrNo =2 hexFour=0032 strBinaryFour=00110010
+ * 2019-03-08 12:33:05.520 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Down Study
+ * 2019-03-08 12:33:05.522 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:33
+ * 2019-03-08 12:33:05.522 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:33:05.522 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:33:06.450 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:33:06.450 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:33:06.461 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 502023284005
+ * 2019-03-08 12:33:06.462 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023284005
+ * 2019-03-08 12:33:06.471 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = a
+ * 2019-03-08 12:33:06.472 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023284005a
+ * 2019-03-08 12:33:06.472 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 0502023284005a  index0d = 14
+ * 2019-03-08 12:33:06.472 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=32 flrNo =2 hexFour=0032 strBinaryFour=00110010
+ * 2019-03-08 12:33:06.474 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Down Study
+ * 2019-03-08 12:33:06.477 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:33
+ * 2019-03-08 12:33:06.477 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:33:06.477 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:33:06.566 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+ * 2019-03-08 12:33:06.566 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+ * 2019-03-08 12:33:06.576 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f21
+ * 2019-03-08 12:33:06.576 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f21
+ * 2019-03-08 12:33:06.583 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2287
+ * 2019-03-08 12:33:06.584 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f212287
+ * 2019-03-08 12:33:06.664 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 44dca
+ * 2019-03-08 12:33:06.665 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f21228744dca
+ * 2019-03-08 12:33:06.665 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f21228744dca  index0d = 14
+ * 2019-03-08 12:33:07.459 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 05020
+ * 2019-03-08 12:33:07.459 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:33:07.490 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2320
+ * 2019-03-08 12:33:07.491 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202320
+ * 2019-03-08 12:33:07.502 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 4005
+ * 2019-03-08 12:33:07.503 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023204005
+ * 2019-03-08 12:33:07.512 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2
+ * 2019-03-08 12:33:07.512 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020232040052
+ * 2019-03-08 12:33:07.512 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 05020232040052  index0d = 14
+ * 2019-03-08 12:33:07.514 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=32 flrNo =2 hexFour=0032 strBinaryFour=00110010
+ * 2019-03-08 12:33:07.516 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Down Study
+ * 2019-03-08 12:33:07.522 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:33
+ * 2019-03-08 12:33:07.522 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:33:07.522 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:33:07.570 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 7
+ * 2019-03-08 12:33:07.570 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 7
+ * 2019-03-08 12:33:07.602 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1b2f
+ * 2019-03-08 12:33:07.602 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f
+ * 2019-03-08 12:33:07.608 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 83ff
+ * 2019-03-08 12:33:07.609 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ff
+ * 2019-03-08 12:33:07.627 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = ffbc
+ * 2019-03-08 12:33:07.627 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ffffbc
+ * 2019-03-08 12:33:07.637 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 7
+ * 2019-03-08 12:33:07.637 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ffffbc7
+ * 2019-03-08 12:33:07.637 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 71b2f83ffffbc7  index0d = 14
+ * 2019-03-08 12:33:09.528 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:33:09.528 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:33:09.538 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020
+ * 2019-03-08 12:33:09.538 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:33:09.547 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2324
+ * 2019-03-08 12:33:09.547 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202324
+ * 2019-03-08 12:33:09.555 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 4005
+ * 2019-03-08 12:33:09.555 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023244005
+ * 2019-03-08 12:33:09.576 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 6
+ * 2019-03-08 12:33:09.577 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020232440056
+ * 2019-03-08 12:33:09.577 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 05020232440056  index0d = 14
+ * 2019-03-08 12:33:09.577 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=32 flrNo =2 hexFour=0032 strBinaryFour=00110010
+ * 2019-03-08 12:33:09.579 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Down Study
+ * 2019-03-08 12:33:09.582 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:33
+ * 2019-03-08 12:33:09.582 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:33:09.582 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:33:09.640 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 7
+ * 2019-03-08 12:33:09.640 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 7
+ * 2019-03-08 12:33:09.646 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1b2f83ff
+ * 2019-03-08 12:33:09.646 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ff
+ * 2019-03-08 12:33:09.658 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = ffac
+ * 2019-03-08 12:33:09.658 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ffffac
+ * 2019-03-08 12:33:09.675 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 6
+ * 2019-03-08 12:33:09.675 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ffffac6
+ * 2019-03-08 12:33:09.675 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 71b2f83ffffac6  index0d = 14
+ * 2019-03-08 12:33:10.552 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:33:10.553 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:33:10.567 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020
+ * 2019-03-08 12:33:10.568 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:33:10.578 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2324
+ * 2019-03-08 12:33:10.578 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202324
+ * 2019-03-08 12:33:10.608 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 4005
+ * 2019-03-08 12:33:10.608 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023244005
+ * 2019-03-08 12:33:10.616 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 6
+ * 2019-03-08 12:33:10.616 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020232440056
+ * 2019-03-08 12:33:10.616 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 05020232440056  index0d = 14
+ * 2019-03-08 12:33:10.617 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=32 flrNo =2 hexFour=0032 strBinaryFour=00110010
+ * 2019-03-08 12:33:10.620 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Down Study
+ * 2019-03-08 12:33:10.623 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:33
+ * 2019-03-08 12:33:10.624 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:33:10.624 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:33:11.586 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:33:11.586 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:33:11.596 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020
+ * 2019-03-08 12:33:11.596 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:33:11.612 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2324
+ * 2019-03-08 12:33:11.612 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202324
+ * 2019-03-08 12:33:11.630 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 4005
+ * 2019-03-08 12:33:11.630 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023244005
+ * 2019-03-08 12:33:11.686 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 6
+ * 2019-03-08 12:33:11.686 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020232440056
+ * 2019-03-08 12:33:11.686 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 05020232440056  index0d = 14
+ * 2019-03-08 12:33:11.687 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=32 flrNo =2 hexFour=0032 strBinaryFour=00110010
+ * 2019-03-08 12:33:11.688 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: Down Study
+ * 2019-03-08 12:33:11.691 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:33
+ * 2019-03-08 12:33:11.691 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:33:11.691 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:33:12.621 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:33:12.621 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:33:12.631 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020
+ * 2019-03-08 12:33:12.631 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:33:12.661 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2304
+ * 2019-03-08 12:33:12.661 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202304
+ * 2019-03-08 12:33:12.669 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0005
+ * 2019-03-08 12:33:12.669 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023040005
+ * 2019-03-08 12:33:12.677 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:33:12.677 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020230400050
+ * 2019-03-08 12:33:12.677 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 05020230400050  index0d = 14
+ * 2019-03-08 12:33:12.678 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=30 flrNo =2 hexFour=0030 strBinaryFour=00110000
+ * 2019-03-08 12:33:12.684 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:33
+ * 2019-03-08 12:33:12.684 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:33:12.684 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:33:12.746 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:33:12.746 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:33:12.754 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 6000
+ * 2019-03-08 12:33:12.754 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 06000
+ * 2019-03-08 12:33:12.760 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2544
+ * 2019-03-08 12:33:12.761 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 060002544
+ * 2019-03-08 12:33:12.841 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 14a8
+ * 2019-03-08 12:33:12.842 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 06000254414a8
+ * 2019-03-08 12:33:12.848 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = b
+ * 2019-03-08 12:33:12.848 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 06000254414a8b
+ * 2019-03-08 12:33:12.848 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 06000254414a8b  index0d = 14
+ * 2019-03-08 12:33:13.647 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:33:13.647 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:33:13.671 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5020
+ * 2019-03-08 12:33:13.671 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020
+ * 2019-03-08 12:33:13.679 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2304
+ * 2019-03-08 12:33:13.679 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202304
+ * 2019-03-08 12:33:13.686 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0005
+ * 2019-03-08 12:33:13.686 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023040005
+ * 2019-03-08 12:33:13.692 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:33:13.693 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 05020230400050
+ * 2019-03-08 12:33:13.693 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 05020230400050  index0d = 14
+ * 2019-03-08 12:33:13.693 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=30 flrNo =2 hexFour=0030 strBinaryFour=00110000
+ * 2019-03-08 12:33:13.697 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:33
+ * 2019-03-08 12:33:13.697 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:33:13.697 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:33:14.722 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+ * 2019-03-08 12:33:14.723 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0
+ * 2019-03-08 12:33:14.731 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 50202300
+ * 2019-03-08 12:33:14.732 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 050202300
+ * 2019-03-08 12:33:14.742 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0004
+ * 2019-03-08 12:33:14.742 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023000004
+ * 2019-03-08 12:33:14.752 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = c
+ * 2019-03-08 12:33:14.752 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 0502023000004c
+ * 2019-03-08 12:33:14.752 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 0502023000004c  index0d = 14
+ * 2019-03-08 12:33:14.753 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData(if 05) =flr 02 str05Stat0=30 flrNo =2 hexFour=0030 strBinaryFour=00110000
+ * 2019-03-08 12:33:14.758 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: processReceivedData :currentDateandTime = 08-03-2019 | 12:33
+ * 2019-03-08 12:33:14.758 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck : 02 parsed=2
+ * 2019-03-08 12:33:14.758 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: errorCheck2 : 00 parsed=0
+ * 2019-03-08 12:33:14.816 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 71b2f
+ * 2019-03-08 12:33:14.816 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f
+ * 2019-03-08 12:33:14.822 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 83ff
+ * 2019-03-08 12:33:14.823 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ff
+ * 2019-03-08 12:33:14.830 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = ffbc
+ * 2019-03-08 12:33:14.830 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ffffbc
+ * 2019-03-08 12:33:14.839 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 7
+ * 2019-03-08 12:33:14.839 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 71b2f83ffffbc7
+ * 2019-03-08 12:33:14.839 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 71b2f83ffffbc7  index0d = 14
+ * 2019-03-08 12:33:37.457 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+ * 2019-03-08 12:33:37.457 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+ * 2019-03-08 12:33:37.473 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f30903190495
+ * 2019-03-08 12:33:37.474 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f30903190495
+ * 2019-03-08 12:33:37.474 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f30903190495  index0d = 14
+ * 2019-03-08 12:34:07.332 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+ * 2019-03-08 12:34:07.332 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+ * 2019-03-08 12:34:07.345 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f21
+ * 2019-03-08 12:34:07.345 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f21
+ * 2019-03-08 12:34:07.356 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2287
+ * 2019-03-08 12:34:07.356 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f212287
+ * 2019-03-08 12:34:07.366 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 44dca
+ * 2019-03-08 12:34:07.367 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f21228744dca
+ * 2019-03-08 12:34:07.367 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f21228744dca  index0d = 14
+ * 2019-03-08 12:34:20.989 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: strcmd = 12410101434ca1=18   12 a2 = 65   41 a3= 1   01 a4= 1   01 a5 = 67   43 a6= 76   4c
+ * 2019-03-08 12:34:20.989 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 49
+ * 2019-03-08 12:34:20.989 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 99
+ * 2019-03-08 12:34:20.989 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 151
+ * 2019-03-08 12:34:20.989 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 200
+ * 2019-03-08 12:34:20.989 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 248
+ * 2019-03-08 12:34:20.989 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 297
+ * 2019-03-08 12:34:20.989 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 345
+ * 2019-03-08 12:34:20.989 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 394
+ * 2019-03-08 12:34:20.989 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 446
+ * 2019-03-08 12:34:20.989 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 497
+ * 2019-03-08 12:34:20.989 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 549
+ * 2019-03-08 12:34:20.989 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 648
+ * 2019-03-08 12:34:20.989 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: chksum = 648
+ * 2019-03-08 12:34:20.989 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: return = 288
+ * 2019-03-08 12:34:21.558 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+ * 2019-03-08 12:34:21.558 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+ * 2019-03-08 12:34:21.586 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2410
+ * 2019-03-08 12:34:21.586 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 12410
+ * 2019-03-08 12:34:21.594 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1014
+ * 2019-03-08 12:34:21.594 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 124101014
+ * 2019-03-08 12:34:21.654 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 34c8
+ * 2019-03-08 12:34:21.654 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 12410101434c8
+ * 2019-03-08 12:34:21.742 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+ * 2019-03-08 12:34:21.742 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 12410101434c88
+ * 2019-03-08 12:34:21.742 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 12410101434c88  index0d = 14
+ * 2019-03-08 12:34:38.211 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+ * 2019-03-08 12:34:38.211 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+ * 2019-03-08 12:34:38.222 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f30
+ * 2019-03-08 12:34:38.222 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f30
+ * 2019-03-08 12:34:38.231 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9031
+ * 2019-03-08 12:34:38.232 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f309031
+ * 2019-03-08 12:34:38.241 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9049
+ * 2019-03-08 12:34:38.242 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3090319049
+ * 2019-03-08 12:34:38.253 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5
+ * 2019-03-08 12:34:38.253 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f30903190495
+ * 2019-03-08 12:34:38.254 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f30903190495  index0d = 14
+ * 2019-03-08 12:34:39.075 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: strcmd = 12410301434ca1=18   12 a2 = 65   41 a3= 3   03 a4= 1   01 a5 = 67   43 a6= 76   4c
+ * 2019-03-08 12:34:39.076 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 49
+ * 2019-03-08 12:34:39.076 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 99
+ * 2019-03-08 12:34:39.076 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 151
+ * 2019-03-08 12:34:39.076 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 200
+ * 2019-03-08 12:34:39.076 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 248
+ * 2019-03-08 12:34:39.076 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 299
+ * 2019-03-08 12:34:39.076 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 347
+ * 2019-03-08 12:34:39.076 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 396
+ * 2019-03-08 12:34:39.076 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 448
+ * 2019-03-08 12:34:39.076 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 499
+ * 2019-03-08 12:34:39.076 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 551
+ * 2019-03-08 12:34:39.076 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: checksumloop = 650
+ * 2019-03-08 12:34:39.076 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: chksum = 650
+ * 2019-03-08 12:34:39.076 12498-12498/com.radioknit.mmidec D/Tag_checksum: calculateChkSum: return = 28a
+ * 2019-03-08 12:34:39.210 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+ * 2019-03-08 12:34:39.210 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+ * 2019-03-08 12:34:39.216 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2410
+ * 2019-03-08 12:34:39.216 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 12410
+ * 2019-03-08 12:34:39.283 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 3014
+ * 2019-03-08 12:34:39.284 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 124103014
+ * 2019-03-08 12:34:39.290 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 34c8a
+ * 2019-03-08 12:34:39.290 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 12410301434c8a
+ * 2019-03-08 12:34:39.290 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 12410301434c8a  index0d = 14
+ * 2019-03-08 12:35:08.203 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+ * 2019-03-08 12:35:08.204 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+ * 2019-03-08 12:35:08.211 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f21228744dca
+ * 2019-03-08 12:35:08.211 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f21228744dca
+ * 2019-03-08 12:35:08.212 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f21228744dca  index0d = 14
+ * 2019-03-08 12:35:42.577 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+ * 2019-03-08 12:35:42.577 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+ * 2019-03-08 12:35:42.596 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f30
+ * 2019-03-08 12:35:42.596 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f30
+ * 2019-03-08 12:35:42.605 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9031
+ * 2019-03-08 12:35:42.605 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f309031
+ * 2019-03-08 12:35:42.614 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9049
+ * 2019-03-08 12:35:42.614 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3090319049
+ * 2019-03-08 12:35:42.867 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5
+ * 2019-03-08 12:35:42.867 12498-12498/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f30903190495
+ * 2019-03-08 12:35:42.867 12498-12498/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f30903190495  index0d = 14
+ * */
+
+
+
+
+
+
 }

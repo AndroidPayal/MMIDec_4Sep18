@@ -244,7 +244,7 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
             String  strCallCopCombine = strcallCop2 + strcallCop1;
             Log.d(TAG, "showCarCalls: strCallCopCombine="+strCallCopCombine);
 
-            for(int indexCop=0; indexCop <=15; indexCop++) {
+            for(int indexCop=0; indexCop <=15; indexCop++) {//showState[indexCop =0]  then florPos=15
                 if (strCallCopCombine.charAt(indexCop) == '0') {
                     showState[indexCop] = 0;
                 } else if(strCallCopCombine.charAt(indexCop) == '1') {
@@ -252,6 +252,7 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
                 }
             }
             adapter.notifyDataSetChanged();
+
             /* CarCallAdapter adapter = new CarCallAdapter(mContext, strcallCop1, strcallCop2, (CarCallAdapter.CarCallIndicatorSignalListner) this);
             listFloorsIndicator.setAdapter(adapter); */
         }catch (Exception e){
@@ -264,6 +265,14 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
        /* CarCallAdapter adapter1 = new CarCallAdapter(mContext, "00000000","00000000", (CarCallAdapter.CarCallIndicatorSignalListner)this);
         listFloorsIndicator.setAdapter(adapter1);
 */
+       /*
+        * 03-07 10:35:12.227 /Tag_MainActivity: appendlog1() msgAppend = 3
+        * 2019-03-07 10:35:12.231 /Tag_MainActivity: appendlog1() msgAppend = 32114c500
+        * 2019-03-07 10:35:12.245 /Tag_MainActivity: appendlog1() msgAppend = 32114c50000184
+        * 2019-03-07 10:35:12.245 /Tag_MainActivity: processReceivedData: temp = 32114c50000184  index0d = 14
+        * 2019-03-07 10:35:12.245 /Tag_MainActivity: processReceivedData: temp114c50 : str11ChkFlr=32 str11HexSwitchData=01
+        * 2019-03-07 10:35:12.566 /Tag_CarCallActivity: showUpDnCalls() : hexSwitchData = 01 binSwitchData=00000001 strChkFlr=32
+       */
         try {
             //int index = strUpDn.lastIndexOf("114c");
             //String strChkFlr=strUpDn.substring(index-2,index);
@@ -272,6 +281,9 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
             String binSwitchData = Utils.hexToBin(hexSwitchData);
             Log.e(TAG, "showUpDnCalls() : hexSwitchData = "+ hexSwitchData +" binSwitchData="+binSwitchData + " strChkFlr="+strChkFlr);
 
+            //TODO :payal change 
+            // /*replaced :charAt(0) with charAt(7)
+            // and charAt(1) with charAt(6)*/
             if(strChkFlr.equals("30")){
                 if(binSwitchData.charAt(0)=='0'){
                     showStateDown[15]=0;//position = 15 for bottom most item = first floor
