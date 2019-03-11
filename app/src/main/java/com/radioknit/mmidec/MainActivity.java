@@ -134,6 +134,8 @@ public class MainActivity extends AppCompatActivity {
     private Menu menu;
     final Handler myHandlerChk = new Handler();
 
+    ImageView imgDummy1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -290,6 +292,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i1);
             }
         });
+
+        imgDummy1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i1 = new Intent(MainActivity.this, CarCallActivity31.class);
+                i1.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(i1);
+            }
+        });
     }
 
     private void createObj() {
@@ -322,6 +333,9 @@ public class MainActivity extends AppCompatActivity {
         imgAutoLevel = (ImageView)findViewById(R.id.imgAutoLevel);
         mTxtEror = (TextView)findViewById(R.id.tvError);
         llError = (LinearLayout)findViewById(R.id.llError);
+
+        imgDummy1 = findViewById(R.id.imgDummy1);
+
         Animation startAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blinking_animation);
         mTxtEror.startAnimation(startAnimation);
 
@@ -620,7 +634,7 @@ public class MainActivity extends AppCompatActivity {
             str13MainCarCall = temp;
         }
 
-        //TODo : Protocol for COP2
+        //TODo : Protocol for COP2 //update payal
         if(temp.startsWith("2311")) {
             Log.d(TAG, "processReceivedData: temp2311 : " + temp);
             int index = temp.indexOf("2311");

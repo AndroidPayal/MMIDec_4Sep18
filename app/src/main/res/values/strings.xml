@@ -24,7 +24,8 @@
     <string name="logout">Logout</string>
     <string name="bt_status">BT Status</string>
 
-    <string name="signup">Sign Up</string><string name="signup_data">For Registration visit on www.theliftiot.net or log on to www.radioknit.com or contact on contact@radioknit.com</string>
+    <string name="signup">Sign Up</string>
+    <string name="signup_data">For Registration visit on www.theliftiot.net or log on to www.radioknit.com or contact on contact@radioknit.com</string>
 
     <string-array name="arr_display_pattern">
         <item>No Change</item>
@@ -128,21 +129,21 @@
     </string-array>
 
     <string-array name="arr_deviceid_programable_parameter">
-    <item>Encoder PPR</item>
-    <item>Travel length 1</item>
-    <item>Travel length 2</item>
-    <item>Travel length 3</item>
-    <item>Slow speed distance 1</item>
-    <item>Slow speed distance 2</item>
-    <item>Slow speed distance 3</item>
-    <item>Slow speed distance 4</item>
-    <item>Diameter of main pulley</item>
-    <item>Gear box ratio</item>
-    <item>Common UP Slip</item>
-    <item>Common DN Slip</item>
-    <item>R.P.M. Setting 1</item>
-    <item>R.P.M. Setting 2</item>
-    <item>R.P.M. Setting 3</item>
+        <item>Encoder PPR</item>
+        <item>Travel length 1</item>
+        <item>Travel length 2</item>
+        <item>Travel length 3</item>
+        <item>Slow speed distance 1</item>
+        <item>Slow speed distance 2</item>
+        <item>Slow speed distance 3</item>
+        <item>Slow speed distance 4</item>
+        <item>Diameter of main pulley</item>
+        <item>Gear box ratio</item>
+        <item>Common UP Slip</item>
+        <item>Common DN Slip</item>
+        <item>R.P.M. Setting 1</item>
+        <item>R.P.M. Setting 2</item>
+        <item>R.P.M. Setting 3</item>
     </string-array>
 
 
@@ -156,9 +157,8 @@
         <item>Car + Hall Up + Hall Down Calls Block</item>
         <item>Hall Up + Down Calls Block</item>
     </string-array>
-    
-    
-    
+
+
     <string-array name="arr_program_code">
         <item>Stop Delay</item>
         <item>Transit Delay</item>
@@ -175,7 +175,7 @@
         <item>Parking Floor</item>
     </string-array>
 
-   <!-- <string-array name="arr_speed_selection">
+    <!-- <string-array name="arr_speed_selection">
         <item>Speed Command when lift is stopped</item>
         <item>Speed Command in power up mode on hit of slow dn SW</item>
         <item>Speed Command in power up mode with closed slow dn SW</item>
