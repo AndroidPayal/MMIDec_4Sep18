@@ -178,7 +178,7 @@ public class WriteModeEnableActivity extends AppCompatActivity {
 
     }
 
-
+//TODO : protocol for parameters
     private void cmdWriteMode(){
 
         String str1 = Integer.toHexString(18);
@@ -198,6 +198,8 @@ public class WriteModeEnableActivity extends AppCompatActivity {
         int a6 = Integer.parseInt(str6,16);
         int a7 = Integer.parseInt(str7,16);
         int a8 = Integer.parseInt(str8,16);
+
+        Log.d(TAG, "cmdWriteMode: a1="+a1 + " a2="+a2 + " a3="+a3+" a4="+a4 + " a5="+a5+" a6="+a6);
 
         int[] sendValChkSum={a1, a2, a3, a4, a5, a6};
 

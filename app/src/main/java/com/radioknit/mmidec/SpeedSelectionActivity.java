@@ -366,6 +366,7 @@ public class SpeedSelectionActivity extends AppCompatActivity {
         });
     }
 
+    //TODO : protocol for parameter
     public void callSetCmd(){
         if(spinCmdValue.getSelectedItem().toString().equals("Select Value")){
             Toast.makeText(getApplicationContext(),"Please select value",Toast.LENGTH_SHORT).show();

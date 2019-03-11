@@ -42,7 +42,7 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
     final Handler myHandlerChk = new Handler();
     CarCallAdapter adapter;
     private Menu menu;
-    String str13HexCarCallsCop1N = "", str13HexCarCallsCop2N = "", str11ChkFlrN = "", str11HexSwitchDataN = "";
+    String str13HexCarCallsCop1N = "", str13HexCarCallsCop2N = "", str11ChkFlrN = "", str11HexSwitchDataN = "" ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -123,11 +123,6 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
 
         public void run() {
 
-/*
-*  ============run: CHECKING DATA CONTINEOUSLY=============
-2019-02-22 16:32:56.413 11797-11797/com.radioknit.mmidec D/Tag_CarCallActivity: str13HexCarCallsCop1 = str13HexCarCallsCop2 = str13HexCarCallsCop1N = str13HexCarCallsCop2N = str11ChkFlr = str11ChkFlrN = str11HexSwitchData=str11HexSwitchDataN =
-2019-02-22 16:32:56.515 11797-11797/com.radioknit.mmidec D/Tag_CarCallActivity: ============run: CHECKING DATA CONTINEOUSLY=============
-*/
             if(!str13HexCarCallsCop1.equals("") && !str13HexCarCallsCop2.equals("")){
                 if(SHOW_TAG)Log.d(TAG, "============run: CHECKING DATA CONTINEOUSLY=============");
                 if(SHOW_TAG)

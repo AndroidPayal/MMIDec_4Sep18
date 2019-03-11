@@ -200,7 +200,7 @@ public class ViewErrorLogActivity extends BaseActivity {
     int a4 = 82;
     int a5 = 97;
     int a6 = 109;
-
+//TODO : protocol sending request to view error stack
     public void callError(int errorNo) {
 
         a3 = errorNo;

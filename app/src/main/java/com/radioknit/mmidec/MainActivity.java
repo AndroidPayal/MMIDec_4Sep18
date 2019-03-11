@@ -110,7 +110,12 @@ public class MainActivity extends AppCompatActivity {
      str11ChkFlr = "", str11HexSwitchData = "", str71IOValues1 = "", str77IOValues2 = "", str11StopDelay = "", str11TransitDelay = "",
      str11BreakHiPulse = "", str11NoOfFloors = "", str11DoorOpenTime = "", str11DoorCloseTime = "", str11DoorKeepOpenTime = "",
      str11ClockDivide = "", str11ControlBit = "", str11FireFloor = "", str11HomeFloor = "", str11CompulsoryStop = "", str11ParkingFloor = "",
-     str13MainCarCall = "", str05MainFloor = "", str06MainPre = "", str71MainSafety = "";
+     str13MainCarCall = "", str05MainFloor = "", str06MainPre = "", str71MainSafety = "",
+
+        //TODO payal
+        str23HexCarCop2CallByte1 = "", str23HexCarCop2CallByte2="";
+
+
 /*     str11DisFlr0 = "", str11DisFlr1 = "", str11DisFlr2 = "", str11DisFlr3 = "", str11DisFlr4 = "", str11DisFlr5 = "", str11DisFlr6 = "",
      str11DisFlr7 = "", str11DisFlr8 = "", str11DisFlr9 = "", str11DisFlr10 = "", str11DisFlr11 = "", str11DisFlr12 = "", str11DisFlr13 = "",
      str11DisFlr14 = "", str11DisFlr15 = "", str11DisFlr16 = "", str11DisFlr17 = "", str11DisFlr18 = "", str11DisFlr19 = "", str11DisFlr20 = "",
@@ -343,9 +348,9 @@ public class MainActivity extends AppCompatActivity {
             Log.e(TAG, "appendlog1() msgOld = "+ msg);
 
             msgAppend.append(msg);
-            //msgAppendChk.append(msg);
+
             Log.e(TAG, "appendlog1() msgAppend = "+ msgAppend.toString());
-            //Log.e(TAG, "msgAppendChk = "+ msgAppendChk.toString());
+
             String strReceived = msgAppend.toString();
             processReceivedData(strReceived);
             msgAppend.setLength(0);
@@ -618,6 +623,11 @@ public class MainActivity extends AppCompatActivity {
         //TODo : Protocol for COP2
         if(temp.startsWith("2311")) {
             Log.d(TAG, "processReceivedData: temp2311 : " + temp);
+            int index = temp.indexOf("2311");
+            str23HexCarCop2CallByte1 = temp.substring(index+6,index+8);
+            str23HexCarCop2CallByte2 = temp.substring(index+8,index+10);
+
+            //add this too here str13MainCarCall = temp;
         }
 
         //TODO:Protocol for LOP
