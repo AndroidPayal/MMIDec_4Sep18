@@ -543,7 +543,12 @@ public class FloorCallBlockingActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-
+            case R.id.menu_search:
+                final int REQUEST_CONNECT_DEVICE = 2;
+                Intent serverIntent = null;
+                serverIntent = new Intent(FloorCallBlockingActivity.this, DeviceListActivity.class);
+                startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE);
+                return true;
             case R.id.wroteModeEnable:
                 Intent intent = new Intent(mContext, WriteModeEnableActivity.class);
                 startActivity(intent);
@@ -570,7 +575,7 @@ public class FloorCallBlockingActivity extends AppCompatActivity {
 
             if (isConnected()) {
                 try{
-                    menu.getItem(0).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));
+                    menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));
                 }
                 catch (Exception e){
                     //Catch
@@ -578,7 +583,7 @@ public class FloorCallBlockingActivity extends AppCompatActivity {
             }
             else {
                 try{
-                    menu.getItem(0).setIcon(ContextCompat.getDrawable(mContext, R.drawable.red_bt));
+                    menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.red_bt));
                 }
                 catch (Exception e){
                     //Catch

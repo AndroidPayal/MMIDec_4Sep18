@@ -31,6 +31,7 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
     //debugging
     private static final String TAG = "Tag_CarCallActivity";
     private static boolean  SHOW_TAG =false;
+    private static final int REQUEST_CONNECT_DEVICE = 2;
 
     private static Context mContext;
     private static ListView listFloorsIndicator;
@@ -173,7 +174,7 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
             }
             if (isConnected()) {
                 try{
-                    menu.getItem(0).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));
+                    menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));
                 }
                 catch (Exception e){
                     //Catch
@@ -181,7 +182,7 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
             }
             else {
                 try{
-                    menu.getItem(0).setIcon(ContextCompat.getDrawable(mContext, R.drawable.red_bt));
+                    menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.red_bt));
                 }
                 catch (Exception e){
                     //Catch
@@ -207,7 +208,9 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
         switch (item.getItemId()) {
 
             case R.id.menu_search:
-
+                Intent serverIntent = null;
+                serverIntent = new Intent(CarCallActivity.this, DeviceListActivity.class);
+                startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE);
                 return true;
 
             default:

@@ -37,6 +37,8 @@ public class AutoLevelActivity extends AppCompatActivity {
     private static GifImageView imgUp;
     private TextView txtFloorNumber;
     String strReceivedDataNew = "";
+    private static final int REQUEST_CONNECT_DEVICE = 2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -128,7 +130,7 @@ public class AutoLevelActivity extends AppCompatActivity {
             showReceivedData();
             if (isConnected()) {
                 try{
-                    menu.getItem(0).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));
+                    menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));
                 }
                 catch (Exception e){
                     //Catch
@@ -214,6 +216,13 @@ public class AutoLevelActivity extends AppCompatActivity {
             case R.id.wroteModeEnable:
                 Intent intent = new Intent(mContext, WriteModeEnableActivity.class);
                 startActivity(intent);
+                return true;
+
+            case R.id.menu_search:
+             //   mChatService.stop();
+                Intent serverIntent = null;
+                serverIntent = new Intent(AutoLevelActivity.this, DeviceListActivity.class);
+                startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE);
                 return true;
 
             default:

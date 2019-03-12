@@ -1,6 +1,7 @@
 package com.radioknit.mmidec;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
@@ -24,6 +25,7 @@ public class CarCallActivity31 extends AppCompatActivity implements CarCallAdapt
     //debugging
     private static final String TAG = "Tag_CarCallActivity31";
     private static boolean  SHOW_TAG =false;
+    private static final int REQUEST_CONNECT_DEVICE = 2;
 
     private static Context mContext;
     private static ListView listFloorsIndicator;
@@ -184,7 +186,7 @@ public class CarCallActivity31 extends AppCompatActivity implements CarCallAdapt
             }
             if (isConnected()) {
                 try{
-                    menu.getItem(0).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));
+                    menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));
                 }
                 catch (Exception e){
                     //Catch
@@ -192,7 +194,7 @@ public class CarCallActivity31 extends AppCompatActivity implements CarCallAdapt
             }
             else {
                 try{
-                    menu.getItem(0).setIcon(ContextCompat.getDrawable(mContext, R.drawable.red_bt));
+                    menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.red_bt));
                 }
                 catch (Exception e){
                     //Catch
@@ -215,10 +217,13 @@ public class CarCallActivity31 extends AppCompatActivity implements CarCallAdapt
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         switch (item.getItemId()) {
 
             case R.id.menu_search:
-
+                Intent serverIntent = null;
+                serverIntent = new Intent(CarCallActivity31.this, DeviceListActivity.class);
+                startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE);
                 return true;
 
             default:

@@ -1355,7 +1355,12 @@ public class LevelFunctionActivity extends AppCompatActivity {
                 Intent intent = new Intent(mContext, WriteModeEnableActivity.class);
                 startActivity(intent);
                 return true;
-
+            case R.id.menu_search:
+                final int REQUEST_CONNECT_DEVICE = 2;
+                Intent serverIntent = null;
+                serverIntent = new Intent(LevelFunctionActivity.this, DeviceListActivity.class);
+                startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -1376,7 +1381,7 @@ public class LevelFunctionActivity extends AppCompatActivity {
             showReceivedDataNew();
             if (isConnected()) {
                 try{
-                    menu.getItem(0).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));
+                    menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));
                 }
                 catch (Exception e){
                     //Catch
@@ -1384,7 +1389,7 @@ public class LevelFunctionActivity extends AppCompatActivity {
             }
             else {
                 try{
-                    menu.getItem(0).setIcon(ContextCompat.getDrawable(mContext, R.drawable.red_bt));
+                    menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.red_bt));
                 }
                 catch (Exception e){
                     //Catch

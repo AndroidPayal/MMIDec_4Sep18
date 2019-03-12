@@ -199,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
         imgCarCall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i1 = new Intent(MainActivity.this, CarCallActivity.class);
+                Intent i1 = new Intent(MainActivity.this, CarCallActivity31.class);
                 i1.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(i1);
             }
@@ -293,6 +293,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        imgDummy1.setVisibility(View.INVISIBLE);
         imgDummy1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -1538,7 +1539,7 @@ public class MainActivity extends AppCompatActivity {
                         setStatus("Connected to "+ mConnectedDeviceName);
                     }*/
 
-                        menu.getItem(0).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));
+                        menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));
                     }
                     catch (Exception e){
                         //Catch
@@ -1547,7 +1548,7 @@ public class MainActivity extends AppCompatActivity {
                 else {
                     try{
                         // setStatus(R.string.title_not_connected);
-                        menu.getItem(0).setIcon(ContextCompat.getDrawable(mContext, R.drawable.red_bt));
+                        menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.red_bt));
                     }
                     catch (Exception e){
                         //Catch
