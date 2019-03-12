@@ -1668,7 +1668,8 @@ public class MainActivity extends AppCompatActivity {
                     // construct a string from the buffer
                     String writeMessage = new String(writeBuf);
 
-                    Toast.makeText(mContext, "sent="+writeMessage, Toast.LENGTH_SHORT).show();
+                    Log.d(TAG, "handleMessage: sent="+writeMessage);
+                    Toast.makeText(mContext, "sent command", Toast.LENGTH_SHORT).show();
                     //mConversationArrayAdapter.add("Me:  " + writeMessage);
                     break;
                 case MESSAGE_READ:
@@ -1680,9 +1681,10 @@ public class MainActivity extends AppCompatActivity {
                             + readMessage);*/
                     final String readMessage = (String) msg.obj;
                     if (readMessage != null) {
+                        Log.d(TAG, "handleMessage: in msg="+readMessage);
                         appendLog1(readMessage, false, false, needClean);
                     }
-                    Toast.makeText(mContext, "Read data", Toast.LENGTH_SHORT).show();
+                 //   Toast.makeText(mContext, "Read data", Toast.LENGTH_SHORT).show();
                     break;
                 case MESSAGE_DEVICE_NAME:
                     // save the connected device's name
