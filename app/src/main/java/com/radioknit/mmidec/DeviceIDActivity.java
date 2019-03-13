@@ -553,12 +553,12 @@ public class DeviceIDActivity extends AppCompatActivity {
                 Intent intent = new Intent(mContext, WriteModeEnableActivity.class);
                 startActivity(intent);
                 return true;
-            case R.id.menu_search:
+       /*     case R.id.menu_search:
                 final int REQUEST_CONNECT_DEVICE = 2;
                 Intent serverIntent = null;
                 serverIntent = new Intent(DeviceIDActivity.this, DeviceListActivity.class);
                 startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE);
-                return true;
+                return true;*/
             default:
                 return super.onOptionsItemSelected(item);
         }

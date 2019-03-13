@@ -1,6 +1,9 @@
 package com.radioknit.mmidec;
 
+import android.app.Activity;
 import android.app.AlertDialog;
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -218,17 +221,20 @@ public class AutoLevelActivity extends AppCompatActivity {
                 startActivity(intent);
                 return true;
 
-            case R.id.menu_search:
+          /*  case R.id.menu_search:
              //   mChatService.stop();
                 Intent serverIntent = null;
                 serverIntent = new Intent(AutoLevelActivity.this, DeviceListActivity.class);
                 startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE);
-                return true;
+                return true;*/
 
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
+
+
+
 }
 
 

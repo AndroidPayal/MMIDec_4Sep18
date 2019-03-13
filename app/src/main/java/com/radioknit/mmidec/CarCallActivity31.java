@@ -220,11 +220,11 @@ public class CarCallActivity31 extends AppCompatActivity implements CarCallAdapt
 
         switch (item.getItemId()) {
 
-            case R.id.menu_search:
+          /*  case R.id.menu_search:
                 Intent serverIntent = null;
                 serverIntent = new Intent(CarCallActivity31.this, DeviceListActivity.class);
                 startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE);
-                return true;
+                return true;*/
 
             default:
                 return super.onOptionsItemSelected(item);

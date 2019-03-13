@@ -207,11 +207,11 @@ public class CarCallActivity extends AppCompatActivity implements CarCallAdapter
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
 
-            case R.id.menu_search:
+         /*   case R.id.menu_search:
                 Intent serverIntent = null;
                 serverIntent = new Intent(CarCallActivity.this, DeviceListActivity.class);
                 startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE);
-                return true;
+                return true;*/
 
             default:
                 return super.onOptionsItemSelected(item);

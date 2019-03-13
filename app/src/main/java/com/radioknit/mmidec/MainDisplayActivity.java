@@ -180,12 +180,12 @@ public class MainDisplayActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
 
-            case R.id.menu_search:
+          /*  case R.id.menu_search:
                 final int REQUEST_CONNECT_DEVICE = 2;
                 Intent serverIntent = null;
                 serverIntent = new Intent(MainDisplayActivity.this, DeviceListActivity.class);
                 startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE);
-                return true;
+                return true;*/
 
             default:
                 return super.onOptionsItemSelected(item);
