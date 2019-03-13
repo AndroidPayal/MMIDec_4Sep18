@@ -1,6 +1,1323 @@
 package com.radioknit.mmidec;
 
 public class dummy {
+    /**
+     * 2019-03-13 10:20:39.934 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: BT address:20:16:08:23:02:88
+     * 2019-03-13 10:20:39.988 10472-10472/com.radioknit.mmidec I/Tag_MainActivity: MESSAGE_STATE_CHANGE: 1
+     * 2019-03-13 10:20:40.079 10472-10472/com.radioknit.mmidec I/Tag_MainActivity: MESSAGE_STATE_CHANGE: 2
+     * 2019-03-13 10:20:40.568 10472-10472/com.radioknit.mmidec I/Tag_MainActivity: MESSAGE_STATE_CHANGE: 3
+     * 2019-03-13 10:20:43.578 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:20:43.579 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:20:43.579 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:20:43.580 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f22
+     * 2019-03-13 10:20:43.580 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f22
+     * 2019-03-13 10:20:43.580 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f22
+     * 2019-03-13 10:20:43.587 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=17f7
+     * 2019-03-13 10:20:43.587 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 17f7
+     * 2019-03-13 10:20:43.587 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f7
+     * 2019-03-13 10:20:43.599 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=44df
+     * 2019-03-13 10:20:43.599 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 44df
+     * 2019-03-13 10:20:43.600 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744df
+     * 2019-03-13 10:20:43.609 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=d
+     * 2019-03-13 10:20:43.609 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = d
+     * 2019-03-13 10:20:43.609 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744dfd
+     * 2019-03-13 10:20:43.610 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f2217f744dfd  index0d = 14
+     * 2019-03-13 10:21:04.287 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:21:04.288 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:21:04.288 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:21:04.289 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f100010
+     * 2019-03-13 10:21:04.289 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f100010
+     * 2019-03-13 10:21:04.289 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f100010
+     * 2019-03-13 10:21:04.291 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=9008
+     * 2019-03-13 10:21:04.292 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9008
+     * 2019-03-13 10:21:04.292 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1000109008
+     * 2019-03-13 10:21:04.292 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=3
+     * 2019-03-13 10:21:04.292 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 3
+     * 2019-03-13 10:21:04.292 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f10001090083
+     * 2019-03-13 10:21:04.293 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f10001090083  index0d = 14
+     * 2019-03-13 10:21:04.314 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 83 -- 83 temp = 11f10001090083
+     * 2019-03-13 10:21:04.314 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 01 data = 9
+     * 2019-03-13 10:21:04.315 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 0 Id :090100
+     * 2019-03-13 10:21:13.542 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:21:13.542 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:21:13.542 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:21:13.543 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f3f
+     * 2019-03-13 10:21:13.543 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3f
+     * 2019-03-13 10:21:13.543 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3f
+     * 2019-03-13 10:21:13.544 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=e1e2
+     * 2019-03-13 10:21:13.544 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = e1e2
+     * 2019-03-13 10:21:13.544 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e2
+     * 2019-03-13 10:21:13.544 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=31f58
+     * 2019-03-13 10:21:13.544 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 31f58
+     * 2019-03-13 10:21:13.544 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f58
+     * 2019-03-13 10:21:13.545 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f3fe1e231f58  index0d = 14
+     * 2019-03-13 10:21:15.062 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0textViewStateAll 0
+     * 2019-03-13 10:21:15.062 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0imageViewUpAll 0
+     * 2019-03-13 10:21:15.062 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0imageViewDownAll 0
+     * 2019-03-13 10:21:15.069 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1textViewStateAll 0
+     * 2019-03-13 10:21:15.069 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1imageViewUpAll 0
+     * 2019-03-13 10:21:15.069 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1imageViewDownAll 0
+     * 2019-03-13 10:21:15.076 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2textViewStateAll 0
+     * 2019-03-13 10:21:15.076 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2imageViewUpAll 0
+     * 2019-03-13 10:21:15.076 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2imageViewDownAll 0
+     * 2019-03-13 10:21:15.082 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3textViewStateAll 0
+     * 2019-03-13 10:21:15.082 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3imageViewUpAll 0
+     * 2019-03-13 10:21:15.082 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3imageViewDownAll 0
+     * 2019-03-13 10:21:15.089 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4textViewStateAll 0
+     * 2019-03-13 10:21:15.089 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4imageViewUpAll 0
+     * 2019-03-13 10:21:15.089 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4imageViewDownAll 0
+     * 2019-03-13 10:21:15.107 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0textViewStateAll 0
+     * 2019-03-13 10:21:15.107 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0imageViewUpAll 0
+     * 2019-03-13 10:21:15.107 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0imageViewDownAll 0
+     * 2019-03-13 10:21:15.109 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1textViewStateAll 0
+     * 2019-03-13 10:21:15.109 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1imageViewUpAll 0
+     * 2019-03-13 10:21:15.109 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1imageViewDownAll 0
+     * 2019-03-13 10:21:15.111 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2textViewStateAll 0
+     * 2019-03-13 10:21:15.111 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2imageViewUpAll 0
+     * 2019-03-13 10:21:15.111 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2imageViewDownAll 0
+     * 2019-03-13 10:21:15.113 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3textViewStateAll 0
+     * 2019-03-13 10:21:15.113 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3imageViewUpAll 0
+     * 2019-03-13 10:21:15.113 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3imageViewDownAll 0
+     * 2019-03-13 10:21:15.115 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4textViewStateAll 0
+     * 2019-03-13 10:21:15.115 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4imageViewUpAll 0
+     * 2019-03-13 10:21:15.115 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4imageViewDownAll 0
+     * 2019-03-13 10:21:15.120 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5textViewStateAll 0
+     * 2019-03-13 10:21:15.120 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5imageViewUpAll 0
+     * 2019-03-13 10:21:15.121 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5imageViewDownAll 0
+     * 2019-03-13 10:21:15.123 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0textViewStateAll 0
+     * 2019-03-13 10:21:15.123 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0imageViewUpAll 0
+     * 2019-03-13 10:21:15.123 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0imageViewDownAll 0
+     * 2019-03-13 10:21:15.125 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1textViewStateAll 0
+     * 2019-03-13 10:21:15.125 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1imageViewUpAll 0
+     * 2019-03-13 10:21:15.126 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1imageViewDownAll 0
+     * 2019-03-13 10:21:15.128 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2textViewStateAll 0
+     * 2019-03-13 10:21:15.128 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2imageViewUpAll 0
+     * 2019-03-13 10:21:15.128 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2imageViewDownAll 0
+     * 2019-03-13 10:21:15.129 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3textViewStateAll 0
+     * 2019-03-13 10:21:15.129 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3imageViewUpAll 0
+     * 2019-03-13 10:21:15.130 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3imageViewDownAll 0
+     * 2019-03-13 10:21:15.131 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4textViewStateAll 0
+     * 2019-03-13 10:21:15.131 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4imageViewUpAll 0
+     * 2019-03-13 10:21:15.131 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4imageViewDownAll 0
+     * 2019-03-13 10:21:15.134 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5textViewStateAll 0
+     * 2019-03-13 10:21:15.134 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5imageViewUpAll 0
+     * 2019-03-13 10:21:15.134 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5imageViewDownAll 0
+     * 2019-03-13 10:21:15.179 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0textViewStateAll 0
+     * 2019-03-13 10:21:15.179 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0imageViewUpAll 0
+     * 2019-03-13 10:21:15.179 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0imageViewDownAll 0
+     * 2019-03-13 10:21:15.185 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1textViewStateAll 0
+     * 2019-03-13 10:21:15.185 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1imageViewUpAll 0
+     * 2019-03-13 10:21:15.185 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1imageViewDownAll 0
+     * 2019-03-13 10:21:15.192 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2textViewStateAll 0
+     * 2019-03-13 10:21:15.192 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2imageViewUpAll 0
+     * 2019-03-13 10:21:15.192 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2imageViewDownAll 0
+     * 2019-03-13 10:21:15.199 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3textViewStateAll 0
+     * 2019-03-13 10:21:15.199 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3imageViewUpAll 0
+     * 2019-03-13 10:21:15.199 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3imageViewDownAll 0
+     * 2019-03-13 10:21:15.205 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4textViewStateAll 0
+     * 2019-03-13 10:21:15.205 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4imageViewUpAll 0
+     * 2019-03-13 10:21:15.205 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4imageViewDownAll 0
+     * 2019-03-13 10:21:15.211 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5textViewStateAll 0
+     * 2019-03-13 10:21:15.211 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5imageViewUpAll 0
+     * 2019-03-13 10:21:15.211 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5imageViewDownAll 0
+     * 2019-03-13 10:21:17.084 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 6textViewStateAll 0
+     * 2019-03-13 10:21:17.084 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 6imageViewUpAll 0
+     * 2019-03-13 10:21:17.084 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 6imageViewDownAll 0
+     * 2019-03-13 10:21:17.215 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 7textViewStateAll 0
+     * 2019-03-13 10:21:17.215 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 7imageViewUpAll 0
+     * 2019-03-13 10:21:17.215 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 7imageViewDownAll 0
+     * 2019-03-13 10:21:17.363 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 8textViewStateAll 0
+     * 2019-03-13 10:21:17.363 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 8imageViewUpAll 0
+     * 2019-03-13 10:21:17.363 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 8imageViewDownAll 0
+     * 2019-03-13 10:21:17.496 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 9textViewStateAll 0
+     * 2019-03-13 10:21:17.496 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 9imageViewUpAll 0
+     * 2019-03-13 10:21:17.496 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 9imageViewDownAll 0
+     * 2019-03-13 10:21:33.163 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:21:33.163 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:21:33.163 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:21:33.164 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f102010
+     * 2019-03-13 10:21:33.165 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f102010
+     * 2019-03-13 10:21:33.165 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f102010
+     * 2019-03-13 10:21:33.166 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=9018
+     * 2019-03-13 10:21:33.166 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9018
+     * 2019-03-13 10:21:33.166 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1020109018
+     * 2019-03-13 10:21:33.167 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=6
+     * 2019-03-13 10:21:33.167 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 6
+     * 2019-03-13 10:21:33.167 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f10201090186
+     * 2019-03-13 10:21:33.167 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f10201090186  index0d = 14
+     * 2019-03-13 10:21:33.188 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 86 -- 86 temp = 11f10201090186
+     * 2019-03-13 10:21:33.188 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 01 data = 9
+     * 2019-03-13 10:21:33.188 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 1 Id :090102
+     * 2019-03-13 10:21:42.413 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:21:42.414 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:21:42.414 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:21:42.414 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f2217f7
+     * 2019-03-13 10:21:42.415 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f2217f7
+     * 2019-03-13 10:21:42.415 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f7
+     * 2019-03-13 10:21:42.415 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=44df
+     * 2019-03-13 10:21:42.415 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 44df
+     * 2019-03-13 10:21:42.415 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744df
+     * 2019-03-13 10:21:42.416 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=d
+     * 2019-03-13 10:21:42.416 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = d
+     * 2019-03-13 10:21:42.416 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744dfd
+     * 2019-03-13 10:21:42.416 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f2217f744dfd  index0d = 14
+     * 2019-03-13 10:22:00.428 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0textViewStateAll 0
+     * 2019-03-13 10:22:00.428 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0imageViewUpAll 0
+     * 2019-03-13 10:22:00.428 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0imageViewDownAll 0
+     * 2019-03-13 10:22:00.432 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1textViewStateAll 0
+     * 2019-03-13 10:22:00.432 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1imageViewUpAll 0
+     * 2019-03-13 10:22:00.432 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1imageViewDownAll 0
+     * 2019-03-13 10:22:00.437 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2textViewStateAll 0
+     * 2019-03-13 10:22:00.437 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2imageViewUpAll 0
+     * 2019-03-13 10:22:00.437 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2imageViewDownAll 0
+     * 2019-03-13 10:22:00.441 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3textViewStateAll 0
+     * 2019-03-13 10:22:00.441 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3imageViewUpAll 0
+     * 2019-03-13 10:22:00.441 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3imageViewDownAll 0
+     * 2019-03-13 10:22:00.445 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4textViewStateAll 0
+     * 2019-03-13 10:22:00.445 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4imageViewUpAll 0
+     * 2019-03-13 10:22:00.445 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4imageViewDownAll 0
+     * 2019-03-13 10:22:00.459 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0textViewStateAll 0
+     * 2019-03-13 10:22:00.459 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0imageViewUpAll 0
+     * 2019-03-13 10:22:00.459 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0imageViewDownAll 0
+     * 2019-03-13 10:22:00.460 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1textViewStateAll 0
+     * 2019-03-13 10:22:00.460 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1imageViewUpAll 0
+     * 2019-03-13 10:22:00.460 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1imageViewDownAll 0
+     * 2019-03-13 10:22:00.461 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2textViewStateAll 0
+     * 2019-03-13 10:22:00.461 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2imageViewUpAll 0
+     * 2019-03-13 10:22:00.461 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2imageViewDownAll 0
+     * 2019-03-13 10:22:00.462 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3textViewStateAll 0
+     * 2019-03-13 10:22:00.462 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3imageViewUpAll 0
+     * 2019-03-13 10:22:00.462 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3imageViewDownAll 0
+     * 2019-03-13 10:22:00.463 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4textViewStateAll 0
+     * 2019-03-13 10:22:00.463 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4imageViewUpAll 0
+     * 2019-03-13 10:22:00.463 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4imageViewDownAll 0
+     * 2019-03-13 10:22:00.467 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5textViewStateAll 0
+     * 2019-03-13 10:22:00.467 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5imageViewUpAll 0
+     * 2019-03-13 10:22:00.467 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5imageViewDownAll 0
+     * 2019-03-13 10:22:00.469 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0textViewStateAll 0
+     * 2019-03-13 10:22:00.469 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0imageViewUpAll 0
+     * 2019-03-13 10:22:00.469 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0imageViewDownAll 0
+     * 2019-03-13 10:22:00.471 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1textViewStateAll 0
+     * 2019-03-13 10:22:00.471 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1imageViewUpAll 0
+     * 2019-03-13 10:22:00.471 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1imageViewDownAll 0
+     * 2019-03-13 10:22:00.473 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2textViewStateAll 0
+     * 2019-03-13 10:22:00.473 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2imageViewUpAll 0
+     * 2019-03-13 10:22:00.473 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2imageViewDownAll 0
+     * 2019-03-13 10:22:00.474 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3textViewStateAll 0
+     * 2019-03-13 10:22:00.475 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3imageViewUpAll 0
+     * 2019-03-13 10:22:00.475 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3imageViewDownAll 0
+     * 2019-03-13 10:22:00.476 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4textViewStateAll 0
+     * 2019-03-13 10:22:00.476 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4imageViewUpAll 0
+     * 2019-03-13 10:22:00.476 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4imageViewDownAll 0
+     * 2019-03-13 10:22:00.478 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5textViewStateAll 0
+     * 2019-03-13 10:22:00.478 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5imageViewUpAll 0
+     * 2019-03-13 10:22:00.478 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5imageViewDownAll 0
+     * 2019-03-13 10:22:00.495 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0textViewStateAll 0
+     * 2019-03-13 10:22:00.495 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0imageViewUpAll 0
+     * 2019-03-13 10:22:00.495 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0imageViewDownAll 0
+     * 2019-03-13 10:22:00.499 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1textViewStateAll 0
+     * 2019-03-13 10:22:00.499 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1imageViewUpAll 0
+     * 2019-03-13 10:22:00.499 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1imageViewDownAll 0
+     * 2019-03-13 10:22:00.503 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2textViewStateAll 0
+     * 2019-03-13 10:22:00.503 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2imageViewUpAll 0
+     * 2019-03-13 10:22:00.503 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2imageViewDownAll 0
+     * 2019-03-13 10:22:00.508 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3textViewStateAll 0
+     * 2019-03-13 10:22:00.508 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3imageViewUpAll 0
+     * 2019-03-13 10:22:00.508 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3imageViewDownAll 0
+     * 2019-03-13 10:22:00.512 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4textViewStateAll 0
+     * 2019-03-13 10:22:00.512 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4imageViewUpAll 0
+     * 2019-03-13 10:22:00.512 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4imageViewDownAll 0
+     * 2019-03-13 10:22:00.516 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5textViewStateAll 0
+     * 2019-03-13 10:22:00.516 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5imageViewUpAll 0
+     * 2019-03-13 10:22:00.516 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5imageViewDownAll 0
+     * 2019-03-13 10:22:01.758 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 6textViewStateAll 0
+     * 2019-03-13 10:22:01.758 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 6imageViewUpAll 0
+     * 2019-03-13 10:22:01.758 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 6imageViewDownAll 0
+     * 2019-03-13 10:22:01.841 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 7textViewStateAll 0
+     * 2019-03-13 10:22:01.841 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 7imageViewUpAll 0
+     * 2019-03-13 10:22:01.841 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 7imageViewDownAll 0
+     * 2019-03-13 10:22:01.891 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 8textViewStateAll 0
+     * 2019-03-13 10:22:01.891 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 8imageViewUpAll 0
+     * 2019-03-13 10:22:01.891 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 8imageViewDownAll 0
+     * 2019-03-13 10:22:01.958 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 9textViewStateAll 0
+     * 2019-03-13 10:22:01.958 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 9imageViewUpAll 0
+     * 2019-03-13 10:22:01.958 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 9imageViewDownAll 0
+     * 2019-03-13 10:22:02.024 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 10textViewStateAll 0
+     * 2019-03-13 10:22:02.025 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 10imageViewUpAll 0
+     * 2019-03-13 10:22:02.025 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 10imageViewDownAll 0
+     * 2019-03-13 10:22:02.108 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 11textViewStateAll 0
+     * 2019-03-13 10:22:02.108 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 11imageViewUpAll 0
+     * 2019-03-13 10:22:02.108 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 11imageViewDownAll 0
+     * 2019-03-13 10:22:02.241 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 12textViewStateAll 0
+     * 2019-03-13 10:22:02.241 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 12imageViewUpAll 0
+     * 2019-03-13 10:22:02.241 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 12imageViewDownAll 0
+     * 2019-03-13 10:22:02.480 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 13textViewStateAll 0
+     * 2019-03-13 10:22:02.480 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 13imageViewUpAll 0
+     * 2019-03-13 10:22:02.480 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 13imageViewDownAll 0
+     * 2019-03-13 10:22:02.560 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 14textViewStateAll 0
+     * 2019-03-13 10:22:02.560 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 14imageViewUpAll 0
+     * 2019-03-13 10:22:02.560 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 14imageViewDownAll 0
+     * 2019-03-13 10:22:02.624 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 15textViewStateAll 0
+     * 2019-03-13 10:22:02.624 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 15imageViewUpAll 0
+     * 2019-03-13 10:22:02.624 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 15imageViewDownAll 0
+     * 2019-03-13 10:22:02.675 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 16textViewStateAll 0
+     * 2019-03-13 10:22:02.676 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 16imageViewUpAll 0
+     * 2019-03-13 10:22:02.676 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 16imageViewDownAll 0
+     * 2019-03-13 10:22:02.759 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 17textViewStateAll 0
+     * 2019-03-13 10:22:02.759 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 17imageViewUpAll 0
+     * 2019-03-13 10:22:02.759 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 17imageViewDownAll 0
+     * 2019-03-13 10:22:02.842 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 18textViewStateAll 0
+     * 2019-03-13 10:22:02.842 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 18imageViewUpAll 0
+     * 2019-03-13 10:22:02.842 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 18imageViewDownAll 0
+     * 2019-03-13 10:22:02.992 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 19textViewStateAll 0
+     * 2019-03-13 10:22:02.992 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 19imageViewUpAll 0
+     * 2019-03-13 10:22:02.992 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 19imageViewDownAll 0
+     * 2019-03-13 10:22:03.039 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:22:03.039 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:22:03.039 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:22:03.039 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f19
+     * 2019-03-13 10:22:03.039 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f19
+     * 2019-03-13 10:22:03.039 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19
+     * 2019-03-13 10:22:03.039 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=4000
+     * 2019-03-13 10:22:03.040 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 4000
+     * 2019-03-13 10:22:03.040 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f194000
+     * 2019-03-13 10:22:03.040 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=9029
+     * 2019-03-13 10:22:03.040 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9029
+     * 2019-03-13 10:22:03.040 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1940009029
+     * 2019-03-13 10:22:03.040 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:22:03.040 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:22:03.040 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19400090291
+     * 2019-03-13 10:22:03.041 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f19400090291  index0d = 14
+     * 2019-03-13 10:22:03.047 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 91 -- 91 temp = 11f19400090291
+     * 2019-03-13 10:22:03.047 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 00 data = 9
+     * 2019-03-13 10:22:03.047 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 2 Id :090094
+     * 2019-03-13 10:22:03.142 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 20textViewStateAll 0
+     * 2019-03-13 10:22:03.142 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 20imageViewUpAll 0
+     * 2019-03-13 10:22:03.142 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 20imageViewDownAll 0
+     * 2019-03-13 10:22:03.195 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 21textViewStateAll 0
+     * 2019-03-13 10:22:03.195 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 21imageViewUpAll 0
+     * 2019-03-13 10:22:03.195 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 21imageViewDownAll 0
+     * 2019-03-13 10:22:03.241 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 22textViewStateAll 0
+     * 2019-03-13 10:22:03.241 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 22imageViewUpAll 0
+     * 2019-03-13 10:22:03.241 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 22imageViewDownAll 0
+     * 2019-03-13 10:22:03.293 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 23textViewStateAll 0
+     * 2019-03-13 10:22:03.293 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 23imageViewUpAll 0
+     * 2019-03-13 10:22:03.293 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 23imageViewDownAll 0
+     * 2019-03-13 10:22:03.342 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 24textViewStateAll 0
+     * 2019-03-13 10:22:03.342 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 24imageViewUpAll 0
+     * 2019-03-13 10:22:03.342 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 24imageViewDownAll 0
+     * 2019-03-13 10:22:03.408 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 25textViewStateAll 0
+     * 2019-03-13 10:22:03.408 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 25imageViewUpAll 0
+     * 2019-03-13 10:22:03.408 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 25imageViewDownAll 0
+     * 2019-03-13 10:22:03.476 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 26textViewStateAll 0
+     * 2019-03-13 10:22:03.476 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 26imageViewUpAll 0
+     * 2019-03-13 10:22:03.476 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 26imageViewDownAll 0
+     * 2019-03-13 10:22:03.558 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 27textViewStateAll 0
+     * 2019-03-13 10:22:03.559 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 27imageViewUpAll 0
+     * 2019-03-13 10:22:03.559 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 27imageViewDownAll 0
+     * 2019-03-13 10:22:03.659 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 28textViewStateAll 0
+     * 2019-03-13 10:22:03.659 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 28imageViewUpAll 0
+     * 2019-03-13 10:22:03.659 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 28imageViewDownAll 0
+     * 2019-03-13 10:22:03.825 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 29textViewStateAll 0
+     * 2019-03-13 10:22:03.825 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 29imageViewUpAll 0
+     * 2019-03-13 10:22:03.825 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 29imageViewDownAll 0
+     * 2019-03-13 10:22:03.991 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 23textViewStateAll 0
+     * 2019-03-13 10:22:03.991 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 23imageViewUpAll 0
+     * 2019-03-13 10:22:03.991 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 23imageViewDownAll 0
+     * 2019-03-13 10:22:04.022 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 22textViewStateAll 0
+     * 2019-03-13 10:22:04.022 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 22imageViewUpAll 0
+     * 2019-03-13 10:22:04.022 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 22imageViewDownAll 0
+     * 2019-03-13 10:22:04.056 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 21textViewStateAll 0
+     * 2019-03-13 10:22:04.056 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 21imageViewUpAll 0
+     * 2019-03-13 10:22:04.056 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 21imageViewDownAll 0
+     * 2019-03-13 10:22:04.073 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 20textViewStateAll 0
+     * 2019-03-13 10:22:04.073 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 20imageViewUpAll 0
+     * 2019-03-13 10:22:04.073 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 20imageViewDownAll 0
+     * 2019-03-13 10:22:04.089 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 19textViewStateAll 0
+     * 2019-03-13 10:22:04.089 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 19imageViewUpAll 0
+     * 2019-03-13 10:22:04.089 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 19imageViewDownAll 0
+     * 2019-03-13 10:22:04.106 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 18textViewStateAll 0
+     * 2019-03-13 10:22:04.106 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 18imageViewUpAll 0
+     * 2019-03-13 10:22:04.106 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 18imageViewDownAll 0
+     * 2019-03-13 10:22:04.123 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 17textViewStateAll 0
+     * 2019-03-13 10:22:04.123 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 17imageViewUpAll 0
+     * 2019-03-13 10:22:04.123 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 17imageViewDownAll 0
+     * 2019-03-13 10:22:04.139 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 16textViewStateAll 0
+     * 2019-03-13 10:22:04.139 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 16imageViewUpAll 0
+     * 2019-03-13 10:22:04.139 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 16imageViewDownAll 0
+     * 2019-03-13 10:22:04.156 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 15textViewStateAll 0
+     * 2019-03-13 10:22:04.156 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 15imageViewUpAll 0
+     * 2019-03-13 10:22:04.156 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 15imageViewDownAll 0
+     * 2019-03-13 10:22:04.173 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 14textViewStateAll 0
+     * 2019-03-13 10:22:04.173 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 14imageViewUpAll 0
+     * 2019-03-13 10:22:04.173 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 14imageViewDownAll 0
+     * 2019-03-13 10:22:04.189 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 13textViewStateAll 0
+     * 2019-03-13 10:22:04.189 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 13imageViewUpAll 0
+     * 2019-03-13 10:22:04.189 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 13imageViewDownAll 0
+     * 2019-03-13 10:22:04.205 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 12textViewStateAll 0
+     * 2019-03-13 10:22:04.205 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 12imageViewUpAll 0
+     * 2019-03-13 10:22:04.205 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 12imageViewDownAll 0
+     * 2019-03-13 10:22:04.222 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 11textViewStateAll 0
+     * 2019-03-13 10:22:04.222 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 11imageViewUpAll 0
+     * 2019-03-13 10:22:04.223 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 11imageViewDownAll 0
+     * 2019-03-13 10:22:04.239 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 10textViewStateAll 0
+     * 2019-03-13 10:22:04.239 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 10imageViewUpAll 0
+     * 2019-03-13 10:22:04.239 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 10imageViewDownAll 0
+     * 2019-03-13 10:22:04.255 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 9textViewStateAll 0
+     * 2019-03-13 10:22:04.255 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 9imageViewUpAll 0
+     * 2019-03-13 10:22:04.255 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 9imageViewDownAll 0
+     * 2019-03-13 10:22:04.289 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 8textViewStateAll 0
+     * 2019-03-13 10:22:04.289 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 8imageViewUpAll 0
+     * 2019-03-13 10:22:04.289 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 8imageViewDownAll 0
+     * 2019-03-13 10:22:04.306 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 7textViewStateAll 0
+     * 2019-03-13 10:22:04.306 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 7imageViewUpAll 0
+     * 2019-03-13 10:22:04.306 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 7imageViewDownAll 0
+     * 2019-03-13 10:22:04.323 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 6textViewStateAll 0
+     * 2019-03-13 10:22:04.323 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 6imageViewUpAll 0
+     * 2019-03-13 10:22:04.323 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 6imageViewDownAll 0
+     * 2019-03-13 10:22:04.338 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5textViewStateAll 0
+     * 2019-03-13 10:22:04.338 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5imageViewUpAll 0
+     * 2019-03-13 10:22:04.339 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 5imageViewDownAll 0
+     * 2019-03-13 10:22:04.373 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4textViewStateAll 0
+     * 2019-03-13 10:22:04.373 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4imageViewUpAll 0
+     * 2019-03-13 10:22:04.373 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 4imageViewDownAll 0
+     * 2019-03-13 10:22:04.389 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3textViewStateAll 0
+     * 2019-03-13 10:22:04.389 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3imageViewUpAll 0
+     * 2019-03-13 10:22:04.389 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 3imageViewDownAll 0
+     * 2019-03-13 10:22:04.406 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2textViewStateAll 0
+     * 2019-03-13 10:22:04.406 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2imageViewUpAll 0
+     * 2019-03-13 10:22:04.406 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 2imageViewDownAll 0
+     * 2019-03-13 10:22:04.438 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1textViewStateAll 0
+     * 2019-03-13 10:22:04.438 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1imageViewUpAll 0
+     * 2019-03-13 10:22:04.438 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 1imageViewDownAll 0
+     * 2019-03-13 10:22:04.456 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0textViewStateAll 0
+     * 2019-03-13 10:22:04.456 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0imageViewUpAll 0
+     * 2019-03-13 10:22:04.456 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 0imageViewDownAll 0
+     * 2019-03-13 10:22:12.288 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:22:12.289 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:22:12.289 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:22:12.289 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f3fe1e2
+     * 2019-03-13 10:22:12.290 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3fe1e2
+     * 2019-03-13 10:22:12.290 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e2
+     * 2019-03-13 10:22:12.290 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=31f5
+     * 2019-03-13 10:22:12.290 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 31f5
+     * 2019-03-13 10:22:12.290 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f5
+     * 2019-03-13 10:22:12.291 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=8
+     * 2019-03-13 10:22:12.291 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+     * 2019-03-13 10:22:12.291 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f58
+     * 2019-03-13 10:22:12.291 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f3fe1e231f58  index0d = 14
+     * 2019-03-13 10:22:31.912 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:22:31.912 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:22:31.913 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:22:31.919 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f19
+     * 2019-03-13 10:22:31.919 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f19
+     * 2019-03-13 10:22:31.919 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19
+     * 2019-03-13 10:22:31.920 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=6000
+     * 2019-03-13 10:22:31.920 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 6000
+     * 2019-03-13 10:22:31.920 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f196000
+     * 2019-03-13 10:22:31.936 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=9039
+     * 2019-03-13 10:22:31.937 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9039
+     * 2019-03-13 10:22:31.937 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1960009039
+     * 2019-03-13 10:22:31.937 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=4
+     * 2019-03-13 10:22:31.937 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 4
+     * 2019-03-13 10:22:31.937 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19600090394
+     * 2019-03-13 10:22:31.938 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f19600090394  index0d = 14
+     * 2019-03-13 10:22:31.961 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 94 -- 94 temp = 11f19600090394
+     * 2019-03-13 10:22:31.961 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 00 data = 9
+     * 2019-03-13 10:22:31.962 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 3 Id :090096
+     * 2019-03-13 10:22:41.174 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:22:41.175 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:22:41.175 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:22:41.177 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f2217f744dfd
+     * 2019-03-13 10:22:41.177 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f2217f744dfd
+     * 2019-03-13 10:22:41.178 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744dfd
+     * 2019-03-13 10:22:41.178 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f2217f744dfd  index0d = 14
+     * 2019-03-13 10:23:01.794 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:23:01.794 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:23:01.794 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:23:01.795 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f199000
+     * 2019-03-13 10:23:01.795 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f199000
+     * 2019-03-13 10:23:01.796 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f199000
+     * 2019-03-13 10:23:01.796 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=90498
+     * 2019-03-13 10:23:01.796 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 90498
+     * 2019-03-13 10:23:01.796 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19900090498
+     * 2019-03-13 10:23:01.796 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f19900090498  index0d = 14
+     * 2019-03-13 10:23:01.808 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 98 -- 98 temp = 11f19900090498
+     * 2019-03-13 10:23:01.808 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 00 data = 9
+     * 2019-03-13 10:23:01.808 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 4 Id :090099
+     * 2019-03-13 10:23:11.041 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:23:11.042 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:23:11.042 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:23:11.042 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f3f
+     * 2019-03-13 10:23:11.042 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3f
+     * 2019-03-13 10:23:11.043 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3f
+     * 2019-03-13 10:23:11.047 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=e1e2
+     * 2019-03-13 10:23:11.048 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = e1e2
+     * 2019-03-13 10:23:11.048 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e2
+     * 2019-03-13 10:23:11.068 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=31f58
+     * 2019-03-13 10:23:11.068 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 31f58
+     * 2019-03-13 10:23:11.068 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f58
+     * 2019-03-13 10:23:11.068 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f3fe1e231f58  index0d = 14
+     * 2019-03-13 10:23:30.805 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:23:30.805 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:23:30.805 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:23:30.806 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f19
+     * 2019-03-13 10:23:30.806 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f19
+     * 2019-03-13 10:23:30.806 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19
+     * 2019-03-13 10:23:30.807 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=7000
+     * 2019-03-13 10:23:30.807 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 7000
+     * 2019-03-13 10:23:30.807 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f197000
+     * 2019-03-13 10:23:30.807 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=90597
+     * 2019-03-13 10:23:30.807 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 90597
+     * 2019-03-13 10:23:30.807 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19700090597
+     * 2019-03-13 10:23:30.808 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f19700090597  index0d = 14
+     * 2019-03-13 10:23:30.828 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 97 -- 97 temp = 11f19700090597
+     * 2019-03-13 10:23:30.829 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 00 data = 9
+     * 2019-03-13 10:23:30.829 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 5 Id :090097
+     * 2019-03-13 10:23:39.939 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=11f22
+     * 2019-03-13 10:23:39.939 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 11f22
+     * 2019-03-13 10:23:39.939 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f22
+     * 2019-03-13 10:23:39.939 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=17f7
+     * 2019-03-13 10:23:39.940 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 17f7
+     * 2019-03-13 10:23:39.940 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f7
+     * 2019-03-13 10:23:39.940 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=44df
+     * 2019-03-13 10:23:39.940 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 44df
+     * 2019-03-13 10:23:39.940 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744df
+     * 2019-03-13 10:23:39.965 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=d
+     * 2019-03-13 10:23:39.966 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = d
+     * 2019-03-13 10:23:39.966 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744dfd
+     * 2019-03-13 10:23:39.966 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f2217f744dfd  index0d = 14
+     * 2019-03-13 10:24:00.819 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:24:00.820 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:24:00.820 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:24:00.820 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f195000
+     * 2019-03-13 10:24:00.821 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f195000
+     * 2019-03-13 10:24:00.821 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f195000
+     * 2019-03-13 10:24:00.839 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=9069
+     * 2019-03-13 10:24:00.839 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9069
+     * 2019-03-13 10:24:00.839 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1950009069
+     * 2019-03-13 10:24:00.847 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=6
+     * 2019-03-13 10:24:00.847 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 6
+     * 2019-03-13 10:24:00.847 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19500090696
+     * 2019-03-13 10:24:00.847 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f19500090696  index0d = 14
+     * 2019-03-13 10:24:00.864 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 96 -- 96 temp = 11f19500090696
+     * 2019-03-13 10:24:00.864 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 00 data = 9
+     * 2019-03-13 10:24:00.865 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 6 Id :090095
+     * 2019-03-13 10:24:10.190 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:24:10.190 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:24:10.190 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:24:10.193 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f3fe1e2
+     * 2019-03-13 10:24:10.194 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3fe1e2
+     * 2019-03-13 10:24:10.194 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e2
+     * 2019-03-13 10:24:10.194 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=31f5
+     * 2019-03-13 10:24:10.194 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 31f5
+     * 2019-03-13 10:24:10.194 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f5
+     * 2019-03-13 10:24:10.195 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=8
+     * 2019-03-13 10:24:10.195 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+     * 2019-03-13 10:24:10.195 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f58
+     * 2019-03-13 10:24:10.195 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f3fe1e231f58  index0d = 14
+     * 2019-03-13 10:24:29.698 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:24:29.698 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:24:29.698 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:24:29.698 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f103010
+     * 2019-03-13 10:24:29.699 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f103010
+     * 2019-03-13 10:24:29.699 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f103010
+     * 2019-03-13 10:24:29.726 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=9078
+     * 2019-03-13 10:24:29.727 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9078
+     * 2019-03-13 10:24:29.727 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1030109078
+     * 2019-03-13 10:24:29.728 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=d
+     * 2019-03-13 10:24:29.728 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = d
+     * 2019-03-13 10:24:29.728 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1030109078d
+     * 2019-03-13 10:24:29.728 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f1030109078d  index0d = 14
+     * 2019-03-13 10:24:29.744 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 8d -- 8d temp = 11f1030109078d
+     * 2019-03-13 10:24:29.745 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 01 data = 9
+     * 2019-03-13 10:24:29.745 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 7 Id :090103
+     * 2019-03-13 10:24:39.065 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:24:39.066 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:24:39.066 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:24:39.069 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f22
+     * 2019-03-13 10:24:39.070 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f22
+     * 2019-03-13 10:24:39.071 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f22
+     * 2019-03-13 10:24:39.071 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=17f744df
+     * 2019-03-13 10:24:39.072 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 17f744df
+     * 2019-03-13 10:24:39.072 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744df
+     * 2019-03-13 10:24:39.072 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=d
+     * 2019-03-13 10:24:39.072 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = d
+     * 2019-03-13 10:24:39.073 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744dfd
+     * 2019-03-13 10:24:39.073 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f2217f744dfd  index0d = 14
+     * 2019-03-13 10:24:59.694 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:24:59.694 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:24:59.694 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:24:59.701 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f1ffff0f088f
+     * 2019-03-13 10:24:59.701 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f1ffff0f088f
+     * 2019-03-13 10:24:59.701 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f088f
+     * 2019-03-13 10:24:59.701 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f1ffff0f088f  index0d = 14
+     * 2019-03-13 10:24:59.715 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 8f -- 8f temp = 11f1ffff0f088f
+     * 2019-03-13 10:24:59.716 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = ff data = 15
+     * 2019-03-13 10:24:59.716 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 8 Id :0fffff
+     * 2019-03-13 10:25:08.941 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:25:08.941 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:25:08.941 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:25:08.943 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f3f
+     * 2019-03-13 10:25:08.943 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3f
+     * 2019-03-13 10:25:08.943 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3f
+     * 2019-03-13 10:25:08.945 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=e1e231f5
+     * 2019-03-13 10:25:08.945 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = e1e231f5
+     * 2019-03-13 10:25:08.945 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f5
+     * 2019-03-13 10:25:08.946 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=8
+     * 2019-03-13 10:25:08.946 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+     * 2019-03-13 10:25:08.946 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f58
+     * 2019-03-13 10:25:08.946 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f3fe1e231f58  index0d = 14
+     * 2019-03-13 10:25:28.574 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:25:28.574 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:25:28.575 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:25:28.575 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f1f
+     * 2019-03-13 10:25:28.575 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f1f
+     * 2019-03-13 10:25:28.575 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1f
+     * 2019-03-13 10:25:28.575 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=fff0f099
+     * 2019-03-13 10:25:28.575 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = fff0f099
+     * 2019-03-13 10:25:28.576 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f099
+     * 2019-03-13 10:25:28.576 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=0
+     * 2019-03-13 10:25:28.576 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0
+     * 2019-03-13 10:25:28.576 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f0990
+     * 2019-03-13 10:25:28.576 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f1ffff0f0990  index0d = 14
+     * 2019-03-13 10:25:28.584 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 90 -- 90 temp = 11f1ffff0f0990
+     * 2019-03-13 10:25:28.584 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = ff data = 15
+     * 2019-03-13 10:25:28.584 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 9 Id :0fffff
+     * 2019-03-13 10:25:37.818 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:25:37.818 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:25:37.818 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:25:37.819 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f22
+     * 2019-03-13 10:25:37.819 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f22
+     * 2019-03-13 10:25:37.819 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f22
+     * 2019-03-13 10:25:37.821 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=17f744df
+     * 2019-03-13 10:25:37.821 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 17f744df
+     * 2019-03-13 10:25:37.821 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744df
+     * 2019-03-13 10:25:37.822 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=d
+     * 2019-03-13 10:25:37.822 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = d
+     * 2019-03-13 10:25:37.822 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744dfd
+     * 2019-03-13 10:25:37.822 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f2217f744dfd  index0d = 14
+     * 2019-03-13 10:25:58.443 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=11f195000
+     * 2019-03-13 10:25:58.444 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 11f195000
+     * 2019-03-13 10:25:58.444 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f195000
+     * 2019-03-13 10:25:58.445 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=9109
+     * 2019-03-13 10:25:58.445 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9109
+     * 2019-03-13 10:25:58.445 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1950009109
+     * 2019-03-13 10:25:58.446 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:25:58.446 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:25:58.446 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19500091091
+     * 2019-03-13 10:25:58.446 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f19500091091  index0d = 14
+     * 2019-03-13 10:25:58.460 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 91 -- 91 temp = 11f19500091091
+     * 2019-03-13 10:25:58.460 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 00 data = 9
+     * 2019-03-13 10:25:58.461 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 10 Id :090095
+     * 2019-03-13 10:26:07.691 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:26:07.691 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:26:07.691 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:26:07.692 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f3f
+     * 2019-03-13 10:26:07.692 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3f
+     * 2019-03-13 10:26:07.692 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3f
+     * 2019-03-13 10:26:07.693 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=e1e2
+     * 2019-03-13 10:26:07.693 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = e1e2
+     * 2019-03-13 10:26:07.693 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e2
+     * 2019-03-13 10:26:07.695 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=31f5
+     * 2019-03-13 10:26:07.695 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 31f5
+     * 2019-03-13 10:26:07.696 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f5
+     * 2019-03-13 10:26:07.696 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=8
+     * 2019-03-13 10:26:07.696 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+     * 2019-03-13 10:26:07.696 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f58
+     * 2019-03-13 10:26:07.696 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f3fe1e231f58  index0d = 14
+     * 2019-03-13 10:26:27.321 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:26:27.321 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:26:27.321 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:26:27.322 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f1ffff0
+     * 2019-03-13 10:26:27.322 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f1ffff0
+     * 2019-03-13 10:26:27.322 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0
+     * 2019-03-13 10:26:27.322 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=f1189
+     * 2019-03-13 10:26:27.323 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = f1189
+     * 2019-03-13 10:26:27.323 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f1189
+     * 2019-03-13 10:26:27.323 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f1ffff0f1189  index0d = 14
+     * 2019-03-13 10:26:27.337 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 89 -- 89 temp = 11f1ffff0f1189
+     * 2019-03-13 10:26:27.338 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = ff data = 15
+     * 2019-03-13 10:26:27.338 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 11 Id :0fffff
+     * 2019-03-13 10:26:36.572 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:26:36.572 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:26:36.573 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:26:36.573 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f2
+     * 2019-03-13 10:26:36.573 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f2
+     * 2019-03-13 10:26:36.573 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2
+     * 2019-03-13 10:26:36.574 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=217f7
+     * 2019-03-13 10:26:36.574 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 217f7
+     * 2019-03-13 10:26:36.574 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f7
+     * 2019-03-13 10:26:36.599 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=44df
+     * 2019-03-13 10:26:36.599 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 44df
+     * 2019-03-13 10:26:36.599 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744df
+     * 2019-03-13 10:26:36.614 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=d
+     * 2019-03-13 10:26:36.614 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = d
+     * 2019-03-13 10:26:36.614 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744dfd
+     * 2019-03-13 10:26:36.614 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f2217f744dfd  index0d = 14
+     * 2019-03-13 10:26:54.126 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 6textViewStateAll 0
+     * 2019-03-13 10:26:54.126 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 6imageViewUpAll 0
+     * 2019-03-13 10:26:54.126 10472-10472/com.radioknit.mmidec D/Tag_CarCallAdapter31: getView: position = 6imageViewDownAll 0
+     * 2019-03-13 10:26:57.191 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:26:57.191 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:26:57.191 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:26:57.192 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f1f
+     * 2019-03-13 10:26:57.192 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f1f
+     * 2019-03-13 10:26:57.192 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1f
+     * 2019-03-13 10:26:57.192 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=fff0
+     * 2019-03-13 10:26:57.193 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = fff0
+     * 2019-03-13 10:26:57.193 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0
+     * 2019-03-13 10:26:57.193 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=f128
+     * 2019-03-13 10:26:57.194 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = f128
+     * 2019-03-13 10:26:57.194 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f128
+     * 2019-03-13 10:26:57.194 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=a
+     * 2019-03-13 10:26:57.194 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = a
+     * 2019-03-13 10:26:57.195 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f128a
+     * 2019-03-13 10:26:57.195 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f1ffff0f128a  index0d = 14
+     * 2019-03-13 10:26:57.216 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 8a -- 8a temp = 11f1ffff0f128a
+     * 2019-03-13 10:26:57.217 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = ff data = 15
+     * 2019-03-13 10:26:57.217 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 12 Id :0fffff
+     * 2019-03-13 10:27:06.443 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:27:06.444 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:27:06.444 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:27:06.445 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f3f
+     * 2019-03-13 10:27:06.445 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3f
+     * 2019-03-13 10:27:06.445 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3f
+     * 2019-03-13 10:27:06.445 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=e1e2
+     * 2019-03-13 10:27:06.445 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = e1e2
+     * 2019-03-13 10:27:06.445 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e2
+     * 2019-03-13 10:27:06.446 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=31f5
+     * 2019-03-13 10:27:06.446 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 31f5
+     * 2019-03-13 10:27:06.446 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f5
+     * 2019-03-13 10:27:06.453 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=8
+     * 2019-03-13 10:27:06.453 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+     * 2019-03-13 10:27:06.453 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f58
+     * 2019-03-13 10:27:06.454 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f3fe1e231f58  index0d = 14
+     * 2019-03-13 10:27:26.194 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:27:26.194 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:27:26.195 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:27:26.195 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f1f
+     * 2019-03-13 10:27:26.195 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f1f
+     * 2019-03-13 10:27:26.196 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1f
+     * 2019-03-13 10:27:26.200 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=fff0
+     * 2019-03-13 10:27:26.201 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = fff0
+     * 2019-03-13 10:27:26.201 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0
+     * 2019-03-13 10:27:26.204 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=f138b
+     * 2019-03-13 10:27:26.204 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = f138b
+     * 2019-03-13 10:27:26.204 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f138b
+     * 2019-03-13 10:27:26.204 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f1ffff0f138b  index0d = 14
+     * 2019-03-13 10:27:26.214 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 8b -- 8b temp = 11f1ffff0f138b
+     * 2019-03-13 10:27:26.214 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = ff data = 15
+     * 2019-03-13 10:27:26.214 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 13 Id :0fffff
+     * 2019-03-13 10:27:35.323 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:27:35.324 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:27:35.324 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:27:35.325 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f2217f744dfd
+     * 2019-03-13 10:27:35.325 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f2217f744dfd
+     * 2019-03-13 10:27:35.325 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744dfd
+     * 2019-03-13 10:27:35.325 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f2217f744dfd  index0d = 14
+     * 2019-03-13 10:27:56.067 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:27:56.067 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:27:56.067 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:27:56.071 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f1ffff0
+     * 2019-03-13 10:27:56.071 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f1ffff0
+     * 2019-03-13 10:27:56.071 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0
+     * 2019-03-13 10:27:56.080 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=f148c
+     * 2019-03-13 10:27:56.080 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = f148c
+     * 2019-03-13 10:27:56.080 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f148c
+     * 2019-03-13 10:27:56.080 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f1ffff0f148c  index0d = 14
+     * 2019-03-13 10:27:56.089 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 8c -- 8c temp = 11f1ffff0f148c
+     * 2019-03-13 10:27:56.090 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = ff data = 15
+     * 2019-03-13 10:27:56.090 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 14 Id :0fffff
+     * 2019-03-13 10:28:05.192 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:28:05.193 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:28:05.193 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:28:05.195 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f3f
+     * 2019-03-13 10:28:05.195 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3f
+     * 2019-03-13 10:28:05.195 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3f
+     * 2019-03-13 10:28:05.207 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=e1e2
+     * 2019-03-13 10:28:05.207 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = e1e2
+     * 2019-03-13 10:28:05.207 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e2
+     * 2019-03-13 10:28:05.256 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=31f5
+     * 2019-03-13 10:28:05.257 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 31f5
+     * 2019-03-13 10:28:05.257 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f5
+     * 2019-03-13 10:28:05.257 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=8
+     * 2019-03-13 10:28:05.258 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+     * 2019-03-13 10:28:05.258 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f58
+     * 2019-03-13 10:28:05.258 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f3fe1e231f58  index0d = 14
+     * 2019-03-13 10:28:24.821 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:28:24.821 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:28:24.821 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:28:24.825 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f10001090083
+     * 2019-03-13 10:28:24.826 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f10001090083
+     * 2019-03-13 10:28:24.826 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f10001090083
+     * 2019-03-13 10:28:24.827 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f10001090083  index0d = 14
+     * 2019-03-13 10:28:24.837 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 83 -- 83 temp = 11f10001090083
+     * 2019-03-13 10:28:24.838 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 01 data = 9
+     * 2019-03-13 10:28:24.838 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 0 Id :090100
+     * 2019-03-13 10:28:34.082 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:28:34.082 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:28:34.082 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:28:34.082 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f22
+     * 2019-03-13 10:28:34.082 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f22
+     * 2019-03-13 10:28:34.082 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f22
+     * 2019-03-13 10:28:34.083 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=17f7
+     * 2019-03-13 10:28:34.083 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 17f7
+     * 2019-03-13 10:28:34.083 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f7
+     * 2019-03-13 10:28:34.096 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=44dfd
+     * 2019-03-13 10:28:34.096 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 44dfd
+     * 2019-03-13 10:28:34.096 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744dfd
+     * 2019-03-13 10:28:34.097 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f2217f744dfd  index0d = 14
+     * 2019-03-13 10:28:54.692 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:28:54.692 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:28:54.692 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:28:54.694 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f10
+     * 2019-03-13 10:28:54.694 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f10
+     * 2019-03-13 10:28:54.694 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f10
+     * 2019-03-13 10:28:54.695 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=2010
+     * 2019-03-13 10:28:54.695 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 2010
+     * 2019-03-13 10:28:54.695 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f102010
+     * 2019-03-13 10:28:54.726 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=9018
+     * 2019-03-13 10:28:54.726 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9018
+     * 2019-03-13 10:28:54.726 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1020109018
+     * 2019-03-13 10:28:54.748 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=6
+     * 2019-03-13 10:28:54.748 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 6
+     * 2019-03-13 10:28:54.748 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f10201090186
+     * 2019-03-13 10:28:54.748 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f10201090186  index0d = 14
+     * 2019-03-13 10:28:54.757 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 86 -- 86 temp = 11f10201090186
+     * 2019-03-13 10:28:54.757 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 01 data = 9
+     * 2019-03-13 10:28:54.757 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 1 Id :090102
+     * 2019-03-13 10:29:04.068 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:29:04.068 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:29:04.068 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:29:04.069 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f3fe1e231f5
+     * 2019-03-13 10:29:04.069 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3fe1e231f5
+     * 2019-03-13 10:29:04.069 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f5
+     * 2019-03-13 10:29:04.070 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=8
+     * 2019-03-13 10:29:04.070 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+     * 2019-03-13 10:29:04.070 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f58
+     * 2019-03-13 10:29:04.070 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f3fe1e231f58  index0d = 14
+     * 2019-03-13 10:29:23.567 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:29:23.568 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:29:23.568 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:29:23.569 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f194000
+     * 2019-03-13 10:29:23.569 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f194000
+     * 2019-03-13 10:29:23.569 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f194000
+     * 2019-03-13 10:29:23.586 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=9029
+     * 2019-03-13 10:29:23.586 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9029
+     * 2019-03-13 10:29:23.586 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1940009029
+     * 2019-03-13 10:29:23.596 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:29:23.596 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:29:23.596 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19400090291
+     * 2019-03-13 10:29:23.597 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f19400090291  index0d = 14
+     * 2019-03-13 10:29:23.600 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 91 -- 91 temp = 11f19400090291
+     * 2019-03-13 10:29:23.600 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 00 data = 9
+     * 2019-03-13 10:29:23.600 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 2 Id :090094
+     * 2019-03-13 10:29:32.941 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:29:32.941 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:29:32.942 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:29:32.943 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f22
+     * 2019-03-13 10:29:32.943 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f22
+     * 2019-03-13 10:29:32.943 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f22
+     * 2019-03-13 10:29:32.943 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=17f7
+     * 2019-03-13 10:29:32.943 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 17f7
+     * 2019-03-13 10:29:32.944 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f7
+     * 2019-03-13 10:29:32.944 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=44df
+     * 2019-03-13 10:29:32.944 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 44df
+     * 2019-03-13 10:29:32.944 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744df
+     * 2019-03-13 10:29:32.944 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=d
+     * 2019-03-13 10:29:32.944 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = d
+     * 2019-03-13 10:29:32.944 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744dfd
+     * 2019-03-13 10:29:32.944 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f2217f744dfd  index0d = 14
+     * 2019-03-13 10:29:53.566 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:29:53.567 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:29:53.567 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:29:53.569 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f1960009039
+     * 2019-03-13 10:29:53.569 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f1960009039
+     * 2019-03-13 10:29:53.570 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1960009039
+     * 2019-03-13 10:29:53.574 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=4
+     * 2019-03-13 10:29:53.574 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 4
+     * 2019-03-13 10:29:53.574 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19600090394
+     * 2019-03-13 10:29:53.574 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f19600090394  index0d = 14
+     * 2019-03-13 10:29:53.583 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 94 -- 94 temp = 11f19600090394
+     * 2019-03-13 10:29:53.583 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 00 data = 9
+     * 2019-03-13 10:29:53.584 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 3 Id :090096
+     * 2019-03-13 10:30:02.816 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:30:02.816 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:30:02.817 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:30:02.818 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f3f
+     * 2019-03-13 10:30:02.818 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3f
+     * 2019-03-13 10:30:02.818 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3f
+     * 2019-03-13 10:30:02.819 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=e1e2
+     * 2019-03-13 10:30:02.819 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = e1e2
+     * 2019-03-13 10:30:02.819 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e2
+     * 2019-03-13 10:30:02.819 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=31f5
+     * 2019-03-13 10:30:02.819 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 31f5
+     * 2019-03-13 10:30:02.819 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f5
+     * 2019-03-13 10:30:02.820 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=8
+     * 2019-03-13 10:30:02.820 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+     * 2019-03-13 10:30:02.820 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f58
+     * 2019-03-13 10:30:02.820 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f3fe1e231f58  index0d = 14
+     * 2019-03-13 10:30:22.446 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:30:22.446 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:30:22.447 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:30:22.447 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f19
+     * 2019-03-13 10:30:22.447 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f19
+     * 2019-03-13 10:30:22.447 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19
+     * 2019-03-13 10:30:22.448 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=9000
+     * 2019-03-13 10:30:22.448 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9000
+     * 2019-03-13 10:30:22.448 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f199000
+     * 2019-03-13 10:30:22.449 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=90498
+     * 2019-03-13 10:30:22.449 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 90498
+     * 2019-03-13 10:30:22.449 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19900090498
+     * 2019-03-13 10:30:22.449 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f19900090498  index0d = 14
+     * 2019-03-13 10:30:22.458 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 98 -- 98 temp = 11f19900090498
+     * 2019-03-13 10:30:22.458 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 00 data = 9
+     * 2019-03-13 10:30:22.458 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 4 Id :090099
+     * 2019-03-13 10:30:31.694 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:30:31.695 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:30:31.695 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:30:31.695 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f2217f744df
+     * 2019-03-13 10:30:31.695 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f2217f744df
+     * 2019-03-13 10:30:31.695 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744df
+     * 2019-03-13 10:30:31.696 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=d
+     * 2019-03-13 10:30:31.696 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = d
+     * 2019-03-13 10:30:31.696 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744dfd
+     * 2019-03-13 10:30:31.696 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f2217f744dfd  index0d = 14
+     * 2019-03-13 10:30:52.318 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:30:52.318 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:30:52.318 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:30:52.320 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f19700090597
+     * 2019-03-13 10:30:52.320 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f19700090597
+     * 2019-03-13 10:30:52.320 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19700090597
+     * 2019-03-13 10:30:52.320 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f19700090597  index0d = 14
+     * 2019-03-13 10:30:52.328 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 97 -- 97 temp = 11f19700090597
+     * 2019-03-13 10:30:52.328 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 00 data = 9
+     * 2019-03-13 10:30:52.328 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 5 Id :090097
+     * 2019-03-13 10:31:01.704 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:31:01.704 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:31:01.704 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:31:01.704 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f3fe1e231f5
+     * 2019-03-13 10:31:01.704 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3fe1e231f5
+     * 2019-03-13 10:31:01.705 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f5
+     * 2019-03-13 10:31:01.705 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=8
+     * 2019-03-13 10:31:01.705 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+     * 2019-03-13 10:31:01.705 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f58
+     * 2019-03-13 10:31:01.705 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f3fe1e231f58  index0d = 14
+     * 2019-03-13 10:31:21.192 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:31:21.192 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:31:21.192 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:31:21.195 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f19
+     * 2019-03-13 10:31:21.195 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f19
+     * 2019-03-13 10:31:21.195 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19
+     * 2019-03-13 10:31:21.197 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=5000
+     * 2019-03-13 10:31:21.197 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5000
+     * 2019-03-13 10:31:21.197 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f195000
+     * 2019-03-13 10:31:21.198 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=9069
+     * 2019-03-13 10:31:21.198 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9069
+     * 2019-03-13 10:31:21.198 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1950009069
+     * 2019-03-13 10:31:21.199 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=6
+     * 2019-03-13 10:31:21.199 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 6
+     * 2019-03-13 10:31:21.199 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19500090696
+     * 2019-03-13 10:31:21.199 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f19500090696  index0d = 14
+     * 2019-03-13 10:31:21.206 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 96 -- 96 temp = 11f19500090696
+     * 2019-03-13 10:31:21.206 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 00 data = 9
+     * 2019-03-13 10:31:21.206 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 6 Id :090095
+     * 2019-03-13 10:31:30.440 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:31:30.441 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:31:30.441 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:31:30.441 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f22
+     * 2019-03-13 10:31:30.441 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f22
+     * 2019-03-13 10:31:30.441 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f22
+     * 2019-03-13 10:31:30.444 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=17f7
+     * 2019-03-13 10:31:30.444 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 17f7
+     * 2019-03-13 10:31:30.444 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f7
+     * 2019-03-13 10:31:30.444 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=44df
+     * 2019-03-13 10:31:30.444 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 44df
+     * 2019-03-13 10:31:30.444 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744df
+     * 2019-03-13 10:31:30.446 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=d
+     * 2019-03-13 10:31:30.446 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = d
+     * 2019-03-13 10:31:30.446 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744dfd
+     * 2019-03-13 10:31:30.446 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f2217f744dfd  index0d = 14
+     * 2019-03-13 10:31:51.194 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:31:51.194 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:31:51.194 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:31:51.195 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f1
+     * 2019-03-13 10:31:51.195 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f1
+     * 2019-03-13 10:31:51.195 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1
+     * 2019-03-13 10:31:51.200 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=03010
+     * 2019-03-13 10:31:51.200 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 03010
+     * 2019-03-13 10:31:51.200 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f103010
+     * 2019-03-13 10:31:51.201 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=9078
+     * 2019-03-13 10:31:51.201 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9078
+     * 2019-03-13 10:31:51.201 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1030109078
+     * 2019-03-13 10:31:51.204 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=d
+     * 2019-03-13 10:31:51.205 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = d
+     * 2019-03-13 10:31:51.205 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1030109078d
+     * 2019-03-13 10:31:51.205 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f1030109078d  index0d = 14
+     * 2019-03-13 10:31:51.211 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 8d -- 8d temp = 11f1030109078d
+     * 2019-03-13 10:31:51.212 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 01 data = 9
+     * 2019-03-13 10:31:51.212 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 7 Id :090103
+     * 2019-03-13 10:32:00.317 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:32:00.317 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:32:00.317 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:32:00.318 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f3f
+     * 2019-03-13 10:32:00.318 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3f
+     * 2019-03-13 10:32:00.318 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3f
+     * 2019-03-13 10:32:00.319 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=e1e2
+     * 2019-03-13 10:32:00.319 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = e1e2
+     * 2019-03-13 10:32:00.319 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e2
+     * 2019-03-13 10:32:00.319 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=31f5
+     * 2019-03-13 10:32:00.320 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 31f5
+     * 2019-03-13 10:32:00.320 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f5
+     * 2019-03-13 10:32:00.326 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=8
+     * 2019-03-13 10:32:00.326 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+     * 2019-03-13 10:32:00.326 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f58
+     * 2019-03-13 10:32:00.327 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f3fe1e231f58  index0d = 14
+     * 2019-03-13 10:32:20.073 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:32:20.073 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:32:20.073 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:32:20.075 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f1ffff0f088
+     * 2019-03-13 10:32:20.075 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f1ffff0f088
+     * 2019-03-13 10:32:20.076 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f088
+     * 2019-03-13 10:32:20.076 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=f
+     * 2019-03-13 10:32:20.076 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = f
+     * 2019-03-13 10:32:20.076 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f088f
+     * 2019-03-13 10:32:20.076 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f1ffff0f088f  index0d = 14
+     * 2019-03-13 10:32:20.083 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 8f -- 8f temp = 11f1ffff0f088f
+     * 2019-03-13 10:32:20.083 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = ff data = 15
+     * 2019-03-13 10:32:20.083 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 8 Id :0fffff
+     * 2019-03-13 10:32:29.188 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=11f22
+     * 2019-03-13 10:32:29.189 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 11f22
+     * 2019-03-13 10:32:29.189 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f22
+     * 2019-03-13 10:32:29.190 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=17f7
+     * 2019-03-13 10:32:29.190 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 17f7
+     * 2019-03-13 10:32:29.190 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f7
+     * 2019-03-13 10:32:29.194 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=44df
+     * 2019-03-13 10:32:29.194 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 44df
+     * 2019-03-13 10:32:29.194 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744df
+     * 2019-03-13 10:32:29.196 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=d
+     * 2019-03-13 10:32:29.196 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = d
+     * 2019-03-13 10:32:29.196 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744dfd
+     * 2019-03-13 10:32:29.196 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f2217f744dfd  index0d = 14
+     * 2019-03-13 10:32:49.816 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:32:49.816 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:32:49.816 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:32:49.819 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f1ffff0
+     * 2019-03-13 10:32:49.819 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f1ffff0
+     * 2019-03-13 10:32:49.819 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0
+     * 2019-03-13 10:32:49.820 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=f0990
+     * 2019-03-13 10:32:49.820 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = f0990
+     * 2019-03-13 10:32:49.820 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f0990
+     * 2019-03-13 10:32:49.820 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f1ffff0f0990  index0d = 14
+     * 2019-03-13 10:32:49.825 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 90 -- 90 temp = 11f1ffff0f0990
+     * 2019-03-13 10:32:49.826 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = ff data = 15
+     * 2019-03-13 10:32:49.826 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 9 Id :0fffff
+     * 2019-03-13 10:32:59.065 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:32:59.065 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:32:59.066 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:32:59.068 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f3f
+     * 2019-03-13 10:32:59.068 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3f
+     * 2019-03-13 10:32:59.068 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3f
+     * 2019-03-13 10:32:59.099 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=e1e2
+     * 2019-03-13 10:32:59.100 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = e1e2
+     * 2019-03-13 10:32:59.100 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e2
+     * 2019-03-13 10:32:59.118 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=31f58
+     * 2019-03-13 10:32:59.119 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 31f58
+     * 2019-03-13 10:32:59.119 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f58
+     * 2019-03-13 10:32:59.119 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f3fe1e231f58  index0d = 14
+     * 2019-03-13 10:33:18.936 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:33:18.936 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:33:18.937 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:33:18.937 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f19
+     * 2019-03-13 10:33:18.937 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f19
+     * 2019-03-13 10:33:18.937 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19
+     * 2019-03-13 10:33:18.938 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=5000
+     * 2019-03-13 10:33:18.938 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 5000
+     * 2019-03-13 10:33:18.938 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f195000
+     * 2019-03-13 10:33:18.938 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=9109
+     * 2019-03-13 10:33:18.938 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9109
+     * 2019-03-13 10:33:18.938 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1950009109
+     * 2019-03-13 10:33:18.938 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:33:18.938 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:33:18.939 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19500091091
+     * 2019-03-13 10:33:18.939 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f19500091091  index0d = 14
+     * 2019-03-13 10:33:18.946 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 91 -- 91 temp = 11f19500091091
+     * 2019-03-13 10:33:18.946 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 00 data = 9
+     * 2019-03-13 10:33:18.947 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 10 Id :090095
+     * 2019-03-13 10:33:28.180 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:33:28.180 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:33:28.180 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:33:28.180 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f22
+     * 2019-03-13 10:33:28.180 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f22
+     * 2019-03-13 10:33:28.181 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f22
+     * 2019-03-13 10:33:28.216 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=17f7
+     * 2019-03-13 10:33:28.216 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 17f7
+     * 2019-03-13 10:33:28.216 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f7
+     * 2019-03-13 10:33:28.216 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=44dfd
+     * 2019-03-13 10:33:28.217 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 44dfd
+     * 2019-03-13 10:33:28.217 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744dfd
+     * 2019-03-13 10:33:28.217 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f2217f744dfd  index0d = 14
+     * 2019-03-13 10:33:48.805 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:33:48.805 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:33:48.805 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:33:48.807 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f1
+     * 2019-03-13 10:33:48.807 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f1
+     * 2019-03-13 10:33:48.809 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1
+     * 2019-03-13 10:33:48.816 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=ffff0
+     * 2019-03-13 10:33:48.816 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = ffff0
+     * 2019-03-13 10:33:48.816 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0
+     * 2019-03-13 10:33:48.829 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=f118
+     * 2019-03-13 10:33:48.829 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = f118
+     * 2019-03-13 10:33:48.829 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f118
+     * 2019-03-13 10:33:48.837 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=9
+     * 2019-03-13 10:33:48.837 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9
+     * 2019-03-13 10:33:48.837 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f1189
+     * 2019-03-13 10:33:48.837 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f1ffff0f1189  index0d = 14
+     * 2019-03-13 10:33:48.842 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 89 -- 89 temp = 11f1ffff0f1189
+     * 2019-03-13 10:33:48.842 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = ff data = 15
+     * 2019-03-13 10:33:48.842 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 11 Id :0fffff
+     * 2019-03-13 10:33:58.183 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:33:58.184 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:33:58.184 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:33:58.186 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f3fe1e231f58
+     * 2019-03-13 10:33:58.186 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3fe1e231f58
+     * 2019-03-13 10:33:58.186 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f58
+     * 2019-03-13 10:33:58.186 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f3fe1e231f58  index0d = 14
+     * 2019-03-13 10:34:17.682 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:34:17.683 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:34:17.683 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:34:17.684 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f1f
+     * 2019-03-13 10:34:17.684 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f1f
+     * 2019-03-13 10:34:17.684 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1f
+     * 2019-03-13 10:34:17.684 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=fff0
+     * 2019-03-13 10:34:17.684 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = fff0
+     * 2019-03-13 10:34:17.684 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0
+     * 2019-03-13 10:34:17.697 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=f128
+     * 2019-03-13 10:34:17.698 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = f128
+     * 2019-03-13 10:34:17.698 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f128
+     * 2019-03-13 10:34:17.725 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=a
+     * 2019-03-13 10:34:17.725 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = a
+     * 2019-03-13 10:34:17.725 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f128a
+     * 2019-03-13 10:34:17.726 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f1ffff0f128a  index0d = 14
+     * 2019-03-13 10:34:17.732 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 8a -- 8a temp = 11f1ffff0f128a
+     * 2019-03-13 10:34:17.732 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = ff data = 15
+     * 2019-03-13 10:34:17.732 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 12 Id :0fffff
+     * 2019-03-13 10:34:27.058 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:34:27.059 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:34:27.060 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:34:27.062 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f2217f744dfd
+     * 2019-03-13 10:34:27.062 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f2217f744dfd
+     * 2019-03-13 10:34:27.062 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744dfd
+     * 2019-03-13 10:34:27.062 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f2217f744dfd  index0d = 14
+     * 2019-03-13 10:34:47.680 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:34:47.680 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:34:47.681 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:34:47.683 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f1ffff0f138
+     * 2019-03-13 10:34:47.683 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f1ffff0f138
+     * 2019-03-13 10:34:47.683 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f138
+     * 2019-03-13 10:34:47.684 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=b
+     * 2019-03-13 10:34:47.684 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = b
+     * 2019-03-13 10:34:47.684 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f138b
+     * 2019-03-13 10:34:47.684 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f1ffff0f138b  index0d = 14
+     * 2019-03-13 10:34:47.688 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 8b -- 8b temp = 11f1ffff0f138b
+     * 2019-03-13 10:34:47.689 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = ff data = 15
+     * 2019-03-13 10:34:47.689 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 13 Id :0fffff
+     * 2019-03-13 10:34:56.938 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:34:56.938 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:34:56.939 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:34:56.939 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f3fe1e2
+     * 2019-03-13 10:34:56.939 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3fe1e2
+     * 2019-03-13 10:34:56.939 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e2
+     * 2019-03-13 10:34:56.942 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=31f58
+     * 2019-03-13 10:34:56.942 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 31f58
+     * 2019-03-13 10:34:56.943 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f58
+     * 2019-03-13 10:34:56.943 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f3fe1e231f58  index0d = 14
+     * 2019-03-13 10:35:16.554 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:35:16.554 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:35:16.555 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:35:16.557 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f1ffff0f
+     * 2019-03-13 10:35:16.557 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f1ffff0f
+     * 2019-03-13 10:35:16.557 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f
+     * 2019-03-13 10:35:16.562 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=148c
+     * 2019-03-13 10:35:16.562 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 148c
+     * 2019-03-13 10:35:16.562 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f148c
+     * 2019-03-13 10:35:16.562 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=
+     * 2019-03-13 10:35:16.562 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld =
+     * 2019-03-13 10:35:16.562 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1ffff0f148c
+     * 2019-03-13 10:35:16.562 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f1ffff0f148c  index0d = 14
+     * 2019-03-13 10:35:16.566 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 8c -- 8c temp = 11f1ffff0f148c
+     * 2019-03-13 10:35:16.566 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = ff data = 15
+     * 2019-03-13 10:35:16.566 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 14 Id :0fffff
+     * 2019-03-13 10:35:25.804 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:35:25.804 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:35:25.804 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:35:25.805 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f22
+     * 2019-03-13 10:35:25.805 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f22
+     * 2019-03-13 10:35:25.805 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f22
+     * 2019-03-13 10:35:25.806 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=17f7
+     * 2019-03-13 10:35:25.806 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 17f7
+     * 2019-03-13 10:35:25.806 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f7
+     * 2019-03-13 10:35:25.807 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=44df
+     * 2019-03-13 10:35:25.807 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 44df
+     * 2019-03-13 10:35:25.807 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744df
+     * 2019-03-13 10:35:25.807 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=d
+     * 2019-03-13 10:35:25.807 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = d
+     * 2019-03-13 10:35:25.808 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744dfd
+     * 2019-03-13 10:35:25.808 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f2217f744dfd  index0d = 14
+     * 2019-03-13 10:35:46.430 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:35:46.430 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:35:46.430 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:35:46.431 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f10
+     * 2019-03-13 10:35:46.431 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f10
+     * 2019-03-13 10:35:46.431 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f10
+     * 2019-03-13 10:35:46.431 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=0010
+     * 2019-03-13 10:35:46.431 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 0010
+     * 2019-03-13 10:35:46.432 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f100010
+     * 2019-03-13 10:35:46.432 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=9008
+     * 2019-03-13 10:35:46.432 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9008
+     * 2019-03-13 10:35:46.433 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1000109008
+     * 2019-03-13 10:35:46.433 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=3
+     * 2019-03-13 10:35:46.433 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 3
+     * 2019-03-13 10:35:46.433 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f10001090083
+     * 2019-03-13 10:35:46.433 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f10001090083  index0d = 14
+     * 2019-03-13 10:35:46.437 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 83 -- 83 temp = 11f10001090083
+     * 2019-03-13 10:35:46.437 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 01 data = 9
+     * 2019-03-13 10:35:46.437 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 0 Id :090100
+     * 2019-03-13 10:35:55.677 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:35:55.678 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:35:55.678 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:35:55.679 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f3f
+     * 2019-03-13 10:35:55.680 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3f
+     * 2019-03-13 10:35:55.680 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3f
+     * 2019-03-13 10:35:55.685 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=e1e231f58
+     * 2019-03-13 10:35:55.685 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = e1e231f58
+     * 2019-03-13 10:35:55.685 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f58
+     * 2019-03-13 10:35:55.685 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f3fe1e231f58  index0d = 14
+     * 2019-03-13 10:36:15.303 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:36:15.303 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:36:15.303 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:36:15.306 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f10201090186
+     * 2019-03-13 10:36:15.306 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f10201090186
+     * 2019-03-13 10:36:15.306 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f10201090186
+     * 2019-03-13 10:36:15.306 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f10201090186  index0d = 14
+     * 2019-03-13 10:36:15.311 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 86 -- 86 temp = 11f10201090186
+     * 2019-03-13 10:36:15.311 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 01 data = 9
+     * 2019-03-13 10:36:15.311 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 1 Id :090102
+     * 2019-03-13 10:36:24.557 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:36:24.557 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:36:24.557 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:36:24.558 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f2217f744dfd
+     * 2019-03-13 10:36:24.558 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f2217f744dfd
+     * 2019-03-13 10:36:24.558 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744dfd
+     * 2019-03-13 10:36:24.558 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f2217f744dfd  index0d = 14
+     * 2019-03-13 10:36:45.432 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:36:45.432 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:36:45.432 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:36:45.436 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f19
+     * 2019-03-13 10:36:45.436 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f19
+     * 2019-03-13 10:36:45.437 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19
+     * 2019-03-13 10:36:45.437 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=4000
+     * 2019-03-13 10:36:45.437 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 4000
+     * 2019-03-13 10:36:45.437 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f194000
+     * 2019-03-13 10:36:45.437 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=9029
+     * 2019-03-13 10:36:45.437 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9029
+     * 2019-03-13 10:36:45.437 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1940009029
+     * 2019-03-13 10:36:45.438 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:36:45.438 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:36:45.438 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19400090291
+     * 2019-03-13 10:36:45.438 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f19400090291  index0d = 14
+     * 2019-03-13 10:36:45.442 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 91 -- 91 temp = 11f19400090291
+     * 2019-03-13 10:36:45.442 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 00 data = 9
+     * 2019-03-13 10:36:45.442 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 2 Id :090094
+     * 2019-03-13 10:36:54.438 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:36:54.438 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:36:54.438 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:36:54.439 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f3fe1e2
+     * 2019-03-13 10:36:54.439 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3fe1e2
+     * 2019-03-13 10:36:54.439 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e2
+     * 2019-03-13 10:36:54.439 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=31f5
+     * 2019-03-13 10:36:54.439 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 31f5
+     * 2019-03-13 10:36:54.439 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f5
+     * 2019-03-13 10:36:54.470 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=8
+     * 2019-03-13 10:36:54.470 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+     * 2019-03-13 10:36:54.470 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f58
+     * 2019-03-13 10:36:54.471 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f3fe1e231f58  index0d = 14
+     * 2019-03-13 10:37:14.056 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:37:14.057 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:37:14.057 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:37:14.057 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f19600090394
+     * 2019-03-13 10:37:14.057 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f19600090394
+     * 2019-03-13 10:37:14.057 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19600090394
+     * 2019-03-13 10:37:14.057 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f19600090394  index0d = 14
+     * 2019-03-13 10:37:14.061 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 94 -- 94 temp = 11f19600090394
+     * 2019-03-13 10:37:14.062 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 00 data = 9
+     * 2019-03-13 10:37:14.062 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 3 Id :090096
+     * 2019-03-13 10:37:23.304 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:37:23.304 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:37:23.304 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:37:23.305 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f2217f7
+     * 2019-03-13 10:37:23.305 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f2217f7
+     * 2019-03-13 10:37:23.305 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f7
+     * 2019-03-13 10:37:23.306 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=44df
+     * 2019-03-13 10:37:23.306 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 44df
+     * 2019-03-13 10:37:23.306 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744df
+     * 2019-03-13 10:37:23.312 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=d
+     * 2019-03-13 10:37:23.312 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = d
+     * 2019-03-13 10:37:23.313 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f2217f744dfd
+     * 2019-03-13 10:37:23.313 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f2217f744dfd  index0d = 14
+     * 2019-03-13 10:37:43.687 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:37:43.687 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:37:43.687 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:37:43.689 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f199000
+     * 2019-03-13 10:37:43.690 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f199000
+     * 2019-03-13 10:37:43.690 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f199000
+     * 2019-03-13 10:37:43.695 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=9049
+     * 2019-03-13 10:37:43.695 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 9049
+     * 2019-03-13 10:37:43.695 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f1990009049
+     * 2019-03-13 10:37:43.695 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=8
+     * 2019-03-13 10:37:43.695 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+     * 2019-03-13 10:37:43.695 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f19900090498
+     * 2019-03-13 10:37:43.696 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f19900090498  index0d = 14
+     * 2019-03-13 10:37:43.697 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: 98 -- 98 temp = 11f19900090498
+     * 2019-03-13 10:37:43.697 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: locationAddress = 00 data = 9
+     * 2019-03-13 10:37:43.697 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: Device  = 4 Id :090099
+     * 2019-03-13 10:37:52.940 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1
+     * 2019-03-13 10:37:52.940 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1
+     * 2019-03-13 10:37:52.941 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 1
+     * 2019-03-13 10:37:52.967 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=1f3f
+     * 2019-03-13 10:37:52.968 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 1f3f
+     * 2019-03-13 10:37:52.968 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3f
+     * 2019-03-13 10:37:52.968 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=e1e2
+     * 2019-03-13 10:37:52.968 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = e1e2
+     * 2019-03-13 10:37:52.968 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e2
+     * 2019-03-13 10:37:52.976 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=31f5
+     * 2019-03-13 10:37:52.976 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 31f5
+     * 2019-03-13 10:37:52.976 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f5
+     * 2019-03-13 10:37:52.984 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: handleMessage: in msg=8
+     * 2019-03-13 10:37:52.984 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgOld = 8
+     * 2019-03-13 10:37:52.984 10472-10472/com.radioknit.mmidec E/Tag_MainActivity: appendlog1() msgAppend = 11f3fe1e231f58
+     * 2019-03-13 10:37:52.984 10472-10472/com.radioknit.mmidec D/Tag_MainActivity: processReceivedData: temp = 11f3fe1e231f58  index0d = 14
+     * 2019-03-13 10:37:55.178 10472-10472/com.radioknit.mmidec I/Tag_MainActivity: MESSAGE_STATE_CHANGE: 0
+     * 2019-03-13 10:37:55.179 10472-10472/com.radioknit.mmidec I/Tag_MainActivity: MESSAGE_STATE_CHANGE: 1*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /*
     2019-02-23 14:29:51.855  D/Tag_CarCallActivity: onCreate()
 2019-02-23 14:29:51.855  D/Tag_CarCallActivity: createObj()
