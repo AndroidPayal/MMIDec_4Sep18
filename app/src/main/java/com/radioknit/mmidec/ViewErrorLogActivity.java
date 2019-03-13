@@ -35,6 +35,9 @@ import java.lang.ref.WeakReference;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
+import static com.radioknit.mmidec.MainActivity.isConnected;
+import static com.radioknit.mmidec.MainActivity.sendMessage;
+
 public class ViewErrorLogActivity extends BaseActivity {
 
     private static final String TAG = "ViewErrorLogActivity";
@@ -230,7 +233,8 @@ public class ViewErrorLogActivity extends BaseActivity {
         Log.e(TAG, "asciiString = "+ asciiString);
 
         if (isConnected()) {
-            connector.write(asciiString.getBytes());
+            //connector.write(asciiString.getBytes());
+            sendMessage(asciiString.getBytes());
         }
         else {
             Toast.makeText(getApplicationContext(), "Connect to the device", Toast.LENGTH_SHORT).show();
@@ -264,10 +268,12 @@ public class ViewErrorLogActivity extends BaseActivity {
     /**
      * ???????? ?????????? ??????????
      */
-    private boolean isConnected() {
+ /*   private boolean isConnected() {
       //  return (connector != null) && (connector.getState() == DeviceConnector.STATE_CONNECTED);
-        return true;
-    }
+        //return true;
+        return (connector.getState() == BluetoothChatService.STATE_CONNECTED);
+
+    }*/
     // ==========================================================================
 
 

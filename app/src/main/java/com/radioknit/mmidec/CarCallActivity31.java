@@ -282,7 +282,7 @@ public class CarCallActivity31 extends AppCompatActivity implements CarCallAdapt
             Log.d(TAG, "showCarCalls23: strCallCop2Combine="+strCallCopCombine);
 
             //array will store flr 16-31 values
-            for(int indexCop=0; indexCop <16; indexCop++) {//showState[indexCop =0]  then florPos=15
+            for(int indexCop=0; indexCop <16; indexCop++) {//showState[indexCop =0]  then florPos=31
                 if (strCallCopCombine.charAt(indexCop) == '0') {
                     showState[indexCop] = 0;
                 } else if(strCallCopCombine.charAt(indexCop) == '1') {

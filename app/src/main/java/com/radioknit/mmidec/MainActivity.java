@@ -1,14 +1,19 @@
 package com.radioknit.mmidec;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -44,6 +49,9 @@ import static com.radioknit.mmidec.PrefUtils.PREFS_LOGIN_USERNAME_KEY;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "Tag_MainActivity";
     private static final boolean D = true;
+
+    public static final int MY_PERMISSIONS_REQUEST_LOCATION = 2;
+
     // Message types sent from the BluetoothChatService Handler
     public static final int MESSAGE_STATE_CHANGE = 1;
     public static final int MESSAGE_READ = 2;
@@ -293,11 +301,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        imgDummy1.setVisibility(View.INVISIBLE);
+      //  imgDummy1.setVisibility(View.INVISIBLE);
         imgDummy1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i1 = new Intent(MainActivity.this, CarCallActivity31.class);
+                Intent i1 = new Intent(MainActivity.this, CarCallActivity.class);
                 i1.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(i1);
             }
@@ -1516,11 +1524,37 @@ public class MainActivity extends AppCompatActivity {
             startActivityForResult(enableIntent, REQUEST_ENABLE_BT);
             // Otherwise, setup the chat session
         } else {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+                askLocationPermission();
+            }
+
+
             if (mChatService == null)
                 setupChat();
         }
     }
 
+    private void askLocationPermission() {
+        //Prompt the user once explanation has been shown
+        if (ActivityCompat.checkSelfPermission(getApplicationContext(),Manifest.permission
+                .ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
+        ||
+        ActivityCompat.checkSelfPermission(getApplicationContext(),Manifest.permission.ACCESS_COARSE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+
+            ActivityCompat.requestPermissions(MainActivity.this,
+                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION},
+                    MY_PERMISSIONS_REQUEST_LOCATION);
+        }//else permission already granted
+    }
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (grantResults.length > 0
+                && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            Toast.makeText(this, "Scanning Bluetooth devices", Toast.LENGTH_SHORT).show();
+        }
+    }
     @Override
     public synchronized void onResume() {
         super.onResume();
