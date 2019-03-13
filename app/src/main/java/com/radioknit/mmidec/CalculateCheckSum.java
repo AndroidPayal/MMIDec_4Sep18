@@ -26,7 +26,7 @@ public static String TAG = "Tag_checksum";
         for(int i = 0; i<strCmd.length(); i++){
             chkSum = chkSum + strCmd.charAt(i);
 
-            Log.d(TAG, "calculateChkSum: checksumloop = "+chkSum);
+          //  Log.d(TAG, "calculateChkSum: checksumloop = "+chkSum);
         }
        Log.d(TAG, "calculateChkSum: chksum = "+ chkSum);
       // System.out.println("Checksum: "+chkSum);

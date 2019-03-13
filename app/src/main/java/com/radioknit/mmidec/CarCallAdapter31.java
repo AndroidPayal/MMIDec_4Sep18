@@ -30,7 +30,7 @@ import static com.radioknit.mmidec.MainActivity.sendMessage;
 public class CarCallAdapter31 extends BaseAdapter {
 
     private static final String TAG = "Tag_CarCallAdapter31";
-    public static boolean SHOW_TAG = false;
+    public static boolean SHOW_TAG = true;
 
     private Context mContext;
     protected ViewHolder mViewHolder;
@@ -296,8 +296,8 @@ public class CarCallAdapter31 extends BaseAdapter {
                     if(SHOW_TAG)Log.d(TAG, "txtFloorNumber clicked placecall = 1");
                     Toast.makeText(mContext, "Clicked : text : "+(31-position), Toast.LENGTH_SHORT).show();
 
-                    viewHolder.txtFloorNumber.setBackground(drawableSel);
-                    callLopCop((31-position),1);//placecall =0000 0001 /*call from cop*/
+                    //viewHolder.txtFloorNumber.setBackground(drawableSel);
+                    callLopCop((31-position),1,viewHolder);//placecall =0000 0001 /*call from cop*/
                 }
             });
 
@@ -309,8 +309,8 @@ public class CarCallAdapter31 extends BaseAdapter {
                     if(SHOW_TAG)Log.d(TAG, "imgUp clicked placecall = 2");
                     Toast.makeText(mContext, "Clicked : imgUp : "+(31-position), Toast.LENGTH_SHORT).show();
 
-                    viewHolder.imgUp.setImageResource(R.drawable.up_green);
-                    callLopCop((31-position),2);//placecall = 0000 0010 /*up call from lop*/
+                    //viewHolder.imgUp.setImageResource(R.drawable.up_green);
+                    callLopCop((31-position),2,viewHolder);//placecall = 0000 0010 /*up call from lop*/
                 }
             });
 
@@ -322,8 +322,8 @@ public class CarCallAdapter31 extends BaseAdapter {
                     if(SHOW_TAG)Log.d(TAG, "imgDown clicked placecall = 4");
                     Toast.makeText(mContext, "Clicked : imgDown : "+(31-position), Toast.LENGTH_SHORT).show();
 
-                    viewHolder.imgDown.setImageResource(R.drawable.down_green);
-                    callLopCop((31-position),4);//place call = 0000 0100 /*down call from lop*/
+                    //viewHolder.imgDown.setImageResource(R.drawable.down_green);
+                    callLopCop((31-position),4,viewHolder);//place call = 0000 0100 /*down call from lop*/
                 }
             });
 
@@ -357,7 +357,7 @@ public class CarCallAdapter31 extends BaseAdapter {
     }
 
 
-    public void callLopCop(int flrNo, int placeCall) {
+    public void callLopCop(int flrNo, int placeCall, ViewHolder viewHolder) {
 
         if(SHOW_TAG)Log.d(TAG, "calllopcop() flor no = "+flrNo +" placecall = "+placeCall );
 
@@ -379,8 +379,20 @@ public class CarCallAdapter31 extends BaseAdapter {
         if(isConnected()) {
 
             if(SHOW_TAG)Log.d(TAG, "===========sending msg==== = "+asciiString + " bytes form = "+asciiString.getBytes());
-
             sendMessage(asciiString.getBytes());
+
+            //Change button color if device is connected we sent command
+            switch (placeCall){
+                case 1:
+                    viewHolder.txtFloorNumber.setBackground(drawableSel);
+                    break;
+                case 2:
+                    viewHolder.imgUp.setImageResource(R.drawable.up_green);
+                    break;
+                case 4:
+                    viewHolder.imgDown.setImageResource(R.drawable.down_green);
+                    break;
+            }
         }
     }
 

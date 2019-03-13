@@ -607,20 +607,32 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //TODO:Protocol time
-        if (temp.startsWith("11f2")) {
-            String hrs = (temp.substring(4, 6));
-            String min = (temp.substring(6, 8));
-            txtTime.setText("" + hrs + " : " + min);
+        if (temp.startsWith("11f2")) {//11f2217f744dfd
+            String hrs = (temp.substring(4, 6));//21
+            String min = (temp.substring(6, 8));//7f
+
+            Log.d(TAG, "processReceivedData: decimal hour="+Integer.parseInt(hrs,16)
+            + " min="+Integer.parseInt(min,16));
+            //decimal hour=33 min=127
+
+            //txtTime.setText("" + hrs + " : " + min);
+            txtTime.setText("" + Integer.parseInt(hrs,16) + " : " + Integer.parseInt(min,16));
             temp = "";
         }
 
         //TODO:Protocol for Date
-        if (temp.startsWith("11f3")) {
-            String date = (temp.substring(4, 6));
-            String month = (temp.substring(6, 8));
-            String year = (temp.substring(8, 10));
-//                txtDate.setText("20" + year + " / " + month + " / " + date);
-            txtDate.setText(date +" / " + month+ " / " + "20" + year  );
+        if (temp.startsWith("11f3")) {//11f3fe1e231f58
+            String date = (temp.substring(4, 6));//23
+            String month = (temp.substring(6, 8));//1e
+            String year = (temp.substring(8, 10));//fe
+
+            Log.d(TAG, "processReceivedData:decimal date = "+Integer.parseInt(date,16)
+            +" month ="+ Integer.parseInt(month ,16)
+            +" yr = "+ Integer.parseInt(year,16));
+            //decimal date = 254 month =30 yr = 35
+
+            //    txtDate.setText(date + " / " + month+ " / " +"20" + year  );
+            txtDate.setText(Integer.parseInt(date,16) +" / " + Integer.parseInt(month ,16)+ " / " + "20" + Integer.parseInt(year,16)  );
             temp = "";
         }
         //TODo : Protocol for COP1
