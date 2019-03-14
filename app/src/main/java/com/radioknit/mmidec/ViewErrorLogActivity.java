@@ -11,6 +11,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuInflater;
@@ -35,12 +36,15 @@ import java.lang.ref.WeakReference;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
+import static com.radioknit.mmidec.MainActivity.MESSAGE_DEVICE_NAME;
+import static com.radioknit.mmidec.MainActivity.MESSAGE_READ;
+import static com.radioknit.mmidec.MainActivity.MESSAGE_STATE_CHANGE;
 import static com.radioknit.mmidec.MainActivity.isConnected;
 import static com.radioknit.mmidec.MainActivity.sendMessage;
 
-public class ViewErrorLogActivity extends BaseActivity {
+public class ViewErrorLogActivity extends AppCompatActivity {
 
-    private static final String TAG = "ViewErrorLogActivity";
+    private static final String TAG = "Tag_ViewErrorLogAct";
     private Context mContext;
     ArrayList<String> arrCommandValueList;
     private ArrayAdapter<String> adapter;
@@ -73,7 +77,7 @@ public class ViewErrorLogActivity extends BaseActivity {
 
     private ProgressDialog pd;
     private StringBuffer completReceivedString;
-
+    final Handler handler = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,7 +114,7 @@ public class ViewErrorLogActivity extends BaseActivity {
     }
 
     private void registerEvent() {
-        final Handler ha = new Handler();
+
 
         btnViewErrorLog.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,60 +124,7 @@ public class ViewErrorLogActivity extends BaseActivity {
                 if (isConnected()) {
                 pd = ProgressDialog.show(mContext,"","Please wait",true);
 
-                boolean b = ha.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-
-                        //call function
-                        if(counter == 0){
-                            callError(counter);
-                            delay();
-                            counter++;
-                        }else if(counter == 1){
-                            callError(counter);
-                            delay();
-                            counter++;
-                        }else if(counter ==  2 ){
-                            callError(counter);
-                            delay();
-                            counter++;
-                        }else if(counter == 3){
-                            callError(counter);
-                            delay();
-                            counter++;
-                        }else if(counter == 4){
-                            callError(counter);
-                            delay();
-                            counter++;
-                        }else if(counter == 5){
-                            callError(counter);
-                            delay();
-                            counter++;
-                        }else if(counter == 6){
-                            callError(counter);
-                            delay();
-                            counter++;
-                        }else if(counter == 7){
-                            callError(counter);
-                            delay();
-                            counter++;
-                        }else if(counter == 8){
-                            callError(counter);
-                            delay();
-                            counter++;
-                        }else if(counter == 9){
-                            callError(counter);
-                            delay();
-                            counter++;
-                        }else if(counter == 10){
-                            counter++;
-                            pd.dismiss();
-                            showReceivedDataNew();
-                        }
-                        ha.postDelayed(this, 500);
-
-                    }
-                }, 500);
+                boolean b = handler.postDelayed(checkDataContinue, 500);
                 }
                 else {
                     Toast.makeText(getApplicationContext(), "Connect to the device", Toast.LENGTH_SHORT).show();
@@ -183,6 +134,60 @@ public class ViewErrorLogActivity extends BaseActivity {
         });
     }
 
+    Runnable checkDataContinue = new Runnable() {
+        @Override
+        public void run() {
+
+            //call function
+            if(counter == 0){
+                callError(counter);
+                delay();
+                counter++;
+            }else if(counter == 1){
+                callError(counter);
+                delay();
+                counter++;
+            }else if(counter ==  2 ){
+                callError(counter);
+                delay();
+                counter++;
+            }else if(counter == 3){
+                callError(counter);
+                delay();
+                counter++;
+            }else if(counter == 4){
+                callError(counter);
+                delay();
+                counter++;
+            }else if(counter == 5){
+                callError(counter);
+                delay();
+                counter++;
+            }else if(counter == 6){
+                callError(counter);
+                delay();
+                counter++;
+            }else if(counter == 7){
+                callError(counter);
+                delay();
+                counter++;
+            }else if(counter == 8){
+                callError(counter);
+                delay();
+                counter++;
+            }else if(counter == 9){
+                callError(counter);
+                delay();
+                counter++;
+            }else if(counter == 10){
+                counter++;
+                pd.dismiss();
+                showReceivedDataNew();
+            }
+            handler.postDelayed(this, 500);
+
+        }
+    };
     private void createObj() {
         mContext = ViewErrorLogActivity.this;
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
@@ -206,6 +211,7 @@ public class ViewErrorLogActivity extends BaseActivity {
 //TODO : protocol sending request to view error stack
     public void callError(int errorNo) {
 
+        Log.d(TAG, "callError: errorNo: "+errorNo);
         a3 = errorNo;
         int sum = a1 + a2 + a3 + a4 + a5 + a6;
         int[] sendValChkSum={a1, a2, a3, a4, a5, a6};
@@ -244,7 +250,8 @@ public class ViewErrorLogActivity extends BaseActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(mContext, MainActivity.class));
+       // startActivity(new Intent(mContext, MainActivity.class));
+        handler.removeCallbacks(checkDataContinue);
         finish();
     }
 
@@ -277,9 +284,7 @@ public class ViewErrorLogActivity extends BaseActivity {
     // ==========================================================================
 
 
-    /**
-     * ????????? ??????????
-     */
+
     private void stopConnection() {
         if (connector != null) {
             connector.stop();
@@ -288,20 +293,20 @@ public class ViewErrorLogActivity extends BaseActivity {
         }
     }
     // ==========================================================================
-    @Override
+   /* @Override
     public synchronized void onPause() {
         super.onPause();
         stopConnection();
-    }
+    }*/
 
     /**
      * ?????? ????????? ??? ???????????
      */
-    private void startDeviceListActivity() {
+    /*private void startDeviceListActivity() {
         stopConnection();
         Intent serverIntent = new Intent(this, DeviceListActivity.class);
         startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE);
-    }
+    }*/
     // ============================================================================
 
 
@@ -310,11 +315,11 @@ public class ViewErrorLogActivity extends BaseActivity {
      *
      * @return
      */
-    @Override
+   /* @Override
     public boolean onSearchRequested() {
         if (super.isAdapterReady()) startDeviceListActivity();
         return false;
-    }
+    }*/
     // ==========================================================================
 
 
@@ -388,7 +393,7 @@ public class ViewErrorLogActivity extends BaseActivity {
     // ============================================================================
 
 
-    @Override
+   /* @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
@@ -408,7 +413,7 @@ public class ViewErrorLogActivity extends BaseActivity {
                 }
                 break;
         }
-    }
+    }*/
     // ==========================================================================
 
 
@@ -512,13 +517,13 @@ public class ViewErrorLogActivity extends BaseActivity {
                         activity.setDeviceName((String) msg.obj);
                         break;
 
-                    case MESSAGE_WRITE:
+                   /* case MESSAGE_WRITE:
 
                         break;
 
                     case MESSAGE_TOAST:
                         // stub
-                        break;
+                        break;*/
                 }
             }
         }
@@ -526,6 +531,7 @@ public class ViewErrorLogActivity extends BaseActivity {
     // ==========================================================================
 
 
+    //TODO : protocol :Receive error code for error no requested
     public void showReceivedDataNew(){
         Log.e(TAG, "ShowReceivedData");
 
