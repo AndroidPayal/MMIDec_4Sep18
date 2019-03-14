@@ -3,9 +3,9 @@ package com.radioknit.mmidec;
 public class dummy {
 
     /**
-     *
-     * 03/14 10:47:31: Launching app
-     * $ adb push /home/shruti/Documents/Android Project/MMIDec_4Sep18/app/build/outputs/apk/app-debug.apk /data/local/tmp/com.radioknit.mmidec
+     * DEBUG LOG
+     * 14/03/19     10:47:31: Launching app
+/*     * $ adb push /home/shruti/Documents/Android Project/MMIDec_4Sep18/app/build/outputs/apk/app-debug.apk /data/local/tmp/com.radioknit.mmidec
      * $ adb shell pm install -t -r "/data/local/tmp/com.radioknit.mmidec"
      * Success
      * APK installed in 2 s 885 ms
@@ -25,7 +25,11 @@ public class dummy {
      * I/chatty: uid=10165(com.radioknit.mmidec) identical 1 line
      * I/System.out: waiting for debugger to settle...
      * I/System.out: waiting for debugger to settle...
-     * Connected to the target VM, address: 'localhost:8600', transport: 'socket'
+     * Connected to the target VM, address: 'localhost:8600', transport: 'socket'*/
+
+
+
+    /*
      * I/System.out: waiting for debugger to settle...
      * I/System.out: waiting for debugger to settle...
      * I/System.out: waiting for debugger to settle...
@@ -6260,6 +6264,26 @@ public class dummy {
      * D/Tag_CarCallAdapter31: cop1Calls obj val = 00000000
      * D/Tag_CarCallAdapter31: getView: position = 10textViewStateAll 0
      * Disconnected from the target VM, address: 'localhost:8600', transport: 'socket'*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

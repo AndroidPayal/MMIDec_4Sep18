@@ -307,7 +307,9 @@ public class BluetoothChatService {
 				try {
 					// This is a blocking call and will only return on a
 					// successful connection or an exception
-					socket = mmServerSocket.accept();
+					if (mmServerSocket!=null)
+						socket = mmServerSocket.accept();
+
 				} catch (Exception e) {
 					Log.e(TAG, "Socket Type: " + mSocketType
 							+ "accept() failed", e);
