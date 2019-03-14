@@ -200,7 +200,7 @@ public class CarCallActivity31 extends AppCompatActivity implements CarCallAdapt
                     //Catch
                 }
             }
-            myHandlerChk.postDelayed(this, 100);
+            myHandlerChk.postDelayed(this, 1000);
         }
 
     };

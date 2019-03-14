@@ -347,9 +347,11 @@ public class BluetoothChatService {
 
 		public void cancel() {
 			if (D)
-				Log.d(TAG, "Socket Type" + mSocketType + "cancel " + this);
+				Log.d(TAG, "Socket Type=" + mSocketType + " cancel() " + this);
 			try {
-				mmServerSocket.close();
+
+				if (mmServerSocket!=null)
+					mmServerSocket.close();
 			} catch (Exception e) {
 				Log.e(TAG, "Socket Type" + mSocketType
 						+ "close() of server failed", e);

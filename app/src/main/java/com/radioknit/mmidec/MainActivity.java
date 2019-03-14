@@ -1565,7 +1565,9 @@ public class MainActivity extends AppCompatActivity {
         // not enabled during onStart(), so we were paused to enable it...
         // onResume() will be called when ACTION_REQUEST_ENABLE activity
         // returns.
+        Log.d(TAG, "onResume: mChatService="+mChatService);
         if (mChatService != null) {
+            Log.d(TAG, "onResume: mChatService state="+mChatService.getState());
             // Only if the state is STATE_NONE, do we know that we haven't
             // started already
             if (mChatService.getState() == BluetoothChatService.STATE_NONE) {
@@ -1807,7 +1809,7 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
 
             case R.id.menu_search:
-                mChatService.stop();
+              //  mChatService.stop(); //this line was
                 Intent serverIntent = null;
                 serverIntent = new Intent(MainActivity.this, DeviceListActivity.class);
                 startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE);

@@ -137,6 +137,7 @@ public class CarCallAdapter31 extends BaseAdapter {
             imageViewDownAll[31].setVisibility(View.INVISIBLE);
         }catch (Exception e){
             //Catch exception
+            Log.d(TAG, "getView: except:"+e);
         }
 
         Log.d(TAG, "getView: position = "+position + "textViewStateAll "+showState[position]);
