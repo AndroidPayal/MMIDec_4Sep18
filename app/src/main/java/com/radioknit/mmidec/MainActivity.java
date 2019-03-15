@@ -1570,6 +1570,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public synchronized void onResume() {
         super.onResume();
+
+
        /* if (D)
             Log.e(TAG, "+ ON RESUME +");*/
 
@@ -1578,7 +1580,10 @@ public class MainActivity extends AppCompatActivity {
         // onResume() will be called when ACTION_REQUEST_ENABLE activity
         // returns.
         Log.d(TAG, "onResume: mChatService="+mChatService);
-        if (mChatService != null) {
+        if (mChatService == null) {//changed to ==
+            if (llError.getVisibility() == View.VISIBLE){
+                llError.setVisibility(View.GONE);
+            }
             Log.d(TAG, "onResume: mChatService state="+mChatService.getState());
             // Only if the state is STATE_NONE, do we know that we haven't
             // started already

@@ -440,7 +440,8 @@ public class IOIndicatorActivity extends AppCompatActivity {
             } else {
                 chk_io_DoorZoneSw.setChecked(false);
             }
-            if (four.charAt(0) == '1') {
+          //  if (four.charAt(0) == '1') {
+            if (four.charAt(0) == '0') {//changing this if condition bcz it was working opposite to intended work
                 chk_io_BrkIn.setChecked(true);
             } else {
                 chk_io_BrkIn.setChecked(false);
