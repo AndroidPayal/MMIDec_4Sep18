@@ -301,7 +301,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-      //  imgDummy1.setVisibility(View.INVISIBLE);
+        imgDummy1.setVisibility(View.INVISIBLE);
         imgDummy1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -403,47 +403,52 @@ public class MainActivity extends AppCompatActivity {
               //  Log.e(TAG, "str05Flr = "+ str05Flr);
                     int floorNo = Integer.parseInt(str05Flr, 16);
                     String hexFour = String.format("%04x", Integer.parseInt(str05Stat0, 16));
-                    String strBinaryFour = Utils.hexToBin(hexFour);
+                    String strBinaryFour = Utils.hexToBin(hexFour);//00110110
 
                 Log.e(TAG, "processReceivedData(if 05) =flr " + str05Flr +" str05Stat0="+str05Stat0
                 + " flrNo ="+floorNo + " hexFour="+hexFour+ " strBinaryFour="+strBinaryFour);
 
-                    if (strBinaryFour.charAt(7) == '1') {
-                        if (strBinaryFour.charAt(5) == '1') {
+                    if (strBinaryFour.charAt(7) == '1') {//up direction
+                        if (strBinaryFour.charAt(5) == '1') {//lift is running
                             imgUp.setVisibility(View.VISIBLE);
                             imgDown.setVisibility(View.GONE);
                             imgUp.setImageResource(R.drawable.up_flashing);
-                        tvRunningStatus.setText("Up Running");
-//                        Log.e(TAG, "Up Running");
-                        } else {
+                            tvRunningStatus.setText("Up Running");
+                        } else {//lift is in stady mode
                             imgUp.setVisibility(View.VISIBLE);
                             imgDown.setVisibility(View.GONE);
                             imgUp.setImageResource(R.drawable.up_arraow);
-                        Log.e(TAG, "Up study");
-//                        tvRunningStatus.setText("Up");
+//                          tvRunningStatus.setText("Up");
                         }
-                    } else if (strBinaryFour.charAt(6) == '1') {
-                        if (strBinaryFour.charAt(5) == '1') {
+
+                    } else if (strBinaryFour.charAt(6) == '1') {//down direction
+                        if (strBinaryFour.charAt(5) == '1') {//lift is running
                             imgDown.setVisibility(View.VISIBLE);
                             imgUp.setVisibility(View.GONE);
                             imgDown.setImageResource(R.drawable.down_flashing);
-                        Log.e(TAG, "Down Running");
-//                        tvRunningStatus.setText("Down Running");
-                        } else {
+                            Log.e(TAG, "Down Running");
+//                          tvRunningStatus.setText("Down Running");
+                        } else {//lift is in stady mode
                             imgDown.setVisibility(View.VISIBLE);
                             imgUp.setVisibility(View.GONE);
                             imgDown.setImageResource(R.drawable.down_arr);
-                        Log.e(TAG, "Down Study");
-//                        tvRunningStatus.setText("Down");
+                            Log.e(TAG, "Down Study");
+//                          tvRunningStatus.setText("Down");
                         }
-                    } else if (strBinaryFour.charAt(7) == '0') {
+                    }
+                    //=======================================================
+                    else if (strBinaryFour.charAt(7) == '0') {
+                        Log.d("Tag_check", "processReceivedData: bit 7 is 0");
                         imgUp.setVisibility(View.GONE);
                         imgDown.setVisibility(View.GONE);
 
                     } else if (strBinaryFour.charAt(6) == '0') {
+                        Log.d("Tag_check", "processReceivedData: bit 6 is 0");
+
                         imgUp.setVisibility(View.GONE);
                         imgDown.setVisibility(View.GONE);
                     }
+                    //=======================================================
 
                     SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy | HH:mm");
                     String currentDateandTime = sdf.format(new Date());
@@ -597,10 +602,12 @@ public class MainActivity extends AppCompatActivity {
                             mTxtEror.setSelected(true);
                             mTxtEror.setSingleLine();
                         }
-                    } else {
+                    } /*else {
                         txtFloorNumber.setText("" + floorNo);
-                    }
-                    str05MainFloor = temp;
+                    }*/
+                Log.d("Tag_check", "processReceivedData: flr no="+floorNo);
+                txtFloorNumber.setText("" + floorNo);
+                str05MainFloor = temp;
                 //}
             }
             catch (Exception e){
@@ -619,28 +626,33 @@ public class MainActivity extends AppCompatActivity {
             String hrs = (temp.substring(4, 6));//21
             String min = (temp.substring(6, 8));//7f
 
-            Log.d(TAG, "processReceivedData: decimal hour="+Integer.parseInt(hrs,16)
-            + " min="+Integer.parseInt(min,16));
+           /* Log.d("Tag_timer", "processReceivedData: hex hour="+hrs
+                    + " min="+min);
+            Log.d("Tag_timer", "processReceivedData: decimal hour="+Integer.parseInt(hrs,16)
+            + " min="+Integer.parseInt(min,16));*/
             //decimal hour=33 min=127
 
-            //txtTime.setText("" + hrs + " : " + min);
-            txtTime.setText("" + Integer.parseInt(hrs,16) + " : " + Integer.parseInt(min,16));
+            txtTime.setText("" + hrs + " : " + min);
+           // txtTime.setText("" + Integer.parseInt(hrs,16) + " : " + Integer.parseInt(min,16));
             temp = "";
         }
 
         //TODO:Protocol for Date
-        if (temp.startsWith("11f3")) {//11f3fe1e231f58
-            String date = (temp.substring(4, 6));//23
-            String month = (temp.substring(6, 8));//1e
-            String year = (temp.substring(8, 10));//fe
+        if (temp.startsWith("11f3")) {
+            String date = (temp.substring(4, 6));
+            String month = (temp.substring(6, 8));
+            String year = (temp.substring(8, 10));
 
-            Log.d(TAG, "processReceivedData:decimal date = "+Integer.parseInt(date,16)
+        /*    Log.d("Tag_timer", "processReceivedData:hex date = "+date
+                    +" month ="+ month
+                    +" yr = "+ year);
+            Log.d("Tag_timer", "processReceivedData:decimal date = "+Integer.parseInt(date,16)
             +" month ="+ Integer.parseInt(month ,16)
-            +" yr = "+ Integer.parseInt(year,16));
+            +" yr = "+ Integer.parseInt(year,16));*/
             //decimal date = 254 month =30 yr = 35
 
-            //    txtDate.setText(date + " / " + month+ " / " +"20" + year  );
-            txtDate.setText(Integer.parseInt(date,16) +" / " + Integer.parseInt(month ,16)+ " / " + "20" + Integer.parseInt(year,16)  );
+                txtDate.setText(date + " / " + month+ " / " +"20" + year  );
+           // txtDate.setText(Integer.parseInt(date,16) +" / " + Integer.parseInt(month ,16)+ " / " + "20" + Integer.parseInt(year,16)  );
             temp = "";
         }
         //TODo : Protocol for COP1

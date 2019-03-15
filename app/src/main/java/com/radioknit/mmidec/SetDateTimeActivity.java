@@ -197,7 +197,7 @@ E/Tag_SetDataTimeAct: asciiString = 12f30103194492
                 Log.e(TAG, "sumSendString = "+ sumSendString);*/
                 //asciiString = asciiString +String.valueOf(sumSendString).substring(1,3)+ "\r";
                 asciiString = asciiString + strChkSum + "\r";
-                Log.e(TAG, "asciiString to send= "+ asciiString);
+                Log.e("Tag_timer", "asciiString date= "+ asciiString);
 
                 if (isConnected()) {
 //                  connector.write(br1);
@@ -277,6 +277,7 @@ E/Tag_SetDataTimeAct: asciiString = 12f30103194492
 //                Log.e(TAG, "asciiString = "+ asciiString1);
 
 
+                Log.d("Tag_timer", "ascii string time= "+asciiString1);
 
                 if (isConnected()) {
 //                    connector.write(br1);
