@@ -133,16 +133,21 @@ public class CarCallAdapter31 extends BaseAdapter {
 
         try {
             //=======removing visibility of top up_image and last down_image=========
-            imageViewUpAll[0].setVisibility(View.INVISIBLE);
-            imageViewDownAll[31].setVisibility(View.INVISIBLE);
+            if (position == 0 )
+                imageViewUpAll[position].setVisibility(View.INVISIBLE);
+            if (position == 31)
+                imageViewDownAll[position].setVisibility(View.INVISIBLE);
+
+           /* imageViewUpAll[0].setVisibility(View.INVISIBLE);
+            imageViewDownAll[31].setVisibility(View.INVISIBLE);*/
         }catch (Exception e){
             //Catch exception
             Log.d(TAG, "getView: except:"+e);
         }
 
-        Log.d(TAG, "getView: position = "+position + "textViewStateAll "+showState[position]);
-        Log.d(TAG, "getView: position = "+position + "imageViewUpAll "+showStateUp[position]);
-        Log.d(TAG, "getView: position = "+position + "imageViewDownAll "+showStateDown[position]);
+//        Log.d(TAG, "getView: position = "+position + "textViewStateAll "+showState[position]);
+//        Log.d(TAG, "getView: position = "+position + "imageViewUpAll "+showStateUp[position]);
+//        Log.d(TAG, "getView: position = "+position + "imageViewDownAll "+showStateDown[position]);
 
         //===textViewStateAll = array of textView having Floor numbers
         if(showState[position]==0){
