@@ -37,7 +37,7 @@ import static com.radioknit.mmidec.MainActivity.str11f1Id;
 
 public class DeviceIDActivity extends AppCompatActivity {
 
-    private static final String TAG = "DeviceIDActivity";
+    private static final String TAG = "Tag_DeviceIDActivity";
     private String connectedDeviceName;
     ArrayList<String> arrCommandValueList;
     private Spinner spinDeviceID;
@@ -480,6 +480,7 @@ public class DeviceIDActivity extends AppCompatActivity {
 
     private void callViewDeviceId(int value) {
 
+        Log.d(TAG, "callViewDeviceId: Sending counter="+value);
 
         int a1 = 18;
         int a2 = 241;

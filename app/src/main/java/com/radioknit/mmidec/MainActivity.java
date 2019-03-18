@@ -1580,7 +1580,7 @@ public class MainActivity extends AppCompatActivity {
         // onResume() will be called when ACTION_REQUEST_ENABLE activity
         // returns.
         Log.d(TAG, "onResume: mChatService="+mChatService);
-        if (mChatService == null) {//changed to ==
+        if (mChatService != null) {//if changed to == device will not get connected autometically
             if (llError.getVisibility() == View.VISIBLE){
                 llError.setVisibility(View.GONE);
             }
