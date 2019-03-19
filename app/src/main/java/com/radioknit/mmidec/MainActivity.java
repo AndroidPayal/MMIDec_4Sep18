@@ -405,8 +405,7 @@ public class MainActivity extends AppCompatActivity {
                     String hexFour = String.format("%04x", Integer.parseInt(str05Stat0, 16));
                     String strBinaryFour = Utils.hexToBin(hexFour);//00110110
 
-                Log.e(TAG, "processReceivedData(if 05) =flr " + str05Flr +" str05Stat0="+str05Stat0
-                + " flrNo ="+floorNo + " hexFour="+hexFour+ " strBinaryFour="+strBinaryFour);
+       //         Log.e(TAG, "processReceivedData(if 05) =flr " + str05Flr +" str05Stat0="+str05Stat0+ " flrNo ="+floorNo + " hexFour="+hexFour+ " strBinaryFour="+strBinaryFour);
 
                     if (strBinaryFour.charAt(7) == '1') {//up direction
                         if (strBinaryFour.charAt(5) == '1') {//lift is running
@@ -426,24 +425,24 @@ public class MainActivity extends AppCompatActivity {
                             imgDown.setVisibility(View.VISIBLE);
                             imgUp.setVisibility(View.GONE);
                             imgDown.setImageResource(R.drawable.down_flashing);
-                            Log.e(TAG, "Down Running");
+                //            Log.e(TAG, "Down Running");
 //                          tvRunningStatus.setText("Down Running");
                         } else {//lift is in stady mode
                             imgDown.setVisibility(View.VISIBLE);
                             imgUp.setVisibility(View.GONE);
                             imgDown.setImageResource(R.drawable.down_arr);
-                            Log.e(TAG, "Down Study");
+                   //         Log.e(TAG, "Down Study");
 //                          tvRunningStatus.setText("Down");
                         }
                     }
                     //=======================================================
                     else if (strBinaryFour.charAt(7) == '0') {
-                        Log.d("Tag_check", "processReceivedData: bit 7 is 0");
+             //           Log.d("Tag_check", "processReceivedData: bit 7 is 0");
                         imgUp.setVisibility(View.GONE);
                         imgDown.setVisibility(View.GONE);
 
                     } else if (strBinaryFour.charAt(6) == '0') {
-                        Log.d("Tag_check", "processReceivedData: bit 6 is 0");
+                //        Log.d("Tag_check", "processReceivedData: bit 6 is 0");
 
                         imgUp.setVisibility(View.GONE);
                         imgDown.setVisibility(View.GONE);
@@ -452,10 +451,10 @@ public class MainActivity extends AppCompatActivity {
 
                     SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy | HH:mm");
                     String currentDateandTime = sdf.format(new Date());
-                    Log.e(TAG, "processReceivedData :currentDateandTime = "+ currentDateandTime);
+         /*           Log.e(TAG, "processReceivedData :currentDateandTime = "+ currentDateandTime);
 //05370030400056
                 Log.d(TAG, "processReceivedData: errorCheck : "+temp.substring(4,6)+" parsed="+Integer.parseInt(temp.substring(4, 6), 16));
-                Log.d(TAG, "processReceivedData: errorCheck2 : "+str05Err+" parsed="+(Integer.parseInt(str05Err, 16)));
+                Log.d(TAG, "processReceivedData: errorCheck2 : "+str05Err+" parsed="+(Integer.parseInt(str05Err, 16)));*/
 
 
                     if (Integer.parseInt(temp.substring(4, 6), 16) == 80) {
@@ -605,7 +604,7 @@ public class MainActivity extends AppCompatActivity {
                     } /*else {
                         txtFloorNumber.setText("" + floorNo);
                     }*/
-                Log.d("Tag_check", "processReceivedData: flr no="+floorNo);
+          //      Log.d("Tag_check", "processReceivedData: flr no="+floorNo);
                 txtFloorNumber.setText("" + floorNo);
                 str05MainFloor = temp;
                 //}
@@ -657,19 +656,19 @@ public class MainActivity extends AppCompatActivity {
         }
         //TODo : Protocol for COP1
         if(temp.startsWith("1311")){
-            Log.d(TAG, "processReceivedData: temp1311 : "+temp);
+      //      Log.d(TAG, "processReceivedData: temp1311 : "+temp);
             int index = temp.indexOf("1311");
             str13HexCarCallsCop1 = temp.substring(index+6,index+8);
             str13HexCarCallsCop2 = temp.substring(index+8,index+10);
 
-            Log.d(TAG, "processReceivedData: temp1311 : "+temp+ " str13HexCarCallsCop1="+str13HexCarCallsCop1+ " str13HexCarCallsCop2 ="+str13HexCarCallsCop2);
+         //   Log.d(TAG, "processReceivedData: temp1311 : "+temp+ " str13HexCarCallsCop1="+str13HexCarCallsCop1+ " str13HexCarCallsCop2 ="+str13HexCarCallsCop2);
 
             str13MainCarCall = temp;
         }
 
         //TODo : Protocol for COP2 //update payal
         if(temp.startsWith("2311")) {
-            Log.d(TAG, "processReceivedData: temp2311 : " + temp);
+        //    Log.d(TAG, "processReceivedData: temp2311 : " + temp);
             int index = temp.indexOf("2311");
             str23HexCarCop2CallByte1 = temp.substring(index+6,index+8);
             str23HexCarCop2CallByte2 = temp.substring(index+8,index+10);
@@ -686,8 +685,7 @@ public class MainActivity extends AppCompatActivity {
             /*01 (hex) = 0000 0001 (bin)
             * working on its binary with 6th bit and 7th bit only*/
 
-            Log.d(TAG, "processReceivedData: temp114c50 : str11ChkFlr="
-                    +str11ChkFlr + " str11HexSwitchData=" +str11HexSwitchData);
+     //       Log.d(TAG, "processReceivedData: temp114c50 : str11ChkFlr="+str11ChkFlr + " str11HexSwitchData=" +str11HexSwitchData);
         }
 
         //TODO:Protocol broadcasting I/Os
@@ -703,14 +701,14 @@ public class MainActivity extends AppCompatActivity {
         //TODO:Protocols for parameters
         if(temp.startsWith("111250")) {
             String sum = Utils.calculateChecksumValueNew(temp);
-            Log.e(TAG, "" + sum.substring(2, 4) + " -- " + temp.substring(temp.length() - 2, temp.length()) + " temp = " + temp);
+          //  Log.e(TAG, "" + sum.substring(2, 4) + " -- " + temp.substring(temp.length() - 2, temp.length()) + " temp = " + temp);
 
             if (sum.substring(2, 4).equalsIgnoreCase(temp.substring(temp.length() - 2, temp.length()))) {
                 String locationAddress = temp.substring(6, 8);
 
                 int data = Integer.parseInt(temp.substring(8, 10), 16);
                 String strData = temp.substring(8, 10);
-                Log.e(TAG, "locationAddress = " + locationAddress + " data = " + data);
+            //    Log.e(TAG, "locationAddress = " + locationAddress + " data = " + data);
                 if (locationAddress.equalsIgnoreCase("82")) {
                     str11StopDelay = (Integer.toString(data) + " ");
                     //str11StopDelay = (strData + " ");
@@ -851,7 +849,7 @@ public class MainActivity extends AppCompatActivity {
 
                 else if (locationAddress.equalsIgnoreCase("A0")) {
                     str11FlrClBlk[0] = Integer.toString(data);
-                      Log.e(TAG,"Data:"+str11FlrClBlk[0]);
+                   //   Log.e(TAG,"Data:"+str11FlrClBlk[0]);
                 } else if (locationAddress.equalsIgnoreCase("A1")) {
                     str11FlrClBlk[1] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("A2")) {
@@ -1307,21 +1305,29 @@ public class MainActivity extends AppCompatActivity {
         //TODO:Protocol for Serial ID
         if(temp.startsWith("11f1")){
             String sum = Utils.calculateChecksumValueNew(temp);
-             Log.e(TAG, "" + sum.substring(2, 4) + " -- " + temp.substring(temp.length() - 2, temp.length()) + " temp = " + temp);
+        //     Log.e("Tag_DeviceIdsM", "" + sum.substring(2, 4) + " -- " + temp.substring(temp.length() - 2, temp.length()) );
 
             if (sum.substring(2, 4).equalsIgnoreCase(temp.substring(temp.length() - 2, temp.length()))) {
                 String locationAddress = temp.substring(6, 8);
 
                 int data = Integer.parseInt(temp.substring(8, 10), 16);
 
-                Log.e(TAG, "locationAddress = " + locationAddress + " data = " + data);
+              //  Log.e("Tag_DeviceIdsM", "locationAddress = " + locationAddress + " data = " + data);
 //                        Utils.showToastMsg(getActivity(), " Data = "+data +" char =  "+ temp.charAt(index - 1));
-                String lsb = temp.substring(8, 10);
+                String lsb = temp.substring(8, 10);//this is msb
                 String sb = temp.substring(6, 8);
-                String msb = temp.substring(4, 6);
-                String id = lsb + sb + msb;
+                String msb = temp.substring(4, 6);//this is lsb
+                String id = lsb + sb + msb;//it will msb + sb + lsb
                 int device = Integer.parseInt(temp.substring(10, 12));
-                Log.e(TAG, "Device  = " + device + " Id :" + id);
+                Log.e("Tag_DeviceIdsMain", "Device  = " + device + " Id :" + id+ " temp = " + temp);
+
+                //todo: ==================change by payal
+                for (int i=0; i<=31 ; i++){
+                    str11f1Id[i] = "";
+
+                }
+                Log.d("Tag_DeviceIdsM", "===========array blank===============");
+
 
                 switch (device) {
                     case 0:
@@ -1581,13 +1587,18 @@ public class MainActivity extends AppCompatActivity {
         // returns.
         Log.d(TAG, "onResume: mChatService="+mChatService);
         if (mChatService != null) {//if changed to == device will not get connected autometically
-            if (llError.getVisibility() == View.VISIBLE){
+           /* if (llError.getVisibility() == View.VISIBLE){
                 llError.setVisibility(View.GONE);
-            }
+            }*/
             Log.d(TAG, "onResume: mChatService state="+mChatService.getState());
             // Only if the state is STATE_NONE, do we know that we haven't
             // started already
             if (mChatService.getState() == BluetoothChatService.STATE_NONE) {
+
+                if (llError.getVisibility() == View.VISIBLE){
+                    llError.setVisibility(View.GONE);
+                }
+
                 // Start the Bluetooth chat services
                 mChatService.start();
             }

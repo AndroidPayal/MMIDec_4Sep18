@@ -37,7 +37,7 @@ import static com.radioknit.mmidec.MainActivity.str11f1Id;
 
 public class DeviceIDActivity extends AppCompatActivity {
 
-    private static final String TAG = "Tag_DeviceIDActivity";
+    private static final String TAG = "Tag_DeviceIds";
     private String connectedDeviceName;
     ArrayList<String> arrCommandValueList;
     private Spinner spinDeviceID;
@@ -96,7 +96,7 @@ public class DeviceIDActivity extends AppCompatActivity {
 
     private OutputStream outputStream;
     private static final String DEVICE_NAME = "DEVICE_NAME";
-    private static final String LOG = "LOG";
+    private static final String LOG = "Tag_DeviceIds";
 
     private ProgressDialog pd;
     private StringBuffer completReceivedString;
@@ -223,148 +223,187 @@ public class DeviceIDActivity extends AppCompatActivity {
                         public void run() {
                             //call function
                             if (counter == 0) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             }else if (counter == 1) {
+                                Log.d(TAG, "run: counter="+counter);
+
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 2) {
+                                Log.d(TAG, "run: counter="+counter);
+
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 3) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 4) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 5) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 6) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 7) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 8) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 9) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 10) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 11) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 12) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 13) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 14) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 15) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 16) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 17) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 18) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 19) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 20) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 21) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 22) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 23) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 24) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 25) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 26) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 27) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 28) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 29) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 30) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 31) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 32) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             } else if (counter == 33) {
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                             }else if(counter == 34){
+                                Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
                                 if(isConnected()){
                                     pd.dismiss();
                                 }
+                                Log.d(TAG, "run: calling show received data()");
+
                                 showReceivedDataNew();
                             }
 
@@ -480,7 +519,7 @@ public class DeviceIDActivity extends AppCompatActivity {
 
     private void callViewDeviceId(int value) {
 
-        Log.d(TAG, "callViewDeviceId: Sending counter="+value);
+        Log.d("Tag_DeviceIds", "callViewDeviceId: Sending counter="+value);
 
         int a1 = 18;
         int a2 = 241;
@@ -598,111 +637,148 @@ public class DeviceIDActivity extends AppCompatActivity {
             if(cntSetText==1){
                 setTextViewValue(spinFlr);
             }
-            myHandlerChk.postDelayed(this, 0);
+            myHandlerChk.postDelayed(this, 50);
         }
 
     };
     public void showReceivedDataNew(){
+        Log.d(TAG, "==========================showReceivedDataNew: called=====================\n");
+
+
         if(!str11f1Id[0].equals("")){
+            Log.d(TAG, "=================  0 = "+str11f1Id[0]+"  ==================");
             txtLPB_0.setText(str11f1Id[0]);
         }
         if(!str11f1Id[1].equals("")){
+            Log.d(TAG, "=================  1 = "+str11f1Id[1]+"  ==================");
             txtLPB_1.setText(str11f1Id[1]);
         }
         if(!str11f1Id[2].equals("")){
+            Log.d(TAG, "=================  2 = "+str11f1Id[2]+"  ==================");
             txtLPB_2.setText(str11f1Id[2]);
         }
         if(!str11f1Id[3].equals("")){
+            Log.d(TAG, "=================  3 = "+str11f1Id[3]+"  ==================");
             txtLPB_3.setText(str11f1Id[3]);
         }
         if(!str11f1Id[4].equals("")){
+            Log.d(TAG, "=================  4 = "+str11f1Id[4]+"  ==================");
             txtLPB_4.setText(str11f1Id[4]);
         }
         if(!str11f1Id[5].equals("")){
+            Log.d(TAG, "=================  5 = "+str11f1Id[5]+"  ==================");
             txtLPB_5.setText(str11f1Id[5]);
         }
         if(!str11f1Id[6].equals("")){
+            Log.d(TAG, "=================  6 = "+str11f1Id[6]+"  ==================");
             txtLPB_6.setText(str11f1Id[6]);
         }
         if(!str11f1Id[7].equals("")){
+            Log.d(TAG, "=================  7 = "+str11f1Id[7]+"  ==================");
             txtLPB_7.setText(str11f1Id[7]);
         }
         if(!str11f1Id[8].equals("")){
+            Log.d(TAG, "=================  8 = "+str11f1Id[8]+"  ==================");
             txtLPB_8.setText(str11f1Id[8]);
         }
         if(!str11f1Id[9].equals("")){
+            Log.d(TAG, "=================  9 = "+str11f1Id[9]+"  ==================");
             txtLPB_9.setText(str11f1Id[9]);
         }
         if(!str11f1Id[10].equals("")){
+            Log.d(TAG, "=================  10 = "+str11f1Id[10]+"  ==================");
             txtLPB_10.setText(str11f1Id[10]);
         }
         if(!str11f1Id[11].equals("")){
+            Log.d(TAG, "=================  11 = "+str11f1Id[11]+"  ==================");
             txtLPB_11.setText(str11f1Id[11]);
         }
         if(!str11f1Id[12].equals("")){
+            Log.d(TAG, "=================  12 = "+str11f1Id[12]+"  ==================");
             txtLPB_12.setText(str11f1Id[12]);
         }
         if(!str11f1Id[13].equals("")){
+            Log.d(TAG, "=================  13 = "+str11f1Id[13]+"  ==================");
             txtLPB_13.setText(str11f1Id[13]);
         }
         if(!str11f1Id[14].equals("")){
+            Log.d(TAG, "=================  14 = "+str11f1Id[14]+"  ==================");
             txtLPB_14.setText(str11f1Id[14]);
         }
         if(!str11f1Id[15].equals("")){
+            Log.d(TAG, "=================  15 = "+str11f1Id[15]+"  ==================");
             txtLPB_15.setText(str11f1Id[15]);
         }
         if(!str11f1Id[16].equals("")){
+            Log.d(TAG, "=================  16 = "+str11f1Id[16]+"  ==================");
             txtLPB_16.setText(str11f1Id[16]);
         }
         if(!str11f1Id[17].equals("")){
+            Log.d(TAG, "=================  17 = "+str11f1Id[17]+"  ==================");
             txtLPB_17.setText(str11f1Id[17]);
         }
         if(!str11f1Id[18].equals("")){
+            Log.d(TAG, "=================  18 = "+str11f1Id[18]+"  ==================");
             txtLPB_18.setText(str11f1Id[18]);
         }
         if(!str11f1Id[19].equals("")){
+            Log.d(TAG, "=================  19 = "+str11f1Id[19]+"  ==================");
             txtLPB_19.setText(str11f1Id[19]);
         }
         if(!str11f1Id[20].equals("")){
+            Log.d(TAG, "=================  20 = "+str11f1Id[20]+"  ==================");
             txtLPB_20.setText(str11f1Id[20]);
         }
         if(!str11f1Id[21].equals("")){
+            Log.d(TAG, "=================  21 = "+str11f1Id[21]+"  ==================");
             txtLPB_21.setText(str11f1Id[21]);
         }
         if(!str11f1Id[22].equals("")){
+            Log.d(TAG, "=================  22 = "+str11f1Id[22]+"  ==================");
             txtLPB_22.setText(str11f1Id[22]);
         }
         if(!str11f1Id[23].equals("")){
+            Log.d(TAG, "=================  23 = "+str11f1Id[23]+"  ==================");
             txtLPB_23.setText(str11f1Id[23]);
         }
         if(!str11f1Id[24].equals("")){
+            Log.d(TAG, "=================  24 = "+str11f1Id[24]+"  ==================");
             txtLPB_24.setText(str11f1Id[24]);
         }
         if(!str11f1Id[25].equals("")){
+            Log.d(TAG, "=================  25 = "+str11f1Id[25]+"  ==================");
             txtLPB_25.setText(str11f1Id[25]);
         }
         if(!str11f1Id[26].equals("")){
+            Log.d(TAG, "=================  26 = "+str11f1Id[26]+"  ==================");
             txtLPB_26.setText(str11f1Id[26]);
         }
         if(!str11f1Id[27].equals("")){
+            Log.d(TAG, "=================  27 = "+str11f1Id[27]+"  ==================");
             txtLPB_27.setText(str11f1Id[27]);
         }
         if(!str11f1Id[28].equals("")){
+            Log.d(TAG, "=================  28 = "+str11f1Id[28]+"  ==================");
             txtLPB_28.setText(str11f1Id[28]);
         }
         if(!str11f1Id[29].equals("")){
+            Log.d(TAG, "=================  29 = "+str11f1Id[29]+"  ==================");
             txtLPB_29.setText(str11f1Id[29]);
         }
         if(!str11f1Id[30].equals("")){
+            Log.d(TAG, "=================  30 = "+str11f1Id[30]+"  ==================");
             txtLPB_30.setText(str11f1Id[30]);
         }
         if(!str11f1Id[31].equals("")){
+            Log.d(TAG, "=================  31 = "+str11f1Id[31]+"  ==================");
             txtLPB_31.setText(str11f1Id[31]);
         }
         if(!str11f1Id[32].equals("")){
+            Log.d(TAG, "=================  32 = "+str11f1Id[32]+"  ==================");
             txtCOP_1.setText(str11f1Id[32]);
         }
         if(!str11f1Id[33].equals("")){
+            Log.d(TAG, "=================  33 = "+str11f1Id[33]+"  ==================");
             txtCOP_2.setText(str11f1Id[33]);
         }
     }
