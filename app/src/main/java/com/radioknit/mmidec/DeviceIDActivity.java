@@ -104,6 +104,9 @@ public class DeviceIDActivity extends AppCompatActivity {
     private static String strTemp = "";
     final Handler myHandlerChk = new Handler();
     private Menu menu;
+
+    boolean displayIds=false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -184,7 +187,7 @@ public class DeviceIDActivity extends AppCompatActivity {
 
     void delay(){
         try {
-            Thread.sleep(50);
+            Thread.sleep(100);//this delay helps to fetch data from device//change by payal
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -216,7 +219,7 @@ public class DeviceIDActivity extends AppCompatActivity {
                 counter = 0;
                  //pd = ProgressDialog.show(mContext,"","Please wait",true);
                 if (isConnected()) {
-                    pd = ProgressDialog.show(mContext, "", "Please wait", true);
+                    pd = ProgressDialog.show(mContext, "", "Please wait...\nIt may take some time", true);
                     boolean b = ha.postDelayed(new Runnable() {
 
                         @Override
@@ -399,6 +402,19 @@ public class DeviceIDActivity extends AppCompatActivity {
                                 callViewDeviceId(counter);
                                 delay();
                                 counter++;
+
+                                //todo change payal
+                               /* for (int i=0 ; i<=34 ; i++ ){
+                                    if (str11f1Id[i].equals("")){//agar koi id blank hai
+                                        if (isConnected()) {
+                                            delay();
+                                            i = -1;
+                                            Log.d(TAG, "=============running again: ==================\n");
+                                        }else{
+                                            break;
+                                        }
+                                    }
+                                }*/
                                 if(isConnected()){
                                     pd.dismiss();
                                 }
@@ -617,7 +633,7 @@ public class DeviceIDActivity extends AppCompatActivity {
     private Runnable checkDataContinue = new Runnable() {
 
         public void run() {
-            showReceivedDataNew();
+           // showReceivedDataNew();
             if (isConnected()) {
                 try{
                     menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));

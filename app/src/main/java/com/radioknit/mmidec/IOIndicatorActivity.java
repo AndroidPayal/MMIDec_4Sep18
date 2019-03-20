@@ -415,6 +415,8 @@ public class IOIndicatorActivity extends AppCompatActivity {
                 chk_io_Encoder_ch_A.setChecked(false);
             }*/
 
+            Log.d(TAG, "setIOValues: four val= "+four +" hexfour="+hexFour);
+
             if (four.charAt(5) == '1') {
                 chk_io_UpStopSw.setChecked(true);
             } else {
@@ -435,13 +437,13 @@ public class IOIndicatorActivity extends AppCompatActivity {
             } else {
                 chk_io_SlowSwUp1.setChecked(false);
             }
-            if (four.charAt(1) == '1') {
+            //  if (four.charAt(1) == '1') {
+            if (four.charAt(1) == '0') {//changing this if condition bcz it was working opposite to intended work
                 chk_io_DoorZoneSw.setChecked(true);
             } else {
                 chk_io_DoorZoneSw.setChecked(false);
             }
-          //  if (four.charAt(0) == '1') {
-            if (four.charAt(0) == '0') {//changing this if condition bcz it was working opposite to intended work
+            if (four.charAt(0) == '1') {
                 chk_io_BrkIn.setChecked(true);
             } else {
                 chk_io_BrkIn.setChecked(false);

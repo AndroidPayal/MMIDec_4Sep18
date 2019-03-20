@@ -1322,10 +1322,10 @@ public class MainActivity extends AppCompatActivity {
                 Log.e("Tag_DeviceIdsMain", "Device  = " + device + " Id :" + id+ " temp = " + temp);
 
                 //todo: ==================change by payal
-                for (int i=0; i<=31 ; i++){
+               /* for (int i=0; i<=31 ; i++){//wrong this code is
                     str11f1Id[i] = "";
 
-                }
+                }*/
                 Log.d("Tag_DeviceIdsM", "===========array blank===============");
 
 
@@ -1595,12 +1595,15 @@ public class MainActivity extends AppCompatActivity {
             // started already
             if (mChatService.getState() == BluetoothChatService.STATE_NONE) {
 
-                if (llError.getVisibility() == View.VISIBLE){
-                    llError.setVisibility(View.GONE);
-                }
 
                 // Start the Bluetooth chat services
                 mChatService.start();
+            }
+            if (mChatService.getState() == BluetoothChatService.STATE_CONNECTING){
+                //if device connection was lost and retrying again
+                if (llError.getVisibility() == View.VISIBLE){
+                    llError.setVisibility(View.GONE);
+                }
             }
         }
     }
