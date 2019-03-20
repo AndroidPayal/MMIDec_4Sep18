@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.radioknit.mmidec">
+    package="com.radioknit.ummi">
 
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -15,38 +15,44 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity android:name="com.radioknit.ummi.LoginActivity">
+           <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity android:name="com.radioknit.ummi.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ViewErrorLogActivity" />
-        <activity android:name=".DeviceListActivity" />
-        <activity android:name=".WriteModeEnableActivity" />
-        <activity android:name=".MainDisplayActivity" />
-        <activity android:name=".CarCallActivity" />
-        <activity android:name=".CarCallActivity31" />
-        <activity android:name=".IOIndicatorActivity" />
-        <activity android:name=".SetDateTimeActivity" />
-        <activity android:name=".ProgramCodeActivity" />
-        <activity android:name=".DisplayPatternActivity" />
-        <activity android:name=".DeviceIDActivity" />
-        <activity android:name=".ProgrammablePrarmeterActivity" />
-        <activity android:name=".SpeedSelectionActivity" />
-        <activity android:name=".FloorCallBlockingActivity" />
-        <activity android:name=".LevelFunctionActivity" />
-        <activity android:name=".AutoLevelActivity" />
+        <activity android:name="com.radioknit.ummi.ViewErrorLogActivity" />
+        <activity android:name="com.radioknit.ummi.DeviceListActivity" />
+        <activity android:name="com.radioknit.ummi.WriteModeEnableActivity" />
+        <activity android:name="com.radioknit.ummi.MainDisplayActivity" />
+        <activity android:name="com.radioknit.ummi.CarCallActivity" />
+        <activity android:name="com.radioknit.ummi.CarCallActivity31" />
+        <activity android:name="com.radioknit.ummi.IOIndicatorActivity" />
+        <activity android:name="com.radioknit.ummi.SetDateTimeActivity" />
+        <activity android:name="com.radioknit.ummi.ProgramCodeActivity" />
+        <activity android:name="com.radioknit.ummi.DisplayPatternActivity" />
+        <activity android:name="com.radioknit.ummi.DeviceIDActivity" />
+        <activity android:name="com.radioknit.ummi.ProgrammablePrarmeterActivity" />
+        <activity android:name="com.radioknit.ummi.SpeedSelectionActivity" />
+        <activity android:name="com.radioknit.ummi.FloorCallBlockingActivity" />
+        <activity android:name="com.radioknit.ummi.LevelFunctionActivity" />
+        <activity android:name="com.radioknit.ummi.AutoLevelActivity" />
         <activity
-            android:name=".SignUpActivity"
+            android:name="com.radioknit.ummi.SignUpActivity"
             android:label="Sign Up" />
     </application>
 

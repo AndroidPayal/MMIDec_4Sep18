@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MMI</string>
+    <string name="app_name">UNI-MMI</string>
 
     <!--  BluetoothChat -->
     <string name="send">Send</string>
