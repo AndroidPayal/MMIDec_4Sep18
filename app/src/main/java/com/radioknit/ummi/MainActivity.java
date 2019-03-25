@@ -366,11 +366,11 @@ public class MainActivity extends AppCompatActivity {
 
             //txtLog.append(msg);
             //  shwLog.append(msg);
-            Log.e(TAG, "appendlog1() msgOld = "+ msg);
+        //    Log.e(TAG, "appendlog1() msgOld = "+ msg);
 
             msgAppend.append(msg);
 
-            Log.e(TAG, "appendlog1() msgAppend = "+ msgAppend.toString());
+      //      Log.e(TAG, "appendlog1() msgAppend = "+ msgAppend.toString());
 
             String strReceived = msgAppend.toString();
             processReceivedData(strReceived);
@@ -388,7 +388,7 @@ public class MainActivity extends AppCompatActivity {
            // Log.e(TAG, "strReceived = "+ strReceived);
             int indexOd = strReceived.indexOf("\r");
             String temp = strReceived.substring(0, indexOd);
-        Log.d(TAG, "processReceivedData: temp = "+temp +"  index0d = "+indexOd);
+        Log.e(TAG, "processReceivedData: temp = "+temp +"  index0d = "+indexOd);
            // Log.e(TAG, "temp = "+ temp);
 
         //TODO:Protocol Broadcasting (status
@@ -623,8 +623,7 @@ public class MainActivity extends AppCompatActivity {
             String hrs = (temp.substring(4, 6));//21
             String min = (temp.substring(6, 8));//7f
 
-           /* Log.d("Tag_timer", "processReceivedData: hex hour="+hrs
-                    + " min="+min);
+           /* Log.d("Tag_timer", "processReceivedData: hex hour="+hrs+ " min="+min);
             Log.d("Tag_timer", "processReceivedData: decimal hour="+Integer.parseInt(hrs,16)
             + " min="+Integer.parseInt(min,16));*/
             //decimal hour=33 min=127
@@ -654,7 +653,7 @@ public class MainActivity extends AppCompatActivity {
         }
         //TODo : Protocol for COP1
         if(temp.startsWith("1311")){
-      //      Log.d(TAG, "processReceivedData: temp1311 : "+temp);
+            Log.d(TAG, "processReceivedData: temp1311 : "+temp);
             int index = temp.indexOf("1311");
             str13HexCarCallsCop1 = temp.substring(index+6,index+8);
             str13HexCarCallsCop2 = temp.substring(index+8,index+10);
@@ -666,7 +665,7 @@ public class MainActivity extends AppCompatActivity {
 
         //TODo : Protocol for COP2 //update payal
         if(temp.startsWith("2311")) {
-        //    Log.d(TAG, "processReceivedData: temp2311 : " + temp);
+            Log.d(TAG, "processReceivedData: temp2311 : " + temp);
             int index = temp.indexOf("2311");
             str23HexCarCop2CallByte1 = temp.substring(index+6,index+8);
             str23HexCarCop2CallByte2 = temp.substring(index+8,index+10);
@@ -683,7 +682,7 @@ public class MainActivity extends AppCompatActivity {
             /*01 (hex) = 0000 0001 (bin)
             * working on its binary with 6th bit and 7th bit only*/
 
-     //       Log.d(TAG, "processReceivedData: temp114c50 : str11ChkFlr="+str11ChkFlr + " str11HexSwitchData=" +str11HexSwitchData);
+            Log.d(TAG, "processReceivedData: temp114c50 : str11ChkFlr="+str11ChkFlr + " str11HexSwitchData=" +str11HexSwitchData);
         }
 
         //TODO:Protocol broadcasting I/Os
@@ -1747,7 +1746,7 @@ public class MainActivity extends AppCompatActivity {
                     String writeMessage = new String(writeBuf);
 
                     Log.d(TAG, "handleMessage: sent="+writeMessage);
-                 //   Toast.makeText(mContext, "sent command", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(mContext, "sent "+writeMessage, Toast.LENGTH_SHORT).show();
                     //mConversationArrayAdapter.add("Me:  " + writeMessage);
                     break;
                 case MESSAGE_READ:

@@ -181,12 +181,18 @@ public class DeviceIDActivity extends AppCompatActivity {
 
     void delay(){
         try {
-            Thread.sleep(100);//this delay helps to fetch data from device//change by payal
+            Thread.sleep(60);//this delay helps to fetch data from device//change by payal
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
+    void delayLarge(){
+        try {
+            Thread.sleep(500);//this delay helps to fetch data from device//change by payal
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     private void registerEvent() {
         final Handler ha = new Handler();
@@ -394,7 +400,7 @@ public class DeviceIDActivity extends AppCompatActivity {
                             }else if(counter == 34){
                                 Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
-                                delay();
+                                delayLarge();
                                 counter++;
 
                                 //todo change payal
@@ -627,7 +633,7 @@ public class DeviceIDActivity extends AppCompatActivity {
     private Runnable checkDataContinue = new Runnable() {
 
         public void run() {
-           // showReceivedDataNew();
+            showReceivedDataNew();
             if (isConnected()) {
                 try{
                     menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));

@@ -123,23 +123,30 @@ public class CarCallActivity31 extends AppCompatActivity implements CarCallAdapt
 
         public void run() {
 
+            if(SHOW_TAG)Log.d(TAG, "============run: CHECKING DATA CONTINEOUSLY=============");
+            if(SHOW_TAG)
+                Log.d(TAG, "\nstr13HexCarCallsCop1 = "+str13HexCarCallsCop1
+                        + "\nstr13HexCarCallsCop2 = "+ str13HexCarCallsCop2
+                        + "\nstr13HexCarCallsCop1N = " + str13HexCarCallsCop1N
+                        + "\nstr13HexCarCallsCop2N = " + str13HexCarCallsCop2N
+                        + "\nstr11ChkFlr = "+ str11ChkFlr
+                        + "\nstr11ChkFlrN = " + str11ChkFlrN
+                        + "\nstr11HexSwitchData=" + str11HexSwitchData
+                        + "\nstr11HexSwitchDataN = "+ str11HexSwitchDataN
+                +"\nstr23HexCarCallsCop2ByteN1 = "+str23HexCarCallsCop2ByteN1
+                +"\nstr23HexCarCallsCop2ByteN2 = "+str23HexCarCallsCop2ByteN2
+                +"\nstr23HexCarCop2CallByte1 = "+str23HexCarCop2CallByte1
+                +"\nstr23HexCarCop2CallByte2 = "+str23HexCarCop2CallByte2);
+
+
+
             if(!str13HexCarCallsCop1.equals("") && !str13HexCarCallsCop2.equals("")){
-                if(SHOW_TAG)Log.d(TAG, "============run: CHECKING DATA CONTINEOUSLY=============");
-                if(SHOW_TAG)
-                    Log.d(TAG, "str13HexCarCallsCop1 = "+str13HexCarCallsCop1
-                            + "str13HexCarCallsCop2 = "+ str13HexCarCallsCop2
-                            + "str13HexCarCallsCop1N = " + str13HexCarCallsCop1N
-                            + "str13HexCarCallsCop2N = " + str13HexCarCallsCop2N
-                            + "str11ChkFlr = "+ str11ChkFlr
-                            + "str11ChkFlrN = " + str11ChkFlrN
-                            + "str11HexSwitchData=" + str11HexSwitchData
-                            + "str11HexSwitchDataN = "+ str11HexSwitchDataN);
 
                 if(!str13HexCarCallsCop1.equals(str13HexCarCallsCop1N) || !str13HexCarCallsCop2.equals(str13HexCarCallsCop2N)){
                     str13HexCarCallsCop1N = str13HexCarCallsCop1;
                     str13HexCarCallsCop2N = str13HexCarCallsCop2;
 
-                    if (SHOW_TAG) Log.d(TAG, "++++++++++++++calling showCarCalls()+++++++++++++");
+                    if (SHOW_TAG) Log.d(TAG, "++++++++++++++calling showCarCalls() 0-15+++++++++++++");
 
                     showCarCalls(str13HexCarCallsCop1, str13HexCarCallsCop2);
                 }
@@ -147,9 +154,10 @@ public class CarCallActivity31 extends AppCompatActivity implements CarCallAdapt
 
             //TODO :change payal
             if (!str23HexCarCop2CallByte1.equals("") && !str23HexCarCop2CallByte2.equals("")) {
-                if (!str23HexCarCop2CallByte1.equals(str23HexCarCallsCop2ByteN1) && !str23HexCarCop2CallByte2.equals(str23HexCarCallsCop2ByteN2)) {
-                    str13HexCarCallsCop1N = str13HexCarCallsCop1;
-                    str13HexCarCallsCop2N = str13HexCarCallsCop2;
+                if (!str23HexCarCop2CallByte1.equals(str23HexCarCallsCop2ByteN1) || !str23HexCarCop2CallByte2.equals(str23HexCarCallsCop2ByteN2)) {
+                    str23HexCarCallsCop2ByteN1 = str23HexCarCop2CallByte1;
+                    str23HexCarCallsCop2ByteN2= str23HexCarCop2CallByte2;
+                  if (SHOW_TAG) Log.d(TAG, "++++++++++++++calling showCarCalls() 16-31+++++++++++++");
 
                     showCarCalls23(str23HexCarCop2CallByte1, str23HexCarCop2CallByte2);
 
@@ -157,32 +165,24 @@ public class CarCallActivity31 extends AppCompatActivity implements CarCallAdapt
             }
 
             if(!str11ChkFlr.equals("") && !str11HexSwitchData.equals("")) {
-                if(SHOW_TAG)Log.d(TAG, "============run: CHECKING DATA CONTINEOUSLY=============");
-                if(SHOW_TAG)
-                    Log.d(TAG, "str13HexCarCallsCop1 = "+str13HexCarCallsCop1
-                            + "str13HexCarCallsCop2 = "+ str13HexCarCallsCop2
-                            + "str13HexCarCallsCop1N = " + str13HexCarCallsCop1N
-                            + "str13HexCarCallsCop2N = " + str13HexCarCallsCop2N
-                            + "str11ChkFlr = "+ str11ChkFlr
-                            + "str11ChkFlrN = " + str11ChkFlrN
-                            + "str11HexSwitchData=" + str11HexSwitchData
-                            + "str11HexSwitchDataN = "+ str11HexSwitchDataN);
 
                 if (!str11ChkFlr.equals(str11ChkFlrN) || !str11HexSwitchData.equals(str11HexSwitchDataN)) {
                     str11ChkFlrN = str11ChkFlr;
                     str11HexSwitchDataN = str11HexSwitchData;
 
-                    if (SHOW_TAG) Log.d(TAG, "===============calling showUpDnCalls() ");
+                    if (SHOW_TAG) Log.d(TAG, "===============calling showUpDnCalls() for lop ui ");
 
                     showUpDnCalls(str11ChkFlr, str11HexSwitchData);
-
-                    //==============TODO :change by payal================
-                    str13HexCarCallsCop1 = "";str13HexCarCallsCop2="";str13HexCarCallsCop1N="";
-                    str13HexCarCallsCop2N="";str11ChkFlr="";str11ChkFlrN="";
-                    str11HexSwitchData="";str11HexSwitchDataN="";
-
                 }
             }
+
+            //==============TODO :change by payal================
+           /* str13HexCarCallsCop1 = "";str13HexCarCallsCop2="";//str13HexCarCallsCop1N="";
+            //str13HexCarCallsCop2N="";
+            str11ChkFlr="";//str11ChkFlrN="";
+            str11HexSwitchData="";//str11HexSwitchDataN="";
+            str23HexCarCop2CallByte1="";str23HexCarCop2CallByte2="";*/
+
             if (isConnected()) {
                 try{
                     menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));
@@ -199,7 +199,7 @@ public class CarCallActivity31 extends AppCompatActivity implements CarCallAdapt
                     //Catch
                 }
             }
-            myHandlerChk.postDelayed(this, 1000);
+            myHandlerChk.postDelayed(this, 100);
         }
 
     };
@@ -255,19 +255,21 @@ public class CarCallActivity31 extends AppCompatActivity implements CarCallAdapt
             Log.d(TAG, "showCarCalls: strCallCopCombine="+strCallCopCombine);
 
             //array will store flr 0-15 values
+            int indexTemp=0;
             for(int indexCop=16; indexCop <32; indexCop++) {//showState[indexCop =0]  then florPos=15
-                if (strCallCopCombine.charAt(indexCop) == '0') {
+                if (strCallCopCombine.charAt(indexTemp) == '0') {
                     showState[indexCop] = 0;
-                } else if(strCallCopCombine.charAt(indexCop) == '1') {
+                } else if(strCallCopCombine.charAt(indexTemp) == '1') {
                     showState[indexCop] = 1;
                 }
+                indexTemp ++;
             }
             adapter.notifyDataSetChanged();
 
             /* CarCallAdapter adapter = new CarCallAdapter(mContext, strcallCop1, strcallCop2, (CarCallAdapter.CarCallIndicatorSignalListner) this);
             listFloorsIndicator.setAdapter(adapter); */
         }catch (Exception e){
-            e.printStackTrace();
+            Log.e(TAG, "showCarCalls: excep : "+e );
         }
     }
 

@@ -8,6 +8,7 @@ import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -102,22 +103,22 @@ public class LoginActivity extends AppCompatActivity {
                 if(isOnline()) {
                     url = "http://theliftiot.net/MMIClient/MMIService/signin?email_id=" + strUser +
                             "&password=" + strPass;
-                   // Log.e(TAG, "URL : " + url);
+                    Log.e(TAG, "URL_login : " + url);
 
-                    //=TODO : temporary change by payal=====================
+                    //=TODO : temporary change by payal=====================undo kr ri isko
 
                         /*removing dabase check for user credentials*/
-                    //new GetStatus().execute();
+                    new GetStatus().execute();
 
                         /*setting user authentication status as 1 and allowing user to login*/
-                    strLoginStatus ="1";
+                   /* strLoginStatus ="1";
 
                     PrefUtils.saveToPrefs(LoginActivity.this, PREFS_LOGIN_USERNAME_KEY, strUser);
                     PrefUtils.saveToPrefs(LoginActivity.this, PREFS_LOGIN_PASSWORD_KEY, strPass);
                     PrefUtils.saveToPrefs(LoginActivity.this, PREFS_LOGIN_DATE_KEY, strCurDate);
                     Intent i1 = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(i1);
-                    finish();
+                    finish();*/
                     //======================================================
                 }
                 else {

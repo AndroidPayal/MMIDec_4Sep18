@@ -63,6 +63,11 @@ public class CarCallAdapter31 extends BaseAdapter {
     public void notoifyChange(String cop1Calls,String cop2Calls){
         this.cop1Calls=cop1Calls;
         this.cop2Calls=cop2Calls;
+
+    }
+    public void notifyChanges(){
+        notifyDataSetChanged();
+        Log.d(TAG, "notifyChanges: called");
     }
 
     public CarCallAdapter31(Context context, String strUpDnCalls , int floorNO, CarCallIndicatorSignalListner carCallIndicatorSignalListner){
@@ -145,7 +150,7 @@ public class CarCallAdapter31 extends BaseAdapter {
             Log.d(TAG, "getView: except:"+e);
         }
 
-//        Log.d(TAG, "getView: position = "+position + "textViewStateAll "+showState[position]);
+        Log.d(TAG, "getView: position = "+position + "textViewStateAll "+showState[position]);
 //        Log.d(TAG, "getView: position = "+position + "imageViewUpAll "+showStateUp[position]);
 //        Log.d(TAG, "getView: position = "+position + "imageViewDownAll "+showStateDown[position]);
 
@@ -178,7 +183,7 @@ public class CarCallAdapter31 extends BaseAdapter {
 //            Log.e(TAG, "Floor hilight = "+ (15- callIndex));
 //            holder.txtFloorNumber.setBackgroundColor(mContext.getResources().getColor(R.color.red));
 //        }
-        if(SHOW_TAG)Log.d(TAG, "cop1Calls obj val = "+cop1Calls);
+      //  if(SHOW_TAG)Log.d(TAG, "cop1Calls obj val = "+cop1Calls);
 
 /*
         if(Utils.isObjNotNull(cop1Calls)) {
@@ -388,7 +393,7 @@ public class CarCallAdapter31 extends BaseAdapter {
             sendMessage(asciiString.getBytes());
 
             //Change button color if device is connected we sent command
-            switch (placeCall){
+           /* switch (placeCall){
                 case 1:
                     viewHolder.txtFloorNumber.setBackground(drawableSel);
                     break;
@@ -398,7 +403,7 @@ public class CarCallAdapter31 extends BaseAdapter {
                 case 4:
                     viewHolder.imgDown.setImageResource(R.drawable.down_green);
                     break;
-            }
+            }*/
         }
     }
 
