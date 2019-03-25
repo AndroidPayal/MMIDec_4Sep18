@@ -1568,7 +1568,7 @@ public class MainActivity extends AppCompatActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (grantResults.length > 0
                 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-            Toast.makeText(this, "Scanning Bluetooth devices", Toast.LENGTH_SHORT).show();
+         //   Toast.makeText(this, "Scanning Bluetooth devices", Toast.LENGTH_SHORT).show();
         }
     }
     @Override
@@ -1747,7 +1747,7 @@ public class MainActivity extends AppCompatActivity {
                     String writeMessage = new String(writeBuf);
 
                     Log.d(TAG, "handleMessage: sent="+writeMessage);
-                    Toast.makeText(mContext, "sent command", Toast.LENGTH_SHORT).show();
+                 //   Toast.makeText(mContext, "sent command", Toast.LENGTH_SHORT).show();
                     //mConversationArrayAdapter.add("Me:  " + writeMessage);
                     break;
                 case MESSAGE_READ:

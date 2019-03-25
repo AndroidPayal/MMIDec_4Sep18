@@ -300,7 +300,7 @@ public class CarCallAdapter31 extends BaseAdapter {
                     mCarCallIndicatorSignalListner.sendCarCallIndicatorSignal(position);*/
 //                    viewHolder.txtFloorNumber.setTag(position);
                     if(SHOW_TAG)Log.d(TAG, "txtFloorNumber clicked placecall = 1");
-                    Toast.makeText(mContext, "Clicked : text : "+(31-position), Toast.LENGTH_SHORT).show();
+                //    Toast.makeText(mContext, "Clicked : text : "+(31-position), Toast.LENGTH_SHORT).show();
 
                     //viewHolder.txtFloorNumber.setBackground(drawableSel);
                     callLopCop((31-position),1,viewHolder);//placecall =0000 0001 /*call from cop*/
@@ -313,7 +313,7 @@ public class CarCallAdapter31 extends BaseAdapter {
                     //mCarCallIndicatorSignalListner.sendUpCallIndicatorSignal(position);
 
                     if(SHOW_TAG)Log.d(TAG, "imgUp clicked placecall = 2");
-                    Toast.makeText(mContext, "Clicked : imgUp : "+(31-position), Toast.LENGTH_SHORT).show();
+                 //   Toast.makeText(mContext, "Clicked : imgUp : "+(31-position), Toast.LENGTH_SHORT).show();
 
                     //viewHolder.imgUp.setImageResource(R.drawable.up_green);
                     callLopCop((31-position),2,viewHolder);//placecall = 0000 0010 /*up call from lop*/
@@ -326,7 +326,7 @@ public class CarCallAdapter31 extends BaseAdapter {
                     //mCarCallIndicatorSignalListner.sendDnCallIndicatorSignal(position);
 
                     if(SHOW_TAG)Log.d(TAG, "imgDown clicked placecall = 4");
-                    Toast.makeText(mContext, "Clicked : imgDown : "+(31-position), Toast.LENGTH_SHORT).show();
+                //    Toast.makeText(mContext, "Clicked : imgDown : "+(31-position), Toast.LENGTH_SHORT).show();
 
                     //viewHolder.imgDown.setImageResource(R.drawable.down_green);
                     callLopCop((31-position),4,viewHolder);//place call = 0000 0100 /*down call from lop*/
