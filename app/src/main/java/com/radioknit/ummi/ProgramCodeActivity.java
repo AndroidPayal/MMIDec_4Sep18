@@ -263,13 +263,15 @@ public class ProgramCodeActivity extends AppCompatActivity {
                                 int timeout = 0;
                                 while (true) {
                                     if (count_loader_ReadPLC == 13) {
-                                        pd.dismiss();
+                                        if (pd.isShowing())
+                                            pd.dismiss();
                                         break;
                                     } else {
                                         if (timeout == 3){
                                             Log.d("Tag_counter", "run: timeout = "+timeout);
                                             Toast.makeText(mContext, "TimeOut! Device is slow", Toast.LENGTH_SHORT).show();
-                                            pd.dismiss();
+                                            if (pd.isShowing())
+                                                pd.dismiss();
 
                                             break;
                                         }

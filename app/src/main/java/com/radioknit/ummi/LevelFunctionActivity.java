@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -28,6 +29,7 @@ import android.widget.Toast;
 import java.io.OutputStream;
 import java.util.ArrayList;
 
+import static com.radioknit.ummi.MainActivity.count_loader_ViewLevel;
 import static com.radioknit.ummi.MainActivity.isConnected;
 import static com.radioknit.ummi.MainActivity.sendMessage;
 import static com.radioknit.ummi.MainActivity.str11LvlDnSlip;
@@ -145,6 +147,7 @@ public class LevelFunctionActivity extends AppCompatActivity {
             public void onClick(View v) {
                 counter = 0;
 
+                Log.d(TAG, "onClick: btnViewLevelFunction called");
                 if (isConnected()) {
                     pd = ProgressDialog.show(mContext, "", "Please wait", true);
                 } else {
@@ -154,6 +157,7 @@ public class LevelFunctionActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         //call function
+                        Log.d(TAG, "onClick: btnViewLevelFunction inside count = "+counter);
 
                         if (counter == 0) {
                             callViewAllLevelFunction(counter);
@@ -672,7 +676,27 @@ public class LevelFunctionActivity extends AppCompatActivity {
                             //counter++;
                             //Log.e(TAG, "counter = " + counter);
                             if (isConnected()) {
-                                pd.dismiss();
+                                //pd.dismiss();
+                                Log.d("Tag_level", "run: count = "+count_loader_ViewLevel);
+                                //todo change payal
+                                int timeout = 0;
+                                while (true) {
+                                    if (count_loader_ViewLevel == 128) {
+                                        if (pd.isShowing())
+                                            pd.dismiss();
+                                        break;
+                                    } else {
+                                        if (timeout == 5){
+                                            Log.d("Tag_counter", "run: timeout = "+timeout);
+                                            Toast.makeText(mContext, "TimeOut! Device is slow", Toast.LENGTH_SHORT).show();
+                                            if (pd.isShowing())
+                                                pd.dismiss();
+                                            break;
+                                        }
+                                        delay();
+                                        timeout ++;
+                                    }
+                                }
                             }
                             //ha.removeCallbacks();
                             //delay();
@@ -1325,7 +1349,8 @@ public class LevelFunctionActivity extends AppCompatActivity {
             }
             else {
                 Toast.makeText(getApplicationContext(), "Connect to the device", Toast.LENGTH_SHORT).show();
-                pd.dismiss();
+                if (pd.isShowing())
+                    pd.dismiss();
             }
 
     }

@@ -176,7 +176,8 @@ public class ViewErrorLogActivity extends AppCompatActivity {
                 counter++;
             }else if(counter == 10){
                 counter++;
-                pd.dismiss();
+                if (pd.isShowing())
+                    pd.dismiss();
                 showReceivedDataNew();
             }
             handler.postDelayed(this, 500);

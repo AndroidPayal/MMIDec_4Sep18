@@ -127,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
     public static int count_loader_ProgrammableParameter = 0;
     public static int count_loader_SpeedSelection = 0;
     public static int count_loader_FlrCallBlocking = 0;
+    public static int count_loader_ViewLevel = 0;
 
 
 
@@ -704,6 +705,9 @@ public class MainActivity extends AppCompatActivity {
 
         //TODO:Protocols for parameters
         if(temp.startsWith("111250")) {
+
+            Log.d(TAG, "processReceivedData: count = "+count_loader_ViewLevel);
+
             String sum = Utils.calculateChecksumValueNew(temp);
           //  Log.e(TAG, "" + sum.substring(2, 4) + " -- " + temp.substring(temp.length() - 2, temp.length()) + " temp = " + temp);
 
@@ -798,6 +802,9 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
+
+
+                //============================================================
 
                 else if (locationAddress.equalsIgnoreCase("C0")) {
                     if (str11DisFlr[0].equals("")){
@@ -1196,322 +1203,706 @@ public class MainActivity extends AppCompatActivity {
                 //===================================================
 
                 else if (locationAddress.equalsIgnoreCase("00")) {
+                    if (str11LvlPos1[0].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[0] = strData;
                 } else if (locationAddress.equalsIgnoreCase("01")) {
+                    if (str11LvlPos2[0].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[0] = strData;
                 } else if (locationAddress.equalsIgnoreCase("02")) {
+                    if (str11LvlUpSlip[0].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[0] = strData;
                 } else if (locationAddress.equalsIgnoreCase("03")) {
+                    if (str11LvlDnSlip[0].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[0] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("04")) {
+                    if (str11LvlPos1[1].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[1] = strData;
                 } else if (locationAddress.equalsIgnoreCase("05")) {
+                    if (str11LvlPos2[1].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[1] = strData;
                 } else if (locationAddress.equalsIgnoreCase("06")) {
+                    if (str11LvlUpSlip[1].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[1] = strData;
                 } else if (locationAddress.equalsIgnoreCase("07")) {
+                    if (str11LvlDnSlip[1].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[1] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("08")) {
+                    if (str11LvlPos1[2].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[2] = strData;
                 } else if (locationAddress.equalsIgnoreCase("09")) {
+                    if (str11LvlPos2[2].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[2] = strData;
                 } else if (locationAddress.equalsIgnoreCase("0A")) {
+                    if (str11LvlUpSlip[2].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[2] = strData;
                 } else if (locationAddress.equalsIgnoreCase("0B")) {
+                    if (str11LvlDnSlip[2].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[2] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("0C")) {
+                    if (str11LvlPos1[3].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[3] = strData;
                 } else if (locationAddress.equalsIgnoreCase("0D")) {
+                    if (str11LvlPos2[3].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[3] = strData;
                 } else if (locationAddress.equalsIgnoreCase("0E")) {
+                    if (str11LvlUpSlip[3].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[3] = strData;
                 } else if (locationAddress.equalsIgnoreCase("0F")) {
+                    if (str11LvlDnSlip[3].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[3] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("10")) {
+                    if (str11LvlPos1[4].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[4] = strData;
                 } else if (locationAddress.equalsIgnoreCase("11")) {
+                    if (str11LvlPos2[4].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[4] = strData;
                 } else if (locationAddress.equalsIgnoreCase("12")) {
+                    if (str11LvlUpSlip[4].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[4] = strData;
                 } else if (locationAddress.equalsIgnoreCase("13")) {
+                    if (str11LvlDnSlip[4].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[4] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("14")) {
+                    if (str11LvlPos1[5].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[5] = strData;
                 } else if (locationAddress.equalsIgnoreCase("15")) {
+                    if (str11LvlPos2[5].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[5] = strData;
                 } else if (locationAddress.equalsIgnoreCase("16")) {
+                    if (str11LvlUpSlip[5].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[5] = strData;
                 } else if (locationAddress.equalsIgnoreCase("17")) {
+                    if (str11LvlDnSlip[5].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[5] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("18")) {
+                    if (str11LvlPos1[6].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[6] = strData;
                 } else if (locationAddress.equalsIgnoreCase("19")) {
+                    if (str11LvlPos2[6].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[6] = strData;
                 } else if (locationAddress.equalsIgnoreCase("1A")) {
+                    if (str11LvlUpSlip[6].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[6] = strData;
                 } else if (locationAddress.equalsIgnoreCase("1B")) {
+                    if (str11LvlDnSlip[6].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[6] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("1C")) {
+                    if (str11LvlPos1[7].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[7] = strData;
                 } else if (locationAddress.equalsIgnoreCase("1D")) {
+                    if (str11LvlPos2[7].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[7] = strData;
                 } else if (locationAddress.equalsIgnoreCase("1E")) {
+                    if (str11LvlUpSlip[7].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[7] = strData;
                 } else if (locationAddress.equalsIgnoreCase("1F")) {
+                    if (str11LvlDnSlip[7].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[7] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("20")) {
+                    if (str11LvlPos1[8].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[8] = strData;
                 } else if (locationAddress.equalsIgnoreCase("21")) {
+                    if (str11LvlPos2[8].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[8] = strData;
                 } else if (locationAddress.equalsIgnoreCase("22")) {
+                    if (str11LvlUpSlip[8].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[8] = strData;
                 } else if (locationAddress.equalsIgnoreCase("23")) {
+                    if (str11LvlDnSlip[8].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[8] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("24")) {
+                    if (str11LvlPos1[9].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[9] = strData;
                 } else if (locationAddress.equalsIgnoreCase("25")) {
+                    if (str11LvlPos2[9].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[9] = strData;
                 } else if (locationAddress.equalsIgnoreCase("26")) {
+                    if (str11LvlUpSlip[9].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[9] = strData;
                 } else if (locationAddress.equalsIgnoreCase("27")) {
+                    if (str11LvlDnSlip[9].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[9] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("28")) {
+                    if (str11LvlPos1[10].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[10] = strData;
                 } else if (locationAddress.equalsIgnoreCase("29")) {
+                    if (str11LvlPos2[10].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[10] = strData;
                 } else if (locationAddress.equalsIgnoreCase("2A")) {
+                    if (str11LvlUpSlip[10].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[10] = strData;
                 } else if (locationAddress.equalsIgnoreCase("2B")) {
+                    if (str11LvlDnSlip[10].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[10] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("2C")) {
+                    if (str11LvlPos1[11].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[11] = strData;
                 } else if (locationAddress.equalsIgnoreCase("2D")) {
+                    if (str11LvlPos2[11].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[11] = strData;
                 } else if (locationAddress.equalsIgnoreCase("2E")) {
+                    if (str11LvlUpSlip[11].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[11] = strData;
                 } else if (locationAddress.equalsIgnoreCase("2F")) {
+                    if (str11LvlDnSlip[11].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[11] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("30")) {
+                    if (str11LvlPos1[12].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[12] = strData;
                 } else if (locationAddress.equalsIgnoreCase("31")) {
+                    if (str11LvlPos2[12].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[12] = strData;
                 } else if (locationAddress.equalsIgnoreCase("32")) {
+                    if (str11LvlUpSlip[12].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[12] = strData;
                 } else if (locationAddress.equalsIgnoreCase("33")) {
+                    if (str11LvlDnSlip[12].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[12] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("34")) {
+                    if (str11LvlPos1[13].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[13] = strData;
                 } else if (locationAddress.equalsIgnoreCase("35")) {
+                    if (str11LvlPos2[13].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[13] = strData;
                 } else if (locationAddress.equalsIgnoreCase("36")) {
+                    if (str11LvlUpSlip[13].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[13] = strData;
                 } else if (locationAddress.equalsIgnoreCase("37")) {
+                    if (str11LvlDnSlip[13].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[13] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("38")) {
+                    if (str11LvlPos1[14].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[14] = strData;
                 } else if (locationAddress.equalsIgnoreCase("39")) {
+                    if (str11LvlPos2[14].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[14] = strData;
                 } else if (locationAddress.equalsIgnoreCase("3A")) {
+                    if (str11LvlUpSlip[14].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[14] = strData;
                 } else if (locationAddress.equalsIgnoreCase("3B")) {
+                    if (str11LvlDnSlip[14].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[14] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("3C")) {
+                    if (str11LvlPos1[15].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[15] = strData;
                 } else if (locationAddress.equalsIgnoreCase("3D")) {
+                    if (str11LvlPos2[15].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[15] = strData;
                 } else if (locationAddress.equalsIgnoreCase("3E")) {
+                    if (str11LvlUpSlip[15].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[15] = strData;
                 } else if (locationAddress.equalsIgnoreCase("3F")) {
+                    if (str11LvlDnSlip[15].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[15] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("40")) {
+                    if (str11LvlPos1[16].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[16] = strData;
                 } else if (locationAddress.equalsIgnoreCase("41")) {
+                    if (str11LvlPos2[16].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[16] = strData;
                 } else if (locationAddress.equalsIgnoreCase("42")) {
+                    if (str11LvlUpSlip[16].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[16] = strData;
                 } else if (locationAddress.equalsIgnoreCase("43")) {
+                    if (str11LvlDnSlip[16].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[16] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("44")) {
+                    if (str11LvlPos1[17].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[17] = strData;
                 } else if (locationAddress.equalsIgnoreCase("45")) {
+                    if (str11LvlPos2[17].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[17] = strData;
                 } else if (locationAddress.equalsIgnoreCase("46")) {
+                    if (str11LvlUpSlip[17].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[17] = strData;
                 } else if (locationAddress.equalsIgnoreCase("47")) {
+                    if (str11LvlDnSlip[17].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[17] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("48")) {
+                    if (str11LvlPos1[18].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[18] = strData;
                 } else if (locationAddress.equalsIgnoreCase("49")) {
+                    if (str11LvlPos2[18].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[18] = strData;
                 } else if (locationAddress.equalsIgnoreCase("4A")) {
+                    if (str11LvlUpSlip[18].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[18] = strData;
                 } else if (locationAddress.equalsIgnoreCase("4B")) {
+                    if (str11LvlDnSlip[18].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[18] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("4C")) {
+                    if (str11LvlPos1[19].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[19] = strData;
                 } else if (locationAddress.equalsIgnoreCase("4D")) {
+                    if (str11LvlPos2[19].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[19] = strData;
                 } else if (locationAddress.equalsIgnoreCase("4E")) {
+                    if (str11LvlUpSlip[19].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[19] = strData;
                 } else if (locationAddress.equalsIgnoreCase("4F")) {
+                    if (str11LvlDnSlip[19].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[19] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("50")) {
+                    if (str11LvlPos1[20].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[20] = strData;
                 } else if (locationAddress.equalsIgnoreCase("51")) {
+                    if (str11LvlPos2[20].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[20] = strData;
                 } else if (locationAddress.equalsIgnoreCase("52")) {
+                    if (str11LvlUpSlip[20].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[20] = strData;
                 } else if (locationAddress.equalsIgnoreCase("53")) {
+                    if (str11LvlDnSlip[20].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[20] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("54")) {
+                    if (str11LvlPos1[21].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[21] = strData;
                 } else if (locationAddress.equalsIgnoreCase("55")) {
+                    if (str11LvlPos2[21].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[21] = strData;
                 } else if (locationAddress.equalsIgnoreCase("56")) {
+                    if (str11LvlUpSlip[21].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[21] = strData;
                 } else if (locationAddress.equalsIgnoreCase("57")) {
+                    if (str11LvlDnSlip[21].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[21] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("58")) {
+                    if (str11LvlPos1[22].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[22] = strData;
                 } else if (locationAddress.equalsIgnoreCase("59")) {
+                    if (str11LvlPos2[22].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[22] = strData;
                 } else if (locationAddress.equalsIgnoreCase("5A")) {
+                    if (str11LvlUpSlip[22].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[22] = strData;
                 } else if (locationAddress.equalsIgnoreCase("5B")) {
+                    if (str11LvlDnSlip[22].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[22] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("5C")) {
+                    if (str11LvlPos1[23].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[23] = strData;
                 } else if (locationAddress.equalsIgnoreCase("5D")) {
+                    if (str11LvlPos2[23].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[23] = strData;
                 } else if (locationAddress.equalsIgnoreCase("5E")) {
+                    if (str11LvlUpSlip[23].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[23] = strData;
                 } else if (locationAddress.equalsIgnoreCase("5F")) {
+                    if (str11LvlDnSlip[23].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[23] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("60")) {
+                    if (str11LvlPos1[24].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[24] = strData;
                 } else if (locationAddress.equalsIgnoreCase("61")) {
+                    if (str11LvlPos2[24].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[24] = strData;
                 } else if (locationAddress.equalsIgnoreCase("62")) {
+                    if (str11LvlUpSlip[24].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[24] = strData;
                 } else if (locationAddress.equalsIgnoreCase("63")) {
+                    if (str11LvlDnSlip[24].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[24] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("64")) {
+                    if (str11LvlPos1[25].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[25] = strData;
                 } else if (locationAddress.equalsIgnoreCase("65")) {
+                    if (str11LvlPos2[25].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[25] = strData;
                 } else if (locationAddress.equalsIgnoreCase("66")) {
+                    if (str11LvlUpSlip[25].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[25] = strData;
                 } else if (locationAddress.equalsIgnoreCase("67")) {
+                    if (str11LvlDnSlip[25].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[25] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("68")) {
+                    if (str11LvlPos1[26].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[26] = strData;
                 } else if (locationAddress.equalsIgnoreCase("69")) {
+                    if (str11LvlPos2[26].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[26] = strData;
                 } else if (locationAddress.equalsIgnoreCase("6A")) {
+                    if (str11LvlUpSlip[26].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[26] = strData;
                 } else if (locationAddress.equalsIgnoreCase("6B")) {
+                    if (str11LvlDnSlip[26].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[26] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("6C")) {
+                    if (str11LvlPos1[27].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[27] = strData;
                 } else if (locationAddress.equalsIgnoreCase("6D")) {
+                    if (str11LvlPos2[27].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[27] = strData;
                 } else if (locationAddress.equalsIgnoreCase("6E")) {
+                    if (str11LvlUpSlip[27].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[27] = strData;
                 } else if (locationAddress.equalsIgnoreCase("6F")) {
+                    if (str11LvlDnSlip[27].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[27] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("70")) {
+                    if (str11LvlPos1[28].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[28] = strData;
                 } else if (locationAddress.equalsIgnoreCase("71")) {
+                    if (str11LvlPos2[28].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[28] = strData;
                 } else if (locationAddress.equalsIgnoreCase("72")) {
+                    if (str11LvlUpSlip[28].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[28] = strData;
                 } else if (locationAddress.equalsIgnoreCase("73")) {
+                    if (str11LvlDnSlip[28].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[28] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("74")) {
+                    if (str11LvlPos1[29].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[29] = strData;
                 } else if (locationAddress.equalsIgnoreCase("75")) {
+                    if (str11LvlPos2[29].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[29] = strData;
                 } else if (locationAddress.equalsIgnoreCase("76")) {
+                    if (str11LvlUpSlip[29].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[29] = strData;
                 } else if (locationAddress.equalsIgnoreCase("77")) {
+                    if (str11LvlDnSlip[29].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[29] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("78")) {
+                    if (str11LvlPos1[30].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[30] = strData;
                 } else if (locationAddress.equalsIgnoreCase("79")) {
+                    if (str11LvlPos2[30].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[30] = strData;
                 } else if (locationAddress.equalsIgnoreCase("7A")) {
+                    if (str11LvlUpSlip[30].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[30] = strData;
                 } else if (locationAddress.equalsIgnoreCase("7B")) {
+                    if (str11LvlDnSlip[30].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[30] = strData;
                 }
 
                 else if (locationAddress.equalsIgnoreCase("7C")) {
+                    if (str11LvlPos1[31].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos1[31] = strData;
                 } else if (locationAddress.equalsIgnoreCase("7D")) {
+                    if (str11LvlPos2[31].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlPos2[31] = strData;
                 } else if (locationAddress.equalsIgnoreCase("7E")) {
+                    if (str11LvlUpSlip[31].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlUpSlip[31] = strData;
                 } else if (locationAddress.equalsIgnoreCase("7F")) {
+                    if (str11LvlDnSlip[31].equals("")){
+                        count_loader_ViewLevel++;
+                    }
                     str11LvlDnSlip[31] = strData;
                 }
                 /*else if (locationAddress.equalsIgnoreCase("C0")) {

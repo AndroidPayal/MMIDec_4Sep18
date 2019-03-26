@@ -422,6 +422,7 @@ public class DeviceIDActivity extends AppCompatActivity {
                                     int timeout = 0;
                                     while (true) {
                                         if (count_IDs == 17 || count_IDs == 34){
+                                            if (pd.isShowing())
                                             pd.dismiss();
                                             break;
                                         }
@@ -429,6 +430,7 @@ public class DeviceIDActivity extends AppCompatActivity {
                                             if (timeout == 3){
                                                 Log.d("Tag_counter", "run: timeout = "+timeout);
                                                 Toast.makeText(mContext, "TimeOut! Device is slow", Toast.LENGTH_SHORT).show();
+                                                if (pd.isShowing())
                                                 pd.dismiss();
                                                 break;
                                             }

@@ -247,6 +247,7 @@ public class SpeedSelectionActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         //call function
+                        Log.d(TAG, "run:inside count ="+counter);
                         if (counter == 0) {
                             callViewSpeedSelectionCommand(counter);
                             delay();
@@ -300,13 +301,15 @@ public class SpeedSelectionActivity extends AppCompatActivity {
                                 int timeout = 0;
                                 while (true) {
                                     if (count_loader_SpeedSelection == 11) {
-                                        pd.dismiss();
+                                        if (pd.isShowing())
+                                            pd.dismiss();
                                         break;
                                     } else {
                                         if (timeout == 3){
                                             Log.d("Tag_counter", "run: timeout = "+timeout);
                                             Toast.makeText(mContext, "TimeOut! Device is slow", Toast.LENGTH_SHORT).show();
-                                            pd.dismiss();
+                                            if (pd.isShowing())
+                                                pd.dismiss();
                                             break;
                                         }
                                         delay();
