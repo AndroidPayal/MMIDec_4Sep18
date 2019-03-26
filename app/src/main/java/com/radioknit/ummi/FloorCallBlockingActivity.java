@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,6 +24,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import static com.radioknit.ummi.MainActivity.count_loader_FlrCallBlocking;
 import static com.radioknit.ummi.MainActivity.isConnected;
 import static com.radioknit.ummi.MainActivity.sendMessage;
 import static com.radioknit.ummi.MainActivity.str11FlrClBlk;
@@ -297,9 +299,31 @@ public class FloorCallBlockingActivity extends AppCompatActivity {
                                 counter++;
                             } else if (counter == 32) {
                                 //counter++;
-                                pd.dismiss();
+                                if (isConnected()){
+                                    //pd.dismiss();
+                                    Log.d("Tag_speed", "run: count = "+count_loader_FlrCallBlocking);
+                                    //todo change payal
+                                    int timeout = 0;
+                                    while (true) {
+                                        if (count_loader_FlrCallBlocking == 32) {
+                                            pd.dismiss();
+                                            break;
+                                        } else {
+                                            if (timeout == 3){
+                                                Log.d("Tag_counter", "run: timeout = "+timeout);
+                                                Toast.makeText(mContext, "TimeOut! Device is slow", Toast.LENGTH_SHORT).show();
+                                                pd.dismiss();
+                                                break;
+                                            }
+                                            delay();
+                                            timeout ++;
+                                        }
+                                    }
+
+                                }
+
                                 //if(completReceivedString.toString().contains("11250bf")){
-                                //showReceivedDataNew();
+                                showReceivedDataNew();
                                 counter++;
                                 //}
 
@@ -581,7 +605,7 @@ public class FloorCallBlockingActivity extends AppCompatActivity {
             if(cntSetText==1){
                 setTextViewValue(spinFlr);
             }
-            showReceivedDataNew();
+            //showReceivedDataNew();
             myHandlerChk.postDelayed(this, 0);
         }
 

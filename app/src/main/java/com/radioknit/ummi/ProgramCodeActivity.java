@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,6 +24,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import static com.radioknit.ummi.MainActivity.count_loader_ReadPLC;
 import static com.radioknit.ummi.MainActivity.isConnected;
 import static com.radioknit.ummi.MainActivity.sendMessage;
 import static com.radioknit.ummi.MainActivity.str11BreakHiPulse;
@@ -124,8 +126,6 @@ public class ProgramCodeActivity extends AppCompatActivity {
         registerEvent();
         myHandlerChk.postDelayed(checkDataContinue, 0);
 
-
-
     }
 
 
@@ -199,6 +199,8 @@ public class ProgramCodeActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Connect to the device", Toast.LENGTH_SHORT).show();
                 }
                 boolean b = ha.postDelayed(new Runnable() {
+
+
                     @Override
                     public void run() {
                         if(counter == 1){
@@ -255,9 +257,28 @@ public class ProgramCodeActivity extends AppCompatActivity {
                                 counter++;
                         }else if(counter == 14){
                             if (isConnected()) {
-                                pd.dismiss();
+                                Log.d("Tag_counter", "run: count val = "+count_loader_ReadPLC);
+
+                               //todo change payal
+                                int timeout = 0;
+                                while (true) {
+                                    if (count_loader_ReadPLC == 13) {
+                                        pd.dismiss();
+                                        break;
+                                    } else {
+                                        if (timeout == 3){
+                                            Log.d("Tag_counter", "run: timeout = "+timeout);
+                                            Toast.makeText(mContext, "TimeOut! Device is slow", Toast.LENGTH_SHORT).show();
+                                            pd.dismiss();
+
+                                            break;
+                                        }
+                                        delayRead();
+                                        timeout ++;
+                                    }
+                                }
                             }
-                                //showReceivedDataNew();
+                                showReceivedDataNew();
                                 counter++;
                         }
                         ha.postDelayed(this, 500);
@@ -1009,7 +1030,7 @@ public class ProgramCodeActivity extends AppCompatActivity {
     private Runnable checkDataContinue = new Runnable() {
 
         public void run() {
-           showReceivedDataNew();
+          // showReceivedDataNew();
             if (isConnected()) {
                 try{
                     menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));

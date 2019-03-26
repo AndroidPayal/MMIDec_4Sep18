@@ -120,6 +120,14 @@ public class MainActivity extends AppCompatActivity {
 
         //TODO payal
         str23HexCarCop2CallByte1 = "", str23HexCarCop2CallByte2="";
+    ImageView imgDummy1;
+    public static int count_IDs=0;//count 17 for 15 flr , and count 34  for 31 flr +Cop1+2
+    public static int count_loader_ReadPLC = 0;
+    public static int count_loader_DisplayPattern = 0;
+    public static int count_loader_ProgrammableParameter = 0;
+    public static int count_loader_SpeedSelection = 0;
+    public static int count_loader_FlrCallBlocking = 0;
+
 
 
 /*     str11DisFlr0 = "", str11DisFlr1 = "", str11DisFlr2 = "", str11DisFlr3 = "", str11DisFlr4 = "", str11DisFlr5 = "", str11DisFlr6 = "",
@@ -140,7 +148,6 @@ public class MainActivity extends AppCompatActivity {
     private Menu menu;
     final Handler myHandlerChk = new Handler();
 
-    ImageView imgDummy1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -300,14 +307,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         imgDummy1.setVisibility(View.INVISIBLE);
-        imgDummy1.setOnClickListener(new View.OnClickListener() {
+       /* imgDummy1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i1 = new Intent(MainActivity.this, CarCallActivity.class);
                 i1.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(i1);
             }
-        });
+        });*/
     }
 
     private void createObj() {
@@ -707,45 +714,84 @@ public class MainActivity extends AppCompatActivity {
                 String strData = temp.substring(8, 10);
             //    Log.e(TAG, "locationAddress = " + locationAddress + " data = " + data);
                 if (locationAddress.equalsIgnoreCase("82")) {
+                    if (str11StopDelay.equals("")){
+                        count_loader_ReadPLC++;
+                    }
                     str11StopDelay = (Integer.toString(data) + " ");
                     //str11StopDelay = (strData + " ");
                 } else if (locationAddress.equalsIgnoreCase("83")) {
+                    if (str11TransitDelay.equals("")){
+                        count_loader_ReadPLC++;
+                    }
                     str11TransitDelay = (Integer.toString(data) + " ");
                     //str11TransitDelay = (strData + " ");
                 } else if (locationAddress.equalsIgnoreCase("84")) {
+                    if (str11BreakHiPulse.equals("")){
+                        count_loader_ReadPLC++;
+                    }
                     str11BreakHiPulse = (Integer.toString(data) + " ");
                     //str11BreakHiPulse = (strData + " ");
                 } else if (locationAddress.equalsIgnoreCase("85")) {
+                    if (str11NoOfFloors.equals("")){
+                        count_loader_ReadPLC++;
+                    }
                     str11NoOfFloors = (Integer.toString(data) + " ");
                     //str11NoOfFloors = (strData + " ");
                 } else if (locationAddress.equalsIgnoreCase("86")) {
+                    if (str11DoorOpenTime.equals("")){
+                        count_loader_ReadPLC++;
+                    }
                     str11DoorOpenTime = (Integer.toString(data) + " ");
                     //str11DoorOpenTime = (strData + " ");
                 } else if (locationAddress.equalsIgnoreCase("87")) {
+                    if (str11DoorCloseTime.equals("")){
+                        count_loader_ReadPLC++;
+                    }
                     str11DoorCloseTime = (Integer.toString(data) + " ");
                     //str11DoorCloseTime = (strData + " ");
                 } else if (locationAddress.equalsIgnoreCase("88")) {
+                    if (str11DoorKeepOpenTime.equals("")){
+                        count_loader_ReadPLC++;
+                    }
                     str11DoorKeepOpenTime = (Integer.toString(data) + " ");
                     //str11DoorKeepOpenTime = (strData + " ");
                 } else if (locationAddress.equalsIgnoreCase("89")) {
+                    if (str11ClockDivide.equals("")){
+                        count_loader_ReadPLC++;
+                    }
                     str11ClockDivide = (Integer.toString(data) + " ");
                     //str11ClockDivide = (strData + " ");
                 } else if (locationAddress.equalsIgnoreCase("8A")) {
+                    if (str11ControlBit.equals("")){
+                        count_loader_ReadPLC++;
+                    }
                     str11ControlBit = (Integer.toString(data) + " ");
                     //str11ControlBit = (strData + " ");
                 } else if (locationAddress.equalsIgnoreCase("8B")) {
+                    if (str11FireFloor.equals("")){
+                        count_loader_ReadPLC++;
+                    }
                     str11FireFloor = (Integer.toString(data) + " ");
                     //str11FireFloor = (strData + " ");
                     //TempSharedPreference.setKeyFiremanFloor(mContext, "" + data);
                 } else if (locationAddress.equalsIgnoreCase("8C")) {
+                    if (str11HomeFloor.equals("")){
+                        count_loader_ReadPLC++;
+                    }
                     str11HomeFloor = (Integer.toString(data) + " ");
                     //str11HomeFloor = (strData + " ");
                     //TempSharedPreference.setKeyHomeFloor(mContext, "" + data);
                 } else if (locationAddress.equalsIgnoreCase("8D")) {
+                    if (str11CompulsoryStop.equals("")){
+                        count_loader_ReadPLC++;
+                    }
                     str11CompulsoryStop = (Integer.toString(data) + " ");
                     //str11CompulsoryStop = (strData + " ");
                     //TempSharedPreference.setKeyCompulsoryStop(mContext, "" + data);
                 } else if (locationAddress.equalsIgnoreCase("8E")) {
+                    if (str11ParkingFloor.equals("")){
+                        count_loader_ReadPLC++;
+                    }
                     str11ParkingFloor = (Integer.toString(data) + " ");
                     //str11ParkingFloor = (strData + " ");
                     //TempSharedPreference.setKeyParkingFloor(mContext, "" + data);
@@ -754,163 +800,400 @@ public class MainActivity extends AppCompatActivity {
 
 
                 else if (locationAddress.equalsIgnoreCase("C0")) {
+                    if (str11DisFlr[0].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[0] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("C1")) {
+                    if (str11DisFlr[1].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[1] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("C2")) {
+                    if (str11DisFlr[2].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[2] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("C3")) {
+                    if (str11DisFlr[3].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[3] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("C4")) {
+                    if (str11DisFlr[4].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[4] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("C5")) {
+                    if (str11DisFlr[5].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[5] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("C6")) {
+                    if (str11DisFlr[6].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[6] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("C7")) {
+                    if (str11DisFlr[7].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[7] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("C8")) {
+                    if (str11DisFlr[8].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[8] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("C9")) {
+                    if (str11DisFlr[9].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[9] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("CA")) {
+                    if (str11DisFlr[10].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[10] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("CB")) {
+                    if (str11DisFlr[11].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[11] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("CC")) {
+                    if (str11DisFlr[12].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[12] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("CD")) {
+                    if (str11DisFlr[13].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[13] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("CE")) {
+                    if (str11DisFlr[14].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[14] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("CF")) {
+                    if (str11DisFlr[15].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[15] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("D0")) {
+                    if (str11DisFlr[16].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[16] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("D1")) {
+                    if (str11DisFlr[17].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[17] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("D2")) {
+                    if (str11DisFlr[18].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[18] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("D3")) {
+                    if (str11DisFlr[19].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[19] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("D4")) {
+                    if (str11DisFlr[20].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[20] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("D5")) {
+                    if (str11DisFlr[21].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[21] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("D6")) {
+                    if (str11DisFlr[22].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[22] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("D7")) {
+                    if (str11DisFlr[23].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[23] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("D8")) {
+                    if (str11DisFlr[24].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[24] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("D9")) {
+                    if (str11DisFlr[25].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[25] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("DA")) {
+                    if (str11DisFlr[26].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[26] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("DB")) {
+                    if (str11DisFlr[27].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[27] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("DC")) {
+                    if (str11DisFlr[28].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[28] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("DD")) {
+                    if (str11DisFlr[29].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[29] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("DE")) {
+                    if (str11DisFlr[30].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[30] = ("" + arrPattern.get(data));
                 } else if (locationAddress.equalsIgnoreCase("DF")) {
+                    if (str11DisFlr[31].equals("")){
+                        count_loader_DisplayPattern++;
+                    }
                     str11DisFlr[31] = ("" + arrPattern.get(data));
                 }
 
 
                 else if (locationAddress.equalsIgnoreCase("F0")) {
+                    if (str11Speed[0].equals("")){
+                        count_loader_SpeedSelection++;
+                    }
                     str11Speed[0] = (data + " ");
                 } else if (locationAddress.equalsIgnoreCase("F1")) {
+                    if (str11Speed[1].equals("")){
+                        count_loader_SpeedSelection++;
+                    }
                     str11Speed[1] = (data + " ");
                 } else if (locationAddress.equalsIgnoreCase("F2")) {
+                    if (str11Speed[2].equals("")){
+                        count_loader_SpeedSelection++;
+                    }
                     str11Speed[2] = (data + " ");
                 } else if (locationAddress.equalsIgnoreCase("F3")) {
+                    if (str11Speed[3].equals("")){
+                        count_loader_SpeedSelection++;
+                    }
                     str11Speed[3] = (data + " ");
                 } else if (locationAddress.equalsIgnoreCase("F4")) {
+                    if (str11Speed[4].equals("")){
+                        count_loader_SpeedSelection++;
+                    }
                     str11Speed[4] = (data + " ");
                 } else if (locationAddress.equalsIgnoreCase("F5")) {
+                    if (str11Speed[5].equals("")){
+                        count_loader_SpeedSelection++;
+                    }
                     str11Speed[5] = (data + " ");
                 } else if (locationAddress.equalsIgnoreCase("F6")) {
+                    if (str11Speed[6].equals("")){
+                        count_loader_SpeedSelection++;
+                    }
                     str11Speed[6] = (data + " ");
                 } else if (locationAddress.equalsIgnoreCase("F7")) {
+                    if (str11Speed[7].equals("")){
+                        count_loader_SpeedSelection++;
+                    }
                     str11Speed[7] = (data + " ");
                 } else if (locationAddress.equalsIgnoreCase("F8")) {
+                    if (str11Speed[8].equals("")){
+                        count_loader_SpeedSelection++;
+                    }
                     str11Speed[8] = (data + " ");
                 } else if (locationAddress.equalsIgnoreCase("F9")) {
+                    if (str11Speed[9].equals("")){
+                        count_loader_SpeedSelection++;
+                    }
                     str11Speed[9] = (data + " ");
                 } else if (locationAddress.equalsIgnoreCase("FA")) {
+                    if (str11Speed[10].equals("")){
+                        count_loader_SpeedSelection++;
+                    }
                     str11Speed[10] = (data + " ");
                 }
 
+
+
+
+
+
+
+
+                //=====================================================
+
                 else if (locationAddress.equalsIgnoreCase("A0")) {
+                    if (str11FlrClBlk[0].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[0] = Integer.toString(data);
                    //   Log.e(TAG,"Data:"+str11FlrClBlk[0]);
                 } else if (locationAddress.equalsIgnoreCase("A1")) {
+                    if (str11FlrClBlk[1].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[1] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("A2")) {
+                    if (str11FlrClBlk[2].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[2] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("A3")) {
+                    if (str11FlrClBlk[3].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[3] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("A4")) {
+                    if (str11FlrClBlk[4].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[4] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("A5")) {
+                    if (str11FlrClBlk[5].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[5] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("A6")) {
+                    if (str11FlrClBlk[6].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[6] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("A7")) {
+                    if (str11FlrClBlk[7].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[7] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("A8")) {
+                    if (str11FlrClBlk[8].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[8] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("A9")) {
+                    if (str11FlrClBlk[9].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[9] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("AA")) {
+                    if (str11FlrClBlk[10].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[10] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("AB")) {
+                    if (str11FlrClBlk[11].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[11] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("AC")) {
+                    if (str11FlrClBlk[12].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[12] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("AD")) {
+                    if (str11FlrClBlk[13].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[13] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("AE")) {
+                    if (str11FlrClBlk[14].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[14] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("AF")) {
+                    if (str11FlrClBlk[15].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[15] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("B0")) {
+                    if (str11FlrClBlk[16].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[16] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("B1")) {
+                    if (str11FlrClBlk[17].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[17] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("B2")) {
+                    if (str11FlrClBlk[18].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[18] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("B3")) {
+                    if (str11FlrClBlk[19].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[19] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("B4")) {
+                    if (str11FlrClBlk[20].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[20] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("B5")) {
+                    if (str11FlrClBlk[21].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[21] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("B6")) {
+                    if (str11FlrClBlk[22].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[22] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("B7")) {
+                    if (str11FlrClBlk[23].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[23] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("B8")) {
+                    if (str11FlrClBlk[24].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[24] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("B9")) {
+                    if (str11FlrClBlk[25].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[25] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("BA")) {
+                    if (str11FlrClBlk[26].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[26] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("BB")) {
+                    if (str11FlrClBlk[27].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[27] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("BC")) {
+                    if (str11FlrClBlk[28].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[28] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("BD")) {
+                    if (str11FlrClBlk[29].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[29] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("BE")) {
+                    if (str11FlrClBlk[30].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[30] = Integer.toString(data);
                 } else if (locationAddress.equalsIgnoreCase("BF")) {
+                    if (str11FlrClBlk[31].equals("")){
+                        count_loader_FlrCallBlocking++;
+                    }
                     str11FlrClBlk[31] = Integer.toString(data);
                 }
 
+
+
+                //===================================================
 
                 else if (locationAddress.equalsIgnoreCase("00")) {
                     str11LvlPos1[0] = strData;
@@ -1316,162 +1599,329 @@ public class MainActivity extends AppCompatActivity {
                 String msb = temp.substring(4, 6);//this is lsb
                 String id = lsb + sb + msb;//it will msb + sb + lsb
                 int device = Integer.parseInt(temp.substring(10, 12));
-                Log.e("Tag_DeviceIdsMain", "Device  = " + device + " Id :" + id+ " temp = " + temp);
+                Log.e("Tag_DeviceIdsMain", "Device  = " + device + " Id :" + id+ " temp = " + temp+ " count= "+count_IDs);
 
                 //todo: ==================change by payal
                /* for (int i=0; i<=31 ; i++){//wrong this code is
                     str11f1Id[i] = "";
 
                 }*/
-                Log.d("Tag_DeviceIdsM", "===========array blank===============");
+              //  Log.d("Tag_DeviceIdsM", "===========array blank===============");
 
 
                 switch (device) {
                     case 0:
+                        if (str11f1Id[0].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[0] = id;
                         break;
                     case 1:
+                        if (str11f1Id[1].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[1] = id;
                         break;
                     case 2:
+                        if (str11f1Id[2].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[2] = id;
                         break;
                     case 3:
+                        if (str11f1Id[3].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[3] = id;
                         break;
                     case 4:
+                        if (str11f1Id[4].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[4] = id;
                         break;
                     case 5:
+                        if (str11f1Id[5].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[5] = id;
                         break;
                     case 6:
+                        if (str11f1Id[6].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[6] = id;
                         break;
                     case 7:
+                        if (str11f1Id[7].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[7] = id;
                         break;
                     case 8:
+                        if (str11f1Id[8].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[8] = id;
                         break;
                     case 9:
+                        if (str11f1Id[9].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[9] = id;
                         break;
                     case 10:
+                        if (str11f1Id[10].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[10] = id;
                         break;
                     case 11:
+                        if (str11f1Id[11].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[11] = id;
                         break;
                     case 12:
+                        if (str11f1Id[12].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[12] = id;
                         break;
-                    case 13:
+                    case 13:if (str11f1Id[13].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[13] = id;
                         break;
-                    case 14:
+                    case 14:if (str11f1Id[14].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[14] = id;
                         break;
-                    case 15:
+                    case 15:if (str11f1Id[15].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[15] = id;
                         break;
-                    case 16:
+                    case 16:if (str11f1Id[16].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[16] = id;
                         break;
-                    case 17:
+                    case 17:if (str11f1Id[17].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[17] = id;
                         break;
-                    case 18:
+                    case 18:if (str11f1Id[18].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[18] = id;
                         break;
-                    case 19:
+                    case 19:if (str11f1Id[19].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[19] = id;
                         break;
-                    case 20:
+                    case 20:if (str11f1Id[20].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[20] = id;
                         break;
-                    case 21:
+                    case 21:if (str11f1Id[21].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[21] = id;
                         break;
-                    case 22:
+                    case 22:if (str11f1Id[22].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[22] = id;
                         break;
-                    case 23:
+                    case 23:if (str11f1Id[23].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[23] = id;
                         break;
-                    case 24:
+                    case 24:if (str11f1Id[24].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[24] = id;
                         break;
-                    case 25:
+                    case 25:if (str11f1Id[25].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[25] = id;
                         break;
-                    case 26:
+                    case 26:if (str11f1Id[26].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[26] = id;
                         break;
-                    case 27:
+                    case 27:if (str11f1Id[27].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[27] = id;
                         break;
-                    case 28:
+                    case 28:if (str11f1Id[28].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[28] = id;
                         break;
-                    case 29:
+                    case 29:if (str11f1Id[29].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[29] = id;
                         break;
-                    case 30:
+                    case 30:if (str11f1Id[30].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[30] = id;
                         break;
-                    case 31:
+                    case 31:if (str11f1Id[31].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[31] = id;
                         break;
-                    case 32:
+                    case 32:if (str11f1Id[32].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[32] = id;
                         break;
-                    case 33:
+                    case 33:if (str11f1Id[33].equals(""))
+                        {
+                            count_IDs++;
+                        }
                         str11f1Id[33] = id;
                         break;
+
+
+
+
+
+
+                        //============================================================
                     case 41:
+                        if (str11f1Param[0].equals("")){
+                            count_loader_ProgrammableParameter++;
+                        }
                         str11f1Param[0] = id;
                         break;
                     case 42:
+                        if (str11f1Param[1].equals("")){
+                            count_loader_ProgrammableParameter++;
+                        }
                         str11f1Param[1] = id;
                         break;
                     case 43:
+                        if (str11f1Param[2].equals("")){
+                            count_loader_ProgrammableParameter++;
+                        }
                         str11f1Param[2] = id;
                         break;
                     case 44:
+                        if (str11f1Param[3].equals("")){
+                            count_loader_ProgrammableParameter++;
+                        }
                         str11f1Param[3] = id;
                         break;
                     case 45:
+                        if (str11f1Param[4].equals("")){
+                            count_loader_ProgrammableParameter++;
+                        }
                         str11f1Param[4] = id;
                         break;
                     case 46:
+                        if (str11f1Param[5].equals("")){
+                            count_loader_ProgrammableParameter++;
+                        }
                         str11f1Param[5] = id;
                         break;
                     case 47:
+                        if (str11f1Param[6].equals("")){
+                            count_loader_ProgrammableParameter++;
+                        }
                         str11f1Param[6] = id;
                         break;
                     case 48:
+                        if (str11f1Param[7].equals("")){
+                            count_loader_ProgrammableParameter++;
+                        }
                         str11f1Param[7] = id;
                         break;
                     case 49:
+                        if (str11f1Param[8].equals("")){
+                            count_loader_ProgrammableParameter++;
+                        }
                         str11f1Param[8] = id;
                         break;
                     case 50:
+                        if (str11f1Param[9].equals("")){
+                            count_loader_ProgrammableParameter++;
+                        }
                         str11f1Param[9] = id;
                         break;
                     case 51:
+                        if (str11f1Param[10].equals("")){
+                            count_loader_ProgrammableParameter++;
+                        }
                         str11f1Param[10] = id;
                         break;
                     case 52:
+                        if (str11f1Param[11].equals("")){
+                            count_loader_ProgrammableParameter++;
+                        }
                         str11f1Param[11] = id;
                         break;
                     case 53:
+                        if (str11f1Param[12].equals("")){
+                            count_loader_ProgrammableParameter++;
+                        }
                         str11f1Param[12] = id;
                         break;
                     case 54:
+                        if (str11f1Param[13].equals("")){
+                            count_loader_ProgrammableParameter++;
+                        }
                         str11f1Param[13] = id;
                         break;
                     case 55:
+                        if (str11f1Param[14].equals("")){
+                            count_loader_ProgrammableParameter++;
+                        }
                         str11f1Param[14] = id;
                         break;
                 }
@@ -1746,7 +2196,7 @@ public class MainActivity extends AppCompatActivity {
                     String writeMessage = new String(writeBuf);
 
                     Log.d(TAG, "handleMessage: sent="+writeMessage);
-                    Toast.makeText(mContext, "sent "+writeMessage, Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(mContext, "sent "+writeMessage, Toast.LENGTH_SHORT).show();
                     //mConversationArrayAdapter.add("Me:  " + writeMessage);
                     break;
                 case MESSAGE_READ:

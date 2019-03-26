@@ -676,7 +676,7 @@ public class LevelFunctionActivity extends AppCompatActivity {
                             }
                             //ha.removeCallbacks();
                             //delay();
-                            //showReceivedDataNew();
+                            showReceivedDataNew();
 
                         }
                         ha.postDelayed(this, 500);
@@ -1371,7 +1371,7 @@ public class LevelFunctionActivity extends AppCompatActivity {
     private Runnable checkDataContinue = new Runnable() {
 
         public void run() {
-            showReceivedDataNew();
+            //showReceivedDataNew();
             if (isConnected()) {
                 try{
                     menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));

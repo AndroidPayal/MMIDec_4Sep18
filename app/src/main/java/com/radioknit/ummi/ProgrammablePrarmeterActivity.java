@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,6 +24,7 @@ import android.widget.Toast;
 import java.io.OutputStream;
 import java.util.ArrayList;
 
+import static com.radioknit.ummi.MainActivity.count_loader_ProgrammableParameter;
 import static com.radioknit.ummi.MainActivity.isConnected;
 import static com.radioknit.ummi.MainActivity.sendMessage;
 import static com.radioknit.ummi.MainActivity.str11f1Param;
@@ -229,7 +231,25 @@ public class ProgrammablePrarmeterActivity extends AppCompatActivity {
                         }else if(counter == 15){
                             counter++;
                             if(isConnected()){
-                                pd.dismiss();
+                               // pd.dismiss();
+                                Log.d("Tag_program", "run: count = "+count_loader_ProgrammableParameter);
+                                //todo change payal
+                                int timeout = 0;
+                                while (true) {
+                                    if (count_loader_ProgrammableParameter == 15) {
+                                        pd.dismiss();
+                                        break;
+                                    } else {
+                                        if (timeout == 3){
+                                            Log.d("Tag_counter", "run: timeout = "+timeout);
+                                            Toast.makeText(mContext, "TimeOut! Device is slow", Toast.LENGTH_SHORT).show();
+                                            pd.dismiss();
+                                            break;
+                                        }
+                                        delay();
+                                        timeout ++;
+                                    }
+                                }
                             }
                             showReceivedDataNew();
                         }
@@ -467,7 +487,7 @@ public class ProgrammablePrarmeterActivity extends AppCompatActivity {
                     //Catch
                 }
             }
-            showReceivedDataNew();
+            //showReceivedDataNew();
             if(cntSetText==1){
                 setTextViewValue(spinFlr);
             }

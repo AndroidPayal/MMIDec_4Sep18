@@ -25,6 +25,7 @@ import android.widget.Toast;
 import java.io.OutputStream;
 import java.util.ArrayList;
 
+import static com.radioknit.ummi.MainActivity.count_IDs;
 import static com.radioknit.ummi.MainActivity.isConnected;
 import static com.radioknit.ummi.MainActivity.sendMessage;
 import static com.radioknit.ummi.MainActivity.str11f1Id;
@@ -186,13 +187,13 @@ public class DeviceIDActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-    void delayLarge(){
+   /* void delayLarge(){
         try {
             Thread.sleep(500);//this delay helps to fetch data from device//change by payal
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
     private void registerEvent() {
         final Handler ha = new Handler();
@@ -215,6 +216,7 @@ public class DeviceIDActivity extends AppCompatActivity {
         btnViewDeviceID.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+               // btnViewDeviceID.setClickable(false);
                 //completReceivedString.setLength(0);
                 counter = 0;
                  //pd = ProgressDialog.show(mContext,"","Please wait",true);
@@ -400,7 +402,7 @@ public class DeviceIDActivity extends AppCompatActivity {
                             }else if(counter == 34){
                                 Log.d(TAG, "run: counter="+counter);
                                 callViewDeviceId(counter);
-                                delayLarge();
+                                delay();
                                 counter++;
 
                                 //todo change payal
@@ -416,9 +418,27 @@ public class DeviceIDActivity extends AppCompatActivity {
                                     }
                                 }*/
                                 if(isConnected()){
-                                    pd.dismiss();
+                                    //todo change payal
+                                    int timeout = 0;
+                                    while (true) {
+                                        if (count_IDs == 17 || count_IDs == 34){
+                                            pd.dismiss();
+                                            break;
+                                        }
+                                        else {
+                                            if (timeout == 3){
+                                                Log.d("Tag_counter", "run: timeout = "+timeout);
+                                                Toast.makeText(mContext, "TimeOut! Device is slow", Toast.LENGTH_SHORT).show();
+                                                pd.dismiss();
+                                                break;
+                                            }
+                                            delay();
+                                            timeout ++;
+                                        }
+                                    }
+
                                 }
-                                Log.d(TAG, "run: calling show received data()");
+                                Log.d(TAG, "run: calling show received data() count = "+count_IDs);
 
                                 showReceivedDataNew();
                             }
@@ -633,7 +653,7 @@ public class DeviceIDActivity extends AppCompatActivity {
     private Runnable checkDataContinue = new Runnable() {
 
         public void run() {
-            showReceivedDataNew();
+            //showReceivedDataNew();
             if (isConnected()) {
                 try{
                     menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,6 +24,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import static com.radioknit.ummi.MainActivity.count_loader_DisplayPattern;
 import static com.radioknit.ummi.MainActivity.isConnected;
 import static com.radioknit.ummi.MainActivity.sendMessage;
 import static com.radioknit.ummi.MainActivity.str11DisFlr;
@@ -295,11 +297,29 @@ public class DisplayPatternActivity extends AppCompatActivity {
                                 counter++;
                         }else if(counter == 32){
                                 counter++;
-                             //   Log.e(TAG, "counter = "+counter);
+                                Log.e("Tag_count", "counterDisplayptrn = "+count_loader_DisplayPattern);
                             if(isConnected()){
-                                pd.dismiss();
+                               // pd.dismiss();
+                                //todo change payal
+                                int timeout = 0;
+                                while (true) {
+                                    if (count_loader_DisplayPattern == 32) {
+                                        pd.dismiss();
+                                        break;
+                                    } else {
+                                        if (timeout == 3){
+                                            Log.d("Tag_counter", "run: timeout = "+timeout);
+                                            Toast.makeText(mContext, "TimeOut! Device is slow", Toast.LENGTH_SHORT).show();
+                                            pd.dismiss();
+
+                                            break;
+                                        }
+                                        delay();
+                                        timeout ++;
+                                    }
+                                }
                             }
-                            delay();
+                           // delay();
                                 showReceivedDataNew();
 
                         }
@@ -485,7 +505,7 @@ public class DisplayPatternActivity extends AppCompatActivity {
     private Runnable checkDataContinue = new Runnable() {
 
         public void run() {
-            showReceivedDataNew();
+            //showReceivedDataNew();
             if (isConnected()) {
                 try{
                     menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));
