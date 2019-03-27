@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.radioknit.ummi">
-<!--pass word : ummiproject
+<!--pass word : unimmikey
+key location : C:\Users\Radioknit\StudioProjects\UniMmiKey.jks
 * in all placess of release-->
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.BLUETOOTH" />

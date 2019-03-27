@@ -70,9 +70,10 @@ public class LoginActivity extends AppCompatActivity {
       //  Log.e(TAG, "strDate : " + strDate);
         if(!strUser.equals("") || !strPass.equals("")){
             if(isOnline()){
-                url= "http://theliftiot.net/MMIClient/MMIService/signin?email_id=" + strUser +
-                        "&password=" + strPass;
-                //Log.e(TAG, "URL : " + url);
+               // url= "http://theliftiot.net/MMIClient/MMIService/signin?email_id=" + strUser +"&password=" + strPass;
+                url= "http://theliftiot.com/UniElevators/UMMIService/signin?email_id="+strUser+"&password="+strPass;
+              //  url= "http://theliftiot.com/UniElevators/UMMIService/signin?email_id=shruti.wandre@radioknit.com&password=shruti@1234";
+                Log.e(TAG, "URL : " + url);
                 new GetStatus().execute();
             }
             else {
@@ -101,8 +102,11 @@ public class LoginActivity extends AppCompatActivity {
                     return;
                 }*/
                 if(isOnline()) {
-                    url = "http://theliftiot.net/MMIClient/MMIService/signin?email_id=" + strUser +
-                            "&password=" + strPass;
+                 /*   url = "http://theliftiot.net/MMIClient/MMIService/signin?email_id=" + strUser +
+                            "&password=" + strPass;*/
+                  //  url= "http://theliftiot.com/UniElevators/UMMIService/signin?email_id=shruti.wandre@radioknit.com&password=shruti@1234";
+                    url= "http://theliftiot.com/UniElevators/UMMIService/signin?email_id="+strUser+"&password="+strPass;
+
                     Log.e(TAG, "URL_login : " + url);
 
                     //=TODO : temporary change by payal=====================undo kr ri isko
