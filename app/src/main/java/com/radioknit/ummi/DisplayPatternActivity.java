@@ -297,7 +297,7 @@ public class DisplayPatternActivity extends AppCompatActivity {
                                 counter++;
                         }else if(counter == 32){
                                 counter++;
-                                Log.e("Tag_count", "counterDisplayptrn = "+count_loader_DisplayPattern);
+                                Log.e("processReceivedData", "counterDisplayptrn = "+count_loader_DisplayPattern);
                             if(isConnected()){
                                // pd.dismiss();
                                 //todo change payal
@@ -323,10 +323,12 @@ public class DisplayPatternActivity extends AppCompatActivity {
                                 }
                             }
                            // delay();
+
                                 showReceivedDataNew();
 
                         }
-                        ha.postDelayed(this, 500);
+                        if (counter<33)
+                            ha.postDelayed(this, 500);
                     }
                 }, 500);
             }

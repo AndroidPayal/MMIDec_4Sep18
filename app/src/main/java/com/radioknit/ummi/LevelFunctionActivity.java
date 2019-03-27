@@ -673,7 +673,7 @@ public class LevelFunctionActivity extends AppCompatActivity {
                             counter++;
                         }
                         else if (counter == 128) {
-                            //counter++;
+                            counter++;
                             //Log.e(TAG, "counter = " + counter);
                             if (isConnected()) {
                                 //pd.dismiss();
@@ -700,10 +700,13 @@ public class LevelFunctionActivity extends AppCompatActivity {
                             }
                             //ha.removeCallbacks();
                             //delay();
-                            showReceivedDataNew();
+
+                                showReceivedDataNew();
 
                         }
-                        ha.postDelayed(this, 500);
+                        Log.d("processReceivedData", "run: counter val is="+counter);
+                        if (counter<129)
+                            ha.postDelayed(this, 500);
                     }
                 }, 500);
             }

@@ -92,6 +92,9 @@ public class SpeedSelectionActivity extends AppCompatActivity {
     private int cntSetText = 0;
     private TextView txtViewValue;
     int spinFlr = 0;
+
+    //change payal
+    Runnable myRunnable;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -243,89 +246,91 @@ public class SpeedSelectionActivity extends AppCompatActivity {
                 else {
                     Toast.makeText(getApplicationContext(), "Connect to the device", Toast.LENGTH_SHORT).show();
                 }
-               /* boolean b = ha.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {*/
-                        //call function
-                        Log.d(TAG, "run:inside count ="+counter);
-                        if (counter == 0) {
-                            callViewSpeedSelectionCommand(counter);
-                            delay();
-                            counter++;
-                        } else if (counter == 1) {
-                                callViewSpeedSelectionCommand(counter);
-                            delay();
-                                counter++;
-                        } else if (counter == 2) {
-                                callViewSpeedSelectionCommand(counter);
-                            delay();
-                                counter++;
-                        } else if (counter == 3) {
-                                callViewSpeedSelectionCommand(counter);
-                            delay();
-                                counter++;
-                        } else if (counter == 4) {
-                                callViewSpeedSelectionCommand(counter);
-                            delay();
-                                counter++;
-                        } else if (counter == 5) {
-                                callViewSpeedSelectionCommand(counter);
-                            delay();
-                                counter++;
-                        } else if (counter == 6) {
-                                callViewSpeedSelectionCommand(counter);
-                            delay();
-                                counter++;
-                        } else if (counter == 7) {
-                                callViewSpeedSelectionCommand(counter);
-                            delay();
-                                counter++;
-                        } else if (counter == 8) {
-                                callViewSpeedSelectionCommand(counter);
-                            delay();
-                                counter++;
-                        } else if (counter == 9) {
-                                callViewSpeedSelectionCommand(counter);
-                            delay();
-                                counter++;
-                        }else if (counter == 10) {
-                                callViewSpeedSelectionCommand(counter);
-                            delay();
-                                counter++;
-                        }else if(counter == 11){
-                                counter++;
-                            if(isConnected()){
-                               // pd.dismiss();
-                                Log.d(TAG, "run: count = "+count_loader_SpeedSelection);
-                                //todo change payal
-                                int timeout = 0;
-                                while (true) {
-                                    if (count_loader_SpeedSelection == 11) {
-                                        if (pd.isShowing())
-                                            pd.dismiss();
-                                        break;
-                                    } else {
-                                        if (timeout == 3){
-                                            Log.d("Tag_counter", "run: timeout = "+timeout);
-                                            Toast.makeText(mContext, "TimeOut! Device is slow", Toast.LENGTH_SHORT).show();
-                                            if (pd.isShowing())
-                                                pd.dismiss();
-                                            break;
-                                        }
-                                        delay();
-                                        timeout ++;
-                                    }
-                                }
-                            }
-
-                                showReceivedDataNew();
-                       }
-                      //  ha.postDelayed(this, 500);
-                    }
-              /*  }, 500);
-    }*/
+               /* boolean b =*/ ha.postDelayed(myRunnable, 500);
+    }
         });
 
+         myRunnable =new Runnable() {
+            @Override
+            public void run() {
+                //call function
+                Log.d(TAG, "run:inside val="+counter);
+                if (counter == 0) {
+                    callViewSpeedSelectionCommand(counter);
+                    delay();
+                    counter++;
+                } else if (counter == 1) {
+                    callViewSpeedSelectionCommand(counter);
+                    delay();
+                    counter++;
+                } else if (counter == 2) {
+                    callViewSpeedSelectionCommand(counter);
+                    delay();
+                    counter++;
+                } else if (counter == 3) {
+                    callViewSpeedSelectionCommand(counter);
+                    delay();
+                    counter++;
+                } else if (counter == 4) {
+                    callViewSpeedSelectionCommand(counter);
+                    delay();
+                    counter++;
+                } else if (counter == 5) {
+                    callViewSpeedSelectionCommand(counter);
+                    delay();
+                    counter++;
+                } else if (counter == 6) {
+                    callViewSpeedSelectionCommand(counter);
+                    delay();
+                    counter++;
+                } else if (counter == 7) {
+                    callViewSpeedSelectionCommand(counter);
+                    delay();
+                    counter++;
+                } else if (counter == 8) {
+                    callViewSpeedSelectionCommand(counter);
+                    delay();
+                    counter++;
+                } else if (counter == 9) {
+                    callViewSpeedSelectionCommand(counter);
+                    delay();
+                    counter++;
+                }else if (counter == 10) {
+                    callViewSpeedSelectionCommand(counter);
+                    delay();
+                    counter++;
+                }else if(counter == 11){
+                    counter++;
+                    if(isConnected()){
+                        // pd.dismiss();
+                        Log.d(TAG, "run: count speedAct = "+count_loader_SpeedSelection);
+                        //todo change payal
+                        int timeout = 0;
+                        while (true) {
+                            if (count_loader_SpeedSelection == 11) {
+                                if (pd.isShowing())
+                                    pd.dismiss();
+                                break;
+                            } else {
+                                if (timeout == 3){
+                                    Log.d("Tag_counter", "run: timeout = "+timeout);
+                                    Toast.makeText(mContext, "TimeOut! Device is slow", Toast.LENGTH_SHORT).show();
+                                    if (pd.isShowing())
+                                        pd.dismiss();
+                                    break;
+                                }
+                                delay();
+                                timeout ++;
+                            }
+                        }
+                    }
+
+                    showReceivedDataNew();
+                }
+                if (counter < 12)
+                    ha.postDelayed(this, 500);
+            }
+        };
 
         btnSetSSValues.setOnClickListener(new View.OnClickListener() {
             @Override

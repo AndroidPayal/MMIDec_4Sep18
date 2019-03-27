@@ -325,12 +325,14 @@ public class FloorCallBlockingActivity extends AppCompatActivity {
                                 }
 
                                 //if(completReceivedString.toString().contains("11250bf")){
-                                showReceivedDataNew();
+
+                                    showReceivedDataNew();
                                 counter++;
                                 //}
 
                             }
-                            ha.postDelayed(this, 500);
+                            if (counter<33)
+                                ha.postDelayed(this, 500);
                         }
                     }, 500);
                 } else {

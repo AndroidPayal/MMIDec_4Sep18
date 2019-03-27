@@ -1903,6 +1903,7 @@ public class MainActivity extends AppCompatActivity {
                     if (str11LvlDnSlip[31].equals("")){
                         count_loader_ViewLevel++;
                     }
+                    Log.d(TAG, "processReceivedData: inside last if");
                     str11LvlDnSlip[31] = strData;
                 }
                 /*else if (locationAddress.equalsIgnoreCase("C0")) {

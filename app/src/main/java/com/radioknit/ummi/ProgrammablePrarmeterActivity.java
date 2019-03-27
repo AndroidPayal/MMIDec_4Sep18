@@ -255,7 +255,8 @@ public class ProgrammablePrarmeterActivity extends AppCompatActivity {
                             }
                             showReceivedDataNew();
                         }
-                        ha.postDelayed(this, 500);
+                        if (counter<16)
+                         ha.postDelayed(this, 500);
 
                     }
 

@@ -445,7 +445,8 @@ public class DeviceIDActivity extends AppCompatActivity {
                                 showReceivedDataNew();
                             }
 
-                            ha.postDelayed(this, 500);
+                            if (counter<35)
+                                ha.postDelayed(this, 500);
                         }
                     }, 500);
                 }

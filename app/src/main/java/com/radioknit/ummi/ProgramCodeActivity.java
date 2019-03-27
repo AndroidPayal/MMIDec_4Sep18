@@ -280,10 +280,12 @@ public class ProgramCodeActivity extends AppCompatActivity {
                                     }
                                 }
                             }
+
                                 showReceivedDataNew();
                                 counter++;
                         }
-                        ha.postDelayed(this, 500);
+                        if (counter<15)
+                             ha.postDelayed(this, 500);
                     }
                 }, 500);
             }
