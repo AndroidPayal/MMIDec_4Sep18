@@ -243,9 +243,9 @@ public class SpeedSelectionActivity extends AppCompatActivity {
                 else {
                     Toast.makeText(getApplicationContext(), "Connect to the device", Toast.LENGTH_SHORT).show();
                 }
-                boolean b = ha.postDelayed(new Runnable() {
+               /* boolean b = ha.postDelayed(new Runnable() {
                     @Override
-                    public void run() {
+                    public void run() {*/
                         //call function
                         Log.d(TAG, "run:inside count ="+counter);
                         if (counter == 0) {
@@ -296,7 +296,7 @@ public class SpeedSelectionActivity extends AppCompatActivity {
                                 counter++;
                             if(isConnected()){
                                // pd.dismiss();
-                                Log.d("Tag_speed", "run: count = "+count_loader_SpeedSelection);
+                                Log.d(TAG, "run: count = "+count_loader_SpeedSelection);
                                 //todo change payal
                                 int timeout = 0;
                                 while (true) {
@@ -319,11 +319,11 @@ public class SpeedSelectionActivity extends AppCompatActivity {
                             }
 
                                 showReceivedDataNew();
-                        }
-                        ha.postDelayed(this, 500);
+                       }
+                      //  ha.postDelayed(this, 500);
                     }
-                }, 500);
-            }
+              /*  }, 500);
+    }*/
         });
 
 
