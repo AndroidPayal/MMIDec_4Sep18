@@ -2427,6 +2427,16 @@ public class MainActivity extends AppCompatActivity {
         // not enabled during onStart(), so we were paused to enable it...
         // onResume() will be called when ACTION_REQUEST_ENABLE activity
         // returns.
+        /* if (mChatService != null) {
+            // Only if the state is STATE_NONE, do we know that we haven't
+            // started already
+            if (mChatService.getState() == BluetoothChatService.STATE_NONE) {
+                // Start the Bluetooth chat services
+                mChatService.start();
+            }
+        }*/
+
+
         Log.d(TAG, "onResume: mChatService="+mChatService);
         if (mChatService != null) {//if changed to == device will not get connected autometically
            /* if (llError.getVisibility() == View.VISIBLE){
@@ -2436,8 +2446,6 @@ public class MainActivity extends AppCompatActivity {
             // Only if the state is STATE_NONE, do we know that we haven't
             // started already
             if (mChatService.getState() == BluetoothChatService.STATE_NONE) {
-
-
                 // Start the Bluetooth chat services
                 mChatService.start();
             }
@@ -2447,7 +2455,7 @@ public class MainActivity extends AppCompatActivity {
                     llError.setVisibility(View.GONE);
                 }
             }
-        }
+        }//else setupChat();//payal trial
     }
 
     private Runnable checkDataContinue = new Runnable() {
