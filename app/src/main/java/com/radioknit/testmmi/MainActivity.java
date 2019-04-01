@@ -121,6 +121,11 @@ public class MainActivity extends AppCompatActivity {
         //TODO payal
         str23HexCarCop2CallByte1 = "", str23HexCarCop2CallByte2="";
     ImageView imgDummy1;
+   // public static String errorReceivedString="";
+    public static ArrayList<String> strViewErrorStack;// = {"", "", "", "", "", "", "", "", "", ""};
+
+
+
     public static int count_IDs=0;//count 17 for 15 flr , and count 34  for 31 flr +Cop1+2
     public static int count_loader_ReadPLC = 0;
     public static int count_loader_DisplayPattern = 0;
@@ -155,6 +160,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+
+        strViewErrorStack = new ArrayList<>();
+        strViewErrorStack.clear();
 
         // If the adapter is null, then Bluetooth is not supported
         if (mBluetoothAdapter == null) {
@@ -361,10 +369,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
-
-
     public void appendLog1(String message, boolean hexMode, boolean outgoing, boolean clean) {
         try {
             StringBuffer msg = new StringBuffer();
@@ -399,6 +403,11 @@ public class MainActivity extends AppCompatActivity {
         Log.e(TAG, "processReceivedData: temp = "+temp +"  index0d = "+indexOd);
            // Log.e(TAG, "temp = "+ temp);
 
+        if (temp.startsWith("ee")){
+           // errorReceivedString = temp;
+            strViewErrorStack.add(temp);
+           // Log.d(TAG, "processReceivedData: error="+errorReceivedString);
+        }
         //TODO:Protocol Broadcasting (status
         if(temp.startsWith("05")){
             try{
@@ -646,9 +655,9 @@ public class MainActivity extends AppCompatActivity {
 
         //TODO:Protocol for Date
         if (temp.startsWith("11f3")) {
-            String date = (temp.substring(4, 6));
+            String date = (temp.substring(8, 10));//(temp.substring(4, 6));
             String month = (temp.substring(6, 8));
-            String year = (temp.substring(8, 10));
+            String year =  (temp.substring(4, 6));//(temp.substring(8, 10));
 
         /*    Log.d("Tag_timer", "processReceivedData:hex date = "+date
                     +" month ="+ month

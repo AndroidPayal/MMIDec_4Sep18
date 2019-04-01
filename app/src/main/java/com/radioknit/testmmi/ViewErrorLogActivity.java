@@ -6,10 +6,12 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -34,6 +36,7 @@ import java.util.ArrayList;
 import static com.radioknit.testmmi.MainActivity.MESSAGE_DEVICE_NAME;
 import static com.radioknit.testmmi.MainActivity.MESSAGE_READ;
 import static com.radioknit.testmmi.MainActivity.MESSAGE_STATE_CHANGE;
+import static com.radioknit.testmmi.MainActivity.strViewErrorStack;
 import static com.radioknit.testmmi.MainActivity.isConnected;
 import static com.radioknit.testmmi.MainActivity.sendMessage;
 
@@ -62,42 +65,102 @@ public class ViewErrorLogActivity extends AppCompatActivity {
     private static String MSG_CONNECTED;
 
     private static BluetoothChatService connector;
-    private static ViewErrorLogActivity.BluetoothResponseHandler mHandler;
+ //   private static ViewErrorLogActivity.BluetoothResponseHandler mHandler;
     DeviceListActivity deviceListActivity;
 
     private boolean hexMode, needClean;
     private boolean show_timings, show_direction;
-    private String command_ending;
+  //  private String command_ending;
     private String deviceName;
 
     private ProgressDialog pd;
-    private StringBuffer completReceivedString;
+  //  private StringBuffer completReceivedString;
     final Handler handler = new Handler();
 
+    //============
+    private Menu menu;
+    final Handler myHandlerChk = new Handler();
+
+/**
+ *
+ 04-01 10:46:51.499  E/Tag_MainActivity: processReceivedData: temp = ee2416190352cb  index0d = 14
+ 04-01 10:46:51.829  E/Tag_MainActivity: processReceivedData: temp = 152616dc6  index0d = 9
+ 04-01 10:46:51.869  E/Tag_MainActivity: processReceivedData: temp = ee2416190353cc  index0d = 14
+ 04-01 10:46:52.169  E/Tag_MainActivity: processReceivedData: temp = 12f40252616dc7  index0d = 14
+ 04-01 10:46:52.269  E/Tag_MainActivity: processReceivedData: temp = ee2316190353cb  index0d = 14
+ 04-01 10:46:52.560  E/Tag_MainActivity: processReceivedData: temp = 12f40352616dc8  index0d = 14
+ 04-01 10:46:52.660  E/Tag_MainActivity: processReceivedData: temp = ee1916190350cd  index0d = 14
+ 04-01 10:46:53.030  E/Tag_MainActivity: processReceivedData: temp = 12f40452616dc9  index0d = 14
+ 04-01 10:46:53.130  E/Tag_MainActivity: processReceivedData: temp = ee4311190350c5  index0d = 14
+ 04-01 10:46:54.161  E/Tag_MainActivity: processReceivedData: temp = 12f40652616dcb  index0d = 14
+ 04-01 10:46:54.271  E/Tag_MainActivity: processReceivedData: temp = ee4311190352c7  index0d = 14
+ 04-01 10:46:54.722  E/Tag_MainActivity: processReceivedData: temp = 12f40752616dcc  index0d = 14
+ 04-01 10:46:54.832  E/Tag_MainActivity: processReceivedData: temp = ee4352190352cc  index0d = 14
+ 04-01 10:46:55.292  E/Tag_MainActivity: processReceivedData: temp = 12f40852616dcd  index0d = 14
+ 04-01 10:46:55.402  E/Tag_MainActivity: processReceivedData: temp = ee4311190352c7  index0d = 14
+ 04-01 10:46:55.863  E/Tag_MainActivity: processReceivedData: temp = 12f40952616dce  index0d = 14
+ 04-01 10:46:55.983  E/Tag_MainActivity: processReceivedData: temp = ee0717190352cd  index0d = 14
+ 04-01 10:46:57.905  E/Tag_MainActivity: processReceivedData: temp = 11f1ffff0f038a  index0d = 14
+* */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
      //   PreferenceManager.setDefaultValues(this, R.xml.settings_activity, false);
 
-        if (mHandler == null) mHandler = new ViewErrorLogActivity.BluetoothResponseHandler(this);
-        else mHandler.setTarget(this);
-
+      //  if (mHandler == null) mHandler = new ViewErrorLogActivity.BluetoothResponseHandler(this);
+     //   else mHandler.setTarget(this);
+/*
         MSG_NOT_CONNECTED = "msg_not_connected";
         MSG_CONNECTING = "msg_connecting";
-        MSG_CONNECTED = "msg_connected";
+        MSG_CONNECTED = "msg_connected";*/
         setContentView(R.layout.activity_view_error_log);
 
-        completReceivedString = new StringBuffer();
+      //  completReceivedString = new StringBuffer();
 
 
         generateId();
         createObj();
         registerEvent();
 
-        if (isConnected() && (savedInstanceState != null)) {
+        myHandlerChk.postDelayed(checkDataContinue, 0);
+      /*  if (isConnected() && (savedInstanceState != null)) {
             setDeviceName(savedInstanceState.getString(DEVICE_NAME));
         } else getSupportActionBar().setSubtitle(MSG_NOT_CONNECTED);
+*/
+    }
+    private Runnable checkDataContinue = new Runnable() {
 
+        public void run() {
+            //showReceivedDataNew();
+            if (isConnected()) {
+                try{
+                    menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.grn_bt));
+                }
+                catch (Exception e){
+                    //Catch
+                }
+            }
+            else {
+                try{
+                    menu.findItem(R.id.menu_search).setIcon(ContextCompat.getDrawable(mContext, R.drawable.red_bt));
+                }
+                catch (Exception e){
+                    //Catch
+                }
+            }
+           /* if(cntSetText==1){
+                setTextViewValue(spinFlr);
+            }*/
+            myHandlerChk.postDelayed(this, 50);
+        }
+
+    };
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_write_mode, menu);
+        this.menu = menu;
+        return true;
     }
 
     void delay(){
@@ -114,12 +177,14 @@ public class ViewErrorLogActivity extends AppCompatActivity {
         btnViewErrorLog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                completReceivedString.setLength(0);
+              //  completReceivedString.setLength(0);
+                strViewErrorStack.clear();
+
                 counter = 0;
                 if (isConnected()) {
                 pd = ProgressDialog.show(mContext,"","Please wait",true);
 
-                boolean b = handler.postDelayed(checkDataContinue, 500);
+                boolean b = handler.postDelayed(checkErrorStack, 500);
                 }
                 else {
                     Toast.makeText(getApplicationContext(), "Connect to the device", Toast.LENGTH_SHORT).show();
@@ -129,7 +194,7 @@ public class ViewErrorLogActivity extends AppCompatActivity {
         });
     }
 
-    Runnable checkDataContinue = new Runnable() {
+    Runnable checkErrorStack = new Runnable() {
         @Override
         public void run() {
 
@@ -180,13 +245,14 @@ public class ViewErrorLogActivity extends AppCompatActivity {
                     pd.dismiss();
                 showReceivedDataNew();
             }
-            handler.postDelayed(this, 500);
+            if (counter<11)
+             handler.postDelayed(this, 500);
 
         }
     };
     private void createObj() {
         mContext = ViewErrorLogActivity.this;
-        bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+      //  bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         arrCommandValueList = new ArrayList<String>();
 
     }
@@ -243,13 +309,7 @@ public class ViewErrorLogActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-       // startActivity(new Intent(mContext, MainActivity.class));
-        handler.removeCallbacks(checkDataContinue);
-        finish();
-    }
+
 
     // ============================================================================
     @Override
@@ -281,13 +341,13 @@ public class ViewErrorLogActivity extends AppCompatActivity {
 
 
 
-    private void stopConnection() {
+ /*   private void stopConnection() {
         if (connector != null) {
             connector.stop();
             connector = null;
             deviceName = null;
         }
-    }
+    }*/
     // ==========================================================================
    /* @Override
     public synchronized void onPause() {
@@ -357,35 +417,35 @@ public class ViewErrorLogActivity extends AppCompatActivity {
  */   // ============================================================================
 
 
-    @Override
+  /*  @Override
     public void onStart() {
         super.onStart();
 
         // hex mode
-        final String mode = Utils.getPrefence(this, "pref_commands_mode");
-        this.hexMode = mode.equals("HEX");
+      //  final String mode = Utils.getPrefence(this, "pref_commands_mode");
+    //    this.hexMode = mode.equals("HEX");
 
-        this.command_ending = getCommandEnding();
+    //    this.command_ending = getCommandEnding();
 
         // ?????? ??????????? ???? ??????
-        this.show_timings = Utils.getBooleanPrefence(this, "pref_log_timing");
+      *//*  this.show_timings = Utils.getBooleanPrefence(this, "pref_log_timing");
         this.show_direction = Utils.getBooleanPrefence(this, "pref_log_direction");
-        this.needClean = Utils.getBooleanPrefence(this, "pref_need_clean");
-    }
+        this.needClean = Utils.getBooleanPrefence(this, "pref_need_clean");*//*
+    }*/
     // ============================================================================
 
 
     /**
      * ???????? ?? ???????? ??????? ????????? ???????
      */
-    private String getCommandEnding() {
+ /*   private String getCommandEnding() {
         String result = Utils.getPrefence(this, "pref_commands_ending");
         if (result.equals("\\r\\n")) result = "\r\n";
         else if (result.equals("\\n")) result = "\n";
         else if (result.equals("\\r")) result = "\r";
         else result = "";
         return result;
-    }
+    }*/
     // ============================================================================
 
 
@@ -434,7 +494,7 @@ public class ViewErrorLogActivity extends AppCompatActivity {
 
      * @param message  - ????? ??? ???????????
      * @param outgoing - ??????????? ????????
-     */
+     *//*
     public void appendLog(String message, boolean hexMode, boolean outgoing, boolean clean) {
 
         StringBuffer msg = new StringBuffer();
@@ -459,13 +519,13 @@ public class ViewErrorLogActivity extends AppCompatActivity {
         getSupportActionBar().setSubtitle(deviceName);
         getSupportActionBar().setTitle("Error Log");
     }
-
+*/
     // ==========================================================================
 
     /**
      * ?????????? ?????? ?????? ?? bluetooth-??????
      */
-    private class BluetoothResponseHandler extends Handler {
+/*    private class BluetoothResponseHandler extends Handler {
         private WeakReference<ViewErrorLogActivity> mActivity;
 
         public BluetoothResponseHandler(ViewErrorLogActivity activity) {
@@ -513,78 +573,89 @@ public class ViewErrorLogActivity extends AppCompatActivity {
                         activity.setDeviceName((String) msg.obj);
                         break;
 
-                   /* case MESSAGE_WRITE:
+                   *//* case MESSAGE_WRITE:
 
                         break;
 
                     case MESSAGE_TOAST:
                         // stub
-                        break;*/
+                        break;*//*
                 }
             }
         }
     }
-    // ==========================================================================
+ */   // ==========================================================================
 
 
     //TODO : protocol :Receive error code for error no requested
     public void showReceivedDataNew(){
         Log.e(TAG, "ShowReceivedData");
+        llErrors.removeAllViews();
 
-        String receivedString = new String(completReceivedString);
-        try {
+        for (int i =0 ; i<strViewErrorStack.size() ; i++) {
+            String receivedString = strViewErrorStack.get(i);//"ee2416190352cb";//errorReceivedString;//new String(completReceivedString);
+            try {
 
-            Log.e(TAG, "receivedString length = "+ receivedString.length());
-            Log.e(TAG, "receivedString length = "+ receivedString);
+                Log.e(TAG, "receivedString val = " + receivedString);
+                Log.e(TAG, "receivedString i = " + i);
 
-            if(Utils.isStringNotNull(receivedString)) {
-                while (receivedString.length() >= 14) {
-                    int index0D = receivedString.indexOf("\r");
-                    Log.e(TAG, "index0D = " + index0D);
-                    String temp = receivedString.substring(0, index0D);
-                    Log.e(TAG, "temp = " + temp);
-                    if (temp.startsWith("ee")) {
-                        String sum = Utils.calculateChecksumValueNew(temp);
-                        Log.e(TAG, "" + sum.substring(2, 4) + " -- " + temp.substring(temp.length() - 2, temp.length()) + " temp = " + temp);
+                if (Utils.isStringNotNull(receivedString)) {
+                    while (receivedString.length() >= 14) {
+                        int index0D = receivedString.length();//.indexOf("\r");
+                        Log.e(TAG, "index0D = " + index0D);
+                        String temp = receivedString;//.substring(0, index0D);
+                        Log.e(TAG, "temp = " + temp);
+                        if (temp.startsWith("ee")) {
+                            String sum = Utils.calculateChecksumValueNew(temp);
+                            Log.e(TAG, "" + sum.substring(2, 4) + " -- " + temp.substring(temp.length() - 2, temp.length()) + " temp = " + temp);
 
-                        if (sum.substring(2, 4).equalsIgnoreCase(temp.substring(temp.length() - 2, temp.length()))) {
-                            String errorCode = temp.substring(10, 12);
+                            if (sum.substring(2, 4).equalsIgnoreCase(temp.substring(temp.length() - 2, temp.length()))) {
+                                String errorCode = temp.substring(10, 12);
 
-                            int month = Integer.parseInt(temp.substring(8, 10));
-                            int date = Integer.parseInt(temp.substring(6, 8));
-                            int min = Integer.parseInt(temp.substring(2, 4));
-                            int hrs = Integer.parseInt(temp.substring(4, 6));
+                                int month = Integer.parseInt(temp.substring(8, 10));
+                                int date = Integer.parseInt(temp.substring(6, 8));
+                                int min = Integer.parseInt(temp.substring(2, 4));
+                                int hrs = Integer.parseInt(temp.substring(4, 6));
 
-                            LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            View view = inflater.inflate(R.layout.error_item, null);
-                            TextView tvErroCode = (TextView) view.findViewById(R.id.tvErrorCode);
-                            TextView tvErrorDate = (TextView) view.findViewById(R.id.tvErrorDate);
-                            TextView tvErrorTime = (TextView) view.findViewById(R.id.tvErrorTime);
-                            TextView tvErrorDiscription = (TextView) view.findViewById(R.id.tvErrorDescription);
+                                LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                                View view = inflater.inflate(R.layout.error_item, null);
+                                TextView tvErroCode = (TextView) view.findViewById(R.id.tvErrorCode);
+                                TextView tvErrorDate = (TextView) view.findViewById(R.id.tvErrorDate);
+                                TextView tvErrorTime = (TextView) view.findViewById(R.id.tvErrorTime);
+                                TextView tvErrorDiscription = (TextView) view.findViewById(R.id.tvErrorDescription);
 
-                            tvErrorTime.setText("" + min + " : " + hrs);
-                            tvErroCode.setText("" + errorCode);
-                            tvErrorDate.setText("" + date + "/" + month);
-                            tvErrorDiscription.setText("" + getErrorCode(Integer.parseInt(errorCode)));
-                            llErrors.addView(view);
 
-                            temp = "";
+                                tvErrorTime.setText("" + hrs + " : " + min);//("" + min + " : " + hrs);
+                                tvErroCode.setText("" + Integer.parseInt(errorCode, 16));//errorCode);
+                                tvErrorDate.setText("" + date + "/" + month);
+                                tvErrorDiscription.setText("" + getErrorCode(Integer.parseInt(errorCode, 16)));
+                                llErrors.addView(view);
 
+                                temp = "";
+
+                            }
+                            receivedString = receivedString.substring(index0D + 1, receivedString.length());
+                            Log.e(TAG, "Sum ===== " + sum);
+                        } else {
+                            receivedString = receivedString.substring(index0D + 1, receivedString.length());
                         }
-                        receivedString = receivedString.substring(index0D + 1, receivedString.length());
-                        Log.e(TAG, "Sum ===== " + sum);
-                    } else {
-                        receivedString = receivedString.substring(index0D + 1, receivedString.length());
+
                     }
-
                 }
-            }
 
-        }catch (Exception e){
-            e.printStackTrace();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        //startActivity(new Intent(mContext, MainActivity.class));
+        myHandlerChk.removeCallbacks(checkDataContinue);
+        handler.removeCallbacks(checkErrorStack);
+        finish();
+    }
     private String getErrorCode(int code) {
 
         if(code == 80){
