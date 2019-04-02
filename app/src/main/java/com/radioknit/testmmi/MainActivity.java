@@ -119,9 +119,8 @@ public class MainActivity extends AppCompatActivity {
      str13MainCarCall = "", str05MainFloor = "", str06MainPre = "", str71MainSafety = "",
 
         //TODO payal
-        str23HexCarCop2CallByte1 = "", str23HexCarCop2CallByte2="";
+        str23HexCarCop2CallByte1 = "", str23HexCarCop2CallByte2="" , str1011MntPowerWeight = "";
     ImageView imgDummy1;
-   // public static String errorReceivedString="";
     public static ArrayList<String> strViewErrorStack;// = {"", "", "", "", "", "", "", "", "", ""};
 
 
@@ -131,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
     public static int count_loader_DisplayPattern = 0;
     public static int count_loader_ProgrammableParameter = 0;
     public static int count_loader_SpeedSelection = 0;
-    public static int count_loader_FlrCallBlocking = 0;
+     public static int count_loader_FlrCallBlocking = 0;
     public static int count_loader_ViewLevel = 0;
 
 
@@ -403,11 +402,19 @@ public class MainActivity extends AppCompatActivity {
         Log.e(TAG, "processReceivedData: temp = "+temp +"  index0d = "+indexOd);
            // Log.e(TAG, "temp = "+ temp);
 
+        //todo : protocol for errors
         if (temp.startsWith("ee")){
            // errorReceivedString = temp;
             strViewErrorStack.add(temp);
            // Log.d(TAG, "processReceivedData: error="+errorReceivedString);
         }
+
+        //todo : protocol for MNT
+        if (temp.startsWith("1011")){
+           // Log.d(TAG, "processReceivedData: temp = ");
+            str1011MntPowerWeight = temp ;
+        }
+
         //TODO:Protocol Broadcasting (status
         if(temp.startsWith("05")){
             try{
@@ -691,6 +698,7 @@ public class MainActivity extends AppCompatActivity {
             str23HexCarCop2CallByte2 = temp.substring(index+8,index+10);
 
             //add this too here str13MainCarCall = temp;
+            str13MainCarCall = temp;
         }
 
         //TODO:Protocol for LOP

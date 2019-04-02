@@ -22,6 +22,7 @@
             android:textColor="@color/white"
             android:textSize="20sp" />
 
+        <!--currently no use of this security button, so hiding-->
         <Button
             android:id="@+id/btn_main_display_security"
             android:layout_width="0dp"
@@ -31,7 +32,8 @@
             android:background="@drawable/btn_selector"
             android:text="security"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:visibility="gone"/>
 
     </LinearLayout>
 
@@ -449,6 +451,60 @@
                             android:layout_margin="5dp"
                             android:background="@drawable/btn_selector"
                             android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnMani_display_High"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="OverLoad"
+                            android:clickable="false"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/btn_selector"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/btnMani_display_Medium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Medium"
+                            android:clickable="false"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/btn_selector"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/btnMani_display_Low"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Low"
+                            android:clickable="false"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/btn_selector"
+                            android:textColor="@color/white" />
+                        <Button
+                            android:id="@+id/btnMani_display_dummy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="dummy"
+                            android:clickable="false"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/btn_selector"
+                            android:textColor="@color/white"
+                            android:visibility="invisible"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>

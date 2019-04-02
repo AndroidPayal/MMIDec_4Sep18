@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -21,6 +22,7 @@ import pl.droidsonroids.gif.GifImageView;
 import static com.radioknit.testmmi.MainActivity.isConnected;
 import static com.radioknit.testmmi.MainActivity.str05MainFloor;
 import static com.radioknit.testmmi.MainActivity.str06MainPre;
+import static com.radioknit.testmmi.MainActivity.str1011MntPowerWeight;
 import static com.radioknit.testmmi.MainActivity.str11CompulsoryStop;
 import static com.radioknit.testmmi.MainActivity.str11FireFloor;
 import static com.radioknit.testmmi.MainActivity.str11HomeFloor;
@@ -46,6 +48,9 @@ public class MainDisplayActivity extends AppCompatActivity {
     private static Button btnVIP2;
     private static Button btnDIR;
     private static Button btnStop;
+    private static Button btnHignWeight;
+    private static Button btnLowWeight;
+    private static Button btnMediumWeight;
     private String remaningString;
 //    private static ImageView imgDn;
 //    private static ImageView imgUp;
@@ -122,6 +127,10 @@ public class MainDisplayActivity extends AppCompatActivity {
         btnAuto = (Button)findViewById(R.id.btnMani_display_Auto);
         btnStop = (Button)findViewById(R.id.btnMani_display_stop);
         btnVIP2 = (Button)findViewById(R.id.btnMani_display_VIP2);
+
+        btnLowWeight = (Button)findViewById(R.id.btnMani_display_Low);
+        btnHignWeight = (Button)findViewById(R.id.btnMani_display_High);
+        btnMediumWeight = (Button)findViewById(R.id.btnMani_display_Medium);
 //        imgUp = (ImageView)findViewById(R.id.imgUp);
 //        imgDn = (ImageView)findViewById(R.id.imgDwn);
         imgUp = (GifImageView)findViewById(R.id.imgUp);
@@ -237,15 +246,55 @@ public class MainDisplayActivity extends AppCompatActivity {
             txtParkingFloor.setText(str11ParkingFloor);
         }
 
+        if (!str1011MntPowerWeight.equals("")){
+            Log.d("Tag_mnt", "showReceivedData: "+str1011MntPowerWeight);
+            setPowerWeightIndication(str1011MntPowerWeight);
+        }
+
         /*if (temp.startsWith("71")){
             setSeftyLoopValues(temp);
         }*/
     }
 
+    private void setPowerWeightIndication(String str1011MntPowerWeight) {
+
+        String hexMStatus1 = String.format("%04x", Integer.parseInt(str1011MntPowerWeight.substring(6,8),16));
+        String strBinMStatus1 = Utils.hexToBin(hexMStatus1);
+        Log.d("Tag_mnt", "setPowerWeightIndication: bin str = "+strBinMStatus1);
+
+        if (strBinMStatus1.charAt(6) == '1'){
+            //low weight yes
+            btnLowWeight.setBackgroundColor(mContext.getResources().getColor(R.color.red));
+        } else{
+          //no
+            btnLowWeight.setBackground(mContext.getResources().getDrawable(R.drawable.btn_selector));
+        }
+
+        if (strBinMStatus1.charAt(5) == '1'){
+            //medium weight yes
+            btnMediumWeight.setBackgroundColor(mContext.getResources().getColor(R.color.red));
+        } else{
+            //no
+            btnMediumWeight.setBackground(mContext.getResources().getDrawable(R.drawable.btn_selector));
+
+        }
+
+        if (strBinMStatus1.charAt(4) == '1'){
+            //high weight yes
+            btnHignWeight.setBackgroundColor(mContext.getResources().getColor(R.color.red));
+
+        } else{
+            //no
+            btnHignWeight.setBackground(mContext.getResources().getDrawable(R.drawable.btn_selector));
+
+        }
+
+    }
+
 
     // ==========================================================================
 
-    private void showCarCalls(String temp) {
+    private void showCarCalls(String temp) {//for cop calls 0-15 flrs
 
         //setDefaultColur();
         try {

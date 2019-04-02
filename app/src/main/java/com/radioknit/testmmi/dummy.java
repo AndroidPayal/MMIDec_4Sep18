@@ -3,6 +3,156 @@ package com.radioknit.testmmi;
 public class dummy {
 
 
+    /*04-02 12:55:20.895 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: BT address:68:48:98:E1:A7:57
+04-02 12:55:20.935 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: onResume: mChatService=com.radioknit.testmmi.BluetoothChatService@41a8e668
+04-02 12:55:20.935 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: onResume: mChatService state=0
+04-02 12:55:20.985 21741-21741/com.radioknit.testmmi I/Tag_MainActivity: MESSAGE_STATE_CHANGE: 1
+04-02 12:55:21.345 21741-21741/com.radioknit.testmmi I/Tag_MainActivity: MESSAGE_STATE_CHANGE: 2
+04-02 12:55:26.190 21741-21741/com.radioknit.testmmi I/Tag_MainActivity: MESSAGE_STATE_CHANGE: 1
+04-02 12:56:16.619 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: onResume: mChatService=com.radioknit.testmmi.BluetoothChatService@41a8e668
+04-02 12:56:16.619 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: onResume: mChatService state=2
+04-02 12:56:16.689 21741-21741/com.radioknit.testmmi I/Tag_MainActivity: MESSAGE_STATE_CHANGE: 2
+04-02 12:56:18.361 21741-21741/com.radioknit.testmmi I/Tag_MainActivity: MESSAGE_STATE_CHANGE: 3
+04-02 12:56:18.681 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f1ffff0f048b  index0d = 14
+04-02 12:56:18.711 21741-21741/com.radioknit.testmmi E/Tag_DeviceIdsMain: Device  = 4 Id :0fffff temp = 11f1ffff0f048b count= 0
+04-02 12:56:18.711 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 8090893  index0d = 7
+04-02 12:56:18.711 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp =   index0d = 0
+04-02 12:56:18.711 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 21744dc3  index0d = 8
+04-02 12:56:18.711 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 3  index0d = 1
+04-02 12:56:18.721 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 500091090  index0d = 9
+04-02 12:56:18.721 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 95  index0d = 2
+04-02 12:56:18.721 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 1904021fc2  index0d = 10
+04-02 12:56:18.721 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = fc2  index0d = 3
+04-02 12:56:18.721 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 18700091294  index0d = 11
+04-02 12:56:27.770 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f11008090893  index0d = 14
+04-02 12:56:27.790 21741-21741/com.radioknit.testmmi E/Tag_DeviceIdsMain: Device  = 8 Id :090810 temp = 11f11008090893 count= 1
+04-02 12:56:37.119 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f31904021fc2  index0d = 14
+04-02 12:56:56.638 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f1130009098f  index0d = 14
+04-02 12:56:56.658 21741-21741/com.radioknit.testmmi E/Tag_DeviceIdsMain: Device  = 9 Id :090013 temp = 11f1130009098f count= 2
+04-02 12:57:05.877 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f21221744dc3  index0d = 14
+04-02 12:57:26.497 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f18500091090  index0d = 14
+04-02 12:57:26.517 21741-21741/com.radioknit.testmmi E/Tag_DeviceIdsMain: Device  = 10 Id :090085 temp = 11f18500091090 count= 3
+04-02 12:57:35.756 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f31904021fc2  index0d = 14
+04-02 12:57:55.406 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f10708091193  index0d = 14
+04-02 12:57:55.426 21741-21741/com.radioknit.testmmi E/Tag_DeviceIdsMain: Device  = 11 Id :090807 temp = 11f10708091193 count= 4
+04-02 12:58:05.015 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f21221744dc3  index0d = 14
+04-02 12:58:23.523 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 13110000000046  index0d = 14
+04-02 12:58:23.523 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 13110000000046
+04-02 12:58:23.763 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 1311c40000007d  index0d = 14
+04-02 12:58:23.773 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 1311c40000007d
+04-02 12:58:25.255 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f18700091294  index0d = 14
+04-02 12:58:25.275 21741-21741/com.radioknit.testmmi E/Tag_DeviceIdsMain: Device  = 12 Id :090087 temp = 11f18700091294 count= 5
+04-02 12:58:25.505 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 13110000000046  index0d = 14
+04-02 12:58:25.505 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 13110000000046
+04-02 12:58:25.805 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 1311c000000079  index0d = 14
+04-02 12:58:25.805 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 1311c000000079
+04-02 12:58:27.597 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 13110000000046  index0d = 14
+04-02 12:58:27.597 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 13110000000046
+04-02 12:58:27.887 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 1311c800000081  index0d = 14
+04-02 12:58:27.897 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 1311c800000081
+04-02 12:58:27.937 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 052e0130008088  index0d = 14
+04-02 12:58:27.947 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData(if 05) =flr 01 str05Stat0=30 flrNo =1 hexFour=0030 strBinaryFour=00110000
+04-02 12:58:34.674 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f31904021fc2  index0d = 14
+04-02 12:58:37.817 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 13110000000046  index0d = 14
+04-02 12:58:37.817 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 13110000000046
+04-02 12:58:37.967 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 052e0130000080  index0d = 14
+04-02 12:58:37.967 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData(if 05) =flr 01 str05Stat0=30 flrNo =1 hexFour=0030 strBinaryFour=00110000
+04-02 12:58:38.127 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 1311c000000079  index0d = 14
+04-02 12:58:38.127 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 1311c000000079
+04-02 12:58:38.918 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 13110000000046  index0d = 14
+04-02 12:58:38.918 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 13110000000046
+04-02 12:58:39.098 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 1311d00000007a  index0d = 14
+04-02 12:58:39.108 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 1311d00000007a
+04-02 12:58:39.228 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 052e0130004084  index0d = 14
+04-02 12:58:39.228 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData(if 05) =flr 01 str05Stat0=30 flrNo =1 hexFour=0030 strBinaryFour=00110000
+04-02 12:58:39.338 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 052e0138004894  index0d = 14
+04-02 12:58:39.338 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData(if 05) =flr 01 str05Stat0=38 flrNo =1 hexFour=0038 strBinaryFour=00111000
+04-02 12:58:42.962 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 13110000000046  index0d = 14
+04-02 12:58:42.972 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 13110000000046
+04-02 12:58:43.112 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 052e0138000890  index0d = 14
+04-02 12:58:43.112 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData(if 05) =flr 01 str05Stat0=38 flrNo =1 hexFour=0038 strBinaryFour=00111000
+04-02 12:58:43.142 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 052e0138000088  index0d = 14
+04-02 12:58:43.142 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData(if 05) =flr 01 str05Stat0=38 flrNo =1 hexFour=0038 strBinaryFour=00111000
+04-02 12:58:43.282 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 1311c000000079  index0d = 14
+04-02 12:58:43.282 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 1311c000000079
+04-02 12:58:44.323 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 13110000000046  index0d = 14
+04-02 12:58:44.323 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 13110000000046
+04-02 12:58:44.594 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 1311c40000007d  index0d = 14
+04-02 12:58:44.594 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 1311c40000007d
+04-02 12:58:44.904 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 052e0130000080  index0d = 14
+04-02 12:58:44.904 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData(if 05) =flr 01 str05Stat0=30 flrNo =1 hexFour=0030 strBinaryFour=00110000
+04-02 12:58:45.344 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 13110000000046  index0d = 14
+04-02 12:58:45.344 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 13110000000046
+04-02 12:58:45.535 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 1311c000000079  index0d = 14
+04-02 12:58:45.535 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 1311c000000079
+04-02 12:58:47.016 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 13110000000046  index0d = 14
+04-02 12:58:47.016 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 13110000000046
+04-02 12:58:47.276 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 1311c40000007d  index0d = 14
+04-02 12:58:47.276 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 1311c40000007d
+04-02 12:58:48.768 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 13110000000046  index0d = 14
+04-02 12:58:48.768 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 13110000000046
+04-02 12:58:49.048 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 1311c000000079  index0d = 14
+04-02 12:58:49.048 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 1311c000000079
+04-02 12:58:49.628 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 13110000000046  index0d = 14
+04-02 12:58:49.628 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 13110000000046
+04-02 12:58:49.799 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 1311c40000007d  index0d = 14
+04-02 12:58:49.799 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 1311c40000007d
+04-02 12:58:51.330 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 13110000000046  index0d = 14
+04-02 12:58:51.330 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 13110000000046
+04-02 12:58:51.610 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 1311c000000079  index0d = 14
+04-02 12:58:51.610 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 1311c000000079
+04-02 12:58:54.123 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 13110000000046  index0d = 14
+04-02 12:58:54.123 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 13110000000046
+04-02 12:58:54.273 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f1ffff0f138b  index0d = 14
+04-02 12:58:54.283 21741-21741/com.radioknit.testmmi E/Tag_DeviceIdsMain: Device  = 13 Id :0fffff temp = 11f1ffff0f138b count= 6
+04-02 12:58:54.413 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 1311c800000081  index0d = 14
+04-02 12:58:54.413 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 1311c800000081
+04-02 12:58:54.473 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 052e0130008088  index0d = 14
+04-02 12:58:54.473 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData(if 05) =flr 01 str05Stat0=30 flrNo =1 hexFour=0030 strBinaryFour=00110000
+04-02 12:58:56.245 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 13110000000046  index0d = 14
+04-02 12:58:56.245 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 13110000000046
+04-02 12:58:56.285 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 052e0130000080  index0d = 14
+04-02 12:58:56.285 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData(if 05) =flr 01 str05Stat0=30 flrNo =1 hexFour=0030 strBinaryFour=00110000
+04-02 12:58:56.515 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 1311c000000079  index0d = 14
+04-02 12:58:56.515 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 1311c000000079
+04-02 12:58:56.836 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 13110000000046  index0d = 14
+04-02 12:58:56.836 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 13110000000046
+04-02 12:58:57.076 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 1311d00000007a  index0d = 14
+04-02 12:58:57.086 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 1311d00000007a
+04-02 12:58:57.146 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 052e0130004084  index0d = 14
+04-02 12:58:57.146 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData(if 05) =flr 01 str05Stat0=30 flrNo =1 hexFour=0030 strBinaryFour=00110000
+04-02 12:58:57.276 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 052e0138004894  index0d = 14
+04-02 12:58:57.276 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData(if 05) =flr 01 str05Stat0=38 flrNo =1 hexFour=0038 strBinaryFour=00111000
+04-02 12:58:59.198 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 13110000000046  index0d = 14
+04-02 12:58:59.198 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 13110000000046
+04-02 12:58:59.308 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 052e0138000890  index0d = 14
+04-02 12:58:59.308 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData(if 05) =flr 01 str05Stat0=38 flrNo =1 hexFour=0038 strBinaryFour=00111000
+04-02 12:58:59.468 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 052e0138000088  index0d = 14
+04-02 12:58:59.468 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData(if 05) =flr 01 str05Stat0=38 flrNo =1 hexFour=0038 strBinaryFour=00111000
+04-02 12:58:59.488 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 1311c000000079  index0d = 14
+04-02 12:58:59.488 21741-21741/com.radioknit.testmmi D/Tag_MainActivity: processReceivedData: temp1311 : 1311c000000079
+04-02 12:59:00.359 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 052e0130000080  index0d = 14
+04-02 12:59:00.369 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData(if 05) =flr 01 str05Stat0=30 flrNo =1 hexFour=0030 strBinaryFour=00110000
+04-02 12:59:03.452 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f21221744dc3  index0d = 14
+04-02 12:59:24.072 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f19500091495  index0d = 14
+04-02 12:59:24.082 21741-21741/com.radioknit.testmmi E/Tag_DeviceIdsMain: Device  = 14 Id :090095 temp = 11f19500091495 count= 7
+04-02 12:59:33.371 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f31904021fc2  index0d = 14
+04-02 12:59:52.910 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f10001090083  index0d = 14
+04-02 12:59:52.930 21741-21741/com.radioknit.testmmi E/Tag_DeviceIdsMain: Device  = 0 Id :090100 temp = 11f10001090083 count= 8
+04-02 13:00:02.389 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f21221744dc3  index0d = 14
+04-02 13:00:23.050 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f10101090185  index0d = 14
+04-02 13:00:23.070 21741-21741/com.radioknit.testmmi E/Tag_DeviceIdsMain: Device  = 1 Id :090101 temp = 11f10101090185 count= 9
+04-02 13:00:32.379 21741-21741/com.radioknit.testmmi E/Tag_MainActivity: processReceivedData: temp = 11f31904021fc2  index0d = 14
+*/
+
+
+/*
+04/01 18:26:24: Launching app
+$ adb push /home/radioknitpc12/AndroidStudioProjects/MMIDec_4Sep18/app/build/outputs/apk/debug/app-debug.apk /data/local/tmp/com.radioknit.testmmi
+com.android.ddmlib.AdbCommandRejectedException: device unauthorized.
+This adbd's $ADB_VENDOR_KEYS is not set; try 'adb kill-server' if that seems wrong.
+Otherwise check for a confirmation dialog on your device.
+Error while Installing APK*/
 /**
  2019-03-20 11:35:18.510 13590-13590/com.radioknit.mmidec D/Tag_DeviceIds: run: counter=0
  2019-03-20 11:35:18.510 13590-13590/com.radioknit.mmidec D/Tag_DeviceIds: callViewDeviceId: Sending counter=0
