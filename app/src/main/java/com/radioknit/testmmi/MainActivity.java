@@ -643,6 +643,7 @@ public class MainActivity extends AppCompatActivity {
         //TODO:Protocol for PreAnnouncing
         if(temp.startsWith("06")){
             str06MainPre = temp;
+            Log.d("Tag_pre", "processReceivedData: pre val="+str06MainPre);
         }
 
         //TODO:Protocol time

@@ -497,14 +497,33 @@ public class MainDisplayActivity extends AppCompatActivity {
 
     private void setPreAnnouncing(String temp) {
         String receivedString = temp;
-        try {
-            String hexFloorNo = String.format("%04x", Integer.parseInt(receivedString.substring(4,6)));
-            String hexDirection = String.format("%4x", Integer.parseInt(receivedString.substring(2,4)));
 
-            txtPreValue.setText("" + Integer.parseInt(hexFloorNo, 16));
-            int dir = Integer.parseInt(hexDirection.trim(), 16);
-          //  Log.e(TAG, "Floor No = " + hexFloorNo + " fl = " + Integer.parseInt(hexFloorNo, 16));
-          //  Log.e(TAG, "Direction = " + hexDirection + " dir = " + dir);
+        Log.d("Tag_pre", "setPreAnnouncing: received="+receivedString);
+        try {
+            String hexDirection = receivedString.substring(2,4);//String.format("%4x", Integer.parseInt(receivedString.substring(2,4)));
+            String hexFloorNo = receivedString.substring(4,6);//String.format("%04x", Integer.parseInt(receivedString.substring(4,6)));
+            int decFloorNo = Integer.parseInt(hexFloorNo , 16);
+
+            if (!hexFloorNo.equals("ff")) {
+                txtPreValue.setText("" + decFloorNo);// Integer.parseInt(hexFloorNo, 16));
+//            int dir = Integer.parseInt(hexDirection.trim(), 16);
+
+                Log.e("Tag_pre", "Floor No = " + hexFloorNo + " fl = " + Integer.parseInt(hexFloorNo, 16));
+                Log.e("Tag_pre", "Direction = " + hexDirection );
+
+                if (hexDirection.equals("00")) {
+                    imgPreDn.setVisibility(View.GONE);
+                    imgPreUp.setVisibility(View.GONE);
+                } else if (hexDirection.equals("01")) {
+                    imgPreDn.setVisibility(View.VISIBLE);
+                    imgPreUp.setVisibility(View.GONE);
+                } else if (hexDirection.equals("02")) {
+                    imgPreUp.setVisibility(View.VISIBLE);
+                    imgPreDn.setVisibility(View.GONE);
+                }
+            }
+            /*Log.e("Tag_pre", "Floor No = " + hexFloorNo + " fl = " + Integer.parseInt(hexFloorNo, 16));
+            Log.e("Tag_pre", "Direction = " + hexDirection + " dir = " + dir);
 
             if (dir == 0) {
                 imgPreDn.setVisibility(View.GONE);
@@ -515,7 +534,7 @@ public class MainDisplayActivity extends AppCompatActivity {
             } else if (dir == 2) {
                 imgPreUp.setVisibility(View.VISIBLE);
                 imgPreDn.setVisibility(View.GONE);
-            }
+            }*/
         }catch (Exception e){
             e.printStackTrace();
         }
