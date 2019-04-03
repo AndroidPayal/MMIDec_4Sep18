@@ -23,7 +23,7 @@ import static com.radioknit.testmmi.MainActivity.str23HexCarCop2CallByte2;
 public class CarCallActivity31 extends AppCompatActivity implements CarCallAdapter31.CarCallIndicatorSignalListner {
     //debugging
     private static final String TAG = "Tag_CarCallActivity31";
-    private static boolean  SHOW_TAG =true;
+    private static boolean  SHOW_TAG =false;
     private static final int REQUEST_CONNECT_DEVICE = 2;
 
     private static Context mContext;

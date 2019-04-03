@@ -219,6 +219,9 @@ public class MainDisplayActivity extends AppCompatActivity {
     private void showReceivedData() {
 
         if (!str13MainCarCall.equals("")) {
+            Log.d("Tag_mnt", "showReceivedData: "+str1011MntPowerWeight);
+            setPowerWeightIndication(str13MainCarCall);
+
             showCarCalls(str13MainCarCall);
         }
 
@@ -246,23 +249,27 @@ public class MainDisplayActivity extends AppCompatActivity {
             txtParkingFloor.setText(str11ParkingFloor);
         }
 
-        if (!str1011MntPowerWeight.equals("")){
+       /* if (!str1011MntPowerWeight.equals("")){
             Log.d("Tag_mnt", "showReceivedData: "+str1011MntPowerWeight);
             setPowerWeightIndication(str1011MntPowerWeight);
-        }
+        }*/
 
         /*if (temp.startsWith("71")){
             setSeftyLoopValues(temp);
         }*/
     }
 
-    private void setPowerWeightIndication(String str1011MntPowerWeight) {
+    private void setPowerWeightIndication(String str13MainCarCalltemp) {
 
-        String hexMStatus1 = String.format("%04x", Integer.parseInt(str1011MntPowerWeight.substring(6,8),16));
+      /*  String hexMStatus1 = String.format("%04x", Integer.parseInt(str1011MntPowerWeight.substring(6,8),16));
         String strBinMStatus1 = Utils.hexToBin(hexMStatus1);
-        Log.d("Tag_mnt", "setPowerWeightIndication: bin str = "+strBinMStatus1);
+        */
 
-        if (strBinMStatus1.charAt(6) == '1'){
+      String strBinMStatus1 = str13MainCarCalltemp.substring(4,6);
+      Log.d("Tag_mnt", "setPowerWeightIndication: substr = "+strBinMStatus1);
+
+        //if (strBinMStatus1.charAt(6) == '1'){
+        if (strBinMStatus1.equals("c4")){
             //low weight yes
             btnLowWeight.setBackgroundColor(mContext.getResources().getColor(R.color.red));
         } else{
@@ -270,7 +277,8 @@ public class MainDisplayActivity extends AppCompatActivity {
             btnLowWeight.setBackground(mContext.getResources().getDrawable(R.drawable.btn_selector));
         }
 
-        if (strBinMStatus1.charAt(5) == '1'){
+        //if (strBinMStatus1.charAt(5) == '1'){
+        if (strBinMStatus1.equals("c8")){
             //medium weight yes
             btnMediumWeight.setBackgroundColor(mContext.getResources().getColor(R.color.red));
         } else{
@@ -279,7 +287,8 @@ public class MainDisplayActivity extends AppCompatActivity {
 
         }
 
-        if (strBinMStatus1.charAt(4) == '1'){
+        //if (strBinMStatus1.charAt(4) == '1'){
+        if (strBinMStatus1.equals("d0")){
             //high weight yes
             btnHignWeight.setBackgroundColor(mContext.getResources().getColor(R.color.red));
 
